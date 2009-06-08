@@ -13,3 +13,4 @@ svg-edit should contain the following future features:
   * Ability to add text to the graphic
   * Arbitrarily rotate elements
   * Arbitrarily scale elements
+  * Add more complicated shapes (arcs, ...)
