@@ -1,0 +1,15 @@
+#summary A high-level roadmap for the svg-edit project.
+
+= Introduction =
+
+This page should list the proposed features
+
+
+= Details =
+
+svg-edit should contain the following future features:
+  * Group/ungroup elements
+  * Send elements forward/backward
+  * Ability to add text to the graphic
+  * Arbitrarily rotate elements
+  * Arbitrarily scale elements
