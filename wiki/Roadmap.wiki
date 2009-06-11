@@ -10,6 +10,7 @@ This page should list the proposed features
 = Version 2.1 ==
 == Approved Features to add ==
  * tooltips added to all UI elements
+ * edit of fill opacity, stroke opacity, group opacity
  * selection of elements
  * move/drag of elements
  * create and edit text elements
@@ -24,9 +25,8 @@ This page should list the proposed features
 
 = Version 2.0 ==
 == Approved Features to add ==
- * ?
- * ?
- * ?
+ * draw ellipse, square
+ * change stroke-dasharray (line style)
 == Dates ==
  * version release - Jun 03, 2009
  * try out url - http://svg-edit.googlecode.com/svn/branches/2.0/svg-editor.html
