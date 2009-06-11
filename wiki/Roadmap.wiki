@@ -4,7 +4,7 @@
 
 = Version 2.2 ==
 == Approved Features ==
- * ?
+ * http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.2
 == Dates ==
  * ?
 
@@ -21,6 +21,7 @@
  * create and edit text elements
  * contextual panel of tools
 == Approved Bugs to be fixed ==
+ * http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.1
 == Dates ==
  * Target release date - Jun 30, 2009?
  * version release - 
