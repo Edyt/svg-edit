@@ -2,17 +2,23 @@
 
 = Introduction =
 
-This page should list the proposed features
-
-
+= Version 2.2 ==
+== Approved Features ==
+ * ?
+== Dates ==
+ * ?
 
 
 = Version 2.1 ==
-== Approved Features to add ==
+== Approved Features ==
+ * keystroke handling (IN PROGRESS)
+ * change text styles: bold, italic, underline, small caps (NOT STARTED)
+== New Features to add ==
  * tooltips added to all UI elements
  * edit of fill opacity, stroke opacity, group opacity
  * selection of elements
  * move/drag of elements
+ * save SVG file to separate tab
  * create and edit text elements
  * contextual panel of tools
 == Approved Bugs to be fixed ==
@@ -24,7 +30,7 @@ This page should list the proposed features
 
 
 = Version 2.0 ==
-== Approved Features to add ==
+== New Features ==
  * draw ellipse, square
  * change stroke-dasharray (line style)
 == Dates ==
@@ -33,7 +39,7 @@ This page should list the proposed features
  * related revision - http://code.google.com/p/svg-edit/source/detail?r=24
 
 = Version 1.0 ==
-== Approved Features to add ==
+== New Features ==
  * draw path, line, freehand-circle, rect
  * clear drawn image
  * delete element
