@@ -10,7 +10,6 @@
 
 = Version 2.1 ==
 == Approved Features ==
- * keystroke handling (IN PROGRESS)
  * change text styles: bold, italic, underline, small caps (NOT STARTED)
 == New Features Added ==
  * tooltips added to all UI elements
@@ -21,6 +20,7 @@
  * create and edit text elements
  * contextual panel of tools
  * change rect radius, font-family, font-size
+ * keystroke handling
 == Approved Bugs to be fixed ==
  * http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.1
 == Dates ==
