@@ -10,7 +10,6 @@
 
 = Version 2.1 ==
 == Approved Features ==
- * change text styles: bold, italic, underline, small caps (NOT STARTED)
 == New Features Added ==
  * tooltips added to all UI elements
  * edit of fill opacity, stroke opacity, group opacity
