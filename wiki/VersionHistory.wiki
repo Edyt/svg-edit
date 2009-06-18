@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page describes past versions of svg-edit.  For the future, see Roadmap.
+This page describes past versions of svg-edit.  For the future, see the [Roadmap].
 
 = Version 2.1 ==
 == Approved Features ==
