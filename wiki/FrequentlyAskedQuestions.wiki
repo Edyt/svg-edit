@@ -3,8 +3,7 @@
 *Q: Why doesn't svg-edit work in Internet Explorer?*
 
 A: At this time, Internet Explorer does not natively support Scalable Vector Graphics (SVG).  There are several possibilities:
-* someone gets it to work with IE and the Adobe SVG Viewer
-* someone gets it to work with the svgweb shim
-* someone gets it to work with another SVG plugin
-* a future version of IE natively supports SVG
-
+  * someone gets it to work with IE and the Adobe SVG Viewer
+  * someone gets it to work with the svgweb shim
+  * someone gets it to work with another SVG plugin
+  * a future version of IE natively supports SVG
