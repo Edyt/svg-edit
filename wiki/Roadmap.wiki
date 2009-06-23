@@ -11,6 +11,7 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.2 full list])
 == New Features Added ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=27 Resize Elements]
+ * Some updated button images
 == Dates ==
  * ?
  * Demo URL - http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html
