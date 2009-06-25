@@ -7,10 +7,10 @@ This document covers future versions of svg-edit.  For previous versions, see th
 = Version 2.2 ==
 == Approved Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=31 Multiselect Mode]
- * [http://code.google.com/p/svg-edit/issues/detail?id=19 Undo Actions]
  * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.2 full list])
 == New Features Added ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=27 Resize Elements]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=19 Undo/Redo Actions]
  * Contextual tools for rect, circle, ellipse, line elements
  * Some updated button images
 == Dates ==
