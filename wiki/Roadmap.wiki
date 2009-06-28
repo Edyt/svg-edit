@@ -16,7 +16,7 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * Stretched the UI to fit the browser window
  * Resizing of the SVG image
 == Dates ==
- * ?
+ * 2009-07-10
  * Demo URL - http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html
 
 
