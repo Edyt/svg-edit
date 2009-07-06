@@ -11,7 +11,7 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * [http://code.google.com/p/svg-edit/issues/detail?id=31 Multiselect Mode]
  * [http://code.google.com/p/svg-edit/issues/detail?id=19 Undo/Redo Actions]
  * [http://code.google.com/p/svg-edit/issues/detail?id=27 Resize Elements]
- * Contextual tools for rect, circle, ellipse, line elements
+ * Contextual tools for rect, circle, ellipse, line, text elements
  * Some updated button images
  * Stretched the UI to fit the browser window
  * Resizing of the SVG canvas
