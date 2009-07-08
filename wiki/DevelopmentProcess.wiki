@@ -1,6 +1,8 @@
 #summary An overall summary of the development process of SVG-edit
 #labels Process
 
+<wiki:toc />
+
 = The Development Phases of a Release =
 
 NOTE: The duration of each of the phases below has not been defined at this time.
