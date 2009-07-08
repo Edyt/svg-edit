@@ -1,0 +1,28 @@
+#summary An overall summary of the development process of SVG-edit
+#labels Process
+
+= The Development Phases of a Release =
+
+NOTE: The duration of each of the phases below has not been defined at this time.
+
+== Pre-Alpha ==
+
+During this phase, the trunk is completely open to contributions:  new features, bug fixes, radical architectural changes.  In this phase, the scope of the release will be locked down (features will be decided upon, new features will be voted and accepted for release targeting).
+
+The trunk spends most of its lifetime in Pre-Alpha mode.
+
+== Alpha ==
+
+During this phase, the majority of the features have been implemented on the trunk.  Some minor features may still not be implemented yet.  Portions of major features may be in a rough state during the Alpha phase.
+
+No new features will be considered for the release, the scope is locked down.
+
+== Beta ==
+
+During this phase, all feature work has been complete.  The release has now gone into bug fix mode.  Only fixes deemed critical to the release will be considered for check-in to the trunk.
+
+== Release ==
+
+During this phase, the trunk will be branched to svn/branches/X.X (where X.X is the release number).  JS and CSS files will be minified on the branch and HTML/SVG files will be updated to reference the minified versions.  At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
+
+If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
