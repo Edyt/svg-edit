@@ -25,4 +25,13 @@ During this phase, all feature work has been complete.  The release has now gone
 
 During this phase, the trunk will be branched to svn/branches/X.X (where X.X is the release number).  JS and CSS files will be minified on the branch and HTML/SVG files will be updated to reference the minified versions.  At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
 
+Once a release has occurred, an administrator must update the *stable* tag to refer to the new release branch via:
+
+{{{
+$ svn delete -m "Removing old stable tag"
+https://svg-edit.googlecode.com/svn/tags/stable
+$ svn copy https://svg-edit.googlecode.com/svn/branches/2.2
+https://svg-edit.googlecode.com/svn/tags/stable
+}}}
+
 If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
