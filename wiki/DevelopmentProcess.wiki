@@ -28,10 +28,8 @@ During this phase, the trunk will be branched to svn/branches/X.X (where X.X is 
 Once a release has occurred, an administrator must update the *stable* tag to refer to the new release branch via:
 
 {{{
-$ svn delete -m "Removing old stable tag"
-https://svg-edit.googlecode.com/svn/tags/stable
-$ svn copy https://svg-edit.googlecode.com/svn/branches/2.2
-https://svg-edit.googlecode.com/svn/tags/stable
+$ svn delete -m "Removing old stable tag" https://svg-edit.googlecode.com/svn/tags/stable
+$ svn copy https://svg-edit.googlecode.com/svn/branches/2.2 https://svg-edit.googlecode.com/svn/tags/stable
 }}}
 
 If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
