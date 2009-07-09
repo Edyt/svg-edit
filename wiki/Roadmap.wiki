@@ -4,6 +4,18 @@
 
 This document covers future versions of svg-edit.  For previous versions, see the VersionHistory
 
-= Version 2.3 ==
-== Approved Features ==
+= Version 2.3 =
+== Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.3 full list])
+ * [http://code.google.com/p/svg-edit/issues/detail?id=33 Gradient picking]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=34 Polygon Mode] (Path Editing, Phase 1)
+ * [http://code.google.com/p/svg-edit/issues/detail?id=40 Group/Ungroup]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=51 Copy/Paste]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=59 Edit SVG Source]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=60 Load SVG Files From URL]
+== Approved Features ==
+== Release Date ==
+
+= Version 2.4 =
+== Proposed Features ==
+ * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.4 full list])
