@@ -4,8 +4,22 @@
 
 This page describes past versions of svg-edit.  For the future, see the [Roadmap].
 
+= Version 2.2 ==
+== New Features Added ==
+ * [http://code.google.com/p/svg-edit/issues/detail?id=31 Multiselect Mode]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=19 Undo/Redo Actions]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=27 Resize Elements]
+ * Contextual tools for rect, circle, ellipse, line, text elements
+ * Some updated button images
+ * Stretched the UI to fit the browser window
+ * Resizing of the SVG canvas
+ * Upgraded to [http://www.digitalmagicpro.com/jPicker/ jPicker] 1.0.8
+ * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.2 full list])
+== Dates ==
+ * 2009-07-08
+ * Demo URL - http://svg-edit.googlecode.com/svn/branches/2.2/editor/svg-editor.html
+
 = Version 2.1 ==
-== Approved Features ==
 == New Features Added ==
  * tooltips added to all UI elements
  * edit of fill opacity, stroke opacity, group opacity
