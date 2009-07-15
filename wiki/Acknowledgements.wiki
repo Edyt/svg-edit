@@ -1,0 +1,23 @@
+#summary A list of all the open source projects that SVG-edit uses
+
+= Code used in SVG-edit =
+
+Like many open source projects, SVG-edit depends on other open source projects.  This page acknowledges these projects and the many software developers across the globe without which our software would be sorely lacking.
+
+== jQuery ==
+
+Jonathan Resig's [http://jquery.com/ jQuery library] was chosen as a basis for the project since the beginning.  The power of jQuery really lets us focus on the functionality and not worry about all the intricacies of mixing with the HTML and CSS DOM.
+
+== jPicker ==
+
+Christopher Tillman's awesome [http://www.digitalmagicpro.com/jPicker/ jPicker] is used as our fill/stroke picker.  It is hosted [http://jpicker.googlecode.com/ at GoogleCode].
+
+Christopher was gracious enough to take suggestions from Pavol on how to incorporate opacity and some callback functionality back upstream into jPicker.
+
+== js-hotkeys ==
+
+[http://code.google.com/p/js-hotkeys/ js-hotkeys] is used to bind all keyboard events in the editor.
+
+== JQuery Web Spin-Button ==
+
+George Adamson's [http://www.softwareunity.com/jquery/JQuerySpinBtn/ Web Spin-Button] provided a starting point to implementing a cross-browser spin control in SVG-edit.  A few bugs were fixed with compatibility and sent back to George for hopeful inclusion in the next version of his jQuery plugin.
