@@ -1,6 +1,6 @@
 #summary A list of all the open source projects that SVG-edit uses
 
-= Code used in SVG-edit =
+= Projects used by SVG-edit =
 
 Like many open source projects, SVG-edit depends on other open source projects.  This page acknowledges these projects and the many software developers across the globe without which our software would be sorely lacking.
 
