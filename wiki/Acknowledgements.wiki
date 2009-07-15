@@ -21,3 +21,7 @@ Christopher was gracious enough to take suggestions from Pavol on how to incorpo
 == JQuery Web Spin-Button ==
 
 George Adamson's [http://www.softwareunity.com/jquery/JQuerySpinBtn/ Web Spin-Button] provided a starting point to implementing a cross-browser spin control in SVG-edit.  A few bugs were fixed with compatibility and sent back to George for hopeful inclusion in the next version of his jQuery plugin.
+
+== Tango Desktop Project ==
+
+Most of the icons used in SVG-edit come from the [http://tango.freedesktop.org/Tango_Desktop_Project Tango Desktop Project] which are released into the public domain.
