@@ -6,7 +6,7 @@ Like many open source projects, SVG-edit depends on other open source projects. 
 
 == jQuery ==
 
-Jonathan Resig's [http://jquery.com/ jQuery library] was chosen as a basis for the project since the beginning.  The power of jQuery really lets us focus on the functionality and not worry about all the intricacies of mixing with the HTML and CSS DOM.
+Jonathan Resig's [http://jquery.com/ jQuery library] was chosen as a basis for the project since the beginning.  The power of jQuery really lets us focus on the functionality and not worry about all the intricacies of mixing with the HTML, CSS and SVG DOM.
 
 == jPicker ==
 
