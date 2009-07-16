@@ -7,3 +7,6 @@ A: At this time, Internet Explorer does not natively support Scalable Vector Gra
   * someone gets it to work with the svgweb shim
   * someone gets it to work with another SVG plugin
   * a future version of IE natively supports SVG
+
+*Q: How can I set the stroke to 'none'?
+A: Shift-clicking palette squares sets the Stroke paint value.  Thus, you can shift-click on the None box (red x on white background) to clear the Stroke paint.
