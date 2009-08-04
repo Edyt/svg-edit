@@ -26,9 +26,4 @@ This document covers future versions of svg-edit.  For previous versions, see th
 
 SVG-edit should provide a means of animating SVG content using SMIL so that it can be played back in any browser.  This becomes increasingly important as more browsers come online with SMIL functionality (Webkit and soon Mozilla).
 
-This bug is a placeholder for the first phase of animation support in SVG-edit.  I envision something like:
-
-- a global timeline (time-based, not frame-based)
-
-
-Thoughts here: http://wiki.inkscape.org/wiki/index.php/Animation-%28Timeline%29
+The Inkscape folks have thoughts here: http://wiki.inkscape.org/wiki/index.php/Animation-%28Timeline%29
