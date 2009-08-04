@@ -19,3 +19,16 @@ This document covers future versions of svg-edit.  For previous versions, see th
 = Version 2.4 =
 == Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.4 full list])
+
+= Future =
+== Proposed Features ==
+=== Animation ===
+
+SVG-edit should provide a means of animating SVG content using SMIL so that it can be played back in any browser.  This becomes increasingly important as more browsers come online with SMIL functionality (Webkit and soon Mozilla).
+
+This bug is a placeholder for the first phase of animation support in SVG-edit.  I envision something like:
+
+- a global timeline (time-based, not frame-based)
+
+
+Thoughts here: http://wiki.inkscape.org/wiki/index.php/Animation-%28Timeline%29
