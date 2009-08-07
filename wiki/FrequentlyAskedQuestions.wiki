@@ -11,3 +11,7 @@ A: At this time, Internet Explorer does not natively support Scalable Vector Gra
 *Q: How can I set the stroke to 'none'?
 
 A: Shift-clicking palette squares sets the Stroke paint value.  Thus, you can shift-click on the None box (red x on white background) to clear the Stroke paint.
+
+*Q: How can I help?
+
+A: We have a list of [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3AGood-First-Bug good first bugs] for people who are new to the project
