@@ -8,7 +8,6 @@ This document covers future versions of svg-edit.  For previous versions, see th
 == Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.3 full list], [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.3 left to do])
  * [http://code.google.com/p/svg-edit/issues/detail?id=52 Align Objects]
- * [http://code.google.com/p/svg-edit/issues/detail?id=60 Load SVG Files From URL]
 == Completed Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=42 Rotate Objects]
  * [http://code.google.com/p/svg-edit/issues/detail?id=51 Copy/Paste]
@@ -23,6 +22,7 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.4 full list])
  * [http://code.google.com/p/svg-edit/issues/detail?id=40 Group/Ungroup]
  * [http://code.google.com/p/svg-edit/issues/detail?id=76 Flip Tools]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=60 Load SVG Files From URL]
 
 = Future =
 == Proposed Features ==
