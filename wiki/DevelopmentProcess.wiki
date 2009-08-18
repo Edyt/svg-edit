@@ -40,3 +40,24 @@ $ svn copy https://svg-edit.googlecode.com/svn/branches/2.2 https://svg-edit.goo
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
 
 If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
+
+= Creating a Branch =
+
+For big experimental features, you may want to branch the repository to separate your work from the trunk.  A branch in SVN is just a copy:
+
+{{{
+svn copy http://svg-edit.googlecode.com/svn/trunk/ http://svg-edit.googlecode.com/svn/branches/rotate-selector -m "Making a branch for..."
+}}}
+
+This will create the branch on the server.  Then you can check it out as a working copy:
+
+{{{
+svn co http://svg-edit.googlecode.com/svn/branches/rotate-selector/ svg-edit-rotater
+}}}
+
+Then hack away in the 'svg-edit-rotater' folder and freely check in your changes (these will only be updating the rotate-selector branch in the repository.  You can share your changes, have them reviewed, etc.
+
+Once your happy with the branch, you can merge it in.
+
+TODO: instructions on automatically merging back to trunk
+TODO: instructions for keeping up to date in the branch (i.e. merging from trunk to branch)
