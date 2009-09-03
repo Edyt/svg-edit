@@ -30,6 +30,8 @@ During this phase, the trunk will be branched to svn/branches/X.X (where X.X is 
   * JS files will be minified on the branch
   * the HTML will be updated to reference the minified JS files (switch HTML comments)
   * the HTML will be updated to point to the Google CDN version of jQuery (switch HTML comments)
+  * the Firefox extension will be packaged into an xpi file and uploaded
+  * the Opera widget will be packaged into a wgt file and uploaded
   * update the *stable* tag to refer to the new release branch via:
 
 {{{
