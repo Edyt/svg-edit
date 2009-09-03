@@ -1,0 +1,3 @@
+#summary Brainstorm for possible rename of svg-edit project
+
+* AAAAAAAAASVG-edit
