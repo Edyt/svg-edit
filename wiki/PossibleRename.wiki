@@ -8,9 +8,10 @@ Put all name ideas here:
  * SViGgy (the friendly SVG editor) 
  (alternative spellings are possible, such as SViiGy, SViiGgy, SViiGee, etc.)
  * Wizzy the Vector Wizzard (or Vizzy)
- * VectAble  VectorAble
- * AniVector  NodeSVG
- * Resizable Graphics, AllSize Move & Graphic 
+ * VectAble VectorAble
+ * AniVector NodeSVG
+ * Resizable Graphics
+ * AllSize Move & Graphic 
 
 
 = Possible Re-versioning =
