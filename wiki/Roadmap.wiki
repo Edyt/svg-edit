@@ -15,7 +15,7 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * [http://code.google.com/p/svg-edit/issues/detail?id=33 Gradient picking]
  * [http://code.google.com/p/svg-edit/issues/detail?id=34 Polygon Mode] (Path Editing, Phase 1)
 == Release Date ==
- * Proposal: Aug 29th, 2009
+ * Proposal: Sep 4th, 2009
 
 = Version 2.4 =
 == Proposed Features ==
