@@ -10,7 +10,9 @@ This document covers future versions of svg-edit.  For previous versions, see th
 == Completed Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=52 Align Objects]
  * [http://code.google.com/p/svg-edit/issues/detail?id=42 Rotate Objects]
- * [http://code.google.com/p/svg-edit/issues/detail?id=51 Copy/Paste]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=51 Clone Objects]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=102 Select Next/Prev Object]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=33 Gradient picking]
  * [http://code.google.com/p/svg-edit/issues/detail?id=59 Edit SVG Source]
  * [http://code.google.com/p/svg-edit/issues/detail?id=33 Gradient picking]
  * [http://code.google.com/p/svg-edit/issues/detail?id=34 Polygon Mode] (Path Editing, Phase 1)
