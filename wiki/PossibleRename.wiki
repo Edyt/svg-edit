@@ -4,7 +4,7 @@
 
 Put all name ideas here:
 
- * *Carve*: from an [http://codedread.com/carve/ earlier project] by codedread
+ * Carve: from an [http://codedread.com/carve/ earlier project] by codedread
  * SViGgy (the friendly SVG editor) 
  (alternative spellings are possible, such as SViiGy, SViiGgy, SViiGee, etc.)
  * Wizzy the Vector Wizzard (or Vizzy)
@@ -12,7 +12,8 @@ Put all name ideas here:
  * AniVector NodeSVG
  * Resizable Graphics
  * AllSize Move & Graphic 
-
+ * Vectigo
+ * ScalarDraw
 
 = Possible Re-versioning =
 
