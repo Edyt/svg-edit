@@ -13,6 +13,7 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * [http://code.google.com/p/svg-edit/issues/detail?id=60 Load SVG Files From URL]
 == Completed Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=57 Raster Images]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=119 Select Non-Adjacent Elements]
 
 = Version 2.5 =
 == Proposed Features ==
