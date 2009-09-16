@@ -7,7 +7,6 @@ This document covers future versions of svg-edit.  For previous versions, see th
 = Version 2.4 =
 == Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.4 full list], [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.4 left-to-do])
- * [http://code.google.com/p/svg-edit/issues/detail?id=38 Zoom]
  * [http://code.google.com/p/svg-edit/issues/detail?id=73 Layers]
  * [http://code.google.com/p/svg-edit/issues/detail?id=76 Flip Tools]
  * [http://code.google.com/p/svg-edit/issues/detail?id=60 Load SVG Files From URL]
@@ -15,6 +14,7 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * [http://code.google.com/p/svg-edit/issues/detail?id=57 Raster Images]
  * [http://code.google.com/p/svg-edit/issues/detail?id=119 Select Non-Adjacent Elements]
  * [http://code.google.com/p/svg-edit/issues/detail?id=40 Group/Ungroup]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=38 Zoom]
 
 = Version 2.5 =
 == Proposed Features ==
