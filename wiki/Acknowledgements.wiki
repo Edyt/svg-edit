@@ -14,6 +14,10 @@ Christopher Tillman's awesome [http://www.digitalmagicpro.com/jPicker/ jPicker] 
 
 Christopher was gracious enough to take suggestions from Pavol on how to incorporate opacity and some callback functionality back upstream into jPicker.
 
+== jQuery UI ==
+
+We use [http://jqueryui.com/ jQuery-UI] for making the color picker draggable.
+
 == js-hotkeys ==
 
 [http://code.google.com/p/js-hotkeys/ js-hotkeys] is used to bind all keyboard events in the editor.
