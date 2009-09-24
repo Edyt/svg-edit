@@ -1,0 +1,45 @@
+#summary A list of browser bugs related to SVG-edit.
+
+= Introduction =
+
+While working on SVG-edit, a number of SVG-related browser bugs were encountered. This page serves to highlight these bugs so they can hopefully be fixed in future versions by the browser makers.
+
+= Bugs =
+
+== Firefox ==
+
+=== Rotating text element with gradient ===
+
+*Problem:* When a text element has a gradient set and is rotated, the individual glyphs are incorrectly repositioned.
+
+*Version(s):* 3.5/Mac 
+
+*Bug report:* None yet
+
+*Workaround in SVG-edit:* No, does not appear possible.
+
+== Opera ==
+
+=== Cloning elements with float values in attributes ===
+
+*Problem:* When an element is cloned using .cloneNode(), any attributes of the clone with a float value has its value changed to use a comma rather than a period (i.e. 5.5 becomes 5,5). The result is that the element has invalid attribute values and fails to render properly or at all.
+
+*Version(s):* 10/Win XP/Non-English locales
+
+*Bug report:* Unknown
+
+*Workaround in SVG-edit:* Yes
+
+= Missing SVG support desired in SVG-edit =
+
+== Internet Explorer ==
+
+*Feature:* Native support of SVG
+
+*Version(s):* All
+
+== Firefox == 
+
+*Feature:* SMIL (animation)
+
+*Version(s):* All
