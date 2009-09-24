@@ -14,6 +14,10 @@ Christopher Tillman's awesome [http://www.digitalmagicpro.com/jPicker/ jPicker] 
 
 Christopher was gracious enough to take suggestions from Pavol on how to incorporate opacity and some callback functionality back upstream into jPicker.
 
+== jGraduate == 
+
+Jeff Schiller created the excellent [http://jgraduate.googlecode.com jGraduate] plugin to select SVG gradients in SVG-edit.
+
 == jQuery UI ==
 
 We use [http://jqueryui.com/ jQuery-UI] for making the color picker draggable.
