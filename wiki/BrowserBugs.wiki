@@ -30,6 +30,18 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 *Workaround in SVG-edit:* Yes
 
+== Webkit ==
+
+=== Path segment types normalized ===
+
+*Problem:* Webkit internally normalizes path segment types and does not provide the original path segments.
+
+*Version(s):* All, Safari & Chrome
+
+*Bug report:* https://bugs.webkit.org/show_bug.cgi?id=26487
+
+*Workaround in SVG-edit:* Handle all path segment types.
+
 = Missing SVG support desired in SVG-edit =
 
 == Internet Explorer ==
