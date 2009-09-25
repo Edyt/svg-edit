@@ -30,6 +30,16 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 *Workaround in SVG-edit:* Yes
 
+=== Moving cloned groups makes them smaller ===
+
+*Problem:* issue 229
+ 
+*Version(s):* 10/Win XP/Non-English locales
+
+*Bug report:* DSK-266662@bugs.opera.com
+
+*Workaround in SVG-edit:* Not yet
+
 == Webkit ==
 
 === Path segment types normalized ===
