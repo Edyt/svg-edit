@@ -33,6 +33,7 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 === Moving cloned groups makes them smaller ===
 
 *Problem:* issue 229
+
  
 *Version(s):* 10/Win XP/Non-English locales
 
