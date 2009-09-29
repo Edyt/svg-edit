@@ -16,7 +16,7 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 *Version(s):* 3.5/Mac 
 
-*Bug report:* None yet
+*Bug report:* https://bugzilla.mozilla.org/show_bug.cgi?id=519472
 
 *Workaround in SVG-edit:* No, does not appear possible.
 
