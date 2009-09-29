@@ -36,7 +36,7 @@ During this phase, the trunk will be branched to svn/branches/X.X (where X.X is 
 
 {{{
 $ svn delete -m "Removing old stable tag" https://svg-edit.googlecode.com/svn/tags/stable
-$ svn copy https://svg-edit.googlecode.com/svn/branches/2.2 https://svg-edit.googlecode.com/svn/tags/stable -m "Pointing stable tag to 2.2 branch"
+$ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.googlecode.com/svn/tags/stable -m "Pointing stable tag to 2.3 branch"
 }}}
 
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
