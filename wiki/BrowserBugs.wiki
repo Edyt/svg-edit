@@ -61,14 +61,13 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 == Internet Explorer ==
 
-*Feature:* Native support of SVG
-*Workaround:* Use the Google Chrome Frame plugin
-
-*Version(s):* All
+  * *Feature:* Native support of SVG, *Version(s):* All, *Workaround:* Use the Google Chrome Frame plugin
 
 == Firefox == 
 
-*Feature:* SMIL (animation)
-*Feature:* SVG Text Selection
+  * *Feature:* SMIL (animation), *Version(s):* All, *Workaround:* None
+  * *Feature:* SVG Text Selection, *Version(s):* All, *Workaround:* None
 
-*Version(s):* All
+== Webkit ==
+
+  * *Feature:* SVG Filters, *Version(s):* All, *Workaround:* None
