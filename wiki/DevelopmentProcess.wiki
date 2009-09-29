@@ -27,12 +27,14 @@ During this phase, all feature work has been complete.  The release has now gone
 
 During this phase, the trunk will be branched to svn/branches/X.X (where X.X is the release number) and the following steps will be performed:
 
-  * manual step: the HTML will be updated to reference the minified JS files (switch HTML comments)
-  * manual step: the HTML will be updated to point to the Google CDN version of jQuery (switch HTML comments)
+  * the HTML will be updated to reference the minified JS files (switch HTML comments)
+  * the HTML will be updated to point to the Google CDN version of jQuery (switch HTML comments)
   * run the Makefile, which does the following automatically
     * JS files will be minified on the branch
-    * the Firefox extension will be packaged into an xpi file and uploaded
-    * the Opera widget will be packaged into a wgt file and uploaded
+    * all files will be packaged up as a downloadable zip file
+    * the Firefox extension will be packaged into an xpi file
+    * the Opera widget will be packaged into a wgt file
+  * upload the zip, xpi and wgt files to the Google Code download section
   * update the *stable* tag to refer to the new release branch via:
 
 {{{
