@@ -1,3 +1,4 @@
 #summary A list of projects that use SVG-edit
 
   * Project Eduvid
+  * [http://pitch.googlecode.com/ Pitch]
