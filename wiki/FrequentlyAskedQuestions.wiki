@@ -15,3 +15,45 @@ A: Shift-clicking palette squares sets the Stroke paint value.  Thus, you can sh
 *Q: How can I help?
 
 A: We have a list of [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3AGood-First-Bug good first bugs] for people who are new to the project
+
+*Q: How can I select an element when it's hidden or behind another one?
+
+A: Select an object. Shift+O will select the previous object Shift+P will select the next object
+
+*Q: Can I trace over a raster (PNG, JPEG...) image?
+
+A: SVG-edit 2.4 features support for raster image elements and layers, so this is quite achievable using those two features.  Though SVG-edit 2.4 has not been released yet.
+
+If you are still using SVG-edit 2.3-, you can embed raster images You can if you have downloaded SVG-edit and run it from your computer. This will add an image as a background for the canvas, you'll get something like this:
+
+http://svg-edit.googlecode.com/svn/wiki/images/svg-edit-background-image_thumb.jpg
+
+- Open the file svg-editor.css - Find the lines:
+
+#svg_editor #svgcanvas {
+  background-color: #FFFFFF;
+
+- Just below these lines, add:
+
+  background-image: url(file:///C:/Documents%20and%20Settings/XP/Mes%20documents/stuff/SVGeDrawings/my_own_image.jpg);
+
+or you can add the URL to an online image:
+
+  background-image: url(http://www.anything.com/...)
+
+Be careful that the file:///url must have the properly encoded format.
+
+You can specify more options, like:
+
+    background-repeat: no-repeat / repeat-x... etc. background-position: center center / top left / 20% 80%... 
+
+See http://www.w3.org/TR/css3-background/#the-background-image for details.
+
+- Save svg-editor.css and now open svg-editor.html with your browser.
+
+
+* Q: How do I use the Wave Gadget? 
+
+A: Go to this wave wavesandbox.com!w+W7VzCLZk%A and there will be a button on the bottom that says "Install" and when you are editing things, you will see a SVG-edit icon in your toolbar that you can click to include the gadget into any blip.
+
+http://www.ubuntu-pics.de/bild/23571/screenshot_050_GM9b8K.png
