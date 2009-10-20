@@ -10,6 +10,16 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 == Firefox ==
 
+=== Group Opacity has terrible performance ===
+
+*Problem:* When an image has many elements with the opacity attribute set to values less than 1.0, the image (and the editor) cause Firefox to become very slow.
+
+*Version(s):* 3.5-
+
+*Bug Report:* https://bugzilla.mozilla.org/show_bug.cgi?id=309782
+
+*Workaround in SVG-edit:* Not really.  One potion is to avoid using the group_opacity control and change the stroke-opacity and fill-opacity instead.
+
 === Rotating text element with gradient ===
 
 *Problem:* When a text element has a gradient set and is rotated, the individual glyphs are incorrectly repositioned.
