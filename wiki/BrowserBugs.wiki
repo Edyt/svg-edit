@@ -18,7 +18,7 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 *Bug Report:* https://bugzilla.mozilla.org/show_bug.cgi?id=309782
 
-*Workaround in SVG-edit:* Not really.  One potion is to avoid using the group_opacity control and change the stroke-opacity and fill-opacity instead.
+*Workaround in SVG-edit:* Not really.  One option is to avoid using the group_opacity control and change the stroke-opacity and fill-opacity instead.
 
 === Rotating text element with gradient ===
 
