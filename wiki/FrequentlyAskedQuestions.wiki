@@ -63,7 +63,7 @@ http://www.ubuntu-pics.de/bild/23571/screenshot_050_GM9b8K.png
 A: 
   * Select the object you want to copy the style from. You'll see its Fill and Stroke style attributes displayed in the bottom toolbar.
   * Holding Shift to keep the first object selected, select one or several other objects.
-  * Open the colorpicker by clicking on the color blocks in the bottom toolbar. If you want to copy the fill, select the Fill block. If you cant to copy the stroke, select the Stroke block.
+  * Open the colorpicker by clicking on the color blocks in the bottom toolbar. If you want to copy the fill, select the Fill block. If you want to copy the stroke, select the Stroke block.
   * Hit "Ok" in the colorpicker
 
 The other objects will get the Fill or the Stroke of the first object.
