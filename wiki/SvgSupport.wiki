@@ -2,7 +2,7 @@
 
 == SVG Element and Attribute Whitelist ==
 
-I apologize up-front for the poor format of this table, I blame the wiki markup allowed in GoogleCode.
+I apologize up-front for the poor format of this table, I blame the wiki markup allowed in Google Code.
 
 Anything not listed here is not supported by SVG-edit and will be stripped out upon import.  SVG-edit supports the following elements and attributes:
 
@@ -38,7 +38,7 @@ At this time, the following attributes cannot be edited in the user interface of
   * stroke-linejoin
   * stroke-miterlimit
 
-In addition, there is no way within jGraduate to:
+In addition, there is no way within jGraduate (the color picker used in SVG-edit) to:
 
   * create a radial gradient
   * add stops to any gradient (limited to two stops only)
