@@ -27,3 +27,18 @@ Anything not listed here is not supported by SVG-edit and will be stripped out u
 || rect || height, rx, ry, width, x, y ||
 || text || font-size, font-family, font-style, font-weight, text-anchor, x, xml:space, y ||
 || title ||  ||
+
+== Non-Editable Items ==
+
+At this time, the following attributes cannot be edited in the user interface of SVG-edit (but they can be tweaked using the SVG source editor within SVG-edit):
+
+  * fill-rule
+  * stroke-dashoffset
+  * stroke-linecap
+  * stroke-linejoin
+  * stroke-miterlimit
+
+In addition, there is no way within jGraduate to:
+
+  * create a radial gradient
+  * add stops to any gradient (limited to two stops only)
