@@ -92,3 +92,5 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 == Webkit ==
 
   * *Feature:* SVG Filters, *Version(s):* All, *Workaround:* None
+  * *Feature:* Save as SVG in Safari, *Version:* Windows, *Workaround:* None
+https://bugs.webkit.org/show_bug.cgi?id=25265
