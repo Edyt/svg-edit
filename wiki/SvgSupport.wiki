@@ -1,0 +1,29 @@
+#summary A summary of the elements and attributes that SVG-edit supports.
+
+== SVG Element and Attribute Whitelist ==
+
+I apologize up-front for the poor format of this table, I blame the wiki markup allowed in GoogleCode.
+
+Anything not listed here is not supported by SVG-edit and will be stripped out upon import.  SVG-edit supports the following elements and attributes:
+
+|| *Element* || *Attributes* ||
+|| *All Elements* || id, requiredFeatures, systemLanguage ||
+|| *All Shapes* || fill, fill-opacity, fill-rule, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity, stroke-width, transform ||
+|| circle || cx, cy, r ||
+|| defs ||  ||
+|| desc ||  ||
+|| ellipse || cx, cy, rx, ry ||
+|| g ||  ||
+|| image || xlink:href, xlink:title ||
+|| line || x1, x2, y1, y2 ||
+|| linearGradient || gradientTransform, gradientUnits, spreadMethod, x1, x2, y1, y2 ||
+|| path || d ||
+|| polygon || points ||
+|| polyline || points ||
+|| radialGradient || cx, cy, fx, fy, gradientTransform, gradientUnits, r, spreadMethod ||
+|| stop || offset, stop-color, stop-opacity ||
+|| svg || height, viewBox, width, xmlns, xmlns:xlink ||
+|| switch ||  ||
+|| rect || height, rx, ry, width, x, y ||
+|| text || font-size, font-family, font-style, font-weight, text-anchor, x, xml:space, y ||
+|| title ||  ||
