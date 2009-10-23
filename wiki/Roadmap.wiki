@@ -16,6 +16,8 @@ This document covers future versions of svg-edit.  For previous versions, see th
  * [http://code.google.com/p/svg-edit/issues/detail?id=73 Layers]
  * [http://code.google.com/p/svg-edit/issues/detail?id=118 Curve Segments in Paths]
  * [http://code.google.com/p/svg-edit/issues/detail?id=64 UI Localization]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=106 Wireframe Mode]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=39 Change Background]
 
 = Version 2.5 =
 == Proposed Features ==
