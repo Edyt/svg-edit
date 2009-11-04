@@ -82,6 +82,15 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* None yet (may have to resort to directly editing the "d" attribute)
 
+=== Matrix Multiplication Incorrect ===
+
+*Problem:* WebKit does not multiply two SVGMatrix objects together properly.
+
+*Bug reports:*
+ * https://bugs.webkit.org/show_bug.cgi?id=16062
+
+*Workaround in SVG-edit:* Do the matrix multiplication ourselves.
+
 = Missing SVG support desired in SVG-edit =
 
 == Internet Explorer ==
