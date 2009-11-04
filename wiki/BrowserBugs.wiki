@@ -91,6 +91,15 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* Do the matrix multiplication ourselves.
 
+=== @transform value is unreliable ===
+
+*Problem:* WebKit changes the value of the @transform attribute just by accessing an element's SVGTransformList.
+
+*Bug reports:*
+ * https://bugs.webkit.org/show_bug.cgi?id=31119
+
+*Workaround in SVG-edit:* Implement our own "shim" version of SVGTransformList
+
 = Missing SVG support desired in SVG-edit =
 
 == Internet Explorer ==
