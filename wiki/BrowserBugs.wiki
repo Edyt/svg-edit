@@ -110,8 +110,10 @@ Other bugs related to Bug 309782:
 
   * *Feature:* SMIL (animation), *Version(s):* All, *Workaround:* None
   * *Feature:* SVG Text Selection, *Version(s):* All, *Workaround:* None
+  * *Feature:* Non-Scaling-Stroke, *Version(s):* All, *Workaround:* None, https://bugzilla.mozilla.org/show_bug.cgi?id=528332
 
 == Webkit ==
 
   * *Feature:* SVG Filters, *Version(s):* All, *Workaround:* None
   * *Feature:* Save as SVG in Safari, *Version:* Windows, *Workaround:* None, https://bugs.webkit.org/show_bug.cgi?id=25265
+  * *Feature:* Non-Scaling-Stroke, *Version(s):* All, *Workaround:* None, https://bugs.webkit.org/show_bug.cgi?id=31438
