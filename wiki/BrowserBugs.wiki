@@ -44,18 +44,17 @@ Other bugs related to Bug 309782:
 
 *Bug report:* Unknown
 
-*Workaround in SVG-edit:* Yes
+*Workaround in SVG-edit:* Yes, elements are cloned manually.
 
-=== Moving cloned groups makes them smaller ===
+=== Re-saving previously imported/saved SVG markup ===
 
-*Problem:* issue 229
+*Problem:* Since .importNode() is used to import/save the SVG markup entered in the source, the same problem occurs as with .cloneNode(). Any attributes of elements with float values have their value changed to use commas rather than periods (i.e. 5.5 becomes 5,5). The result is that these elements have invalid attribute values and fails to render properly or at all.
 
- 
 *Version(s):* 10/Win XP/Non-English locales
 
-*Bug report:* DSK-266662@bugs.opera.com
+*Bug report:* Unknown
 
-*Workaround in SVG-edit:* Not yet
+*Workaround in SVG-edit:* Yes, we traverse through the original XML and copy the correct attribute values whenever necessary.
 
 == Webkit ==
 
@@ -71,16 +70,16 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* Handle all path segment types and check if commas are present in the point list.
 
-=== Path Segments Cannot be Added/Removed ===
+=== Relative Path Segments Cannot be Added/Removed ===
 
-*Problem:* Manipulating segments using insertItemBefore, removeItem, etc fail to actually affect the path element.
+*Problem:* Manipulating segments using insertItemBefore, removeItem, etc fail to actually affect path elements made of relative segments.
 
 *Version(s):* All, Safari & Chrome
 
 *Bug reports:* 
  * https://bugs.webkit.org/show_bug.cgi?id=30219
 
-*Workaround in SVG-edit:* None yet (may have to resort to directly editing the "d" attribute)
+*Workaround in SVG-edit:* Convert all paths to use absolute segments.
 
 === Matrix Multiplication Incorrect ===
 
