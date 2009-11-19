@@ -2,7 +2,11 @@
 
 = Introduction =
 
-This document covers future versions of svg-edit.  For previous versions, see the VersionHistory
+This document covers future versions of svg-edit.  For previous versions, see the VersionHistory.
+
+Starting with 2.4, development versions of SVG-edit are given an alphabetic codename that corresponds to the name of a shape.  See potential lists here:
+ * http://en.wikipedia.org/wiki/List_of_curves
+ * http://en.wikipedia.org/wiki/List_of_regular_polytopes
 
 = Version 2.4 ([http://en.wikipedia.org/wiki/Arbelos Arbelos]) =
 == Proposed Features ==
