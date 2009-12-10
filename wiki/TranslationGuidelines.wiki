@@ -1,0 +1,9 @@
+#summary The meaning of each id used in the SVG-edit language files
+
+= Introduction =
+
+This page will list the existing id in the language files, and explain what they "technically" represent, for a meaningful - yet simple - translation of the SVG-edit interface.
+
+
+= Details =
+
