@@ -1,8 +1,15 @@
 #summary The meaning of each id used in the SVG-edit language files
 
+Under construction
+
 = Introduction =
 
 This page will list the existing id in the language files, and explain what they "technically" represent, for a meaningful - yet simple - translation of the SVG-edit interface.
+
+<font color="Pink">New ID since the last version</font><br/>
+<font color="Green">Active ID</font><br/>
+<font color="Orange">ID made obsolete last version</font><br/>
+<font color="Red">Obsolete ID</font><br/>
 
 
 = Details =
