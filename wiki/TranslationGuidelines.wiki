@@ -7,3 +7,42 @@ This page will list the existing id in the language files, and explain what they
 
 = Details =
 
+<font color="green">
+== layer_new ==
+||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== layer_delete ==
+||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== layer_rename ==
+||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== layer_up ==
+||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_clear ==
+||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
