@@ -67,3 +67,12 @@ A:
   * Hit "Ok" in the colorpicker
 
 The other objects will get the Fill or the Stroke of the first object.
+
+
+* Q: How come I'm not seeing the latest SVG-edit version when I access the [http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html online trunk version] in Firefox 3.5+ ?
+
+A: Between September 25, 2009 ( r715 ) and October 8, 2009 ( r783 ), we had experimented with the Offline resources features of HTML5, to allow SVG-edit to run offline. There was a cache manifest which asked for storing local files. 
+
+This was causing problems with Firefox 3.5+, so it was removed. Anyway, if you have visited the above URL and have items stored locally during this period, you might experience that the version you see still uses the outdated cache files.
+
+The solution is to delete the offline cache items - preferably with a Sqlite manager addon for Firefox, for instance [https://addons.mozilla.org/en-US/firefox/addon/5817 SQLite Manager].
