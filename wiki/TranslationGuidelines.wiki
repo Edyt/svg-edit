@@ -7,9 +7,253 @@ This page will list the existing id in the language files, and explain what they
 
 = Details =
 
-<font color="green">
-== layer_new ==
-||Value identifier||"title":||
+<font color="Green">
+== align_relative_to ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== angle ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== angleLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== bkgnd_color ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== circle_cx ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== circle_cy ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== circle_r ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== cornerRadiusLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== curve_segments ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== ellipse_cx ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== ellipse_cy ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== ellipse_rx ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== ellipse_ry ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== fill_color ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== fill_tool_bottom ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== fit_to_all ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== fit_to_canvas ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== fit_to_layer_content ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== fit_to_sel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== fitToContent ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== font_family ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== font_size ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== group_opacity ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== icon_large ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== icon_medium ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== icon_small ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== icon_xlarge ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== iheightLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== image_height ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== image_opt_embed ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== image_opt_ref ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== image_url ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== image_width ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== includedImages ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== iwidthLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== largest_object ==
 ||Description||Here||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -17,7 +261,20 @@ This page will list the existing id in the language files, and explain what they
 
 <font color="green">
 == layer_delete ==
-||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== layer_down ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== layer_new ==
 ||Description||Here||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -25,7 +282,6 @@ This page will list the existing id in the language files, and explain what they
 
 <font color="green">
 == layer_rename ==
-||Value identifier||"title":||
 ||Description||Here||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -33,7 +289,356 @@ This page will list the existing id in the language files, and explain what they
 
 <font color="green">
 == layer_up ==
-||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== layersLable ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== line_x1 ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== line_x2 ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== line_y1 ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== line_y2 ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== page ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== palette ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== path_node_x ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== path_node_y ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== rect_height ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== rect_rx ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== rect_width ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== relativeToLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== rheightLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== rwidthLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== seg_type ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== selected_objects ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== selected_x ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== selected_y ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== selectedPredefined ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== selLayerLabel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== selLayerNames ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== sidepanel_handle ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== smallest_object ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== straight_segments ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== stroke_color ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== stroke_style ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== stroke_tool_bottom ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== stroke_width ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_bg_note ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_change_background ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_change_background ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_dim ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_dim ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_editor_prefs ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_height ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_icons ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_image_props ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_lang ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_title ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_width ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== text ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_alignbottom ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_aligncenter ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_alignleft ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_alignmiddle ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_alignright ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_aligntop ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_bold ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_circle ==
 ||Description||Here||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -41,7 +646,293 @@ This page will list the existing id in the language files, and explain what they
 
 <font color="green">
 == tool_clear ==
-||Value identifier||"title":||
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_clone ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_clone_multi ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_delete ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_delete_multi ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_docprops ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_docprops_cancel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_docprops_save ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_ellipse ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_fhellipse ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_fhpath ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_fhrect ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_group ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_image ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_italic ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_line ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_move_bottom ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_move_top ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_node_clone ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_node_delete ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_node_link ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_open ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_path ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_rect ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_redo ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_reorient ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_save ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_select ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_source ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_source_cancel ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_source_save ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_square ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_text ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_topath ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_undo ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_ungroup ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_wireframe ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tool_zoom ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tools_ellipse_show ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== tools_rect_show ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== zoom ==
+||Description||Here||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== zoomLabel ==
 ||Description||Here||
 ||In use since||2.4||
 ||Obsolete since||-||
