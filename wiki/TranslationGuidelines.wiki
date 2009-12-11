@@ -2,6 +2,8 @@
 
 Under construction
 
+http://imgh.us/SVG-edit_Languages.svg
+
 = Introduction =
 
 This page will list the existing ID in the language files, and explain what they "technically" represent, for a meaningful - yet simple - translation of the SVG-edit interface.
