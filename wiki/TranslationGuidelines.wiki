@@ -2,21 +2,174 @@
 
 Under construction
 
-http://imgh.us/SVG-edit_Languages.svg shows the status of translations for each SVG-edit
-
-language file.
+http://imgh.us/SVG-edit_Languages.svg shows the status of translations for each SVG-edit language file.
 
 = Introduction =
 
-This page will list the existing ID in the language files, and explain what they "technically" represent, for a meaningful - yet simple - translation of the SVG-edit interface.
+This page lists the existing ID in the language files, and explain what they "technically" represent, for a meaningful - yet simple - translation of the SVG-edit interface.
 
 <font color="Blue">New ID since the last version</font><br/>
 <font color="Green">Active ID</font><br/>
 <font color="Orange">ID made obsolete last version</font><br/>
 <font color="Red">Obsolete ID</font><br/>
 
+There is also a block of JavaScript strings, at the end of each language file. Their second part needs to be translated.
 
-= Details =
+-----
+
+= JavaScript strings ("js_strings") =
+
+<font color="Green">
+== cancel == 
+||Description||_Verb_. To cancel||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== dupeLayerName ==
+||Description||_Sentence_. There is already a layer named that!||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== enterNewImgURL ==
+||Description||_Verb_. (To) enter the new image URL||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== enterNewLayerName ==
+||Description||_Sentence_. Please enter the new layer name||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== enterUniqueLayerName ==
+||Description||_Sentence_. Please enter a unique layer name||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== featNotSupported ==
+||Description||_Noun_. Feature not supported||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== invalidAttrValGiven ==
+||Description||_Adjective_. Invalid value given||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== key_backspace == 
+||Description||_Noun_. Name of the keyboard key: backspace||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== key_del ==
+||Description||_Noun_. Name of the keyboard key: delete||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== key_down == 
+||Description||_Noun_. Name of the keyboard key: down||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+
+<font color="Green">
+== key_up == 
+||Description||_Noun_. Name of the keyboard key: up||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== layer ==
+||Description||_Noun_. Layer||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== layerHasThatName ==
+||Description||_Sentence_. (this) Layer already has that name||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== noContentToFitTo ==
+||Description||_Sentence_. (there is) No content to fit to||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== ok ==
+||Description||_Noun_. OK||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== pathCtrlPtTooltip ==
+||Description||_Verb_. (to) Drag control point to adjust curve properties||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== pathNodeTooltip == 
+||Description||_Verb_. (to) Drag node to move it. (to) Double-click node to change segment type||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== QerrorsRevertToSource ==
+||Description||_Sentence_. There were parsing errors in your SVG source.\nRevert back to original SVG source?||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== QignoreSourceChanges ==
+||Description||_Sentence_. Ignore changes made to SVG source?||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== QmoveElemsToLayer ==
+||Description||_Sentence_. Move selected elements to layer '%s'? (_'%s' must not be translated or changed._)||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="Green">
+== QwantToClear ==
+||Description||_Sentence_. Do you want to clear the drawing?\nThis will also erase your undo history!||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+-----
+
+= IDs Details =
 
 <font color="Green">
 == align_relative_to ==
@@ -949,23 +1102,4 @@ This page will list the existing ID in the language files, and explain what they
 ||Obsolete since||-||
 </font>
 
-JS strings
-	
-"cancel":"Cancel"
-"dupeLayerName":"There is already a layer named that!"
-"enterNewImgURL":"Enter the new image URL"
-"enterNewLayerName":"Please enter the new layer name"
-"enterUniqueLayerName":"Please enter a unique layer name"
-"featNotSupported":"Feature not supported"
-"invalidAttrValGiven":"Invalid value given"
-'layer':"Layer"
-"layerHasThatName":"Layer already has that name"
-"noContentToFitTo":"No content to fit to"
-"ok":"OK"
-"pathCtrlPtTooltip":"Drag control point to adjust curve properties"
-"pathNodeTooltip":"Drag node to move it. Double-click node to change segment type"
-"QerrorsRevertToSource":"There were parsing errors in your SVG source.\nRevert back to original SVG source?"
-"QignoreSourceChanges":"Ignore changes made to SVG source?"
-"QmoveElemsToLayer":"Move selected elements to layer '%s'?"
-"QwantToClear":"Do you want to clear the drawing?\nThis will also erase your undo history!"
 	
