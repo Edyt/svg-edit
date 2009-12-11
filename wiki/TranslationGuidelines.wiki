@@ -67,7 +67,7 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="Green">
 == cornerRadiusLabel ==
-||Description||_Noun_. Value of the radius of the corners, for a rectangle.||
+||Description||_Noun_. Value of the radius of the corners, for a rectangle with rounded corners.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -151,77 +151,77 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="Green">
 == fitToContent ==
-||Description||Here||
+||Description||_Adjective or past participle_. Adjusted to the content of the drawing, cropped.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == font_family ==
-||Description||Here||
+||Description||_Verb_. To change the font-family of a text element.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == font_size ==
-||Description||Here||
+||Description||_Verb_. To change the font size of a text element.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == group_opacity ==
-||Description||Here||
+||Description||_Verb_. To change the opacity of selected items.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == icon_large ==
-||Description||Here||
+||Description||_Adjective_. Large, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == icon_medium ==
-||Description||Here||
+||Description||_Adjective_. Average, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == icon_small ==
-||Description||Here||
+||Description||_Adjective_. Small, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == icon_xlarge ==
-||Description||Here||
+||Description||_Adjective_. Extra large, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == iheightLabel ==
-||Description||Here||
+||Description||_Noun_. Height.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == image_height ==
-||Description||Here||
+||Description||_Verb_. To change the height of an image.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == image_opt_embed ==
-||Description||Here||
+||Description||||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -235,84 +235,84 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="Green">
 == image_url ==
-||Description||Here||
+||Description||_Verb_. To change the URL of an image.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == image_width ==
-||Description||Here||
+||Description||_Verb_. To change the width of an image.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == includedImages ==
-||Description||Here||
+||Description||_Adjective or past participle_. Included, integrated, embedded images.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == iwidthLabel ==
-||Description||Here||
+||Description||_Noun_. Width.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == largest_object ==
-||Description||Here||
+||Description||_Superlative adjective_. The largest object.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == layer_delete ==
-||Description||Here||
+||Description||_Verb_. To delete the current layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == layer_down ==
-||Description||Here||
+||Description||_Verb_. To move the current layer down in the layer table.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == layer_new ==
-||Description||Here||
+||Description||_Noun_. A new layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == layer_rename ==
-||Description||Here||
+||Description||_Verb_. To give a new name to the current layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == layer_up ==
-||Description||Here||
+||Description||_Verb_. To move the current layer up in the layer table.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == layersLable ==
-||Description||Here||
+||Description||_Noun_. The layers.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == line_x1 ==
-||Description||Here||
+||Description||_Verb_. To change the horizontal coordinate x of the starting point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
