@@ -16,112 +16,112 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="Green">
 == align_relative_to ==
-||Description||Here||
+||Description||_Verb_. To align objects relatively to either objects or the page.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == angle ==
-||Description||Here||
+||Description||_Verb_. To change the angle of rotation applied to an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == angleLabel ==
-||Description||Here||
+||Description||_Noun_. The angle of rotation applied to an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == bkgnd_color ==
-||Description||Here||
+||Description||_Verb_. To change the background color / the opacity.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == circle_cx ==
-||Description||Here||
+||Description||_Verb_. To change the horizontal coordinate cx of a circle.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == circle_cy ==
-||Description||Here||
+||Description||_Verb_. To change the vertical coordinate cy of a circle.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == circle_r ==
-||Description||Here||
+||Description||_Verb_. To change the radius of a circle.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == cornerRadiusLabel ==
-||Description||Here||
+||Description||_Noun_. Value of the radius of the corners, for a rectangle.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == curve_segments ==
-||Description||Here||
+||Description||_Noun_. Type of segment: curved segment, as opposed to straight line.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == ellipse_cx ==
-||Description||Here||
+||Description||_Verb_. To change the horizontal coordinate cx of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == ellipse_cy ==
-||Description||Here||
+||Description||_Verb_. To change the vertical coordinate cy of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == ellipse_rx ==
-||Description||Here||
+||Description||_Verb_. To change the horizontal radius x of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == ellipse_ry ==
-||Description||Here||
+||Description||_Verb_. To change the vertical radius y of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == fill_color ==
-||Description||Here||
+||Description||_Verb_. To change the fill color of an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == fill_tool_bottom ==
-||Description||Here||
+||Description||_Noun_. The inner painting of an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == fit_to_all ==
-||Description||Here||
+||Description||_Verb_. To adjust the canvas dimensions to include everything drawn in all layers.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
