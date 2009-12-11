@@ -121,28 +121,28 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="Green">
 == fit_to_all ==
-||Description||_Verb_. To adjust the canvas dimensions to include everything drawn in all layers.||
+||Description||_Verb_. To adjust the zoom level to include everything drawn in all layers.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == fit_to_canvas ==
-||Description||Here||
+||Description||_Verb_. To adjust the zoom level to the canvas dimensions.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == fit_to_layer_content ==
-||Description||Here||
+||Description||_Verb_. To adjust the zoom level to include everything in the current layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == fit_to_sel ==
-||Description||Here||
+||Description||_Verb_. To adjust the zoom level to include all the selected objects.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
