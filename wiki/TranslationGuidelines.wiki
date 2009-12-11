@@ -2,7 +2,9 @@
 
 Under construction
 
-http://imgh.us/SVG-edit_Languages.svg
+http://imgh.us/SVG-edit_Languages.svg shows the status of translations for each SVG-edit
+
+language file.
 
 = Introduction =
 
@@ -221,14 +223,14 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="Green">
 == image_opt_embed ==
-||Description||||
+||Description||_Verb_. To embed (include, integrate) the images as data (for local files)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
 == image_opt_ref ==
-||Description||Here||
+||Description||_Verb_. To use the reference of the images (URLs of the images, instead of embedding them||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -543,406 +545,427 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="green">
 == svginfo_editor_prefs ==
-||Description||Here||
+||Description||_Noun_. The preferences of the editor.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_height ==
-||Description||Here||
+||Description||_Noun_. Height.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_icons ==
-||Description||Here||
+||Description||_Noun_. Size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_image_props ==
-||Description||Here||
+||Description||_Noun_. The properties of the image.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_lang ==
-||Description||Here||
+||Description||_Noun_. Language (of the editor).||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_title ==
-||Description||Here||
+||Description||_Noun_. Title (of the image).||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_width ==
-||Description||Here||
+||Description||_Noun_. Width (of the image).||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == text ==
-||Description||Here||
+||Description||_Noun_. Text, content of a text element.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_alignbottom ==
-||Description||Here||
+||Description||_Verb_. To align the bottom of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_aligncenter ==
-||Description||Here||
+||Description||_Verb_. To center vertically, relatively to the vertical axis||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_alignleft ==
-||Description||Here||
+||Description||_Verb_. To align the left sides of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_alignmiddle ==
-||Description||Here||
+||Description||_Verb_. To center horizontally, relatively to the horizontal axis||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_alignright ==
-||Description||Here||
+||Description||_Verb_. To align the right sides of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_aligntop ==
-||Description||Here||
+||Description||_Verb_. To align the top sides of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_bold ==
-||Description||Here||
+||Description||_Adjective_. Bold text [B].||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_circle ==
-||Description||Here||
+||Description||_Noun_. Circle.|
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_clear ==
-||Description||Here||
+||Description||_Adjective_. New Image [N]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_clone ==
-||Description||Here||
+||Description||_Verb_. To clone an element. [C]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_clone_multi ==
-||Description||Here||
+||Description||_Verb_. To clone elements. [C]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_delete ==
-||Description||Here||
+||Description||_Verb_. To delete an element [Delete/Backspace]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_delete_multi ==
-||Description||Here||
+||Description||_Verb_. To delete selected elements [Delete/Backspace]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_docprops ==
-||Description||Here||
+||Description||_Noun_. The document properties [I]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_docprops_cancel ==
-||Description||Here||
+||Description||_Verb_. To cancel||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_docprops_save ==
-||Description||Here||
+||Description||_Noun_. OK (does not mean "Save")||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_ellipse ==
-||Description||Here||
+||Description||_Noun_. Ellipse||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_fhellipse ==
-||Description||Here||
+||Description||_Noun_. Free-hand ellipse||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_fhpath ==
-||Description||Here||
+||Description||_Noun_. Pencil tool [2]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_fhrect ==
-||Description||Here||
+||Description||_Noun_. Free-hand rectangle||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_group ==
-||Description||Here||
+||Description||_Verb_. To group elements [G]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_image ==
-||Description||Here||
+||Description||_Noun_. Image tool [8]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_italic ==
-||Description||Here||
+||Description||_Adjective_. Italic text [I]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_line ==
-||Description||Here||
+||Description||_Noun_. Line tool [3]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_move_bottom ==
-||Description||Here||
+||Description||_Verb_. To move (the selected element) to the bottom [Shift+Down]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_move_top ==
-||Description||Here||
+||Description||_Verb_. To move (the selected element) to the top [Shift+Up]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_node_clone ==
-||Description||Here||
+||Description||_Verb_. To clone a node||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_node_delete ==
-||Description||Here||
+||Description||_Verb_. To delete a node||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_node_link ==
-||Description||Here||
+||Description||_Verb_. To link control points, to make the two handles of a node move together, with solidarity, instead of individually.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_open ==
-||Description||Here||
+||Description||_Verb_. To open an image [O]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_path ==
-||Description||Here||
+||Description||_Noun_. Path tool [7]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_rect ==
-||Description||Here||
+||Description||_Noun_. Rectangle||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_redo ==
-||Description||Here||
+||Description||_Verb_. To redo [Y]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_reorient ==
-||Description||Here||
+||Description||_Verb_. For a previously rotated object: make its bounding box parallel to the canvas, and with a rotation angle of 0°. (Resets the bounding box origin)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_save ==
-||Description||Here||
+||Description||_Verb_. To save the image [S]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_select ==
-||Description||Here||
+||Description||_Noun_. Select (selection) tool [1]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_source ==
-||Description||Here||
+||Description||_Verb_. To edit the source [U] (opens the source editor)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_source_cancel ==
-||Description||Here||
+||Description||_Verb_. To cancel, discard changes.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_source_save ==
-||Description||Here||
+||Description||_Verb_. To apply changes, accept changes.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_square ==
-||Description||Here||
+||Description||_Noun_. Square||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_text ==
-||Description||Here||
+||Description||_Noun_. Text tool [6]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_topath ==
-||Description||Here||
+||Description||_Verb_. To convert (a regular shape, circle, ellipse, rectangle...) in a path (with editable segments)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_undo ==
-||Description||Here||
+||Description||_Verb_. To undo [2]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_ungroup ==
-||Description||Here||
+||Description||_Verb_. To ungroup elements (previously grouped) [G]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_wireframe ==
-||Description||Here||
+||Description||_Noun_. Wireframe, outline mode (shows the outline of the elements, with no colors) [F]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_zoom ==
-||Description||Here||
+||Description||_Noun_. Zoom tool [Ctrl+Up/Down]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tools_ellipse_show ==
-||Description||Here||
+||Description||_Noun_. Ellipse/Circle tool [5/Shift+5]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tools_rect_show ==
-||Description||Here||
+||Description||_Noun_. Square/Rectangle tool [4/Shift+4]||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == zoom ==
-||Description||Here||
+||Description||_Verb_. To change the zoom level||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == zoomLabel ==
-||Description||Here||
+||Description||_Noun_. Zoom:||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
+
+JS strings
+	
+"cancel":"Cancel"
+"dupeLayerName":"There is already a layer named that!"
+"enterNewImgURL":"Enter the new image URL"
+"enterNewLayerName":"Please enter the new layer name"
+"enterUniqueLayerName":"Please enter a unique layer name"
+"featNotSupported":"Feature not supported"
+"invalidAttrValGiven":"Invalid value given"
+'layer':"Layer"
+"layerHasThatName":"Layer already has that name"
+"noContentToFitTo":"No content to fit to"
+"ok":"OK"
+"pathCtrlPtTooltip":"Drag control point to adjust curve properties"
+"pathNodeTooltip":"Drag node to move it. Double-click node to change segment type"
+"QerrorsRevertToSource":"There were parsing errors in your SVG source.\nRevert back to original SVG source?"
+"QignoreSourceChanges":"Ignore changes made to SVG source?"
+"QmoveElemsToLayer":"Move selected elements to layer '%s'?"
+"QwantToClear":"Do you want to clear the drawing?\nThis will also erase your undo history!"
+	
