@@ -319,223 +319,223 @@ This page will list the existing ID in the language files, and explain what they
 
 <font color="green">
 == line_x2 ==
-||Description||Here||
+||Description||_Verb_. To change the horizontal coordinate x of the ending point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == line_y1 ==
-||Description||Here||
+||Description||_Verb_. To change the vertical coordinate y of the starting point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == line_y2 ==
-||Description||Here||
+||Description||_Verb_. To change the vertical coordinate y of the ending point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == page ==
-||Description||Here||
+||Description||_Noun_. The page.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == palette ==
-||Description||Here||
+||Description||_Noun_. The palette, the painter's tool which holds all the available colors.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == path_node_x ==
-||Description||Here||
+||Description||_Verb_. To change the horizontal coordinate x, for a node (point).||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == path_node_y ==
-||Description||Here||
+||Description||_Verb_. To change the vertical coordinate y, for a node (point).||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == rect_height ==
-||Description||Here||
+||Description||_Verb_. To change the height of a rectangle.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == rect_rx ==
-||Description||Here||
+||Description||_Verb_. To change the value of the radius of the corners, for a rectangle with rounded corners.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == rect_width ==
-||Description||Here||
+||Description||_Verb_. To change the width of a rectangle.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == relativeToLabel ==
-||Description||Here||
+||Description||_Adverb_. (Objects aligned) relatively to either objects, or the page.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == rheightLabel ==
-||Description||Here||
+||Description||_Noun_. Height.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == rwidthLabel ==
-||Description||Here||
+||Description||_Noun_. Width.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == seg_type ==
-||Description||Here||
+||Description||_Verb_. To change the type of a segment.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == selected_objects ==
-||Description||Here||
+||Description||_Past participle_. Objects which are selected. ||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == selected_x ==
-||Description||Here||
+||Description||_Verb_. To change the horizontal coordinate X.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == selected_y ==
-||Description||Here||
+||Description||_Verb_. To change the vertical coordinate Y.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == selectedPredefined ==
-||Description||Here||
+||Description||_Verb_. To select predifined values, for the canvas dimensions.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == selLayerLabel ==
-||Description||Here||
+||Description||_Verb_. To move elements to (another layer):||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == selLayerNames ==
-||Description||Here||
+||Description||_Verb_. To move selected elements to a different layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == sidepanel_handle ==
-||Description||Here||
+||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel [X], then, L a y e r s.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == smallest_object ==
-||Description||Here||
+||Description||_Superlative adjective_. The smallest object.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == straight_segments ==
-||Description||Here||
+||Description||_Noun_. Type of segment: straight line, as opposed to curve.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == stroke_color ==
-||Description||Here||
+||Description||_Verb_. To change the color of the outline (exterior) of an element.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == stroke_style ==
-||Description||Here||
+||Description||_Verb_. To change the style of dashes, for the outline (exterior) of an element.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == stroke_tool_bottom ==
-||Description||Here||
+||Description||_Noun_. The outline (exterior) of an element.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == stroke_width ==
-||Description||Here||
+||Description||_Verb_. To change the width of the outline (exterior) of an element.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_bg_note ==
-||Description||Here||
+||Description||Note : Background will not be saved with the image.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_change_background ==
-||Description||Here||
+||Description||_Noun_. The background of the canvas.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
-== svginfo_change_background ==
-||Description||Here||
-||In use since||2.4||
-||Obsolete since||-||
-</font>
-
-<font color="green">
-== svginfo_dim ==
-||Description||Here||
+== svginfo_change_background (duplicate ID) ==
+||Description||_Noun_. The preferences of the editor.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == svginfo_dim ==
+||Description||_Noun_. The dimensions of the canvas.||
+||In use since||2.4||
+||Obsolete since||-||
+</font>
+
+<font color="green">
+== svginfo_dim (duplicate) ==
 ||Description||Here||
 ||In use since||2.4||
 ||Obsolete since||-||
