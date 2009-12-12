@@ -4,7 +4,7 @@ Under construction
 
 http://imgh.us/SVG-edit_Languages.svg shows the status of translations for each SVG-edit language file.<br/>
 [TranslationGuidelines#Introduction Introduction] Explanation of this document.<br/>
-[TranslationGuidelines#JavaScript_strings_(&quot;js_strings&quot;) js_strings] Describes the !JavaScript strings.<br/>
+[TranslationGuidelines#JavaScript_strings_(js_strings) js_strings] Describes the !JavaScript strings.<br/>
 [TranslationGuidelines#IDs_Details IDs Details] Describes the IDs.
 
 = Introduction =
@@ -29,7 +29,7 @@ Notes:
 
 -----
 
-= !JavaScript strings ("js_strings") =
+= !JavaScript strings (js_strings) =
 
 <font color="Green">
 == cancel == 
