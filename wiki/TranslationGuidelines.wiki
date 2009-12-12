@@ -13,11 +13,20 @@ This page lists the existing ID in the language files, and explain what they "te
 <font color="Orange">ID made obsolete last version</font><br/>
 <font color="Red">Obsolete ID</font><br/>
 
-There is also a block of JavaScript strings, at the end of each language file. Their second part needs to be translated.
+There is also a block of !JavaScript strings, at the end of each language file. Their second part needs to be translated.
+
+Notes:
+  * a '%string' is a value and must not be translated. Ex: '%s'.
+  * \n inside a long line:<br>
+  Long lines are sometimes split with a<br> 
+  \nwhich must not be translated. It may be moved<br>
+  \ninto the sentences<br>
+  \nfor verbose languages.
+  * References to shortcuts (numbers or words inside a pair of "[ ]" brackets still appearing in a language file do not need to be translated, and can be deleted from the line. 
 
 -----
 
-= JavaScript strings ("js_strings") =
+= !JavaScript strings ("js_strings") =
 
 <font color="Green">
 == cancel == 
@@ -140,28 +149,28 @@ There is also a block of JavaScript strings, at the end of each language file. T
 </font>
 
 <font color="Green">
-== QerrorsRevertToSource ==
+== !QerrorsRevertToSource ==
 ||Description||_Sentence_. There were parsing errors in your SVG source.\nRevert back to original SVG source?||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
-== QignoreSourceChanges ==
+== !QignoreSourceChanges ==
 ||Description||_Sentence_. Ignore changes made to SVG source?||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
-== QmoveElemsToLayer ==
+== !QmoveElemsToLayer ==
 ||Description||_Sentence_. Move selected elements to layer '%s'? (_'%s' must not be translated or changed._)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="Green">
-== QwantToClear ==
+== !QwantToClear ==
 ||Description||_Sentence_. Do you want to clear the drawing?\nThis will also erase your undo history!||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -614,7 +623,7 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == sidepanel_handle ==
-||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel [X], then, L a y e r s.||
+||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel, then, L a y e r s.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -796,7 +805,7 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_bold ==
-||Description||_Adjective_. Bold text [B].||
+||Description||_Adjective_. Bold text||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -810,42 +819,42 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_clear ==
-||Description||_Adjective_. New Image [N]||
+||Description||_Adjective_. New Image||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_clone ==
-||Description||_Verb_. To clone an element. [C]||
+||Description||_Verb_. To clone an element||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_clone_multi ==
-||Description||_Verb_. To clone elements. [C]||
+||Description||_Verb_. To clone elements||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_delete ==
-||Description||_Verb_. To delete an element [Delete/Backspace]||
+||Description||_Verb_. To delete an element||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_delete_multi ==
-||Description||_Verb_. To delete selected elements [Delete/Backspace]||
+||Description||_Verb_. To delete selected elements||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_docprops ==
-||Description||_Noun_. The document properties [I]||
+||Description||_Noun_. The document properties||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -880,7 +889,7 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_fhpath ==
-||Description||_Noun_. Pencil tool [2]||
+||Description||_Noun_. Pencil tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -894,42 +903,42 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_group ==
-||Description||_Verb_. To group elements [G]||
+||Description||_Verb_. To group elements||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_image ==
-||Description||_Noun_. Image tool [8]||
+||Description||_Noun_. Image tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_italic ==
-||Description||_Adjective_. Italic text [I]||
+||Description||_Adjective_. Italic text||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_line ==
-||Description||_Noun_. Line tool [3]||
+||Description||_Noun_. Line tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_move_bottom ==
-||Description||_Verb_. To move (the selected element) to the bottom [Shift+Down]||
+||Description||_Verb_. To move (the selected element) to the bottom||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_move_top ==
-||Description||_Verb_. To move (the selected element) to the top [Shift+Up]||
+||Description||_Verb_. To move (the selected element) to the top||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -950,21 +959,21 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_node_link ==
-||Description||_Verb_. To link control points, to make the two handles of a node move together, with solidarity, instead of individually.||
+||Description||_Verb_. To link control points: to make the two handles of a node move together, with solidarity, instead of individually.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_open ==
-||Description||_Verb_. To open an image [O]||
+||Description||_Verb_. To open an image||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_path ==
-||Description||_Noun_. Path tool [7]||
+||Description||_Noun_. Path tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -978,35 +987,35 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_redo ==
-||Description||_Verb_. To redo [Y]||
+||Description||_Verb_. To redo||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_reorient ==
-||Description||_Verb_. For a previously rotated object: make its bounding box parallel to the canvas, and with a rotation angle of 0°. (Resets the bounding box origin)||
+||Description||_Verb_. (to) Reorient (a) path: For a previously rotated object, make its bounding box parallel to the canvas, and with a rotation angle of 0°. Resets the bounding box origin.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_save ==
-||Description||_Verb_. To save the image [S]||
+||Description||_Verb_. To save the image||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_select ==
-||Description||_Noun_. Select (selection) tool [1]||
+||Description||_Noun_. Select (selection) tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_source ==
-||Description||_Verb_. To edit the source [U] (opens the source editor)||
+||Description||_Verb_. To edit the source (opens the source editor)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -1020,7 +1029,7 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_source_save ==
-||Description||_Verb_. To apply changes, accept changes.||
+||Description||_Verb_. (to) Apply changes, accept changes.||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -1034,7 +1043,7 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_text ==
-||Description||_Noun_. Text tool [6]||
+||Description||_Noun_. Text tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
@@ -1048,42 +1057,42 @@ There is also a block of JavaScript strings, at the end of each language file. T
 
 <font color="green">
 == tool_undo ==
-||Description||_Verb_. To undo [2]||
+||Description||_Verb_. To undo||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_ungroup ==
-||Description||_Verb_. To ungroup elements (previously grouped) [G]||
+||Description||_Verb_. To ungroup elements (previously grouped)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_wireframe ==
-||Description||_Noun_. Wireframe, outline mode (shows the outline of the elements, with no colors) [F]||
+||Description||_Noun_. Wireframe, outline mode (shows the outline of the elements, with no colors)||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tool_zoom ==
-||Description||_Noun_. Zoom tool [Ctrl+Up/Down]||
+||Description||_Noun_. Zoom tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tools_ellipse_show ==
-||Description||_Noun_. Ellipse/Circle tool [5/Shift+5]||
+||Description||_Noun_. Ellipse/Circle tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
 
 <font color="green">
 == tools_rect_show ==
-||Description||_Noun_. Square/Rectangle tool [4/Shift+4]||
+||Description||_Noun_. Square/Rectangle tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 </font>
