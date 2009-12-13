@@ -33,151 +33,150 @@ Notes:
 
 <font color="Green">
 == cancel == 
+</font>
 ||Description||_Verb_. To cancel||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == dupeLayerName ==
+</font>
 ||Description||_Sentence_. There is already a layer named that!||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == enterNewImgURL ==
+</font>
 ||Description||_Verb_. (To) enter the new image URL||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == enterNewLayerName ==
+</font>
 ||Description||_Sentence_. Please enter the new layer name||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == enterUniqueLayerName ==
+</font>
 ||Description||_Sentence_. Please enter a unique layer name||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == featNotSupported ==
+</font>
 ||Description||_Noun_. Feature not supported||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == invalidAttrValGiven ==
+</font>
 ||Description||_Adjective_. Invalid value given||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == key_backspace == 
+</font>
 ||Description||_Noun_. Name of the keyboard key: backspace||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == key_del ==
+</font>
 ||Description||_Noun_. Name of the keyboard key: delete||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == key_down == 
+</font>
 ||Description||_Noun_. Name of the keyboard key: down||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
-
 
 <font color="Green">
 == key_up == 
+</font>
 ||Description||_Noun_. Name of the keyboard key: up||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == layer ==
+</font>
 ||Description||_Noun_. Layer||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == layerHasThatName ==
+</font>
 ||Description||_Sentence_. (this) Layer already has that name||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == noContentToFitTo ==
+</font>
 ||Description||_Sentence_. (there is) No content to fit to||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == ok ==
+</font>
 ||Description||_Noun_. OK||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == pathCtrlPtTooltip ==
+</font>
 ||Description||_Verb_. (to) Drag control point to adjust curve properties||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == pathNodeTooltip == 
+</font>
 ||Description||_Verb_. (to) Drag node to move it. (to) Double-click node to change segment type||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == !QerrorsRevertToSource ==
+</font>
 ||Description||_Sentence_. There were parsing errors in your SVG source.\nRevert back to original SVG source?||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == !QignoreSourceChanges ==
+</font>
 ||Description||_Sentence_. Ignore changes made to SVG source?||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == !QmoveElemsToLayer ==
+</font>
 ||Description||_Sentence_. Move selected elements to layer '%s'? (_'%s' must not be translated or changed._)||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == !QwantToClear ==
+</font>
 ||Description||_Sentence_. Do you want to clear the drawing?\nThis will also erase your undo history!||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 -----
 
@@ -185,933 +184,931 @@ Notes:
 
 <font color="Green">
 == align_relative_to ==
+</font>
 ||Description||_Verb_. To align objects relatively to either objects or the page.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == angle ==
+</font>
 ||Description||_Verb_. To change the angle of rotation applied to an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == angleLabel ==
+</font>
 ||Description||_Noun_. The angle of rotation applied to an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == bkgnd_color ==
+</font>
 ||Description||_Verb_. To change the background color / the opacity.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == circle_cx ==
+</font>
 ||Description||_Verb_. To change the horizontal coordinate cx of a circle.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == circle_cy ==
+</font>
 ||Description||_Verb_. To change the vertical coordinate cy of a circle.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == circle_r ==
+</font>
 ||Description||_Verb_. To change the radius of a circle.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == cornerRadiusLabel ==
+</font>
 ||Description||_Noun_. Value of the radius of the corners, for a rectangle with rounded corners.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == curve_segments ==
+</font>
 ||Description||_Noun_. Type of segment: curved segment, as opposed to straight line.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == ellipse_cx ==
+</font>
 ||Description||_Verb_. To change the horizontal coordinate cx of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == ellipse_cy ==
+</font>
 ||Description||_Verb_. To change the vertical coordinate cy of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == ellipse_rx ==
+</font>
 ||Description||_Verb_. To change the horizontal radius x of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == ellipse_ry ==
+</font>
 ||Description||_Verb_. To change the vertical radius y of an ellipse.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == fill_color ==
+</font>
 ||Description||_Verb_. To change the fill color of an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == fill_tool_bottom ==
+</font>
 ||Description||_Noun_. The inner painting of an object.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == fit_to_all ==
+</font>
 ||Description||_Verb_. To adjust the zoom level to include everything drawn in all layers.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == fit_to_canvas ==
+</font>
 ||Description||_Verb_. To adjust the zoom level to the canvas dimensions.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == fit_to_layer_content ==
+</font>
 ||Description||_Verb_. To adjust the zoom level to include everything in the current layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == fit_to_sel ==
+</font>
 ||Description||_Verb_. To adjust the zoom level to include all the selected objects.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == fitToContent ==
+</font>
 ||Description||_Adjective or past participle_. Adjusted to the content of the drawing, cropped.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == font_family ==
+</font>
 ||Description||_Verb_. To change the font-family of a text element.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == font_size ==
+</font>
 ||Description||_Verb_. To change the font size of a text element.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == group_opacity ==
+</font>
 ||Description||_Verb_. To change the opacity of selected items.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == icon_large ==
+</font>
 ||Description||_Adjective_. Large, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == icon_medium ==
+</font>
 ||Description||_Adjective_. Average, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == icon_small ==
+</font>
 ||Description||_Adjective_. Small, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == icon_xlarge ==
+</font>
 ||Description||_Adjective_. Extra large, for the size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == iheightLabel ==
+</font>
 ||Description||_Noun_. Height.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == image_height ==
+</font>
 ||Description||_Verb_. To change the height of an image.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == image_opt_embed ==
+</font>
 ||Description||_Verb_. To embed (include, integrate) the images as data (for local files)||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == image_opt_ref ==
+</font>
 ||Description||_Verb_. To use the reference of the images (URLs of the images, instead of embedding them||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == image_url ==
+</font>
 ||Description||_Verb_. To change the URL of an image.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == image_width ==
+</font>
 ||Description||_Verb_. To change the width of an image.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == includedImages ==
+</font>
 ||Description||_Adjective or past participle_. Included, integrated, embedded images.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == iwidthLabel ==
+</font>
 ||Description||_Noun_. Width.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="Green">
 == largest_object ==
+</font>
 ||Description||_Superlative adjective_. The largest object.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == layer_delete ==
+</font>
 ||Description||_Verb_. To delete the current layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == layer_down ==
+</font>
 ||Description||_Verb_. To move the current layer down in the layer table.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == layer_new ==
+</font>
 ||Description||_Noun_. A new layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == layer_rename ==
+</font>
 ||Description||_Verb_. To give a new name to the current layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == layer_up ==
+</font>
 ||Description||_Verb_. To move the current layer up in the layer table.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == layersLable ==
+</font>
 ||Description||_Noun_. The layers.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == line_x1 ==
+</font>
 ||Description||_Verb_. To change the horizontal coordinate x of the starting point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == line_x2 ==
+</font>
 ||Description||_Verb_. To change the horizontal coordinate x of the ending point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == line_y1 ==
+</font>
 ||Description||_Verb_. To change the vertical coordinate y of the starting point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == line_y2 ==
+</font>
 ||Description||_Verb_. To change the vertical coordinate y of the ending point, for a line.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == page ==
+</font>
 ||Description||_Noun_. The page.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == palette ==
+</font>
 ||Description||_Noun_. The palette, the painter's tool which holds all the available colors.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == path_node_x ==
+</font>
 ||Description||_Verb_. To change the horizontal coordinate x, for a node (point).||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == path_node_y ==
+</font>
 ||Description||_Verb_. To change the vertical coordinate y, for a node (point).||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == rect_height ==
+</font>
 ||Description||_Verb_. To change the height of a rectangle.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == rect_rx ==
+</font>
 ||Description||_Verb_. To change the value of the radius of the corners, for a rectangle with rounded corners.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == rect_width ==
+</font>
 ||Description||_Verb_. To change the width of a rectangle.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == relativeToLabel ==
+</font>
 ||Description||_Adverb_. (Objects aligned) relatively to either objects, or the page.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == rheightLabel ==
+</font>
 ||Description||_Noun_. Height.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == rwidthLabel ==
+</font>
 ||Description||_Noun_. Width.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == seg_type ==
+</font>
 ||Description||_Verb_. To change the type of a segment.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == selected_objects ==
+</font>
 ||Description||_Past participle_. Objects which are selected. ||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == selected_x ==
+</font>
 ||Description||_Verb_. To change the horizontal coordinate X.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == selected_y ==
+</font>
 ||Description||_Verb_. To change the vertical coordinate Y.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == selectedPredefined ==
+</font>
 ||Description||_Verb_. To select predifined values, for the canvas dimensions.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == selLayerLabel ==
+</font>
 ||Description||_Verb_. To move elements to (another layer):||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == selLayerNames ==
+</font>
 ||Description||_Verb_. To move selected elements to a different layer.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == sidepanel_handle ==
+</font>
 ||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel, then, L a y e r s.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == smallest_object ==
+</font>
 ||Description||_Superlative adjective_. The smallest object.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == straight_segments ==
+</font>
 ||Description||_Noun_. Type of segment: straight line, as opposed to curve.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == stroke_color ==
+</font>
 ||Description||_Verb_. To change the color of the outline (exterior) of an element.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == stroke_style ==
+</font>
 ||Description||_Verb_. To change the style of dashes, for the outline (exterior) of an element.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == stroke_tool_bottom ==
-||Description||_Noun_. The outline (exterior) of an element.||
+</font>
+||Description||_Noun_. The outline (exterior) of an element. This includes the color/opacity, the line thicknes and the line style (dashes and/or dots).||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == stroke_width ==
+</font>
 ||Description||_Verb_. To change the width of the outline (exterior) of an element.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_bg_note ==
+</font>
 ||Description||Note : Background will not be saved with the image.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_change_background ==
+</font>
 ||Description||_Noun_. The background of the canvas.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_change_background (duplicate ID) ==
+</font>
 ||Description||_Noun_. The preferences of the editor.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_dim ==
+</font>
 ||Description||_Noun_. The dimensions of the canvas.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_dim (duplicate) ==
+</font>
 ||Description||Here||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_editor_prefs ==
+</font>
 ||Description||_Noun_. The preferences of the editor.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_height ==
+</font>
 ||Description||_Noun_. Height.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_icons ==
+</font>
 ||Description||_Noun_. Size of the icons.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_image_props ==
+</font>
 ||Description||_Noun_. The properties of the image.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_lang ==
+</font>
 ||Description||_Noun_. Language (of the editor).||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_title ==
+</font>
 ||Description||_Noun_. Title (of the image).||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == svginfo_width ==
+</font>
 ||Description||_Noun_. Width (of the image).||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == text ==
+</font>
 ||Description||_Noun_. Text, content of a text element.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_alignbottom ==
+</font>
 ||Description||_Verb_. To align the bottom of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_aligncenter ==
+</font>
 ||Description||_Verb_. To center vertically, relatively to the vertical axis||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_alignleft ==
+</font>
 ||Description||_Verb_. To align the left sides of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_alignmiddle ==
+</font>
 ||Description||_Verb_. To center horizontally, relatively to the horizontal axis||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_alignright ==
+</font>
 ||Description||_Verb_. To align the right sides of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_aligntop ==
+</font>
 ||Description||_Verb_. To align the top sides of selected elements.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_bold ==
+</font>
 ||Description||_Adjective_. Bold text||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_circle ==
+</font>
 ||Description||_Noun_. Circle.|
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_clear ==
+</font>
 ||Description||_Adjective_. New Image||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_clone ==
+</font>
 ||Description||_Verb_. To clone an element||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_clone_multi ==
+</font>
 ||Description||_Verb_. To clone elements||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_delete ==
+</font>
 ||Description||_Verb_. To delete an element||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_delete_multi ==
+</font>
 ||Description||_Verb_. To delete selected elements||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_docprops ==
+</font>
 ||Description||_Noun_. The document properties||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_docprops_cancel ==
+</font>
 ||Description||_Verb_. To cancel||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_docprops_save ==
+</font>
 ||Description||_Noun_. OK (does not mean "Save")||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_ellipse ==
+</font>
 ||Description||_Noun_. Ellipse||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_fhellipse ==
+</font>
 ||Description||_Noun_. Free-hand ellipse||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_fhpath ==
+</font>
 ||Description||_Noun_. Pencil tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_fhrect ==
+</font>
 ||Description||_Noun_. Free-hand rectangle||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_group ==
+</font>
 ||Description||_Verb_. To group elements||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_image ==
+</font>
 ||Description||_Noun_. Image tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_italic ==
+</font>
 ||Description||_Adjective_. Italic text||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_line ==
+</font>
 ||Description||_Noun_. Line tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_move_bottom ==
+</font>
 ||Description||_Verb_. To move (the selected element) to the bottom||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_move_top ==
+</font>
 ||Description||_Verb_. To move (the selected element) to the top||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_node_clone ==
+</font>
 ||Description||_Verb_. To clone a node||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_node_delete ==
+</font>
 ||Description||_Verb_. To delete a node||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_node_link ==
+</font>
 ||Description||_Verb_. To link control points: to make the two handles of a node move together, with solidarity, instead of individually.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_open ==
+</font>
 ||Description||_Verb_. To open an image||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_path ==
+</font>
 ||Description||_Noun_. Path tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_rect ==
+</font>
 ||Description||_Noun_. Rectangle||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_redo ==
+</font>
 ||Description||_Verb_. To redo||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_reorient ==
+</font>
 ||Description||_Verb_. (to) Reorient (a) path: For a previously rotated object, make its bounding box parallel to the canvas, and with a rotation angle of 0°. Resets the bounding box origin.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_save ==
+</font>
 ||Description||_Verb_. To save the image||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_select ==
+</font>
 ||Description||_Noun_. Select (selection) tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_source ==
+</font>
 ||Description||_Verb_. To edit the source (opens the source editor)||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_source_cancel ==
+</font>
 ||Description||_Verb_. To cancel, discard changes.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_source_save ==
+</font>
 ||Description||_Verb_. (to) Apply changes, accept changes.||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_square ==
+</font>
 ||Description||_Noun_. Square||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_text ==
+</font>
 ||Description||_Noun_. Text tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_topath ==
+</font>
 ||Description||_Verb_. To convert (a regular shape, circle, ellipse, rectangle...) in a path (with editable segments)||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_undo ==
+</font>
 ||Description||_Verb_. To undo||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_ungroup ==
+</font>
 ||Description||_Verb_. To ungroup elements (previously grouped)||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_wireframe ==
+</font>
 ||Description||_Noun_. Wireframe, outline mode (shows the outline of the elements, with no colors)||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tool_zoom ==
+</font>
 ||Description||_Noun_. Zoom tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tools_ellipse_show ==
+</font>
 ||Description||_Noun_. Ellipse/Circle tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == tools_rect_show ==
+</font>
 ||Description||_Noun_. Square/Rectangle tool||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == zoom ==
+</font>
 ||Description||_Verb_. To change the zoom level||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
 
 <font color="green">
 == zoomLabel ==
+</font>
 ||Description||_Noun_. Zoom:||
 ||In use since||2.4||
 ||Obsolete since||-||
-</font>
-
-	
