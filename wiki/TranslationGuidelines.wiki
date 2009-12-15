@@ -34,49 +34,56 @@ Notes:
 <font color="Green">
 == cancel == 
 </font>
-||Description||_Verb_. To cancel||
+||Description||_Verb_. Cancels a given command and returns back to the state before that.||
+||Default language||Cancel||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == dupeLayerName ==
 </font>
-||Description||_Sentence_. There is already a layer named that!||
+||Description||_Sentence_. Is displayed if a layer is created with a name of an already excisting layer.||
+||Default language||There is already a layer named that!||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == enterNewImgURL ==
 </font>
-||Description||_Verb_. (To) enter the new image URL||
+||Description||_Verb_. Lets you edit the URL of an insterted image.||
+||Default language||Enter the new image URL||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == enterNewLayerName ==
 </font>
-||Description||_Sentence_. Please enter the new layer name||
+||Description||_Sentence_. Asks for a new layer name. A layer name identifies a layer.||
+||Default language||Please enter the new layer name||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == enterUniqueLayerName ==
 </font>
-||Description||_Sentence_. Please enter a unique layer name||
+||Description||_Sentence_. Asks for an unique layer name.||
+||Default language||Please enter a unique layer name||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == featNotSupported ==
 </font>
-||Description||_Noun_. Feature not supported||
+||Description||_Noun_. States that a function is not supported.||
+||Default language||Feature not supported||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == invalidAttrValGiven ==
 </font>
-||Description||_Adjective_. Invalid value given||
+||Description||_Adjective_. State that a given value is not correct. Eg some text is given while a number is required.||
+||Default language||Invalid value given||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -84,6 +91,7 @@ Notes:
 == key_backspace == 
 </font>
 ||Description||_Noun_. Name of the keyboard key: backspace||
+||Default language||backspace||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -91,6 +99,7 @@ Notes:
 == key_del ==
 </font>
 ||Description||_Noun_. Name of the keyboard key: delete||
+||Default language||delete||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -98,6 +107,7 @@ Notes:
 == key_down == 
 </font>
 ||Description||_Noun_. Name of the keyboard key: down||
+||Default language||down||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -105,76 +115,87 @@ Notes:
 == key_up == 
 </font>
 ||Description||_Noun_. Name of the keyboard key: up||
+||Default language||up||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == layer ==
 </font>
-||Description||_Noun_. Layer||
+||Description||_Noun_. Gives the name for a layer. An image can have multiple layers that can group a number of elements.||
+||Default language||Layer||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == layerHasThatName ==
 </font>
-||Description||_Sentence_. (this) Layer already has that name||
+||Description||_Sentence_. States that the new layer name is the same as the old layer name.||
+||Default language||Layer already has that name||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == noContentToFitTo ==
 </font>
-||Description||_Sentence_. (there is) No content to fit to||
+||Description||_Sentence_. States that the command to zoom to show all content could not be executed, because there is no content.||
+||Default language||No content to fit to||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == ok ==
 </font>
-||Description||_Noun_. OK||
+||Description||_Noun_. Execute the action and commit the changes that have been made.||
+||Default language||OK||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == pathCtrlPtTooltip ==
 </font>
-||Description||_Verb_. (to) Drag control point to adjust curve properties||
+||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the curve of the matching line.||
+||Default language||Drag control point to adjust curve properties||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == pathNodeTooltip == 
 </font>
-||Description||_Verb_. (to) Drag node to move it. (to) Double-click node to change segment type||
+||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the shape. The point can also be dubbel clicked, which will change the matching line type.||
+||Default language||Drag node to move it. Double-click node to change segment type||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == !QerrorsRevertToSource ==
 </font>
-||Description||_Sentence_. There were parsing errors in your SVG source.\nRevert back to original SVG source?||
+||Description||_Sentence_. States that there where errors while parsing the manually given SVG source code. Asks if it should go back to the original code.||
+||Default language||There were parsing errors in your SVG source.\nRevert back to original SVG source?||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == !QignoreSourceChanges ==
 </font>
-||Description||_Sentence_. Ignore changes made to SVG source?||
+||Description||_Sentence_. Verifies that the changes made to the SVG source code can be rolled back.||
+||Default language||Ignore changes made to SVG source?||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == !QmoveElemsToLayer ==
 </font>
-||Description||_Sentence_. Move selected elements to layer '%s'? (_'%s' must not be translated or changed._)||
+||Description||_Sentence_. Verifies that the selected items must be moved to another (already specified) layer. (_'%s' must not be translated or changed._)||
+||Default language||Move selected elements to layer '%s'?||
 ||In use since||2.4||
 ||Obsolete since||-||
 
 <font color="Green">
 == !QwantToClear ==
 </font>
-||Description||_Sentence_. Do you want to clear the drawing?\nThis will also erase your undo history!||
+||Description||_Sentence_. Verifies if the entire drawing, including the undo history, should be discarded.||
+||Default language||you want to clear the drawing?\nThis will also erase your undo history!||
 ||In use since||2.4||
 ||Obsolete since||-||
 
