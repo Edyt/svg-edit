@@ -138,7 +138,7 @@ Notes:
 <font color="Green">
 == noContentToFitTo ==
 </font>
-||Description||_Sentence_. States that the command to zoom to show all content could not be executed, because there is no content.||
+||Description||_Sentence_. States that the command to resize the canvas to all content could not be executed, because there is no content.||
 ||Default language||No content to fit to||
 ||In use since||2.4||
 ||Obsolete since||-||
