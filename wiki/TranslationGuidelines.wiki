@@ -9,7 +9,7 @@ http://imgh.us/SVG-edit_Languages.svg shows the status of translations for each 
 
 = Introduction =
 
-This page lists the existing ID in the language files, and explain what they "technically" represent, for a meaningful - yet simple - translation of the SVG-edit interface.
+This page lists the existing IDs in the language files, and explains what they "technically" represent, for a meaningful - yet simple - translation of the SVG-edit interface.
 
 <font color="Blue">New ID since the last version</font><br/>
 <font color="Green">Active ID</font><br/>
@@ -42,7 +42,7 @@ Notes:
 <font color="Green">
 == dupeLayerName ==
 </font>
-||Description||_Sentence_. Is displayed if a layer is created with a name of an already excisting layer.||
+||Description||_Sentence_. Is displayed if a layer is created with a name of an already existing layer.||
 ||Default language||There is already a layer named that!||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -50,7 +50,7 @@ Notes:
 <font color="Green">
 == enterNewImgURL ==
 </font>
-||Description||_Verb_. Lets you edit the URL of an insterted image.||
+||Description||_Verb_. Lets you edit the URL of an inserted image.||
 ||Default language||Enter the new image URL||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -66,7 +66,7 @@ Notes:
 <font color="Green">
 == enterUniqueLayerName ==
 </font>
-||Description||_Sentence_. Asks for an unique layer name.||
+||Description||_Sentence_. Asks for a unique layer name.||
 ||Default language||Please enter a unique layer name||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -82,7 +82,7 @@ Notes:
 <font color="Green">
 == invalidAttrValGiven ==
 </font>
-||Description||_Adjective_. State that a given value is not correct. Eg some text is given while a number is required.||
+||Description||_Adjective_. States that a given value is not correct. Eg some text is given while a number is required.||
 ||Default language||Invalid value given||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -146,7 +146,7 @@ Notes:
 <font color="Green">
 == ok ==
 </font>
-||Description||_Noun_. Execute the action and commit the changes that have been made.||
+||Description||_Noun_. Executes the action and commits the changes that have been made.||
 ||Default language||OK||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -162,7 +162,7 @@ Notes:
 <font color="Green">
 == pathNodeTooltip == 
 </font>
-||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the shape. The point can also be dubbel clicked, which will change the matching line type.||
+||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the shape. The point can also be double-clicked, which will change the matching line type.||
 ||Default language||Drag node to move it. Double-click node to change segment type||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -170,7 +170,7 @@ Notes:
 <font color="Green">
 == !QerrorsRevertToSource ==
 </font>
-||Description||_Sentence_. States that there where errors while parsing the manually given SVG source code. Asks if it should go back to the original code.||
+||Description||_Sentence_. States that there were errors while parsing the manually given SVG source code. Asks if it should go back to the original code.||
 ||Default language||There were parsing errors in your SVG source.\nRevert back to original SVG source?||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -195,7 +195,7 @@ Notes:
 == !QwantToClear ==
 </font>
 ||Description||_Sentence_. Verifies if the entire drawing, including the undo history, should be discarded.||
-||Default language||you want to clear the drawing?\nThis will also erase your undo history!||
+||Default language||Do you want to clear the drawing?\nThis will also erase your undo history!||
 ||In use since||2.4||
 ||Obsolete since||-||
 
