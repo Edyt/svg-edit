@@ -2,7 +2,7 @@
 
 Under construction
 
-http://imgh.us/SVG-edit_Languages.svg shows the status of translations for each SVG-edit language file.<br/>
+[http://imgh.us/SVG-edit_Languages.svg http://imgh.us/SVG-edit_Languages.jpg] shows the status of translations for each SVG-edit language file.<br/>
 [TranslationGuidelines#Introduction Introduction] Explanation of this document.<br/>
 [TranslationGuidelines#JavaScript_strings_(js_strings) js_strings] Describes the !JavaScript strings.<br/>
 [TranslationGuidelines#IDs_Details IDs Details] Describes the IDs.
