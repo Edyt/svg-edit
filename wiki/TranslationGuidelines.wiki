@@ -19,6 +19,8 @@ This page lists the existing IDs in the language files, and explains what they "
 
 There is also a block of !JavaScript strings, at the end of each language file. Their second part needs to be translated.
 
+The current available languages files can be found [http://code.google.com/p/svg-edit/source/browse/#svn/trunk/editor/locale here]. Click on the language file you want, then select "View Raw file" to display the file and save it as a .js file that you can edit.
+
 Notes:
   * a '%string' is a value and must not be translated. Ex: '%s'.
   * \n inside a long line:<br>
