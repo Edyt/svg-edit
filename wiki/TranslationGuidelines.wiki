@@ -720,7 +720,7 @@ Notes:
 == sidepanel_handle ==
 </font>
 ||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel, then, L a y e r s.||
-||Default language||Drag left/right to resize side panel '[X]'||
+||Default language||Drag left/right to resize side panel '['X]||
 ||Default language||L a y e r s||
 ||In use since||2.4||
 ||Obsolete since||-||
