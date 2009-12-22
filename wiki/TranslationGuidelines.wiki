@@ -720,7 +720,7 @@ Notes:
 == sidepanel_handle ==
 </font>
 ||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel, then, L a y e r s.||
-||Default language||Drag left/right to resize side panel `[X]`||
+||Default language||Drag left/right to resize side panel||
 ||Default language||L a y e r s||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -913,7 +913,7 @@ Notes:
 == tool_bold ==
 </font>
 ||Description||_Adjective_. Bold text||
-||Default language||Bold Text `[B]`||
+||Default language||Bold Text||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -929,7 +929,7 @@ Notes:
 == tool_clear ==
 </font>
 ||Description||_Adjective_. New Image||
-||Default language||New Image `[N]`||
+||Default language||New Image||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -937,7 +937,7 @@ Notes:
 == tool_clone ==
 </font>
 ||Description||_Verb_. To clone an element||
-||Default language||Clone Element `[C]`||
+||Default language||Clone Element||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -945,7 +945,7 @@ Notes:
 == tool_clone_multi ==
 </font>
 ||Description||_Verb_. To clone elements||
-||Default language||Clone Elements `[C]`||
+||Default language||Clone Elements||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -953,7 +953,7 @@ Notes:
 == tool_delete ==
 </font>
 ||Description||_Verb_. To delete an element||
-||Default language||Delete Element `[Delete/Backspace]`||
+||Default language||Delete Element||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -961,7 +961,7 @@ Notes:
 == tool_delete_multi ==
 </font>
 ||Description||_Verb_. To delete selected elements||
-||Default language||Delete Selected Elements `[Delete/Backspace]`||
+||Default language||Delete Selected Elements||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -969,7 +969,7 @@ Notes:
 == tool_docprops ==
 </font>
 ||Description||_Noun_. The document properties||
-||Default language||Document Properties `[I]`||
+||Default language||Document Properties||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1009,7 +1009,7 @@ Notes:
 == tool_fhpath ==
 </font>
 ||Description||_Noun_. Pencil tool||
-||Default language||Pencil Tool `[2]`||
+||Default language||Pencil Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1025,7 +1025,7 @@ Notes:
 == tool_group ==
 </font>
 ||Description||_Verb_. To group elements||
-||Default language||Group Elements `[G]`||
+||Default language||Group Elements||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1033,7 +1033,7 @@ Notes:
 == tool_image ==
 </font>
 ||Description||_Noun_. Image tool||
-||Default language||Image Tool `[8]`||
+||Default language||Image Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1041,7 +1041,7 @@ Notes:
 == tool_italic ==
 </font>
 ||Description||_Adjective_. Italic text||
-||Default language||Italic Text `[I]`||
+||Default language||Italic Text||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1049,7 +1049,7 @@ Notes:
 == tool_line ==
 </font>
 ||Description||_Noun_. Line tool||
-||Default language||Line Tool `[3]`||
+||Default language||Line Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1057,7 +1057,7 @@ Notes:
 == tool_move_bottom ==
 </font>
 ||Description||_Verb_. To move (the selected element) to the bottom||
-||Default language||Move to Bottom `[Shift+Down]`||
+||Default language||Move to Bottom||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1065,7 +1065,7 @@ Notes:
 == tool_move_top ==
 </font>
 ||Description||_Verb_. To move (the selected element) to the top||
-||Default language||Move to Top `[Shift+Up]`||
+||Default language||Move to Top||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1097,17 +1097,17 @@ Notes:
 == tool_open ==
 </font>
 ||Description||_Verb_. To open an image||
-||Default language||Open Image `[O]`||
+||Default language||Open Image||
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="green">
+<font color="Orange">
 == tool_path ==
 </font>
 ||Description||_Noun_. Path tool||
 ||Default language||Path Tool `[7]`||
-||In use since||2.4||
-||Obsolete since||-||
+||In use since||2.3||
+||Obsolete since||2.4||
 
 <font color="green">
 == tool_rect ==
@@ -1121,7 +1121,7 @@ Notes:
 == tool_redo ==
 </font>
 ||Description||_Verb_. To redo||
-||Default language||Redo `[Y]`||
+||Default language||Redo||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1137,7 +1137,7 @@ Notes:
 == tool_save ==
 </font>
 ||Description||_Verb_. To save the image||
-||Default language||Save Image `[S]`||
+||Default language||Save Image||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1145,7 +1145,7 @@ Notes:
 == tool_select ==
 </font>
 ||Description||_Noun_. Select (selection) tool||
-||Default language||Select Tool `[1]`||
+||Default language||Select Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1153,7 +1153,7 @@ Notes:
 == tool_source ==
 </font>
 ||Description||_Verb_. To edit the source (opens the source editor)||
-||Default language||Edit Source `[U]`||
+||Default language||Edit Source||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1185,7 +1185,7 @@ Notes:
 == tool_text ==
 </font>
 ||Description||_Noun_. Text tool||
-||Default language||Text Tool `[6]`||
+||Default language||Text Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1201,7 +1201,7 @@ Notes:
 == tool_undo ==
 </font>
 ||Description||_Verb_. To undo||
-||Default language||Undo `[Z]`||
+||Default language||Undo||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1209,7 +1209,7 @@ Notes:
 == tool_ungroup ==
 </font>
 ||Description||_Verb_. To ungroup elements (previously grouped)||
-||Default language||Ungroup Elements `[G]`||
+||Default language||Ungroup Elements||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1217,7 +1217,7 @@ Notes:
 == tool_wireframe ==
 </font>
 ||Description||_Noun_. Wireframe, outline mode (shows the outline of the elements, with no colors)||
-||Default language||Wireframe Mode `[F]`||
+||Default language||Wireframe Mode||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1225,7 +1225,7 @@ Notes:
 == tool_zoom ==
 </font>
 ||Description||_Noun_. Zoom tool||
-||Default language||Zoom Tool `[Ctrl+Up/Down]`||
+||Default language||Zoom Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1233,7 +1233,7 @@ Notes:
 == tools_ellipse_show ==
 </font>
 ||Description||_Noun_. Ellipse/Circle tool||
-||Default language||Ellipse/Circle Tool `[5/Shift+5]`||
+||Default language||Ellipse/Circle Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1241,7 +1241,7 @@ Notes:
 == tools_rect_show ==
 </font>
 ||Description||_Noun_. Square/Rectangle tool||
-||Default language||Square/Rect Tool `[4/Shift+4]`||
+||Default language||Square/Rect Tool||
 ||In use since||2.4||
 ||Obsolete since||-||
 
