@@ -1101,11 +1101,11 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Orange">
+<font color="green">
 == tool_path ==
 </font>
 ||Description||_Noun_. Path tool||
-||Default language||Path Tool `[7]`||
+||Default language||Path Tool||
 ||In use since||2.3||
 ||Obsolete since||2.4||
 
