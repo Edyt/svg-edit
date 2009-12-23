@@ -476,6 +476,23 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
+<font color="Orange">
+== image_x ==
+</font>
+||Description||_Verb_. To change the horizontal position of an image.||
+||Default language||Change image X coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
+
+<font color="Orange">
+== image_y ==
+</font>
+||Description||_Verb_. To change the vertical position of an image.||
+||Default language||Change image Y coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
+
+
 <font color="Green">
 == includedImages ==
 </font>
@@ -636,6 +653,22 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
+<font color="Orange">
+== rect_x ==
+</font>
+||Description||_Verb_. To change the horizontal position of a rectangle.||
+||Default language||Change rectangle X coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
+
+<font color="Orange">
+== rect_y ==
+</font>
+||Description||_Verb_. To change the vertical position of a rectangle.||
+||Default language||Change rectangle X coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
+
 <font color="green">
 == relativeToLabel ==
 </font>
@@ -784,7 +817,7 @@ Notes:
 <font color="green">
 == svginfo_change_background ==
 </font>
-||Description||_Noun_. The preferences of the editor.||
+||Description||_Noun_. The background color or image of the editor.||
 ||Default language||Editor Background||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -860,6 +893,23 @@ Notes:
 ||Default language||Change text contents||
 ||In use since||2.4||
 ||Obsolete since||-||
+
+<font color="Orange">
+== text_x ==
+</font>
+||Description||_Verb_. To change the horizontal position of a text element.||
+||Default language||Change text X coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
+
+<font color="Orange">
+== text_x ==
+</font>
+||Description||_Verb_. To change the vertical position of a text element.||
+||Default language||Change text Y coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
+
 
 <font color="green">
 == tool_alignbottom ==
@@ -984,7 +1034,7 @@ Notes:
 <font color="green">
 == tool_docprops_save ==
 </font>
-||Description||_Noun_. OK (does not mean "Save")||
+||Description||_Noun_. OK *(does not mean "Save")*||
 ||Default language||OK||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -1168,7 +1218,7 @@ Notes:
 <font color="green">
 == tool_source_save ==
 </font>
-||Description||_Verb_. (to) Apply changes, accept changes.||
+||Description||_Verb_. (to) Apply changes, accept changes. *(does not mean "Save")*||
 ||Default language||Apply Changes||
 ||In use since||2.4||
 ||Obsolete since||-||
