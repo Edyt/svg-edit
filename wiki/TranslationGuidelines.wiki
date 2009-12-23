@@ -558,12 +558,20 @@ Notes:
 ||Obsolete since||-||
 
 <font color="green">
-== layersLable ==
+== layersLabel ==
 </font>
 ||Description||_Noun_. The layers.||
 ||Default language||Layers:||
 ||In use since||2.4||
 ||Obsolete since||-||
+
+<font color="Orange">
+== layersLable ==
+</font>
+||Description||_Noun_. The layers.||
+||Default language||Layers:||
+||In use since||2.4||
+||Obsolete since||2.4||
 
 <font color="green">
 == line_x1 ==
