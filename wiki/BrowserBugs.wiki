@@ -56,6 +56,16 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* Yes, we traverse through the original XML and copy the correct attribute values whenever necessary.
 
+=== Group bbox not correct when contents have moved ===
+
+*Problem:* Calling getBBox() on a bounding box whose contents have moved results in an incorrect bbox.  The returned bbox is the union of the bbox before the elements moved and the region after the elements moved.
+
+*Version(s):* 10.10 on OSX and Ubuntu (at least)
+
+*Bug report:* Unknown
+
+*Workaround in SVG-edit:* None yet known.  This causes Issue 374.
+
 == Webkit ==
 
 === Path Segments and Points Normalized ===
