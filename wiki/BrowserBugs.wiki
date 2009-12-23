@@ -62,7 +62,7 @@ Other bugs related to Bug 309782:
 
 *Version(s):* 10.10 on OSX and Ubuntu (at least)
 
-*Bug report:* Unknown
+*Bug report:* DSK-274511
 
 *Workaround in SVG-edit:* None yet known.  This causes Issue 374.
 
