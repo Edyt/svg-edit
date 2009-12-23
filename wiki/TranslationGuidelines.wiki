@@ -903,7 +903,7 @@ Notes:
 ||Obsolete since||2.4||
 
 <font color="Orange">
-== text_x ==
+== text_y ==
 </font>
 ||Description||_Verb_. To change the vertical position of a text element.||
 ||Default language||Change text Y coordinate ||
@@ -1154,8 +1154,16 @@ Notes:
 <font color="green">
 == tool_path ==
 </font>
-||Description||_Noun_. Path tool||
+||Description||_Noun_. Path tool. The chosen word musn't mean Polygon.||
 ||Default language||Path Tool||
+||In use since||2.3||
+||Obsolete since||2.4||
+
+<font color="Orange">
+== tool_poly ==
+</font>
+||Description||_Noun_. Polygon tool||
+||Default language||Polygon Tool||
 ||In use since||2.3||
 ||Obsolete since||2.4||
 
