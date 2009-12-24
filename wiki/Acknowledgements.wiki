@@ -30,6 +30,10 @@ We use [http://jqueryui.com/ jQuery-UI] for making the color picker draggable.
 
 George Adamson's [http://www.softwareunity.com/jquery/JQuerySpinBtn/ Web Spin-Button] provided a starting point to implementing a cross-browser spin control in SVG-edit.  A few bugs were fixed with compatibility and sent back to George for hopeful inclusion in the next version of his jQuery plugin.
 
+== SVG Icon Loader ==
+
+Alexis Daveria's [http://code.google.com/p/svg-icon-loader/ svg-icon-loader] is used to load in all the SVG icons for the SVG-edit user interface.
+
 == Icons ==
 
-Most of the icons used in SVG-edit come from the [http://tango.freedesktop.org/Tango_Desktop_Project Tango Desktop Project] which are released into the public domain.  We use a couple of icons from the [http://famfamfam.com/lab/icons/silk/ Silk Icon Project], which is licensed under the Creative Commons Attribution 2.5 License.
+Many of the icons used in SVG-edit come from the [http://tango.freedesktop.org/Tango_Desktop_Project Tango Desktop Project] which are released into the public domain.  We also used a couple of icons from the [http://famfamfam.com/lab/icons/silk/ Silk Icon Project], which is licensed under the Creative Commons Attribution 2.5 License.  Finally, some of the icons were hand-drawn (in SVG-edit itself).
