@@ -20,7 +20,7 @@ Jeff Schiller created the excellent [http://jgraduate.googlecode.com jGraduate] 
 
 == jQuery UI ==
 
-We use [http://jqueryui.com/ jQuery-UI] for making the dialog boxes (color picker, document properties) draggable.
+We use [http://jqueryui.com/ jQuery-UI] for making the dialog boxes (color picker, document properties) draggable, as well as for the opacity slider.
 
 == js-hotkeys ==
 
