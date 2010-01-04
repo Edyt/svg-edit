@@ -51,13 +51,13 @@ If bugs are encountered with a released version, those fixes must be merged to b
 For big experimental features, you may want to branch the repository to separate your work from the trunk.  A branch in SVN is just a copy:
 
 {{{
-svn copy http://svg-edit.googlecode.com/svn/trunk/ http://svg-edit.googlecode.com/svn/branches/rotate-selector -m "Making a branch for..."
+svn copy https://svg-edit.googlecode.com/svn/trunk/ https://svg-edit.googlecode.com/svn/branches/rotate-selector -m "Making a branch for..."
 }}}
 
 This will create the branch on the server.  Then you can check it out as a working copy:
 
 {{{
-svn co http://svg-edit.googlecode.com/svn/branches/rotate-selector/ svg-edit-rotater
+svn co https://svg-edit.googlecode.com/svn/branches/rotate-selector/ svg-edit-rotater
 }}}
 
 Then hack away in the 'svg-edit-rotater' folder and freely check in your changes (these will only be updating the rotate-selector branch in the repository.  You can share your changes, have them reviewed, etc.
