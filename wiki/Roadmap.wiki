@@ -11,7 +11,6 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
 = Version 2.4 ([http://en.wikipedia.org/wiki/Arbelos Arbelos]) =
 == Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.4 full list], [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.4 left-to-do])
- * [http://code.google.com/p/svg-edit/issues/detail?id=76 Distribute Tools]
 == Completed Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=57 Raster Images]
  * [http://code.google.com/p/svg-edit/issues/detail?id=119 Select Non-Adjacent Elements]
