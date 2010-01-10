@@ -15,6 +15,7 @@ This page describes past versions of svg-edit.  For the future, see the [Roadmap
  * [http://code.google.com/p/svg-edit/issues/detail?id=64 UI Localization]
  * [http://code.google.com/p/svg-edit/issues/detail?id=106 Wireframe Mode]
  * [http://code.google.com/p/svg-edit/issues/detail?id=39 Change Background]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=68 Convert Shapes to Path]
 == Release Date ==
  * Jan 11th, 2010
 == Demo ==
