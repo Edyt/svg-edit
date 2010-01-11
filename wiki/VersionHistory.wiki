@@ -20,6 +20,64 @@ This page describes past versions of svg-edit.  For the future, see the [Roadmap
  * Jan 11th, 2010
 == Demo ==
  * http://svg-edit.googlecode.com/svn/branches/2.4/editor/svg-editor.html
+== Full Release Notes ==
+=== New SVG support ===
+	
+	* Raster Images
+		  * Raster images (PNGs, JPEGs, etc) can now be added and where possible can be entirely embedded in the SVG file.
+	* Group elements
+		  * Elements can be added into a group, and each group can be transformed like any other element. Any groups can also be ungrouped.
+	* Add/Remove path nodes
+		  * After a path has been created, nodes can now be added or removed.
+	* Curved Paths
+		  * After a path has been created, the straight segments (lines between nodes) can be turned into curved segments. Curves can be finely tuned by adjusting their control points.
+	* Floating point values for all attributes
+		  * Attribute values are no longer restricted to integers.
+	* Text fields for all attributes 
+		  * Attributes values are no longer limited to those given in dropdown lists, any (valid) value can now be entered.
+	* Title element
+		  * Images and layer groups can now be given a title.
+
+
+=== New Interface features ===
+
+	* Zoom
+		  * The canvas can now be zoomed in or out using a variety of methods:
+				* Using the up/down buttons on the zoom spinner tool in the bottom-left corner
+				* Using the dropdown button next to the zoom spinner tool (includes several "Fit to..." options)
+				* Clicking on the magnifier icon to draw a zoom box, or just click/shift-click on an area to zoom in/out
+				* Double-click tho magnifier icon to return to 100% zoom
+				* Hold the shift key and use the scroll wheel on your mouse to zoom in/out on the area the cursor is on
+	* Layers
+		  * Using the panel on the right (click or drag the "Layers" handle), additional layers can be created. Layers can be shown/hidden by clicking on the eye icon, and re-arranged by using the up and down buttons. To move one or more elements to another layer: select the elements, then choose the destination layer from the dropdown list under the layer list.
+	* UI Localization
+		  * In addition to English, there are now several language options available for the SVG-Edit interface. When loaded for the first time, SVG-Edit will automatically switch to the language the browser has been set to. Else it will use the language specified in the Document Properties interface. Current supported languages are:
+				* Czech
+				* Dutch
+				* Farsi
+				* French
+				* German
+				* Romanian
+				* Slovak
+				* Spanish
+	* Wireframe Mode
+		  * Clicking on the wireframe button (the outlined square and circle icon on the top panel) makes all shapes appear only as outlines, allowing shapes to be seen regardless of their position or opacity level.
+	* Resizable UI (SVG icons)
+		  * A dropdown list for the "Icon size" has been added in the Document Properties. This allows toolbars to be set at a smaller or larger size than the default. By using SVG, the icons will appear as intended at any size.
+	* Set background color and/or image (for tracing)
+		  * The default white background of the canvas can now be changed to a different color in the Document Properties. Additionally, a URL to an image can be given that can be used to trace over.
+	* Convert Shapes to Paths  
+		  * All shapes (except text and raster images) can now be converted to path elements by clicking on the "Convert to Path" icon in the context menu. This then allows the shapes to be modified by editing their nodes and segments.
+	* X, Y coordinates for all elements
+		  * Elements that do not actually have base x and y values can now be positioned using them anyway, based on the top-left coordinates of their bounding box.
+	* Draggable Dialog boxes
+		  * The color/gradient picker and other dialog boxes can now be dragged around.
+	* Select Non-Adjacent Elements
+		  * Previously selecting multiple elements was only possible by dragging, you can now select/deselect elements by shift-clicking them while in "select" mode.
+	* Fixed-ratio resize
+		  * While resizing elements, you can now hold the shift key to keep the width/height ratio the same.
+	* Automatic Tool Switching
+		  * After drawing an element, you will remain in the same mode you were in. However, if you simply click on another element, you will automatically go into "Select" mode.
 
 = Version 2.3 =
 == New Features Added ==
