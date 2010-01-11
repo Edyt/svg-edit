@@ -8,7 +8,7 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
  * http://en.wikipedia.org/wiki/List_of_curves
  * http://en.wikipedia.org/wiki/List_of_regular_polytopes
 
-= Version 2.5 =
+= Version 2.5 ([http://en.wikipedia.org/wiki/Bicorn Bicorn]) =
 == Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.5 full list])
 
