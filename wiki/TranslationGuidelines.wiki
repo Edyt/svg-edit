@@ -9,8 +9,9 @@ shows the status of translations for each SVG-edit language file.<br/>
 -----
 
 [TranslationGuidelines#Introduction Introduction] Explanation of this document.<br/>
-[TranslationGuidelines#JavaScript_strings_(js_strings) js_strings] Describes the !JavaScript strings.<br/>
-[TranslationGuidelines#IDs_Details IDs Details] Describes the IDs.
+[TranslationGuidelines#IDs_Details IDs Details] Describes the IDs.<br/>
+[TranslationGuidelines#JavaScript_strings_(js_strings) js_strings] Describes the !JavaScript strings.
+
 
 = Introduction =
 
@@ -25,7 +26,9 @@ There is also a block of !JavaScript strings, at the end of each language file. 
 
 The current available languages files can be found [http://code.google.com/p/svg-edit/source/browse/#svn/trunk/editor/locale here]. Click on the language file you want, then select "View Raw file" to display the file and save it as a .js file that you can edit.
 
-The translations can be attached to the [http://code.google.com/p/svg-edit/issues/detail?id=351 issue 351: Update all language files for SVG-Edit 2.4 Final] page.
+The translations can be attached to the [http://code.google.com/p/svg-edit/issues/detail?id=410 issue 410: Update more language files for SVG-edit Bicorn (and Arbelos)] page.
+
+This page is sorted in the same order as the language files themselves.
 
 Notes:
   * a '%string' is a value and must not be translated. Ex: '%s'.
@@ -34,179 +37,7 @@ Notes:
   \nwhich must not be translated. It may be moved<br>
   \ninto the sentences<br>
   \nfor verbose languages.
-  * References to shortcuts (numbers or words inside a pair of "[ ]" brackets still appearing in a language file do not need to be translated, and can be deleted from the line. 
-
------
-
-= !JavaScript strings (js_strings) =
-
-<font color="Green">
-== cancel == 
-</font>
-||Description||_Verb_. Cancels a given command and returns back to the state before that.||
-||Default language||Cancel||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== dupeLayerName ==
-</font>
-||Description||_Sentence_. Is displayed if a layer is created with a name of an already existing layer.||
-||Default language||There is already a layer named that!||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== enterNewImgURL ==
-</font>
-||Description||_Verb_. Lets you edit the URL of an inserted image.||
-||Default language||Enter the new image URL||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== enterNewLayerName ==
-</font>
-||Description||_Sentence_. Asks for a new layer name. A layer name identifies a layer.||
-||Default language||Please enter the new layer name||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== enterUniqueLayerName ==
-</font>
-||Description||_Sentence_. Asks for a unique layer name.||
-||Default language||Please enter a unique layer name||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== featNotSupported ==
-</font>
-||Description||_Noun_. States that a function is not supported.||
-||Default language||Feature not supported||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== invalidAttrValGiven ==
-</font>
-||Description||_Adjective_. States that a given value is not correct. Eg some text is given while a number is required.||
-||Default language||Invalid value given||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== key_backspace == 
-</font>
-||Description||_Noun_. Name of the keyboard key: backspace||
-||Default language||backspace||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== key_del ==
-</font>
-||Description||_Noun_. Name of the keyboard key: delete||
-||Default language||delete||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== key_down == 
-</font>
-||Description||_Noun_. Name of the keyboard key: down||
-||Default language||down||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== key_up == 
-</font>
-||Description||_Noun_. Name of the keyboard key: up||
-||Default language||up||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== layer ==
-</font>
-||Description||_Noun_. Gives the name for a layer. An image can have multiple layers that can group a number of elements.||
-||Default language||Layer||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== layerHasThatName ==
-</font>
-||Description||_Sentence_. States that the new layer name is the same as the old layer name.||
-||Default language||Layer already has that name||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== noContentToFitTo ==
-</font>
-||Description||_Sentence_. States that the command to resize the canvas to all content could not be executed, because there is no content.||
-||Default language||No content to fit to||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== ok ==
-</font>
-||Description||_Noun_. Executes the action and commits the changes that have been made.||
-||Default language||OK||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== pathCtrlPtTooltip ==
-</font>
-||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the curve of the matching line.||
-||Default language||Drag control point to adjust curve properties||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== pathNodeTooltip == 
-</font>
-||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the shape. The point can also be double-clicked, which will change the matching line type.||
-||Default language||Drag node to move it. Double-click node to change segment type||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== !QerrorsRevertToSource ==
-</font>
-||Description||_Sentence_. States that there were errors while parsing the manually given SVG source code. Asks if it should go back to the original code.||
-||Default language||There were parsing errors in your SVG source.\nRevert back to original SVG source?||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== !QignoreSourceChanges ==
-</font>
-||Description||_Sentence_. Verifies that the changes made to the SVG source code can be rolled back.||
-||Default language||Ignore changes made to SVG source?||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== !QmoveElemsToLayer ==
-</font>
-||Description||_Sentence_. Verifies that the selected items must be moved to another (already specified) layer. (_'%s' must not be translated or changed._)||
-||Default language||Move selected elements to layer '%s'?||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== !QwantToClear ==
-</font>
-||Description||_Sentence_. Verifies if the entire drawing, including the undo history, should be discarded.||
-||Default language||Do you want to clear the drawing?\nThis will also erase your undo history!||
-||In use since||2.4||
-||Obsolete since||-||
+  * References to shortcuts (numbers or words inside a pair of "[ ]" brackets still appearing in a language file must be deleted from the line. 
 
 -----
 
@@ -333,6 +164,14 @@ Notes:
 ||Obsolete since||-||
 
 <font color="Green">
+== fitToContent ==
+</font>
+||Description||_Adjective or past participle_. Adjusted to the content of the drawing, cropped.||
+||Default language||Fit to Content||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
 == fit_to_all ==
 </font>
 ||Description||_Verb_. To adjust the zoom level to include everything drawn in all layers.||
@@ -361,14 +200,6 @@ Notes:
 </font>
 ||Description||_Verb_. To adjust the zoom level to include all the selected objects.||
 ||Default language||Fit to selection||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== fitToContent ==
-</font>
-||Description||_Adjective or past participle_. Adjusted to the content of the drawing, cropped.||
-||Default language||Fit to Content||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -476,23 +307,6 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Orange">
-== image_x ==
-</font>
-||Description||_Verb_. To change the horizontal position of an image.||
-||Default language||Change image X coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
-
-<font color="Orange">
-== image_y ==
-</font>
-||Description||_Verb_. To change the vertical position of an image.||
-||Default language||Change image Y coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
-
-
 <font color="Green">
 == includedImages ==
 </font>
@@ -508,6 +322,22 @@ Notes:
 ||Default language||width:||
 ||In use since||2.4||
 ||Obsolete since||-||
+
+<font color="Orange">
+== image_x ==
+</font>
+||Description||_Verb_. To change the horizontal position of an image.||
+||Default language||Change image X coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
+
+<font color="Orange">
+== image_y ==
+</font>
+||Description||_Verb_. To change the vertical position of an image.||
+||Default language||Change image Y coordinate ||
+||In use since||2.4||
+||Obsolete since||2.4||
 
 <font color="Green">
 == largest_object ==
@@ -710,6 +540,30 @@ Notes:
 ||Obsolete since||-||
 
 <font color="green">
+== selLayerLabel ==
+</font>
+||Description||_Verb_. To move elements to (another layer):||
+||Default language||Move elements to:||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="green">
+== selLayerNames ==
+</font>
+||Description||_Verb_. To move selected elements to a different layer.||
+||Default language||Move selected elements to a different layer||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="green">
+== selectedPredefined ==
+</font>
+||Description||_Verb_. To select predifined values, for the canvas dimensions.||
+||Default language||Select predefined:||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="green">
 == selected_objects ==
 </font>
 ||Description||_Past participle_. Objects which are selected. ||
@@ -730,39 +584,6 @@ Notes:
 </font>
 ||Description||_Verb_. To change the vertical coordinate Y.||
 ||Default language||Change Y coordinate||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="green">
-== selectedPredefined ==
-</font>
-||Description||_Verb_. To select predifined values, for the canvas dimensions.||
-||Default language||Select predefined:||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="green">
-== selLayerLabel ==
-</font>
-||Description||_Verb_. To move elements to (another layer):||
-||Default language||Move elements to:||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="green">
-== selLayerNames ==
-</font>
-||Description||_Verb_. To move selected elements to a different layer.||
-||Default language||Move selected elements to a different layer||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="green">
-== sidepanel_handle ==
-</font>
-||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel, then, L a y e r s.||
-||Default language||Drag left/right to resize side panel||
-||Default language||L a y e r s||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1326,3 +1147,186 @@ Notes:
 ||Default language||zoom:||
 ||In use since||2.4||
 ||Obsolete since||-||
+
+<font color="green">
+== sidepanel_handle ==
+</font>
+||Description||_Verb_, then _Noun_. To drag left/right (in order) to resize the side panel, then, L a y e r s.||
+||Default language||Drag left/right to resize side panel||
+||Default language||L a y e r s||
+||In use since||2.4||
+||Obsolete since||-||
+
+-----
+
+= !JavaScript strings (js_strings) =
+
+<font color="Green">
+== !QerrorsRevertToSource ==
+</font>
+||Description||_Sentence_. States that there were errors while parsing the manually given SVG source code. Asks if it should go back to the original code.||
+||Default language||There were parsing errors in your SVG source.\nRevert back to original SVG source?||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== !QignoreSourceChanges ==
+</font>
+||Description||_Sentence_. Verifies that the changes made to the SVG source code can be rolled back.||
+||Default language||Ignore changes made to SVG source?||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== !QmoveElemsToLayer ==
+</font>
+||Description||_Sentence_. Verifies that the selected items must be moved to another (already specified) layer. (_'%s' must not be translated or changed._)||
+||Default language||Move selected elements to layer '%s'?||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== !QwantToClear ==
+</font>
+||Description||_Sentence_. Verifies if the entire drawing, including the undo history, should be discarded.||
+||Default language||Do you want to clear the drawing?\nThis will also erase your undo history!||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== cancel == 
+</font>
+||Description||_Verb_. Cancels a given command and returns back to the state before that.||
+||Default language||Cancel||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== dupeLayerName ==
+</font>
+||Description||_Sentence_. Is displayed if a layer is created with a name of an already existing layer.||
+||Default language||There is already a layer named that!||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== enterNewImgURL ==
+</font>
+||Description||_Verb_. Lets you edit the URL of an inserted image.||
+||Default language||Enter the new image URL||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== enterNewLayerName ==
+</font>
+||Description||_Sentence_. Asks for a new layer name. A layer name identifies a layer.||
+||Default language||Please enter the new layer name||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== enterUniqueLayerName ==
+</font>
+||Description||_Sentence_. Asks for a unique layer name.||
+||Default language||Please enter a unique layer name||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== featNotSupported ==
+</font>
+||Description||_Noun_. States that a function is not supported.||
+||Default language||Feature not supported||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== invalidAttrValGiven ==
+</font>
+||Description||_Adjective_. States that a given value is not correct. Eg some text is given while a number is required.||
+||Default language||Invalid value given||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== key_backspace == 
+</font>
+||Description||_Noun_. Name of the keyboard key: backspace||
+||Default language||backspace||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== key_del ==
+</font>
+||Description||_Noun_. Name of the keyboard key: delete||
+||Default language||delete||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== key_down == 
+</font>
+||Description||_Noun_. Name of the keyboard key: down||
+||Default language||down||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== key_up == 
+</font>
+||Description||_Noun_. Name of the keyboard key: up||
+||Default language||up||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== layer ==
+</font>
+||Description||_Noun_. Gives the name for a layer. An image can have multiple layers that can group a number of elements.||
+||Default language||Layer||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== layerHasThatName ==
+</font>
+||Description||_Sentence_. States that the new layer name is the same as the old layer name.||
+||Default language||Layer already has that name||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== noContentToFitTo ==
+</font>
+||Description||_Sentence_. States that the command to resize the canvas to all content could not be executed, because there is no content.||
+||Default language||No content to fit to||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== ok ==
+</font>
+||Description||_Noun_. Executes the action and commits the changes that have been made.||
+||Default language||OK||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== pathCtrlPtTooltip ==
+</font>
+||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the curve of the matching line.||
+||Default language||Drag control point to adjust curve properties||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== pathNodeTooltip == 
+</font>
+||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the shape. The point can also be double-clicked, which will change the matching line type.||
+||Default language||Drag node to move it. Double-click node to change segment type||
+||In use since||2.4||
+||Obsolete since||-||
+
+-----
