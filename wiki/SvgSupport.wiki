@@ -38,7 +38,7 @@ At this time, the following attributes cannot be edited in the user interface of
   * stroke-linecap
   * stroke-linejoin
   * stroke-miterlimit
-  * xlink:href on a <use> element
+  * xlink:href on a use element
 
 In addition, there is no way within jGraduate (the color picker used in SVG-edit) to:
 
