@@ -66,6 +66,12 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* None yet known.  This causes Issue 374.
 
+=== Does not support the W3C File API ===
+
+*Problem:* Cannot open local files in the browser version of SVG-edit in Opera.
+
+*Workaround:* Use the widget version.
+
 == Webkit ==
 
 === Path Segments and Points Normalized ===
@@ -108,6 +114,15 @@ Other bugs related to Bug 309782:
  * https://bugs.webkit.org/show_bug.cgi?id=31119
 
 *Workaround in SVG-edit:* Implement our own "shim" version of SVGTransformList
+
+=== Does not support the W3C File API ===
+
+*Problem:* Cannot open local files in browser-based version of SVG-edit
+
+*Bug Reports:*
+  * https://bugs.webkit.org/show_bug.cgi?id=32624
+
+*Workaround:* Copy contents of file and paste in via SVG-edit source editor
 
 = Missing SVG support desired in SVG-edit =
 
