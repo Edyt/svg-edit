@@ -27,6 +27,7 @@ Anything not listed here is not supported by SVG-edit and will be stripped out u
 || rect || height, rx, ry, width, x, y ||
 || text || font-size, font-family, font-style, font-weight, text-anchor, x, xml:space, y ||
 || title ||  ||
+|| use || height, width, x, xlink:href, y ||
 
 == Non-Editable Items ==
 
@@ -37,6 +38,7 @@ At this time, the following attributes cannot be edited in the user interface of
   * stroke-linecap
   * stroke-linejoin
   * stroke-miterlimit
+  * xlink:href on a <use> element
 
 In addition, there is no way within jGraduate (the color picker used in SVG-edit) to:
 
