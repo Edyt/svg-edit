@@ -11,6 +11,8 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
 = Version 2.5 ([http://en.wikipedia.org/wiki/Bicorn Bicorn]) =
 == Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.5 full list])
+== Proposed Release Date ==
+ * April 1st, 2010
 == Implemented Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=392 Open Local Files] (Firefox 3.6+ only)
  * [http://code.google.com/p/svg-edit/issues/detail?id=313 Main menu for svg-edit]
