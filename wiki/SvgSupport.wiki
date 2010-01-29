@@ -7,12 +7,14 @@ I apologize up-front for the poor format of this table, I blame the wiki markup 
 Anything not listed here is not supported by SVG-edit and will be stripped out upon import.  SVG-edit supports the following elements and attributes:
 
 || *Element* || *Attributes* ||
-|| *All Elements* || id, requiredFeatures, systemLanguage ||
+|| *All Elements* || filter, id, requiredFeatures, style, systemLanguage ||
 || *All Shapes* || fill, fill-opacity, fill-rule, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity, stroke-width, transform ||
 || circle || cx, cy, r ||
 || defs ||  ||
 || desc ||  ||
 || ellipse || cx, cy, rx, ry ||
+|| feGaussianBlur || stdDeviation
+|| filter || filterRes, filterUnits, height, primitiveUnits, width, x, xlink:href, y
 || g ||  ||
 || image || xlink:href, xlink:title ||
 || line || x1, x2, y1, y2 ||
