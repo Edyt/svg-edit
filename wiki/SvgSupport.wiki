@@ -13,8 +13,8 @@ Anything not listed here is not supported by SVG-edit and will be stripped out u
 || defs ||  ||
 || desc ||  ||
 || ellipse || cx, cy, rx, ry ||
-|| feGaussianBlur || stdDeviation
-|| filter || filterRes, filterUnits, height, primitiveUnits, width, x, xlink:href, y
+|| feGaussianBlur || stdDeviation ||
+|| filter || filterRes, filterUnits, height, primitiveUnits, width, x, xlink:href, y ||
 || g ||  ||
 || image || xlink:href, xlink:title ||
 || line || x1, x2, y1, y2 ||
