@@ -4,6 +4,7 @@
 
 Put all name ideas here:
 
+ * Savage Editor
  * Carve: from an [http://codedread.com/carve/ earlier project] by codedread
  * SViGgy (the friendly SVG editor) 
  (alternative spellings are possible, such as SViiGy, SViiGgy, SViiGee, etc.)
