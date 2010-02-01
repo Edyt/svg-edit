@@ -10,6 +10,14 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 == Firefox ==
 
+=== SVG Files in data: cannot reference elements internally ===
+
+If you click 'Save' in the browser-based editor, Firefox will show all gradients as black and all markers will be invisible.  This is because Firefox doesn't support fragment URIs within a data: URI.
+
+*Version(s):* 3.5-
+
+*Bug Report:* https://bugzilla.mozilla.org/show_bug.cgi?id=308590
+
 === Group Opacity has terrible performance ===
 
 *Problem:* When an image has many elements with the opacity attribute set to values less than 1.0, the image (and the editor) cause Firefox to become very slow.
