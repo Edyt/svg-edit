@@ -631,7 +631,7 @@ Notes:
 == stroke_width ==
 </font>
 ||Description||_Verb_. To change the width of the outline (exterior) of an element.||
-||Default language||Change stroke width||
+||Default language||Change stroke width by 1, shift-click to change by 0.1||
 ||In use since||2.4||
 ||Obsolete since||-||
 
@@ -1116,21 +1116,21 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="green">
+<font color="Orange">
 == tools_ellipse_show ==
 </font>
 ||Description||_Noun_. Ellipse/Circle tool||
 ||Default language||Ellipse/Circle Tool||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5 r1333||
 
-<font color="green">
+<font color="Orange">
 == tools_rect_show ==
 </font>
 ||Description||_Noun_. Square/Rectangle tool||
 ||Default language||Square/Rect Tool||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5 r1333||
 
 <font color="green">
 == zoom ==
