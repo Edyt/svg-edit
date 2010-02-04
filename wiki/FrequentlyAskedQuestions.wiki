@@ -22,7 +22,7 @@ A: Select an object. Shift+O will select the previous object Shift+P will select
 
 *Q: Can I trace over a raster (PNG, JPEG...) image?
 
-A: SVG-edit 2.4 features support for raster image elements and layers, so this is quite achievable using those two features.  Though SVG-edit 2.4 has not been released yet.
+A: SVG-edit 2.4 features support for raster image elements and layers, so this is quite achievable using those two features.
 
 If you are still using SVG-edit 2.3-, you can embed raster images You can if you have downloaded SVG-edit and run it from your computer. This will add an image as a background for the canvas, you'll get something like this:
 
