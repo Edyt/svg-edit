@@ -7,9 +7,10 @@ I apologize up-front for the poor format of this table, I blame the wiki markup 
 Anything not listed here is not supported by SVG-edit and will be stripped out upon import.  SVG-edit supports the following elements and attributes:
 
 || *Element* || *Attributes* ||
-|| *All Elements* || filter, id, requiredFeatures, style, systemLanguage ||
-|| *All Shapes* || fill, fill-opacity, fill-rule, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity, stroke-width, transform ||
+|| *All Elements* || class, filter, id, requiredFeatures, style, systemLanguage ||
+|| *All Shapes* || clip-path, fill, fill-opacity, fill-rule, marker-end, marker-mid, marker-start, pattern, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity, stroke-width, transform ||
 || circle || cx, cy, r ||
+|| clipPath || clipPathUnits ||
 || defs ||  ||
 || desc ||  ||
 || ellipse || cx, cy, rx, ry ||
@@ -19,15 +20,20 @@ Anything not listed here is not supported by SVG-edit and will be stripped out u
 || image || xlink:href, xlink:title ||
 || line || x1, x2, y1, y2 ||
 || linearGradient || gradientTransform, gradientUnits, spreadMethod, x1, x2, y1, y2 ||
+|| marker || markerHeight, markerUnits, markerWidth, orient, refX, refY ||
 || path || d ||
+|| pattern || height, patternContentUnits, patternTransform, patternUnits, width, x, xlink:href, y ||
 || polygon || points ||
 || polyline || points ||
 || radialGradient || cx, cy, fx, fy, gradientTransform, gradientUnits, r, spreadMethod ||
 || stop || offset, stop-color, stop-opacity ||
-|| svg || height, viewBox, width, xmlns, xmlns:xlink ||
+|| symbol || preserveAspectRatio, viewBox ||
+|| svg || height, preserveAspectRatio, viewBox, width, xmlns, xmlns:xlink ||
 || switch ||  ||
 || rect || height, rx, ry, width, x, y ||
 || text || font-size, font-family, font-style, font-weight, text-anchor, x, xml:space, y ||
+|| textPath || method, spacing, startOffset, xlink:href ||
+|| tspan || dx, dy, rotate, textLength, x, y
 || title ||  ||
 || use || height, width, x, xlink:href, y ||
 
