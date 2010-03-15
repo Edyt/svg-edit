@@ -1,0 +1,48 @@
+#summary Information on setting configuration options
+
+= Introduction =
+
+As of version 2.5 (currently still in alpha stage), SVG-Edit has several configuration settings that can be overridden either by adding URL parameters or by setting the options in JavaScript.
+
+== How to set the options ==
+
+Options can be set using svgEditor.setConfig(options), where "options" is an object literal of keys and values. This must be run _before_ the actual page or DOM is loaded, else it will have no effect.
+
+Example:
+
+{{{
+svgEditor.setConfig({
+	dimensions: [320, 240],
+	canvas_expansion: 5,
+	initFill: {
+		color: '0000FF'
+	}
+});
+}}}
+
+This will set the default width/height of the image, the size of the outside canvas, and the default "fill" color.
+
+The same options can be set in the URL like this:
+
+{{{
+.../svg-editor.html?dimensions=300,240&canvas_expansion=5&initFill[color]=0000FF
+}}}
+
+If options are set both using .setConfig() as well as in the URL, the URL value will be used.
+
+== Configurable options ==
+
+|| *Property* || *Description* || *Default* ||
+|| lang || Two-letter language code. The language must exist in the Editor Preferences langauge list || en ||
+|| bkgd_url || Background raster image URL. This image will fill the background of the document, useful for tracing purposes || (none) ||
+|| img_save || Defines whether included raster images should be saved as Data URIs when possible, or as URL references. Must be either 'embed' or 'ref' || embed ||
+|| dimensions || The default width/height of a new document. Use an array in setConfig (i.e. [800, 600]) and comma separated numbers in the URL || [640, 480] ||
+|| initFill`[`color`]` || The initial fill color. Must be a hex code string. || FF0000 ||
+|| initFill`[`opacity`]` || The initial fill opacity. Must be a number between 0 and 1 || 1 ||
+|| initStroke`[`color`]` || The initial stroke color. Must be a hex code. || 000000 ||
+|| initStroke`[`width`]` || The initial stroke width. Must be a positive number. || 5 ||
+|| initStroke`[`opacity`]` || The initial stroke opacity. Must be a number between 0 and 1 || 1 ||
+|| canvas_expansion || The minimum area visible outside the canvas, as a multiple of the image dimensions. The larger the number, the more one can scroll outside the canvas. || 3 ||
+|| show_outside_canvas || A boolean that defines whether or not elements outside the canvas should be visible || true ||
+|| iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || m ||
+|| bkgd_color || Canvas background color || #FFF (white) ||
