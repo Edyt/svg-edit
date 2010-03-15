@@ -36,7 +36,7 @@ If options are set both using .setConfig() as well as in the URL, the URL value 
 || lang || Two-letter language code. The language must exist in the Editor Preferences langauge list || en ||
 || bkgd_url || Background raster image URL. This image will fill the background of the document, useful for tracing purposes || (none) ||
 || img_save || Defines whether included raster images should be saved as Data URIs when possible, or as URL references. Must be either 'embed' or 'ref' || embed ||
-|| dimensions || The default width/height of a new document. Use an array in setConfig (i.e. [800, 600]) and comma separated numbers in the URL || [640, 480] ||
+|| dimensions || The default width/height of a new document. Use an array in setConfig (i.e. `[`800, 600`]`) and comma separated numbers in the URL || `[`640, 480`]` ||
 || initFill`[`color`]` || The initial fill color. Must be a hex code string. || FF0000 ||
 || initFill`[`opacity`]` || The initial fill opacity. Must be a number between 0 and 1 || 1 ||
 || initStroke`[`color`]` || The initial stroke color. Must be a hex code. || 000000 ||
