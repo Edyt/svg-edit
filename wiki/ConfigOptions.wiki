@@ -69,8 +69,10 @@ svgEditor.loadFromURL("images/logo.svg");
 
 Or as URL parameter:
 
+{{{
 // Data URI: 
 ?source=data:image/svg+xml;base64,...
 
 // Local URL:
 ?url=images/logo.svg
+}}}
