@@ -45,6 +45,8 @@ If options are set both using .setConfig() as well as in the URL, the URL value 
 || initTool || The initially selected tool. Must be either the ID of the button for the tool, or the ID without "tool_" prefix || select ||
 || imgPath || The path where the SVG icons are located, with trailing slash || images/ ||
 || langPath || The path where the language files are located, with trailing slash || locale/ ||
+|| extPath || The path used for extension files, with trailing slash || extensions/ ||
+|| extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that this list entirely overrides the default list, so the default extensions will not be included if not in the list. || `[`'ext-arrows.js','ext-connector.js'`]` ||
 || showlayers || Open the layers side-panel by default || false ||
 || wireframe || Start in wireframe mode || false ||
 || canvas_expansion || The minimum area visible outside the canvas, as a multiple of the image dimensions. The larger the number, the more one can scroll outside the canvas. || 3 ||
