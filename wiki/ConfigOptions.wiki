@@ -49,6 +49,7 @@ If options are set both using .setConfig() as well as in the URL, the URL value 
 || extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that this list entirely overrides the default list, so the default extensions will not be included if not in the list. || `[`'ext-arrows.js','ext-connector.js'`]` ||
 || showlayers || Open the layers side-panel by default || false ||
 || wireframe || Start in wireframe mode || false ||
+|| no_save_warning || A boolean that when true prevents the warning dialog box from appearing when closing/reloading the page. Mostly useful for testing. || false ||
 || canvas_expansion || The minimum area visible outside the canvas, as a multiple of the image dimensions. The larger the number, the more one can scroll outside the canvas. || 3 ||
 || show_outside_canvas || A boolean that defines whether or not elements outside the canvas should be visible || true ||
 || iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || m ||
