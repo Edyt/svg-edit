@@ -22,7 +22,7 @@ SVG-edit is a fast, web-based, Javascript-driven SVG editor that works in any mo
 
 *Remarks:*
 
-== codedread ==
+=== codedread's comments ===
 
 Pavol, I would recommend talking about the new features in 2.4, 2.5 (and if it is released prior to the conference, 2.6).  Also, I would recommend discussing some of the challenges so that browsers are more aware of them.  Please feel free to take comments from this list of challenges to weave them into your talk:
 
