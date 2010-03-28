@@ -1,0 +1,25 @@
+#summary SVG Open 2010
+
+= Info =
+
+8th International Conference on Scalable Vector Graphics
+August 30 to September 1, 2010
+Paris, France
+
+= Abstract =
+
+Paper title: SVG-edit
+
+Paper subtitle: A complete vector graphics editor in the browser
+
+Authors: Rusnak, Pavol
+
+Paper topic: Graphic Design with SVG -or- Interactivity and Scripting -or- SVG Authoring Tools and Techniques
+
+Abstract (400-800 words):
+
+SVG-edit is a fast, web-based, Javascript-driven SVG editor that works in any modern browser. It's built around open-source components like jQuery and itself is licensed under Apache License 2.0, so it's easy to embed into both non-commercial and commercial projects. ...
+
+Remarks:
+
+...
