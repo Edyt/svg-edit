@@ -1,0 +1,290 @@
+#summary Tutorial for creating extensions
+
+= Introduction =
+
+As of version 2.5 (currently still in alpha stage), SVG-Edit has support for extensions. This an (in-progress) guide for creating SVG-Edit plugins.
+
+== Basic format ==
+
+SVG-Edit plugins are standalone JavaScript files that can be either included in the HTML file or loaded using setConfig or through the URL (see ConfigOptions for usage).
+
+This is the general format for an extension:
+
+{{{
+svgEditor.addExtension("extensionName", function(methods) {
+	return extensionData;
+});
+}}}
+
+The first parameter (`extensionName`) is the unique name for this extension. 
+
+The second parameter is a function that supplies methods and variables from svgCanvas and can return an object that includes properties and functions related to the extension.
+
+The basic [file:///Network/Servers/concord.lan.newsargus.com/Volumes/ShareB/managers/adeveria/Desktop/Unsorted/svg-edit/editor/extensions/ext-helloworld.js Hello world extension] can be used as an example on how to create a basic extension. This extension adds a "mode" button to the bottom of the left panel that changes the mode, then shows a "Hello world" message whenever the canvas is clicked on. [http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html?extensions=ext-helloworld.js See extension in action].
+
+The basic structure of this plugin looks like this:
+
+{{{
+svgEditor.addExtension("Hello World", function() {
+	
+	return {
+		svgicons: "extensions/helloworld-icon.xml",
+		buttons: [{...}],
+		mouseDown: function() {
+			...
+		},
+		
+		mouseUp: function(opts) {
+			...
+		}
+	};
+});
+}}}
+
+Note how the returned properties include information on the buttons, as well as the functions that should be run when certain events take place.
+
+== Creating buttons ==
+
+Buttons can appear either in the mode panel (left panel) or the context panel (top panel, changes depending on selection). Their icons can either consist of SVG icons (recommended) or just raster images. 
+
+Each button is an object with the following properties:
+
+|| *Property* || *Description* || *Required?* ||
+|| id (string) || A unique identifier for this button. If SVG icons are used, this must match the ID used in the icon file. || Yes ||
+|| type (string) || Type of button. Must be either 'mode' or 'context' || Yes ||
+|| title (string) || The tooltip text that will appear when the user hovers over the icon || Yes ||
+|| icon (string) || The file path to the raster version of the icon. || Only if no svgicons is supplied ||
+|| panel (string) || The ID of the context panel to be included, if type is "context". || Only if type is "context" ||
+|| events (object) || DOM event names with associated functions. Example: `{'click': function() { alert('Button was clicked') }` } || Yes ||
+|| includeWith (object) || Object with flyout menu data (see following properties) || No || 
+|| includeWith`[`button`]` (string) || jQuery selector of the existing button to be joined. Example: `'#tool_line'` || Yes (if includeWith is used) ||
+|| includeWith`[`isDefault`]` (boolean) || Option indicating whether button is default in flyout list or not || No ||
+|| includeWith`[`position`]` (number) || Position of icon in flyout list, will be added to end if not indicated || No ||
+
+== Creating SVG icons ==
+
+The SVG-Edit project uses icons created using basic SVG (generally _using_ SVG-Edit as design tool), and extensions are encouraged to do so too. This allows the interface toolbars to be resized and icons to be reused at various sizes. If your extension uses multiple icons, they can all be stored in the same file. To specify icon file used, set the path under the extension's returned `svgicons` property.
+
+An SVG icon file is an XML document that consists of a root SVG element with child group elements (`<g></g>`). Each of these has an ID that should match the ID specified in the associated button object. Its content should be the SVG source of the icon. See the [http://svg-edit.googlecode.com/svn/trunk/editor/extensions/helloworld-icon.xml Hello World] icon as an example.
+
+For further information, see the [http://svg-icon-loader.googlecode.com/ SVG Icon Loader] project.
+
+
+== Creating context tools ==
+
+Context tools appear in the top toolbar whenever a certain type of element is selected.
+
+|| *Property* || *Description* || *Required?* ||
+|| panel (string) || The ID of the existing panel for the tool to be added to || Yes ||
+|| container_id (string) || The ID to be given to the tool's container element || No ||
+|| type (string) || The type of tool being added. Must be one of the following: 'tool_button', 'select', 'input' || Yes ||
+|| id (string) || The ID of the actual tool element || Yes ||
+|| events (object) || DOM event names with associated functions. Example: `{'change': function() { alert('Option was changed') }` } || Yes ||
+|| options (object) || List of options and their labels for select tools. Example: `{'1': 'One', '2': 'Two', 'all': 'All' } || Only for "select" tools ||
+|| defval (string) || Default value || No ||
+|| label (string) || Label associated with the tool, visible in the UI || No ||
+|| title (string) || The tooltip text that will appear when the user hovers over the tool || Yes ||
+|| size (number) || Value of the "size" attribute of the tool || No ||
+|| spindata (object) || When added to a tool of type "input", this tool becomes a "spinner" which allows the number to be in/decreased. For data required see [http://svg-edit.googlecode.com/svn/trunk/editor/spinbtn/JQuerySpinBtn.js The SpinButton script] || No ||
+
+== SVG-Edit events ==
+
+Most plugins will want to run functions when certain events are triggered. This is a list of the current events that can be hooked onto. All events are optional.
+
+|| *Event* || *Description* || *Parameters* || *Return value expected* ||
+|| mouseDown || The main (left) mouse button is held down on the canvas area || Supplies an object with these properties: evt (the event object), start_x (x coordinate on canvas), start_y (y coordinate on canvas), selectedElements (an array of the selected Elements) || An optional object with started: true to indicate that creating/editing has started ||
+|| mouseMove || The mouse is moved on the canvas area || Same as for mouseDown, but with a `selected` property that refers to the first selected element || None ||
+|| mouseUp || The main (left) mouse button is released (anywhere) || Same as for mousedown || An optional object with these properties: element (the element being affected), keep (boolean that indicates if the current element should be kept) started (boolean that indicates if editing should still be considered as "started") ||
+|| zoomChanged || The zoom level is changed || Supplies the new zoom level as a number (not percentage) || None ||
+|| selectedChanged || The element selection has changed (elements were added/removed from selection || Supplies an object with these properties: elems (array of the newly selected elements), selectedElement (the single selected element), multiselected (a boolean that indicates whether one or more elements was selected) || None ||
+|| elementChanged || One or more elements were changed || Array of the affected elements || None ||
+|| toolButtonStateUpdate || The bottom panel was updated || Object with these properties: nofill (boolean that indicates fill is disabled), nostroke (boolean that indicates stroke is disabled) || None ||
+|| langChanged || The language was changed || Two-letter code of the new language || None ||
+
+
+== Helper functions ==
+
+A variety of methods can be accessed within plugins. In the future, we hope to have them all properly documented, for now here is the current list of function/variable names.
+
+=== svgCanvas variables === 
+
+These are supplied in an object through the first parameter of the extension function (see "methods" variable in above example).
+
+|| *Name* || *Description* ||
+|| svgroot (element) || The workarea's root SVG element. NOT the root SVG element of the image being edited || 
+|| svgcontent (element) || The root SVG element of the image being edited ||
+|| nonce (number) || The unique identifier given to this image ||
+|| selectorManager (object) || The object that manages selection information ||
+
+
+=== svgCanvas private methods == 
+
+These are supplied in an object through the first parameter of the extension function (see "methods" variable in above example).
+
+|| *Name* || *Description* ||
+|| addCommandToHistory() || ||
+|| addGradient() || ||
+|| addSvgElementFromJson() || ||
+|| assignAttributes() || ||
+|| BatchCommand() || ||
+|| call() || ||
+|| ChangeElementCommand() || ||
+|| cleanupElement() || ||
+|| copyElem() || ||
+|| ffClone() || ||
+|| findDefs() || ||
+|| findDuplicateGradient() || ||
+|| fromXml() || ||
+|| getElem() || ||
+|| getId() || ||
+|| getIntersectionList() || ||
+|| getNextId() || ||
+|| getPathBBox() || ||
+|| getUrlFromAttr() || ||
+|| hasMatrixTransform() || ||
+|| identifyLayers() || ||
+|| InsertElementCommand() || ||
+|| isIdentity() || ||
+|| logMatrix() || ||
+|| matrixMultiply() || ||
+|| MoveElementCommand() || ||
+|| preventClickDefault() || ||
+|| recalculateAllSelectedDimensions() || ||
+|| recalculateDimensions() || ||
+|| remapElement() || ||
+|| RemoveElementCommand() || ||
+|| removeUnusedGrads() || ||
+|| resetUndoStack() || ||
+|| round() || ||
+|| runExtensions() || ||
+|| sanitizeSvg() || ||
+|| Selector() || ||
+|| SelectorManager() || ||
+|| shortFloat() || ||
+|| svgCanvasToString() || ||
+|| SVGEditTransformList() || ||
+|| svgToString() || ||
+|| toString() || ||
+|| toXml() || ||
+|| transformBox() || ||
+|| transformListToTransform() || ||
+|| transformPoint() || ||
+|| transformToObj() || ||
+|| walkTree() || ||
+
+=== svgCanvas public methods ===
+
+|| *Name* || *Description* ||
+|| addToSelection() || ||
+|| alignSelectedElements() || ||
+|| beginUndoableChange() || ||
+|| bind() || ||
+|| changeSelectedAttribute() || ||
+|| changeSelectedAttributeNoUndo() || ||
+|| clear() || ||
+|| clearSelection() || ||
+|| cloneSelectedElements() || ||
+|| convertToPath() || ||
+|| createLayer() || ||
+|| cycleElement() || ||
+|| deleteCurrentLayer() || ||
+|| deleteSelectedElements() || ||
+|| each() || ||
+|| embedImage() || ||
+|| finishUndoableChange() || ||
+|| fixOperaXML() || ||
+|| getBBox() || ||
+|| getBold() || ||
+|| getContentElem() || ||
+|| getCurrentLayer() || ||
+|| getEditorNS() || ||
+|| getFillColor() || ||
+|| getFillOpacity() || ||
+|| getFontFamily() || ||
+|| getFontSize() || ||
+|| getHistoryPosition() || ||
+|| getImageTitle() || ||
+|| getItalic() || ||
+|| getLayer() || ||
+|| getLayerOpacity() || ||
+|| getLayerVisibility() || ||
+|| getMode() || ||
+|| getNextRedoCommandText() || ||
+|| getNextUndoCommandText() || ||
+|| getNumLayers() || ||
+|| getOffset() || ||
+|| getOpacity() || ||
+|| getPrivateMethods() || ||
+|| getRedoStackSize() || ||
+|| getResolution() || ||
+|| getRootElem() || ||
+|| getRotationAngle() || ||
+|| getSelectedElems() || ||
+|| getStrokeColor() || ||
+|| getStrokeOpacity() || ||
+|| getStrokeStyle() || ||
+|| getStrokeWidth() || ||
+|| getStrokedBBox() || ||
+|| getSvgString() || ||
+|| getText() || ||
+|| getTransformList() || ||
+|| getUndoStackSize() || ||
+|| getUrlFromAttr() || ||
+|| getVersion() || ||
+|| getVisibleElements() || ||
+|| getZoom() || ||
+|| groupSelectedElements() || ||
+|| importSvgString() || ||
+|| isValidUnit() || ||
+|| linkControlPoints() || ||
+|| matrixMultiply() || ||
+|| moveSelectedElements() || ||
+|| moveSelectedToLayer() || ||
+|| moveToBottomSelectedElement() || ||
+|| moveToTopSelectedElement() || ||
+|| open() || ||
+|| randomizeIds() || ||
+|| ready() || ||
+|| redo() || ||
+|| removeFromSelection() || ||
+|| renameCurrentLayer() || ||
+|| runExtensions() || ||
+|| save() || ||
+|| selectAllInCurrentLayer() || ||
+|| setBBoxZoom() || ||
+|| setBackground() || ||
+|| setBold() || ||
+|| setConfig() || ||
+|| setCurrentLayer() || ||
+|| setCurrentLayerPosition() || ||
+|| setFillColor() || ||
+|| setFillOpacity() || ||
+|| setFillPaint() || ||
+|| setFontFamily() || ||
+|| setFontSize() || ||
+|| setIdPrefix() || ||
+|| setImageTitle() || ||
+|| setImageURL() || ||
+|| setItalic() || ||
+|| setLayerOpacity() || ||
+|| setLayerVisibility() || ||
+|| setMode() || ||
+|| setOpacity() || ||
+|| setRectRadius() || ||
+|| setResolution() || ||
+|| setRotationAngle() || ||
+|| setSegType() || ||
+|| setStrokeColor() || ||
+|| setStrokeOpacity() || ||
+|| setStrokePaint() || ||
+|| setStrokeStyle() || ||
+|| setStrokeWidth() || ||
+|| setSvgString() || ||
+|| setTextContent() || ||
+|| setUiStrings() || ||
+|| setZoom() || ||
+|| smoothControlPoints() || ||
+|| undo() || ||
+|| ungroupSelectedElement() || ||
+|| updateCanvas() || ||
+|| updateElementFromJson() || ||
