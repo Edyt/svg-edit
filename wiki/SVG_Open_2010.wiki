@@ -14,11 +14,11 @@ Paris, France
 
 *Authors:* Rusnak, Pavol
 
-*Paper topic:* Graphic Design with SVG -or- Interactivity and Scripting -or- SVG Authoring Tools and Techniques
+*Paper topic:* SVG Authoring Tools and Techniques
 
-*Abstract (400-800 words):*
+*Abstract:*
 
-SVG-edit is a fast, web-based, Javascript-driven SVG editor that works in any modern browser. It's built around open-source components like jQuery and itself is licensed under Apache License 2.0, so it's easy to embed into both non-commercial and commercial projects. ...
+SVG-edit is a fast, web-based, Javascript-driven SVG editor that works in any modern browser. It is inspired by Inkscape and despite its youth (slightly more than a year of development) already provides a good set of features to create advanced vector drawings. Open-source components like jQuery are used and SVG-edit itself is also licensed under a liberal Apache License 2.0, which makes it very easy to embed the editor in both commercial and non-commercial projects. The talk will focus on a short history plus overview of the project and the new features implemented in the last SVG-edit releases. We will mention various challenges we faced during the development and also describe the browser missing features which would make life a lot easier. We'll conclude the talk with a live demonstration of the editor and other projects that already use embedded SVG-edit.
 
 *Remarks:*
 
