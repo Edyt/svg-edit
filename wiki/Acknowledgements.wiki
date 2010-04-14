@@ -18,6 +18,10 @@ Christopher was gracious enough to take suggestions from Pavol on how to incorpo
 
 Jeff Schiller created the excellent [http://jgraduate.googlecode.com jGraduate] plugin to select SVG gradients in SVG-edit.
 
+== canvg ==
+
+Gabe Lerner's excellent [http://canvg.googlecode.com SVG-to-Canvas] library has helped us bypass browsers' inability to save SVG files an PNGs, by first rendering SVG images in an HTML5 Canvas element.
+
 == jQuery UI ==
 
 We use [http://jqueryui.com/ jQuery-UI] for making the dialog boxes (color picker, document properties) draggable, as well as for the opacity slider.
@@ -32,7 +36,7 @@ George Adamson's [http://www.softwareunity.com/jquery/JQuerySpinBtn/ Web Spin-Bu
 
 == SVG Icon Loader ==
 
-Alexis Daveria's [http://code.google.com/p/svg-icon-loader/ svg-icon-loader] is used to load in all the SVG icons for the SVG-edit user interface.
+Alexis Deveria's [http://code.google.com/p/svg-icon-loader/ svg-icon-loader] is used to load in all the SVG icons for the SVG-edit user interface.
 
 == Icons ==
 
