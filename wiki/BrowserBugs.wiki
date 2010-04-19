@@ -136,7 +136,7 @@ Other bugs related to Bug 309782:
 
 == Internet Explorer ==
 
-  * *Feature:* Native support of SVG, *Version(s):* All, *Workaround:* Use the Google Chrome Frame plugin
+  * *Feature:* Native support of SVG, *Version(s):* IE8-, *Workaround:* For all versions prior to IE9, use the Google Chrome Frame plugin.  For IE9, wait and see.
 
 == Firefox == 
 
