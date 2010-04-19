@@ -146,6 +146,6 @@ Other bugs related to Bug 309782:
 
 == Webkit ==
 
-  * *Feature:* SVG Filters, *Version(s):* All, *Workaround:* None
+  * *Feature:* SVG Filters, *Version(s):* Safari 4-, Chrome 4-, *Workaround:* Wait, SVG Filters are now implemented in the WebKit trunk
   * *Feature:* Save as SVG in Safari, *Version:* Windows, *Workaround:* None, https://bugs.webkit.org/show_bug.cgi?id=25265
   * *Feature:* Non-Scaling-Stroke, *Version(s):* All, *Workaround:* None, https://bugs.webkit.org/show_bug.cgi?id=31438
