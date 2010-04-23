@@ -12,7 +12,7 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
 == Proposed Features ==
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.5 full list], [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.5 left-to-do])
 == Proposed Release Date ==
- * April 30th, 2010
+ * Mid May 2010
 == Implemented Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=392 Open Local Files] (Firefox 3.6+ only)
  * [http://code.google.com/p/svg-edit/issues/detail?id=72 Import SVG into Drawing] (Firefox 3.6+ only)
