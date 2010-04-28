@@ -21,6 +21,10 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
  * [http://code.google.com/p/svg-edit/issues/detail?id=424 Base support for the svg:use element]
 
 
+= Version 2.6 (Currently Unnamed) =
+== Proposed Features ==
+
+
 = Future =
 == Proposed Features ==
 === Animation ===
