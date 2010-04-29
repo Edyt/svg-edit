@@ -51,21 +51,13 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Green">
-== angle ==
-</font>
-||Description||_Verb_. To change the angle of rotation applied to an object.||
-||Default language||Change rotation angle||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
+<font color="Red">
 == angleLabel ==
 </font>
 ||Description||_Noun_. The angle of rotation applied to an object.||
 ||Default language||angle:||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5||
 
 <font color="Green">
 == bkgnd_color ==
@@ -99,13 +91,29 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Green">
+<font color="Blue">
+== connector_no_arrow ==
+</font>
+||Description||_Noun_. Option indicating that the line should not have arrows.||
+||Default language||No arrow||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== copyrightLabel ==
+</font>
+||Description||_Sentence start_. Prefix to "SVG-edit" credit in bottom-right corner.||
+||Default language||Powered by||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Purple">
 == cornerRadiusLabel ==
 </font>
-||Description||_Noun_. Value of the radius of the corners, for a rectangle with rounded corners.||
-||Default language||Corner Radius:||
+||Description||_Verb_. Value of the radius of the corners, for a rectangle with rounded corners. Note: This text used to be "Corner Radius:" and was a label. As of 2.5 it refers to the tooltip text||
+||Default language||Change Rectangle Corner Radius||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||||
 
 <font color="Green">
 == curve_segments ==
@@ -155,13 +163,13 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Green">
+<font color="Red">
 == fill_tool_bottom ==
 </font>
 ||Description||_Noun_. The inner painting of an object.||
 ||Default language||fill:||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5||
 
 <font color="Green">
 == fitToContent ==
@@ -211,20 +219,12 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Green">
-== font_size ==
+<font color="Blue">
+== idLabel ==
 </font>
-||Description||_Verb_. To change the font size of a text element.||
-||Default language||Change Font Size||
-||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Green">
-== group_opacity ==
-</font>
-||Description||_Verb_. To change the opacity of selected items.||
-||Default language||Change selected item opacity||
-||In use since||2.4||
+||Description||_Verb_. To change the ID of an element.||
+||Default language||Identify the element||
+||In use since||2.5||
 ||Obsolete since||-||
 
 <font color="Green">
@@ -259,13 +259,13 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Green">
+<font color="Red">
 == iheightLabel ==
 </font>
 ||Description||_Noun_. Height.||
 ||Default language||height:||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5||
 
 <font color="Green">
 == image_height ==
@@ -315,29 +315,13 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Green">
+<font color="Red">
 == iwidthLabel ==
 </font>
 ||Description||_Noun_. Width.||
 ||Default language||width:||
 ||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Orange">
-== image_x ==
-</font>
-||Description||_Verb_. To change the horizontal position of an image.||
-||Default language||Change image X coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
-
-<font color="Orange">
-== image_y ==
-</font>
-||Description||_Verb_. To change the vertical position of an image.||
-||Default language||Change image Y coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
+||Obsolete since||2.5||
 
 <font color="Green">
 == largest_object ==
@@ -395,14 +379,6 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Orange">
-== layersLable ==
-</font>
-||Description||_Noun_. The layers.||
-||Default language||Layers:||
-||In use since||2.4||
-||Obsolete since||2.4||
-
 <font color="green">
 == line_x1 ==
 </font>
@@ -433,6 +409,70 @@ Notes:
 ||Description||_Verb_. To change the vertical coordinate y of the ending point, for a line.||
 ||Default language||Change line's ending y coordinate||
 ||In use since||2.4||
+||Obsolete since||-||
+
+<font color="blue">
+== linecap_butt ==
+</font>
+||Description||_Noun_. To made the end of a line stop exactly at its end coordinate.||
+||Default language||Linecap: Butt||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== linecap_round ==
+</font>
+||Description||_Noun_. To made the end of a line end rounded.||
+||Default language||Linecap: Round||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== linecap_round ==
+</font>
+||Description||_Noun_. To made the end of a line end square.||
+||Default language||Linecap: Square||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== linejoin_bevel ==
+</font>
+||Description||_Noun_. To make line joints use straight, cut off edges.||
+||Default language||Linejoin: Bevel||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== linejoin_miter ==
+</font>
+||Description||_Noun_. To make line joints use regular, usually pointy edges.||
+||Default language||Linejoin: Miter||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== linejoin_round ==
+</font>
+||Description||_Noun_. To make line joints use round edges.||
+||Default language||Linejoin: Round||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== main_icon ==
+</font>
+||Description||_Noun_. The main (application) menu.||
+||Default language||Main Menu||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== mode_connect ==
+</font>
+||Description||Verb. Option to connect two objects with a line.||
+||Default language||Connect two objects||
+||In use since||2.5||
 ||Obsolete since||-||
 
 <font color="green">
@@ -491,22 +531,6 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Orange">
-== rect_x ==
-</font>
-||Description||_Verb_. To change the horizontal position of a rectangle.||
-||Default language||Change rectangle X coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
-
-<font color="Orange">
-== rect_y ==
-</font>
-||Description||_Verb_. To change the vertical position of a rectangle.||
-||Default language||Change rectangle X coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
-
 <font color="green">
 == relativeToLabel ==
 </font>
@@ -515,21 +539,21 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="green">
+<font color="red">
 == rheightLabel ==
 </font>
 ||Description||_Noun_. Height.||
 ||Default language||height:||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5||
 
-<font color="green">
+<font color="red">
 == rwidthLabel ==
 </font>
 ||Description||_Noun_. Width.||
 ||Default language||width:||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5||
 
 <font color="green">
 == seg_type ==
@@ -619,13 +643,13 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="green">
+<font color="red">
 == stroke_tool_bottom ==
 </font>
 ||Description||_Noun_. The outline (exterior) of an element. This includes the color/opacity, the line thicknes and the line style (dashes and/or dots).||
 ||Default language||stroke:||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5||
 
 <font color="green">
 == stroke_width ==
@@ -723,22 +747,13 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
-<font color="Orange">
-== text_x ==
+<font color="blue">
+== toggle_stroke_tools ==
 </font>
-||Description||_Verb_. To change the horizontal position of a text element.||
-||Default language||Change text X coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
-
-<font color="Orange">
-== text_y ==
-</font>
-||Description||_Verb_. To change the vertical position of a text element.||
-||Default language||Change text Y coordinate ||
-||In use since||2.4||
-||Obsolete since||2.4||
-
+||Description||_Verb_. To show/hide the additional stroke tools||
+||Default language||Show/hide more stroke tools||
+||In use since||2.5||
+||Obsolete since||-||
 
 <font color="green">
 == tool_alignbottom ==
@@ -788,6 +803,22 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
+<font color="Green">
+== tool_angle (was: angle) ==
+</font>
+||Description||_Verb_. To change the angle of rotation applied to an object.||
+||Default language||Change rotation angle||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Green">
+== tool_blur ==
+</font>
+||Description||_Verb_. To change the gaussian blur value of an object.||
+||Default language||Change gaussian blur value||
+||In use since||2.5||
+||Obsolete since||-||
+
 <font color="green">
 == tool_bold ==
 </font>
@@ -799,7 +830,7 @@ Notes:
 <font color="green">
 == tool_circle ==
 </font>
-||Description||_Noun_. Circle.|
+||Description||_Noun_. Circle.||
 ||Default language||Circle||
 ||In use since||2.4||
 ||Obsolete since||-||
@@ -876,6 +907,22 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
+<font color="blue">
+== tool_export ==
+</font>
+||Description||_Verb_. To save the image as a PNG file||
+||Default language||Export as PNG||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== tool_eyedropper ==
+</font>
+||Description||_Verb_. Tool for copying the style from one element to another||
+||Default language||Eye Dropper Tool||
+||In use since||2.5||
+||Obsolete since||-||
+
 <font color="green">
 == tool_fhellipse ==
 </font>
@@ -900,6 +947,14 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
+<font color="Green">
+== tool_font_size (was: font_size) ==
+</font>
+||Description||_Verb_. To change the font size of a text element.||
+||Default language||Change Font Size||
+||In use since||2.4||
+||Obsolete since||-||
+
 <font color="green">
 == tool_group ==
 </font>
@@ -914,6 +969,30 @@ Notes:
 ||Description||_Noun_. Image tool||
 ||Default language||Image Tool||
 ||In use since||2.4||
+||Obsolete since||-||
+
+<font color="blue">
+== tool_import ==
+</font>
+||Description||_Verb_. To import an SVG file into the image.||
+||Default language||Import SVG||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Green">
+== tool_opacity (was: group_opacity) ==
+</font>
+||Description||_Verb_. To change the opacity of selected items.||
+||Default language||Change selected item opacity||
+||In use since||2.4||
+||Obsolete since||-||
+
+<font color="blue">
+== tool_openclose_path ==
+</font>
+||Description||_Verb_. To make a path or part of a path open or closed||
+||Default language||Open/close sub-path||
+||In use since||2.5||
 ||Obsolete since||-||
 
 <font color="green">
@@ -988,13 +1067,13 @@ Notes:
 ||In use since||2.3||
 ||Obsolete since||2.4||
 
-<font color="Orange">
-== tool_poly ==
+<font color="blue">
+== tool_position ==
 </font>
-||Description||_Noun_. Polygon tool||
-||Default language||Polygon Tool||
-||In use since||2.3||
-||Obsolete since||2.4||
+||Description||_Verb_. To align a single element in reference to the page||
+||Default language||Align Element to Page||
+||In use since||2.5||
+||Obsolete since||-||
 
 <font color="green">
 == tool_rect ==
@@ -1132,21 +1211,29 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||2.5 r1333||
 
-<font color="green">
-== zoom ==
+<font color="blue">
+== url_notice ==
+</font>
+||Description||_Sentence_. Notice given to indicate the raster image cannot be embedded and depends on the given path to appear||
+||Default language||NOTE: This image cannot be embedded. It will depend on this path to be displayed||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="blue">
+== zoom_panel (was: zoom) ==
 </font>
 ||Description||_Verb_. To change the zoom level||
 ||Default language||Change zoom level||
-||In use since||2.4||
+||In use since||2.5||
 ||Obsolete since||-||
 
-<font color="green">
+<font color="red">
 == zoomLabel ==
 </font>
 ||Description||_Noun_. Zoom:||
 ||Default language||zoom:||
 ||In use since||2.4||
-||Obsolete since||-||
+||Obsolete since||2.5||
 
 <font color="green">
 == sidepanel_handle ==
