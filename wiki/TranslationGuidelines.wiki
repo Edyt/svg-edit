@@ -2,10 +2,11 @@
 
 Under construction
 
+<wiki:comment>
 [http://imgh.us/SVG-edit_Languages.svg http://imgh.us/SVG-edit_Languages.jpg] 
 
 shows the status of translations for each SVG-edit language file.<br/>
-
+</wiki:comment>
 -----
 
 [TranslationGuidelines#Introduction Introduction] Explanation of this document.<br/>
@@ -1334,14 +1335,6 @@ Notes:
 ||Description||_Adjective_. States that a given value is not correct. Eg some text is given while a number is required.||
 ||Default language||Invalid value given||
 ||In use since||2.4||
-||Obsolete since||-||
-
-<font color="Blue">
-== enterNewImgURL ==
-</font>
-||Description||_Sentence_. Asks for a new image URL||
-||Default language||Enter the new image URL||
-||In use since||2.5||
 ||Obsolete since||-||
 
 <font color="Blue">
