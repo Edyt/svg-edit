@@ -1336,6 +1336,46 @@ Notes:
 ||In use since||2.4||
 ||Obsolete since||-||
 
+<font color="Blue">
+== enterNewImgURL ==
+</font>
+||Description||_Sentence_. Asks for a new image URL||
+||Default language||Enter the new image URL||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== defsFailOnSave ==
+</font>
+||Description||_Sentence_. Provides a message for Firefox users indicating that gradients, markers, etc will not appear as expected when saving. ||
+||Default language||NOTE: Due to a bug in your browser, this image may appear wrong (missing gradients or elements). It will however appear correct once actually saved.||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== loadingImage ==
+</font>
+||Description||_Sentence_. Text that briefly appears on the page when the "Export to PNG" option is chosen||
+||Default language||Loading image, please wait...||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== saveFromBrowser ==
+</font>
+||Description||_Sentence_. Text that appears in popup on the new window with a PNG/SVG (%s = PNG or SVG)||
+||Default language||Select \"Save As...\" in your browser to save this image as a %s file.||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== noteTheseIssues ==
+</font>
+||Description||_Sentence_. On "Export to PNG", the prefix text to indicate there are issues. ||
+||Default language||Also note the following issues: ||
+||In use since||2.5||
+||Obsolete since||-||
+
 <font color="Green">
 == key_backspace == 
 </font>
@@ -1414,6 +1454,46 @@ Notes:
 ||Description||_Verb_. States that the point that is being hovered can be dragged elsewhere. This will change the shape. The point can also be double-clicked, which will change the matching line type.||
 ||Default language||Drag node to move it. Double-click node to change segment type||
 ||In use since||2.4||
+||Obsolete since||-||
+
+<font color="Blue">
+== exportNoBlur ==
+</font>
+||Description||_Sentence_. Note that blur is not supported on PNG export ||
+||Default language||Blurred elements will appear as un-blurred||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== exportNoImage ==
+</font>
+||Description||_Sentence_. Note that Image elements are not supported on PNG export ||
+||Default language||Image elements will not appear||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== exportNoforeignObject ==
+</font>
+||Description||_Sentence_. Note that foreignObject elements are not supported on PNG export ||
+||Default language||foreignObject elements will not appear||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== exportNoDashArray ==
+</font>
+||Description||_Sentence_. Note that stroke-dasharray is not supported on PNG export (will appear as regular stroke instead) ||
+||Default language||Strokes will appear filled||
+||In use since||2.5||
+||Obsolete since||-||
+
+<font color="Blue">
+== exportNoText ==
+</font>
+||Description||_Sentence_. Note that text is not supported on PNG export (will only appear in browsers that don't support Canvas Text API)||
+||Default language||Text may not appear as expected||
+||In use since||2.5||
 ||Obsolete since||-||
 
 -----
