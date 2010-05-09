@@ -1,4 +1,6 @@
-#summary Brainstorm for possible rename of svg-edit project
+#summary OBSOLETE. Brainstorm for possible rename of svg-edit project
+
+*NOTE:* This page is obsolete now - the name is fixed at SVG-edit now.
 
 = Possible Names =
 
