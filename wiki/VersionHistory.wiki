@@ -4,6 +4,37 @@
 
 This page describes past versions of svg-edit.  For the future, see the [Roadmap].
 
+= Version 2.5 ([http://en.wikipedia.org/wiki/Bicorn Bicorn]) =
+== New Features ==
+
+ * [http://code.google.com/p/svg-edit/issues/detail?id=392 Open Local Files] (Firefox 3.6+ only)
+ * [http://code.google.com/p/svg-edit/issues/detail?id=72 Import SVG into Drawing] (Firefox 3.6+ only)
+ * [http://code.google.com/p/svg-edit/issues/detail?id=310 Ability to create extensions/plugins]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=313 Main menu and overal interface improvements]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=185 Create and select elements outside the canvas]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=424 Base support for the svg:use element]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=443 Add/Edit Sub-paths]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=277 Multiple path segment selection]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=298 Radial Gradient support] 
+ * [http://code.google.com/p/svg-edit/issues/detail?id=200 Connector lines]  
+ * [http://code.google.com/p/svg-edit/issues/detail?id=308 Arrows & Markers]  
+ * [http://code.google.com/p/svg-edit/issues/detail?id=341 Smoother freehand paths]
+ * Foreign markup support (ForeignObject/MathML)
+ * [http://code.google.com/p/svg-edit/issues/detail?id=427 Configurable options]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=65 File-loading options]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=115 Eye-dropper tool (copy element style)]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=440 Stroke linejoin and linecap options]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=70 Export to PNG]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=75 Blur tool]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=135 Page-align single elements]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=364 Inline text editing]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=520 Line draw snapping with Shift key]
+ 
+ == Release Date ==
+ * June 15th, 2010
+== Demo ==
+ * http://svg-edit.googlecode.com/svn/branches/2.5/editor/svg-editor.html
+
 = Version 2.4 ([http://en.wikipedia.org/wiki/Arbelos Arbelos]) =
 == New Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=57 Raster Images]
