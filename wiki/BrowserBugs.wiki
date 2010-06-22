@@ -44,36 +44,6 @@ Other bugs related to Bug 309782:
 
 == Opera ==
 
-=== Cloning elements with float values in attributes ===
-
-*Problem:* When an element is cloned using .cloneNode(), any attributes of the clone with a float value has its value changed to use a comma rather than a period (i.e. 5.5 becomes 5,5). The result is that the element has invalid attribute values and fails to render properly or at all.
-
-*Version(s):* 10/Win XP/Non-English locales
-
-*Bug report:* Unknown
-
-*Workaround in SVG-edit:* Yes, elements are cloned manually.
-
-=== Re-saving previously imported/saved SVG markup ===
-
-*Problem:* Since .importNode() is used to import/save the SVG markup entered in the source, the same problem occurs as with .cloneNode(). Any attributes of elements with float values have their value changed to use commas rather than periods (i.e. 5.5 becomes 5,5). The result is that these elements have invalid attribute values and fails to render properly or at all.
-
-*Version(s):* 10/Win XP/Non-English locales
-
-*Bug report:* Unknown
-
-*Workaround in SVG-edit:* Yes, we traverse through the original XML and copy the correct attribute values whenever necessary.
-
-=== Group bbox not correct when contents have moved ===
-
-*Problem:* Calling getBBox() on a bounding box whose contents have moved results in an incorrect bbox.  The returned bbox is the union of the bbox before the elements moved and the region after the elements moved.
-
-*Version(s):* 10.10 on OSX and Ubuntu (at least)
-
-*Bug report:* DSK-274511
-
-*Workaround in SVG-edit:* None yet known.  This causes Issue 374.
-
 === Does not support the W3C File API ===
 
 *Problem:* Cannot open local files in the browser version of SVG-edit in Opera.
