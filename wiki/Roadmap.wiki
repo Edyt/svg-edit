@@ -8,21 +8,15 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
  * http://en.wikipedia.org/wiki/List_of_curves
  * http://en.wikipedia.org/wiki/List_of_regular_polytopes
 
-= Version 2.5 ([http://en.wikipedia.org/wiki/Bicorn Bicorn]) =
+= Version 2.6 ([http://en.wikipedia.org/wiki/Cycloid Cycloid]) =
 == Proposed Features ==
- * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.5 full list], [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.5 left-to-do])
-== Proposed Release Date ==
- * Mid May 2010
+ * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.6 full list], [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.6 left-to-do])
+ * [http://code.google.com/p/svg-edit/issues/detail?id=541 Library of SVG objects]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=582 Basic Server-based tools for file opening/saving]
 == Implemented Features ==
- * [http://code.google.com/p/svg-edit/issues/detail?id=392 Open Local Files] (Firefox 3.6+ only)
- * [http://code.google.com/p/svg-edit/issues/detail?id=72 Import SVG into Drawing] (Firefox 3.6+ only)
- * [http://code.google.com/p/svg-edit/issues/detail?id=313 Main menu for svg-edit]
- * [http://code.google.com/p/svg-edit/issues/detail?id=185 Create and select elements outside the canvas]
- * [http://code.google.com/p/svg-edit/issues/detail?id=424 Base support for the svg:use element]
 
-
-= Version 2.6 (Currently Unnamed) =
-== Proposed Features ==
+== Proposed Release Date ==
+ * End 2010
 
 
 = Future =
