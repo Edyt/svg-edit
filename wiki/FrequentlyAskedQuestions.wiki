@@ -2,11 +2,12 @@
 
 *Q: Why doesn't svg-edit work in Internet Explorer?*
 
-A: SVG-edit only works in IE6+ if you have installed the [http://code.google.com/chrome/chromeframe/ Google Chrome Frame plugin].  At this time, Internet Explorer does not natively support Scalable Vector Graphics (SVG).  There are several other possibilities:
+A: SVG-edit only works in IE6+ if you have installed the [http://code.google.com/chrome/chromeframe/ Google Chrome Frame plugin]. Internet Explorer 8 and under do not natively support Scalable Vector Graphics (SVG), however the upcoming IE9 does. We plan on making sure SVG-edit will work in Internet Explorer 9 by the time it has been fully released. 
+
+In theory there are several other possibilities that could allow SVG-edit to work in IE:
   * someone gets it to work with the [http://svgweb.googlecode.com/ SVG Web] shim
   * someone gets it to work with IE and the Adobe SVG Viewer
   * someone gets it to work with another SVG plugin
-  * a future version of IE natively supports SVG
 
 *Q: How can I set the stroke to 'none'?
 
@@ -18,43 +19,18 @@ A: We have a list of [http://code.google.com/p/svg-edit/issues/list?can=1&q=labe
 
 *Q: How can I select an element when it's hidden or behind another one?
 
-A: Select an object. Shift+O will select the previous object Shift+P will select the next object
+A: Select an object. Shift+O will select the previous object Shift+P will select the next object. Using the wireframe mode may also help in seeing hidden objects.
 
 *Q: Can I trace over a raster (PNG, JPEG...) image?
 
-A: SVG-edit 2.4 features support for raster image elements and layers, so this is quite achievable using those two features.
+A: Yes, there are two methods you can use as of SVG-edit 2.4.
+1. Go to the Document Properties, and enter the URL of the image under "Editor Background". This image will then fill the background without being saved as part of the image.
 
-If you are still using SVG-edit 2.3-, you can embed raster images You can if you have downloaded SVG-edit and run it from your computer. This will add an image as a background for the canvas, you'll get something like this:
-
-http://svg-edit.googlecode.com/svn/wiki/images/svg-edit-background-image_thumb.jpg
-
-- Open the file svg-editor.css - Find the lines:
-
-#svg_editor #svgcanvas {
-  background-color: #FFFFFF;
-
-- Just below these lines, add:
-
-  background-image: url(file:///C:/Documents%20and%20Settings/XP/Mes%20documents/stuff/SVGeDrawings/my_own_image.jpg);
-
-or you can add the URL to an online image:
-
-  background-image: url(http://www.anything.com/...)
-
-Be careful that the file:///url must have the properly encoded format.
-
-You can specify more options, like:
-
-    background-repeat: no-repeat / repeat-x... etc. background-position: center center / top left / 20% 80%... 
-
-See http://www.w3.org/TR/css3-background/#the-background-image for details.
-
-- Save svg-editor.css and now open svg-editor.html with your browser.
-
+2. Add a layer from the layer panel. Then draw a raster image (image icon) and enter your URL. Use the layer above this one to trace over the image without moving. Note that you can also hide/show layers to help your work.
 
 * Q: How do I use the Wave Gadget? 
 
-A: Go to this wave wavesandbox.com!w+W7VzCLZk%A and there will be a button on the bottom that says "Install" and when you are editing things, you will see a SVG-edit icon in your toolbar that you can click to include the gadget into any blip.
+A: (Note that this information refers to the SVG-edit 2.3 Wave Gadget, it may be a bit out of date) Go to this wave wavesandbox.com!w+W7VzCLZk%A and there will be a button on the bottom that says "Install" and when you are editing things, you will see a SVG-edit icon in your toolbar that you can click to include the gadget into any blip.
 
 http://www.ubuntu-pics.de/bild/23571/screenshot_050_GM9b8K.png
 
@@ -67,12 +43,3 @@ A:
   * Hit "Ok" in the colorpicker
 
 The other objects will get the Fill or the Stroke of the first object.
-
-
-* Q: How come I'm not seeing the latest SVG-edit version when I access the [http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html online trunk version] in Firefox 3.5+ ?
-
-A: Between September 25, 2009 ( r715 ) and October 8, 2009 ( r783 ), we had experimented with the Offline resources features of HTML5, to allow SVG-edit to run offline. There was a cache manifest which asked for storing local files. 
-
-This was causing problems with Firefox 3.5+, so it was removed. Anyway, if you have visited the above URL and have items stored locally during this period, you might experience that the version you see still uses the outdated cache files.
-
-The solution is to delete the offline cache items - preferably with a Sqlite manager addon for Firefox, for instance [https://addons.mozilla.org/en-US/firefox/addon/5817 SQLite Manager].
