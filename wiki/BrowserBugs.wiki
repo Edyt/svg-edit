@@ -14,9 +14,21 @@ While working on SVG-edit, a number of SVG-related browser bugs were encountered
 
 If you click 'Save' in the browser-based editor, Firefox will show all gradients as black and all markers will be invisible.  This is because Firefox doesn't support fragment URIs within a data: URI.
 
-*Version(s):* 3.5-
+*Version(s):* 4.0-
 
 *Bug Report:* https://bugzilla.mozilla.org/show_bug.cgi?id=308590
+
+*Workaround in SVG-edit:* Not possible.
+
+=== Symbol elements cannot reference elements internally ===
+
+Importing an image with a symbol element that includes gradients results in all the gradient-filled elements being black. 
+
+*Version(s):* 4.0-
+
+*Bug Report:* https://bugzilla.mozilla.org/show_bug.cgi?id=353575
+
+*Workaround in SVG-edit:* None yet
 
 === Group Opacity has terrible performance ===
 
