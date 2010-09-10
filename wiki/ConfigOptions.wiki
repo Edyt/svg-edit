@@ -82,4 +82,4 @@ Or as URL parameter:
 ?url=images/logo.svg
 }}}
 
-*Note:* There is currently a bug that prevents data URIs ending with equals (=) characters prom being parsed. Removing these characters seem to allow the import to work as expected.
+*Note:* There is currently a bug that prevents data URIs ending with equals (=) characters from being parsed. Removing these characters seem to allow the import to work as expected.
