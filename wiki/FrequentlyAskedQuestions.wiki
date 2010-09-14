@@ -9,6 +9,12 @@ In theory there are several other possibilities that could allow SVG-edit to wor
   * someone gets it to work with IE and the Adobe SVG Viewer
   * someone gets it to work with another SVG plugin
 
+*Q: How can I make SVG-edit save files on my server?*
+
+A: As of SVG-edit 2.5.1, an extension is available that overrides the default open/save behavior and instead uses PHP files to allow proper open/save dialog boxes. You can include the extension by adding 'ext-server_opensave.js' to the curConfig.extension array in svg-editor.js or through other methods mentioned on our ConfigOptions page.
+
+For other server-saving behavior you'll want to modify `ext-server_opensave.js` or the `filesave.php` file, both available under `editor/extensions/` .
+
 *Q: How can I set the stroke to 'none'?
 
 A: Shift-clicking palette squares sets the Stroke paint value.  Thus, you can shift-click on the None box (red x on white background) to clear the Stroke paint.
@@ -31,8 +37,6 @@ A: Yes, there are two methods you can use as of SVG-edit 2.4.
 * Q: How do I use the Wave Gadget? 
 
 A: (Note that this information refers to the SVG-edit 2.3 Wave Gadget, it may be a bit out of date) Go to this wave wavesandbox.com!w+W7VzCLZk%A and there will be a button on the bottom that says "Install" and when you are editing things, you will see a SVG-edit icon in your toolbar that you can click to include the gadget into any blip.
-
-http://www.ubuntu-pics.de/bild/23571/screenshot_050_GM9b8K.png
 
 * Q: How do I copy the style of an object to other(s)?
 
