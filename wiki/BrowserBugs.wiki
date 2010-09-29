@@ -87,25 +87,25 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* Convert all paths to use absolute segments.
 
-=== Matrix Multiplication Incorrect ===
-
-*Problem:* WebKit does not multiply two SVGMatrix objects together properly.
-
-*Bug reports:*
- * https://bugs.webkit.org/show_bug.cgi?id=16062
-
-*Workaround in SVG-edit:* Do the matrix multiplication ourselves.
-
 === @transform value is unreliable ===
 
-*Problem:* WebKit changes the value of the @transform attribute just by accessing an element's SVGTransformList.
+*Problem:* WebKit fails to update the value of the @transform attribute after changes are made to its transformlist.
 
 *Bug reports:*
- * https://bugs.webkit.org/show_bug.cgi?id=31119
+ * None yet, related bug here: https://bugs.webkit.org/show_bug.cgi?id=31119
 
 *Workaround in SVG-edit:* Implement our own "shim" version of SVGTransformList
 
-=== Does not support the W3C File API ===
+=== Failure to detect camelCase elements ===
+
+*Problem:* WebKit is unable to detect elements like linearGradient using querySelectorAll or getElementsByTagName.
+
+*Bug reports:*
+ * https://bugs.webkit.org/show_bug.cgi?id=46800
+
+*Workaround in SVG-edit:* Search through all elements, then check their tagName value
+
+=== Does not support the W3C File API (Safari only)===
 
 *Problem:* Cannot open local files in browser-based version of SVG-edit
 
@@ -118,16 +118,16 @@ Other bugs related to Bug 309782:
 
 == Internet Explorer ==
 
-  * *Feature:* Native support of SVG, *Version(s):* IE8-, *Workaround:* For all versions prior to IE9, use the Google Chrome Frame plugin.  For IE9, wait and see.
+  * *Feature:* Native support of SVG, *Version(s):* IE8-, *Workaround:* For all versions prior to IE9, use the Google Chrome Frame plugin.  IE9 supported in SVG-edit 2.6
 
 == Firefox == 
 
   * *Feature:* SMIL (animation), *Version(s):* All, *Workaround:* None
   * *Feature:* SVG Text Selection, *Version(s):* All, *Workaround:* None
-  * *Feature:* Non-Scaling-Stroke, *Version(s):* All, *Workaround:* None, https://bugzilla.mozilla.org/show_bug.cgi?id=528332
+  * *Feature:* Non-Scaling-Stroke, *Version(s):* All, *Workaround:* Re-calculate stroke manually, https://bugzilla.mozilla.org/show_bug.cgi?id=528332
 
 == Webkit ==
 
-  * *Feature:* SVG Filters, *Version(s):* Safari 4-, Chrome 4-, *Workaround:* Wait, SVG Filters are now implemented in the WebKit trunk
+  * *Feature:* SVG Filters, *Version(s):* Safari 5-, Chrome 4-, *Workaround:* Wait, SVG Filters are now implemented in the WebKit trunk
   * *Feature:* Save as SVG in Safari, *Version:* Windows, *Workaround:* None, https://bugs.webkit.org/show_bug.cgi?id=25265
-  * *Feature:* Non-Scaling-Stroke, *Version(s):* All, *Workaround:* None, https://bugs.webkit.org/show_bug.cgi?id=31438
+  * *Feature:* Non-Scaling-Stroke, *Version(s):* Safari 5- *Workaround:* Re-calculate stroke manually, wait until Safari is updated (fixed in WebKit trunk)
