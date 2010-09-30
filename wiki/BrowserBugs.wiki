@@ -48,7 +48,7 @@ Other bugs related to Bug 309782:
 
 *Problem:* When a text element has a gradient set and is rotated, the individual glyphs are incorrectly repositioned.
 
-*Version(s):* 3.5/Mac 
+*Version(s):* All, but only on Mac OSX 10.5 (10.6 is fine)
 
 *Bug report:* https://bugzilla.mozilla.org/show_bug.cgi?id=519472
 
@@ -104,6 +104,17 @@ Other bugs related to Bug 309782:
  * https://bugs.webkit.org/show_bug.cgi?id=46800
 
 *Workaround in SVG-edit:* Search through all elements, then check their tagName value
+
+=== Data URL page cannot be saved ===
+
+*Problem:* When using the default save handler, the SVG image is opened in a new tab, but there is no method to save the file.
+
+*Version(s):* Chrome 5, 6
+
+*Bug reports:*
+ * http://code.google.com/p/chromium/issues/detail?id=46735
+
+*Workaround in SVG-edit:* Open the source editor instead, advising user to copy & paste from there
 
 === Does not support the W3C File API (Safari only)===
 
