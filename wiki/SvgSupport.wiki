@@ -9,6 +9,7 @@ Anything not listed here is not supported by SVG-edit and will be stripped out u
 || *Element* || *Attributes* ||
 || *All Elements* || class, filter, id, requiredFeatures, style, systemLanguage ||
 || *All Shapes* || clip-path, fill, fill-opacity, fill-rule, marker-end, marker-mid, marker-start, pattern, stroke, stroke-dasharray, stroke-dashoffset, stroke-linecap, stroke-linejoin, stroke-miterlimit, stroke-opacity, stroke-width, transform ||
+|| a || xlink:href ||
 || circle || cx, cy, r ||
 || clipPath || clipPathUnits ||
 || defs ||  ||
@@ -43,8 +44,6 @@ At this time, the following attributes cannot be edited in the user interface of
 
   * fill-rule
   * stroke-dashoffset
-  * stroke-linecap
-  * stroke-linejoin
   * stroke-miterlimit
   * xlink:href on a use element
 
