@@ -56,6 +56,8 @@ If options are set both using .setConfig() as well as in the URL, the URL value 
 || show_outside_canvas || A boolean that defines whether or not elements outside the canvas should be visible || true ||
 || iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || m ||
 || bkgd_color || Canvas background color || #FFF (white) ||
+|| showRulers || Initial state of ruler display (v2.6) || true ||
+|| selectNew || Initial state of option to automatically select objects after they are created (v2.6)|| true ||
 
 == Preload a file ==
 
