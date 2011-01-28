@@ -16,9 +16,30 @@ But now that I was in Narendra's shoes and the amount of code had gone up by an 
 
 I eventually worked things out such that code that had been refactored lived somewhere under the 'svgedit' global namespace.  For instance, browser.js introduces the following:
 
+{{{
 svgedit.browser.isOpera()
 svgedit.browser.isWebkit()
 svgedit.browser.isGecko()
 svgedit.browser.supportsSelectors()
 svgedit.browser.supportsPathReplaceItem()
-etc
+etc...
+}}}
+
+Here's a bullet-point summary of the state of affairs:
+
+  * Development versions of SVG-edit now have many `<script>` tags that load in all the JS modules.
+  * The dependencies between these files are currently maintained manually, the JS files must be loaded in the correct order
+  * Each new JS module has a corresponding test file under test/.  These will never be complete, just keep adding tests to them.
+  * You can (and should often) run all tests by going to http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
+  * The Makefile has been updated to compile all the JS modules using the Closure Compiler.  This collapses all the JS into one compiled file and reduces the number of GET requests back to a sane level for a release version of SVG-edit.
+
+*NOTE:* This is an *ongoing* effort.  It's not done, and I don't know if it will ever be done.  Currently svgcanvas.js is still around 9700 lines of code and occasionally growing.  My silly benchmark for this effort is to have every file browsable online in GoogleCode :)  Don't browse to svgcanvas.js in googlecode today.  My browser grinds to a halt.
+
+= TODOs =
+
+  * Finish moving layers functionality into the Drawing class
+  * Move current_group and context functionality into Drawing
+  * Move setSvgString() and importSvgString() into a module
+  * Move pathActions into its own module
+  * Determine how to convince the Closure Compiler to compile svgedit.browser.isOpera() into svgedit$browser$isOpera() so that it can also be optimized (reduces compiled file size and saves in run-time cost).
+  * ...
