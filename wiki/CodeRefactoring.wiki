@@ -14,7 +14,9 @@ I'll note that a call to split out JS functionality into separate files was made
 
 But now that I was in Narendra's shoes and the amount of code had gone up by an order of magnitude, I realized how important it was.  With this in mind, I set out to try and break apart the code a little bit.  Starting with r1817, I managed to split out some bits of code into a separate JS file.  My goal in the refactoring was to make incremental changes that carefully started to split apart the code but didn't introduce any new bugs.  I haven't been entirely successful in this, but there haven't been any major disasters, at least.
 
-I eventually worked things out such that code that had been refactored lived somewhere under the 'svgedit' global namespace.  For instance, browser.js introduces the following:
+I eventually worked things out such that code that had been refactored lived somewhere under the 'svgedit' global namespace.  The end goal is for everything to live under this namespace, but for now there are pieces that don't (svgEditor and svgCanvas).
+
+For instance, browser.js introduces the following:
 
 {{{
 svgedit.browser.isOpera()
@@ -33,7 +35,7 @@ Here's a bullet-point summary of the state of affairs:
   * You can (and should often) run all tests by going to http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
   * The Makefile has been updated to compile all the JS modules using the Closure Compiler.  This collapses all the JS into one compiled file and reduces the number of GET requests back to a sane level for a release version of SVG-edit.
 
-*NOTE:* This is an *ongoing* effort.  It's not done, and I don't know if it will ever be done.  Currently svgcanvas.js is still around 9700 lines of code and occasionally growing.  My silly benchmark for this effort is to have every file browsable online in GoogleCode :)  Don't browse to svgcanvas.js in googlecode today.  My browser grinds to a halt.
+*NOTE:* This is an *ongoing* effort.  It's not done, and I don't know if it will ever be done.  Currently svgcanvas.js is still around 9700 lines of code and occasionally growing.  My silly benchmark for this effort is to have every file browsable online in Google Code :)  Don't browse to svgcanvas.js in googlecode today.  My browser grinds to a halt.
 
 = TODOs =
 
@@ -41,5 +43,11 @@ Here's a bullet-point summary of the state of affairs:
   * Move current_group and context functionality into Drawing
   * Move setSvgString() and importSvgString() into a module
   * Move pathActions into its own module
+  * Regenerate API documentation
   * Determine how to convince the Closure Compiler to compile svgedit.browser.isOpera() into svgedit$browser$isOpera() so that it can also be optimized (reduces compiled file size and saves in run-time cost).
   * ...
+
+I have some other things I intend to investigate:
+
+  * Moving to something that uses jscode instead of our existing documentation style
+  * Moving to using a bit of Closure (for goog.require/provide).  My concern with this is that there is significant overlap between Closure and jQuery and I'd want to make sure we are not pulling in code that we don't need.
