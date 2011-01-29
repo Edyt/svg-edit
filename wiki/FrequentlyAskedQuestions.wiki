@@ -27,6 +27,10 @@ A: We have a list of [http://code.google.com/p/svg-edit/issues/list?can=1&q=labe
 
 A: Select an object. Shift+O will select the previous object Shift+P will select the next object. Using the wireframe mode may also help in seeing hidden objects.
 
+*Q: How can I edit shapes that have been grouped?
+
+A: Double-click the group and you will shift the editing context to the group.  The rest of the image will not be editable while you are in the group context.  Once you are done editing inside the group, press Escape.
+
 *Q: Can I trace over a raster (PNG, JPEG...) image?
 
 A: Yes, there are two methods you can use as of SVG-edit 2.4.
@@ -36,7 +40,7 @@ A: Yes, there are two methods you can use as of SVG-edit 2.4.
 
 * Q: How do I use the Wave Gadget? 
 
-A: (Note that this information refers to the SVG-edit 2.3 Wave Gadget, it may be a bit out of date) Go to this wave wavesandbox.com!w+W7VzCLZk%A and there will be a button on the bottom that says "Install" and when you are editing things, you will see a SVG-edit icon in your toolbar that you can click to include the gadget into any blip.
+A: (Note that this information refers to the SVG-edit 2.3 Wave Gadget, the Wave Gadget has not been worked on for years though) Go to this wave wavesandbox.com!w+W7VzCLZk%A and there will be a button on the bottom that says "Install" and when you are editing things, you will see a SVG-edit icon in your toolbar that you can click to include the gadget into any blip.
 
 * Q: How do I copy the style of an object to other(s)?
 
