@@ -8,7 +8,7 @@ My main concern with this was that one giant JS file, no matter how well-comment
 
 The other problem is that the only realistic way of testing any new change was to invoke the editor and try out the feature.  While this is a really good way to ensure your new feature works, it doesn't catch if you've broken other existing features.  Over time, codebases that only rely on manual testing are bound to make less and less progress.
 
-= Details =
+= History =
 
 I'll note that a call to split out JS functionality into separate files was made by Narendra back in 2009 (when he had gone away from the project and tried to come back).  He had even contributed new code in the form of a separate script to deal with localization, which was great.  But at the time I didn't really know how I wanted to deal with modularization in a web app.  I didn't want to be making separate GET requests for every script tag, and even his attempt with locale.js bothered me just a little.  Plus, development was hot and heavy on new features ;)
 
@@ -31,11 +31,15 @@ Here's a bullet-point summary of the state of affairs:
 
   * Development versions of SVG-edit now have many `<script>` tags that load in all the JS modules.
   * The dependencies between these files are currently maintained manually, the JS files must be loaded in the correct order
-  * Each new JS module has a corresponding test file under test/.  These will never be complete, just keep adding tests to them.
-  * You can (and should often) run all tests by going to http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
+  * Each new JS module has a corresponding test file under test/.
   * The Makefile has been updated to compile all the JS modules using the Closure Compiler.  This collapses all the JS into one compiled file and reduces the number of GET requests back to a sane level for a release version of SVG-edit.
 
 *NOTE:* This is an *ongoing* effort.  It's not done, and I don't know if it will ever be done.  Currently svgcanvas.js is still around 9700 lines of code and occasionally growing.  My silly benchmark for this effort is to have every file browsable online in Google Code :)  Don't browse to svgcanvas.js in googlecode today.  My browser grinds to a halt.
+
+
+= Unit Tests =
+
+As I refactor, I am taking the opportunity to add unit tests for each module/function/class refactored.  As of Jan 2010, we are close to 500 unit tests.  They are all ran at http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
 
 = TODOs =
 
