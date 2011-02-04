@@ -96,6 +96,28 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* Implement our own "shim" version of SVGTransformList
 
+=== getBBox on paths with curves includes control points ===
+
+*Problem:* Calling getBBox() on a path with curves returns a box that is too big, as the control points are incorrectly included in the size.
+
+*Version(s):* All, Safari & Chrome
+
+*Bug reports:* 
+ * https://bugs.webkit.org/show_bug.cgi?id=53512
+
+*Workaround in SVG-edit:* Implement our own "shim" version of getBBox for paths.
+
+=== USE element is not repositioned when moved to x=0 y=0 through script ===
+
+*Problem:* Attempting to set any USE element (like when importing SVGs) to position 0,0 has no visible effect. This may occur by doing undo after moving it or by setting the values as attributes.
+
+*Version(s):* All, Safari & Chrome
+
+*Bug reports:* 
+ * https://bugs.webkit.org/show_bug.cgi?id=53767
+
+*Workaround in SVG-edit:* Removing then re-adding the element seems to take care of this.
+
 === Failure to detect camelCase elements ===
 
 *Problem:* WebKit is unable to detect elements like linearGradient using querySelectorAll or getElementsByTagName.
@@ -105,11 +127,11 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* Search through all elements, then check their tagName value
 
-=== Data URL page cannot be saved ===
+=== Data URL page cannot be saved (Chrome only) ===
 
 *Problem:* When using the default save handler, the SVG image is opened in a new tab, but there is no method to save the file.
 
-*Version(s):* Chrome 5, 6
+*Version(s):* Chrome 5+
 
 *Bug reports:*
  * http://code.google.com/p/chromium/issues/detail?id=46735
