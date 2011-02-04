@@ -87,9 +87,11 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* Convert all paths to use absolute segments.
 
-=== @transform value is unreliable ===
+=== @transform value is unreliable (Safari only) ===
 
 *Problem:* WebKit fails to update the value of the @transform attribute after changes are made to its transformlist.
+
+*Version(s):* Safari (should be fixed in next version after 5)
 
 *Bug reports:*
  * None yet, related bug here: https://bugs.webkit.org/show_bug.cgi?id=31119
