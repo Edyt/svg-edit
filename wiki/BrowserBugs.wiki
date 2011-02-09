@@ -54,6 +54,16 @@ Other bugs related to Bug 309782:
 
 *Workaround in SVG-edit:* No, does not appear possible.
 
+=== BBoxes for groups and symbols ignore horizontal/vertical lines === 
+
+*Problem:* When a group or symbol element contains a horizontal or vertical line, getBBox() ignores the line and thus provides an incorrect rectangle.
+
+*Version(s):* All
+
+*Bug report:* None yet
+
+*Workaround in SVG-edit:* Resource-heavy workaround script (for 2.6)
+
 == Opera ==
 
 === Does not support the W3C File API ===
@@ -148,6 +158,16 @@ Other bugs related to Bug 309782:
   * https://bugs.webkit.org/show_bug.cgi?id=32624
 
 *Workaround:* Copy contents of file and paste in via SVG-edit source editor
+
+=== BBoxes for groups and symbols ignore horizontal/vertical lines === 
+
+*Problem:* When a group or symbol element contains a horizontal or vertical line, getBBox() ignores the line and thus provides an incorrect rectangle.
+
+*Version(s):* All
+
+*Bug report:* None yet
+
+*Workaround in SVG-edit:* Resource-heavy workaround script (for 2.6)
 
 = Missing SVG support desired in SVG-edit =
 
