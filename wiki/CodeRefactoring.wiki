@@ -34,12 +34,18 @@ Here's a bullet-point summary of the state of affairs:
   * Each new JS module has a corresponding test file under test/.
   * The Makefile has been updated to compile all the JS modules using the Closure Compiler.  This collapses all the JS into one compiled file and reduces the number of GET requests back to a sane level for a release version of SVG-edit.
 
-*NOTE:* This is an *ongoing* effort.  It's not done, and I don't know if it will ever be done.  Currently svgcanvas.js is still around 9700 lines of code and occasionally growing.  My silly benchmark for this effort is to have every file browsable online in Google Code :)  Don't browse to svgcanvas.js in googlecode today.  My browser grinds to a halt.
-
+*NOTE:* This is an *ongoing* effort.  It's not done, and I don't know if it will ever be done.  Currently svgcanvas.js is still around 8800 lines of code and occasionally growing.  My silly benchmark for this effort is to have every file browsable online in Google Code :)  Don't browse to svgcanvas.js in googlecode today.  My browser grinds to a halt.
 
 = Unit Tests =
 
 As I refactor, I am taking the opportunity to add unit tests for each module/function/class refactored.  As of Jan 2010, we are close to 500 unit tests.  They are all ran at http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
+
+= Current Tasks =
+
+1) I introduced the concept of a Drawing earlier on that would encapsulate the state of a single open SVG document.  The SVG editor has a handle to the current drawing and uses that instead of accessing svg DOM elements directly.  Eventually all code that deals with layers, current editing context, document history and more will be moved into draw.js but for now, much of that code still lives in svgcanvas.js.
+
+2) I'm in the process of migrating a large chunk of svgcanvas.js called "pathActions" into its own module (path.js).  This piece of code did have a lot of dependencies so moving it piece-by-piece seemed like the right way to go.  Currently it's about half-way migrated, with most of the 'public API' still living in svgcanvas.js.
+
 
 = TODOs =
 
