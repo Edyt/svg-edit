@@ -23,7 +23,7 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
  * [http://code.google.com/p/svg-edit/issues/detail?id=541 Shape library]
  * [http://code.google.com/p/svg-edit/issues/detail?id=582 Basic Server-based tools for file opening/saving]
 == Proposed Release Date ==
- * End 2010
+ * Q3 2011
 
 
 = Future =
