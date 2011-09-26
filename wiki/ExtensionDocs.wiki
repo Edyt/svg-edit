@@ -6,7 +6,7 @@ As of version 2.5 (currently still in alpha stage), SVG-Edit has support for ext
 
 == Basic format ==
 
-SVG-Edit plugins are standalone JavaScript files that can be either included in the HTML file or loaded using setConfig or through the URL (see ConfigOptions for usage).
+SVG-Edit plugins are standalone !JavaScript files that can be either included in the HTML file or loaded using setConfig or through the URL (see ConfigOptions for usage).
 
 This is the general format for an extension:
 
