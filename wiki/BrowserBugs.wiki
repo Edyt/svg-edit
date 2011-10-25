@@ -18,7 +18,7 @@ If you click 'Save' in the browser-based editor, Firefox will show all gradients
 
 *Bug Report:* https://bugzilla.mozilla.org/show_bug.cgi?id=308590
 
-*Workaround in SVG-edit:* Not possible.
+*Workaround in SVG-edit:*  None. This is now only a problem for obsolete versions of Firefox.
 
 === Symbol elements cannot reference elements internally ===
 
