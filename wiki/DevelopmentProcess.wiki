@@ -64,5 +64,15 @@ Then hack away in the 'svg-edit-rotater' folder and freely check in your changes
 
 Once your happy with the branch, you can merge it in.
 
+= Rolling Back a Bad Commit =
+
+Let's say you accidentally committed your change when you didn't mean to as revision 2075.
+
+{{{
+svn merge -r2075:2074 .
+svn ci -m "Rollback bad revision 2075"
+}}}
+
+
   * TODO: instructions on automatically merging back to trunk
   * TODO: instructions for keeping up to date in the branch (i.e. merging from trunk to branch)
