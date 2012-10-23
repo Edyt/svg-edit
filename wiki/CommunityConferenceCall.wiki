@@ -2,10 +2,10 @@
 
 =Topics=
 == Introduction of participants ==
-* Each person takes a minute or two to introduce themselves
-** Where do you live?
-** How do you use SVG-edit?
-** Where do you want to see the project in the future?
+  * Each person takes a minute or two to introduce themselves
+  ** Where do you live?
+  ** How do you use SVG-edit?
+  ** Where do you want to see the project in the future?
 
 
 == 2.6 Release ==
@@ -71,4 +71,3 @@ If you are interested to participate, please indicate your name and ideal dates/
 
 = Your thoughts =
 What do you think? Let us know what is on your mind :-)
-
