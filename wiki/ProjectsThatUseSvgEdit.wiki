@@ -4,6 +4,6 @@
   * [http://pitch.googlecode.com/ Pitch]
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0]
   * [http://framavectoriel.org/ Framavectoriel] (in French)
-  * CloudCanvas http://editor.cloud-canvas.com
+  * CloudCanvas [http://editor.cloud-canvas.com]
 
 See also: http://code.google.com/p/svg-edit/#Projects_That_Use_SVG-edit
