@@ -1,4 +1,4 @@
-#In November or December 2012, we will hold a community conference call.
+#summary In November or December 2012, we will hold a community conference call.
 
 =Topics=
 == Introduction of participants ==
