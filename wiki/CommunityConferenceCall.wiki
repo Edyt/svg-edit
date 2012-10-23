@@ -1,0 +1,74 @@
+# In November or December 2012, we will hold a community conference call.
+
+=Topics=
+== Introduction of participants ==
+* Each person takes a minute or two to introduce themselves
+** Where do you live?
+** How do you use SVG-edit?
+** Where do you want to see the project in the future?
+
+
+== 2.6 Release ==
+  * What is the code status in trunk?
+  ** Discuss blockers for a 2.6 release
+  ** If we can't release quickly, perhaps just branch so trunk is open again for development?
+
+== Wiki edit rights ==
+  * How should we use the wiki?
+  ** Used more for community planning discussion?
+  ** Explicit way for people to gain edit access
+
+
+== Commit access policy ==
+SVG-edit is awesome. And all the people who worked on it have done a superb contribution to the Free and Open Source ecosystem. The main
+contributors according to https://www.ohloh.net/p/svg-edit/contributors are: Alexis, Jeff, Pavol and of course, thank you to Narendra for starting all this.
+
+Now, time goes by, great people get busy with new projects and it's time for renewal within the SVG-edit community. There is a great bit of talent and energy on the mailing lists and the issue tracker. We hope to always count on Alexis, Jeff, Pavol and Narendra when there is a big problem, but we want the community to be sustainable and growing.
+
+The commit activity has slowed in recent years: https://www.ohloh.net/p/svg-edit/commits/summary
+
+Yet, there are patches in SVN. How can we increase the odds that 1- they become appropriate for and 2- they are committed to the main code base?
+
+What should our commit access policy be?
+
+Marc Laporte proposes to think about this: http://info.tiki.org/article188-Tiki-reaches-500-contributors-with-commit-access and to move progressively in this direction. It's a little scary at first but listen to the podcast on that link :-)
+
+
+
+== Convergence of energy ==
+There are many applications that are based on SVG-edit. Super!  Now, how do we make sure that enhancements are upstreamed?
+
+Let's discuss a way to reduce the number of forks like https://code.google.com/p/cwm-drawtool/ and make projects like http://adityab.github.com/Awwation/ closer and have everyone work in the same code base (with branches, distros, alternate themes, or something!)   Many projects are discussed at https://groups.google.com/d/topic/svg-edit/8uYm9I4KheQ/discussion
+
+* Why do people fork? 
+** Let's discuss when this is a "good"/acceptable/best scenario vs when we feel this work should be part of SVG-edit.
+
+
+== Browser support ==
+More or less half the web uses rapid release browsers (Chrome & Firefox). What happens if we want to improve SVG-edit but need something that is not yet available in some of the browsers? (or very difficult to do)
+
+What should our policy be?  
+
+
+== Consulting ecosystem ==
+There are people (ex.: on the mailing list) that are willing to sponsor SVG-edit work. How do we leverage this?
+  * List on a wiki page
+  * What else?
+
+
+=Who=
+If you are interested to participate, please indicate your name and ideal dates/times/periods. We'll like use an online service to pick the date
+
+  * Marc Laporte (any time)
+  * You?
+
+  Who else should we make sure is present?
+
+=Where=
+  * Whatever is best for participant, but most likely using http://bigbluebutton.org/
+
+
+
+= Your thoughts =
+What do you think? Let us know what is on your mind :-)
+
