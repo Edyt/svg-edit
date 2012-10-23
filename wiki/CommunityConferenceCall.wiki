@@ -21,7 +21,7 @@
 
 == Commit access policy ==
 SVG-edit is awesome. And all the people who worked on it have done a superb contribution to the Free and Open Source ecosystem. The main
-contributors according to https://www.ohloh.net/p/svg-edit/contributors are: Alexis, Jeff, Pavol and of course, thank you to Narendra for starting all this.
+contributors according to https://www.ohloh.net/p/svg-edit/contributors?query=&sort=commits are: Alexis, Jeff, Pavol and of course, thank you to Narendra for starting all this.
 
 Now, time goes by, great people get busy with new projects and it's time for renewal within the SVG-edit community. There is a great bit of talent and energy on the mailing lists and the issue tracker. We hope to always count on Alexis, Jeff, Pavol and Narendra when there is a big problem, but we want the community to be sustainable and growing.
 
