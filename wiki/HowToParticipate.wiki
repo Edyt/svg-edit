@@ -18,6 +18,9 @@ At the moment, the policy is:
   * attach clean patches that fix the problem to the bugs (svn diff from the trunk)
   * after a few successful, non-trivial patches we would consider granting you commit privileges
 
+= Interoperability or re-use =
+If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsThatUseSvgEdit]
+
 = Conference calls =
   * [CommunityConferenceCall]
 
