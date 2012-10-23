@@ -1,0 +1,28 @@
+#summary All the ways you can participate to the project
+
+
+
+
+= Wiki access =
+To get wiki access, ask for it on the [https://groups.google.com/forum/#!topic/svg-edit/ mailing list]
+
+= Feature requests =
+Please add to https://code.google.com/p/svg-edit/issues/list once you have checked that it's not already there
+
+
+= Bug Reports =
+Please add to https://code.google.com/p/svg-edit/issues/list once you have checked that it's not already there
+
+
+= Commit access =
+At the moment, the policy is:
+  * open bugs on https://code.google.com/p/svg-edit/issues/list
+  * attach clean patches that fix the problem to the bugs (svn diff from the trunk)
+  * after a few successful, non-trivial patches we would consider granting you commit privileges
+
+
+= Conference calls =
+[CommunityConferenceCall]
+
+= Anything and anything else =
+Please ask for it on the [https://groups.google.com/forum/#!topic/svg-edit/ mailing list]
