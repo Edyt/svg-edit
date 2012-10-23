@@ -4,7 +4,7 @@
 
 
 = Wiki access =
-To get wiki access, ask for it on the [https://groups.google.com/forum/#!topic/svg-edit/ mailing list]
+To get wiki edit access, ask for it on the [https://groups.google.com/forum/#!topic/svg-edit/ mailing list]
 
 = Feature requests =
 Please add to https://code.google.com/p/svg-edit/issues/list once you have checked that it's not already there
