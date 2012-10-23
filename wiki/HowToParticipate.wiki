@@ -22,7 +22,7 @@ At the moment, the policy is:
 
 
 = Conference calls =
-[CommunityConferenceCall]
+  * [CommunityConferenceCall]
 
 = Anything and anything else =
-Please ask for it on the [https://groups.google.com/forum/#!topic/svg-edit/ mailing list]
+Please ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit
