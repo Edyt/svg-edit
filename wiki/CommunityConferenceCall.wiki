@@ -43,6 +43,13 @@ Let's discuss a way to reduce the number of forks like https://code.google.com/p
 * Why do people fork? 
 ** Let's discuss when this is a "good"/acceptable/best scenario vs when we feel this work should be part of SVG-edit.
 
+== Wikipedia ==
+We have https://www.mediawiki.org/wiki/Extension:SVGEdit
+
+Being used for Wikipedia would be the biggest surge of usage for SVG-edit (Wikipedia being a top-10 site in the World)
+
+What are the steps to get there?
+
 
 == Browser support ==
 More or less half the web uses rapid release browsers (Chrome & Firefox). What happens if we want to improve SVG-edit but need something that is not yet available in some of the browsers? (or very difficult to do)
