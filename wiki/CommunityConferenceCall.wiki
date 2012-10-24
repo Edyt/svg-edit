@@ -67,7 +67,7 @@ There are people (ex.: on the mailing list) that are willing to sponsor SVG-edit
 If you are interested to participate, please indicate your name, city or time zone and ideal dates/times/periods. We'll likely use an online service to pick the date
 
   * Marc Laporte, Montréal (any time)
-  * Pavol Rusnak (any time)
+  * Pavol Rusnak, Prague (any time)
   * Chance Roth (any time)
   * Mark MacKay (any time)
   * Ahmad Syazwan, Kuala Lumpur (?)
