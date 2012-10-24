@@ -57,12 +57,13 @@ There are people (ex.: on the mailing list) that are willing to sponsor SVG-edit
 
 
 =Who=
-If you are interested to participate, please indicate your name and ideal dates/times/periods. We'll like use an online service to pick the date
+If you are interested to participate, please indicate your name and ideal dates/times/periods. We'll likely use an online service to pick the date
 
   * Marc Laporte (any time)
   * Pavol Rusnak (any time)
   * Chance Roth (any time)
   * Mark MacKay (any time)
+  * Ahmad Syazwan (?)
   * You?
 
   Who else should we make sure is present?
