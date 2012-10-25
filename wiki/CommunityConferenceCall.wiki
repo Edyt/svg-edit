@@ -71,12 +71,13 @@ If you are interested to participate, please indicate your name, city or time zo
   * Chance Roth (any time)
   * Mark MacKay (any time)
   * Ahmad Syazwan, Kuala Lumpur (?)
+  * Bdkzero, Italy 
   * You?
 
   Who else should we make sure is present?
 
 =Where=
-  * Whatever is best for participant, but most likely using http://bigbluebutton.org/
+  * Whatever is best for participants, but most likely using http://bigbluebutton.org/
 
 
 
