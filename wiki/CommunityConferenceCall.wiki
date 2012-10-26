@@ -44,7 +44,9 @@ Let's discuss a way to reduce the number of forks like https://code.google.com/p
 ** Let's discuss when this is a "good"/acceptable/best scenario vs when we feel this work should be part of SVG-edit.
 
 == Wikipedia ==
-We have https://www.mediawiki.org/wiki/Extension:SVGEdit
+We have:
+* https://www.mediawiki.org/wiki/Extension:SVGEdit
+* https://www.mediawiki.org/wiki/Extension:TranslateSvg
 
 Being used for Wikipedia would be the biggest surge of usage for SVG-edit (Wikipedia being a top-10 site in the World)
 
