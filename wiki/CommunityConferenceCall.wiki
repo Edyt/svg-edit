@@ -40,13 +40,15 @@ There are many applications that are based on SVG-edit. Super!  Now, how do we m
 
 Let's discuss a way to reduce the number of forks like https://code.google.com/p/cwm-drawtool/ and make projects like http://adityab.github.com/Awwation/ closer and have everyone work in the same code base (with branches, distros, alternate themes, or something!)   Many projects are discussed at https://groups.google.com/d/topic/svg-edit/8uYm9I4KheQ/discussion
 
-* Why do people fork? 
-** Let's discuss when this is a "good"/acceptable/best scenario vs when we feel this work should be part of SVG-edit.
+  * Why do people fork? 
+  ** Let's discuss when this is a "good"/acceptable/best scenario vs when we feel this work should be part of SVG-edit.
 
 == Wikipedia ==
 We have:
-* https://www.mediawiki.org/wiki/Extension:SVGEdit
-* https://www.mediawiki.org/wiki/Extension:TranslateSvg
+  * https://www.mediawiki.org/wiki/Extension:SVGEdit
+  * https://www.mediawiki.org/wiki/Extension:TranslateSvg
+  * https://bugzilla.wikimedia.org/show_bug.cgi?id=38271
+  * https://code.google.com/p/svg-edit/issues/detail?id=1006
 
 Being used for Wikipedia would be the biggest surge of usage for SVG-edit (Wikipedia being a top-10 site in the World)
 
