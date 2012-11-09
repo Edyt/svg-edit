@@ -76,6 +76,7 @@ If you are interested to participate, please indicate your name, city or time zo
   * Mark MacKay (any time)
   * Ahmad Syazwan, Kuala Lumpur (?)
   * Bdkzero, Italy 
+  * Brion Vibber, San Francisco
   * You?
 
   Who else should we make sure is present?
