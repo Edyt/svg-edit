@@ -1,5 +1,14 @@
 #summary Early December 2012, we will hold a community conference call.
 
+=When=
+This will happen early December. Please vote of the best time/date:
+http://tiki.org/SVG-edit+2012-12+community+meeting
+
+
+=Where=
+  * Whatever is best for participants, but most likely using http://bigbluebutton.org/
+
+
 =Topics=
 == Introduction of participants ==
   * Each person takes a minute or two to introduce themselves. This also serves to make sure sound is OK for all. Please have a headset.
@@ -100,14 +109,6 @@ If you are interested to participate, please indicate your name, city or time zo
   * You?
 
   Who else should we make sure is present?
-
-=When=
-This will happen early December. Please vote of the best time/date:
-http://tiki.org/SVG-edit+2012-12+community+meeting
-
-
-=Where=
-  * Whatever is best for participants, but most likely using http://bigbluebutton.org/
 
 
 
