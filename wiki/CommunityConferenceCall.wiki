@@ -23,11 +23,14 @@ http://tiki.org/SVG-edit+2012-12+community+meeting
    * [https://www.mediawiki.org/wiki/Extension:SVGEdit MediaWiki integration] (Brion Vibber)
    * [https://www.mediawiki.org/wiki/Extension:TranslateSvg TranslateSvg] (Harry Burt)
    * [http://sourceforge.net/projects/ocsvg/ OwnCloud integration] (Florian Hülsmann)
+   * [http://www.cloud-canvas.com/ CloudCanvas] (Chance Roth)
    * [http://doc.tiki.org/Screencast Tiki Screen capture] and [https://doc.tiki.org/Draw Tiki Draw] (Marc Laporte & Robert Plummer)
 
 
 == 2.6 Release ==
   * What is the code status in trunk?
+   * [https://code.google.com/p/svg-edit/issues/list?can=2&q=NeededFor%3D2.6 The current list of ]
+
    * Discuss blockers for a 2.6 release
    * If we can't release quickly, perhaps just branch so trunk is open again for development?
 
