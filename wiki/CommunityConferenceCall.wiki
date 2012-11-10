@@ -81,6 +81,11 @@ If you are interested to participate, please indicate your name, city or time zo
 
   Who else should we make sure is present?
 
+=When=
+This will happen early December. Please vote of the best time/date:
+http://tiki.org/SVG-edit+2012-12+community+meeting
+
+
 =Where=
   * Whatever is best for participants, but most likely using http://bigbluebutton.org/
 
