@@ -2,19 +2,19 @@
 
 =Topics=
 == Introduction of participants ==
-  * Each person takes a minute or two to introduce themselves
+  * Each person takes a minute or two to introduce themselves. This also serves to make sure sound is OK for all. Please have a headset.
    * Where do you live?
-   * How do you use SVG-edit?
+   * How do you use SVG-edit? (if this takes more than 30 seconds, please add as a presentation below)
    * Where do you want to see the project in the future?
 
 == Demos/explanation of how SVG-edit is used/integrated ==
   * Each project presents in 2-5 minutes an overview of how they use SVG-edit. Presentators: you'll be able to [http://www.bigbluebutton.org/overview/ share URLs in the chatroom, or you can upload PDFs to the presentation tool]
-   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
+   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool] (Boris Goldowsky)
    * [http://awwation.com/ Awwation] (Aditya Bhatt)
    * [https://www.mediawiki.org/wiki/Extension:SVGEdit MediaWiki integration] (Brion Vibber)
-   * TranslateSvg (Harry 
+   * [https://www.mediawiki.org/wiki/Extension:TranslateSvg TranslateSvg] (Harry Burt)
    * [http://sourceforge.net/projects/ocsvg/ OwnCloud integration] (Florian Hülsmann)
-   * [http://doc.tiki.org/Screencast Tiki Screen capture] and [https://doc.tiki.org/Draw Tiki Draw] (Marc Laporte)
+   * [http://doc.tiki.org/Screencast Tiki Screen capture] and [https://doc.tiki.org/Draw Tiki Draw] (Marc Laporte & Robert Plummer)
 
 
 == 2.6 Release ==
