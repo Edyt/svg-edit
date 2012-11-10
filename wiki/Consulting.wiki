@@ -1,0 +1,26 @@
+#summary List of all SVG-edit consultants
+
+__As per the [https://en.wikipedia.org/wiki/MIT_License MIT license], you do not have to pay anything to anyone to use or integrate SVG-edit. If you code, we hope that you will choose to re-contribute your fixes and enhancements. Additionally, you may __choose__ to pay for support, training, bug fixes and enhancements.
+
+While there is no official endorsement from the point of view of SVG-edit, below is a list of self-identified consultants, who offer services. We ask that all consultants listed here be active within the community and upstream fixes and enhancements, when it's possible/relevant. Some enhancements are just too specific and it may not be acceptable for the official project code base.
+
+
+= Consultant A =
+
+name,
+website
+etc.
+
+
+= Consultant B =
+
+name,
+website
+etc.
+
+
+= Add yourself here =
+
+
+
+
