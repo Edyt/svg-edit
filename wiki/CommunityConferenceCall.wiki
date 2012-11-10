@@ -67,6 +67,16 @@ There are people (ex.: on the mailing list) that are willing to sponsor SVG-edit
   * What else?
 
 
+== Roadmap ==
+Let's discuss as a project where we want to be in 3-5 years. What are the features / use cases we would cover if we had tons of contributors the project vs what is outside the scope of the project?
+
+  * SVG-edit is a https://en.wikipedia.org/wiki/Vector_graphics_editor. Will it become a https://en.wikipedia.org/wiki/Raster_graphics_editor as well? Ex.: [https://code.google.com/p/svg-edit/issues/detail?id=893|Pixastic Image Processing Library]
+  * [https://code.google.com/p/svg-edit/issues/detail?id=985 SVG-edit can draw on images. Will it one day draw on videos?]
+  * [https://code.google.com/p/svg-edit/issues/detail?id=947 How about realtime collaborative editing?] 
+  * There are some non-linear presentation tools like use SVG-edit as a base. Should SVG-edit become a such editor?  [https://github.com/adityab/Awwation#readme Awwation: "The editor is built upon the core of SVG-edit, and uses the Sozi library for zooming animations"]
+
+
+
 =Who=
 If you are interested to participate, please indicate your name, city or time zone and ideal dates/times/periods. We'll likely use an online service to pick the date
 
