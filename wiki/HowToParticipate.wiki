@@ -1,8 +1,6 @@
 #summary All the ways you can participate to the project
 
 
-
-
 = Wiki access =
 To get wiki edit access, ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit
 
@@ -23,6 +21,10 @@ If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsTha
 
 = Conference calls =
   * [CommunityConferenceCall]
+
+= Networks =
+  * http://www.linkedin.com/groups/SVGedit-4712151
+  * https://www.facebook.com/groups/447646278605459/ 
 
 = Anything and anything else =
 Please ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit
