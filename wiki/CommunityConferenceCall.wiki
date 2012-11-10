@@ -1,17 +1,26 @@
-#summary In November or December 2012, we will hold a community conference call.
+#summary Early December 2012, we will hold a community conference call.
 
 =Topics=
 == Introduction of participants ==
   * Each person takes a minute or two to introduce themselves
-  ** Where do you live?
-  ** How do you use SVG-edit?
-  ** Where do you want to see the project in the future?
+   * Where do you live?
+   * How do you use SVG-edit?
+   * Where do you want to see the project in the future?
+
+== Demos/explanation of how SVG-edit is used/integrated ==
+  * Each project presents in 2-5 minutes an overview of how they use SVG-edit. Presentators: you'll be able to [http://www.bigbluebutton.org/overview/ share URLs in the chatroom, or you can upload PDFs to the presentation tool]
+   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
+   * [http://awwation.com/ Awwation] (Aditya Bhatt)
+   * [https://www.mediawiki.org/wiki/Extension:SVGEdit MediaWiki integration] (Brion Vibber)
+   * TranslateSvg (Harry 
+   * [http://sourceforge.net/projects/ocsvg/ OwnCloud integration] (Florian Hülsmann)
+   * [http://doc.tiki.org/Screencast Tiki Screen capture] and [https://doc.tiki.org/Draw Tiki Draw] (Marc Laporte)
 
 
 == 2.6 Release ==
   * What is the code status in trunk?
-  ** Discuss blockers for a 2.6 release
-  ** If we can't release quickly, perhaps just branch so trunk is open again for development?
+   * Discuss blockers for a 2.6 release
+   * If we can't release quickly, perhaps just branch so trunk is open again for development?
 
 == Wiki edit rights ==
   * How should we use the wiki?
