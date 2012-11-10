@@ -24,6 +24,7 @@ http://tiki.org/SVG-edit+2012-12+community+meeting
    * [https://www.mediawiki.org/wiki/Extension:SVGEdit MediaWiki integration] (Brion Vibber)
    * [https://www.mediawiki.org/wiki/Extension:TranslateSvg TranslateSvg] (Harry Burt)
    * [http://sourceforge.net/projects/ocsvg/ OwnCloud integration] (Florian Hülsmann)
+   * [https://groups.google.com/d/msg/svg-edit/8uYm9I4KheQ/kMLggZdytuoJ A schematic editor (one-line diagrams for electric utilities)] (Flint O'Brien)
    * [http://www.cloud-canvas.com/ CloudCanvas] (Chance Roth)
    * [http://doc.tiki.org/Screencast Tiki Screen capture] and [https://doc.tiki.org/Draw Tiki Draw] (Marc Laporte & Robert Plummer)
 
