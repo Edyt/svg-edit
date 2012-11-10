@@ -23,6 +23,7 @@ If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsTha
   * [CommunityConferenceCall]
 
 = Networks =
+  * https://www.ohloh.net/p/svg-edit (Add to your stacks)
   * http://www.linkedin.com/groups/SVGedit-4712151
   * http://www.facebook.com/groups/447646278605459/ 
   * http://plus.google.com/107010604858430492390/
