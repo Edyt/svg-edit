@@ -74,6 +74,7 @@ Let's discuss as a project where we want to be in 3-5 years. What are the featur
   * [https://code.google.com/p/svg-edit/issues/detail?id=985 SVG-edit can draw on images. Will it one day draw on videos?]
   * [https://code.google.com/p/svg-edit/issues/detail?id=947 How about realtime collaborative editing?] 
   * There are some non-linear presentation tools like use SVG-edit as a base. Should SVG-edit become a such editor?  [https://github.com/adityab/Awwation#readme Awwation: "The editor is built upon the core of SVG-edit, and uses the Sozi library for zooming animations"]
+  * How good will SVG-edit become for [http://www.mind-mapping.org/web-based-mindmappers/graphical.html Concept Maps, Mind Maps, Topic Maps, Flow Charts and Org Charts]?
 
 
 
