@@ -81,7 +81,7 @@ What should our policy be?
 
 == Consulting ecosystem ==
 There are people (ex.: on the mailing list) that are willing to sponsor SVG-edit work. How do we leverage this?
-  * List on a wiki page
+  * [Consulting] (add yourself!)
   * What else?
 
 
