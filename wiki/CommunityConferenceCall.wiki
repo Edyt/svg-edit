@@ -57,14 +57,11 @@ What should our commit access policy be?
 Marc Laporte proposes to think about this: http://info.tiki.org/article188-Tiki-reaches-500-contributors-with-commit-access and to move progressively in this direction. It's a little scary at first but listen to the podcast on that link :-)
 
 
-
 == Convergence of energy ==
-There are many applications that are based on SVG-edit. Super!  Now, how do we make sure that enhancements are upstreamed?
+There are many applications that are based on SVG-edit (CWM Draw Tool, Method Draw, Awwation, etc.) Super! Now, many of these enhancements are obviously suitable for upstream as the new default, and some are suitable as an option.
+* Let's discuss when this is a "good"/acceptable/best scenario to keep things separate vs when we feel this work should be part of SVG-edit.
+* Let's discuss a way to reduce the number of forks and make projects closer and have everyone work in the same code base (with branches, distros, alternate themes, or something!) 
 
-Let's discuss a way to reduce the number of forks like https://code.google.com/p/cwm-drawtool/ and make projects like http://adityab.github.com/Awwation/ closer and have everyone work in the same code base (with branches, distros, alternate themes, or something!)   Many projects are discussed at https://groups.google.com/d/topic/svg-edit/8uYm9I4KheQ/discussion
-
-  * Why do people fork? 
-  ** Let's discuss when this is a "good"/acceptable/best scenario vs when we feel this work should be part of SVG-edit.
 
 == Wikipedia ==
 We have:
