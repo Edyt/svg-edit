@@ -90,6 +90,8 @@ There are people (ex.: on the mailing list) that are willing to sponsor SVG-edit
   * [Consulting] (add yourself!)
   * What else?
 
+== Translations ==
+  * [https://groups.google.com/d/topic/svg-edit/suxArdPZcqI/discussion Translation overhaul discussion]
 
 == Roadmap ==
 Let's discuss as a project where we want to be in 3-5 years. What are the features / use cases we would cover if we had tons of contributors the project vs what is outside the scope of the project?
