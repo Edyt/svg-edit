@@ -59,8 +59,8 @@ Marc Laporte proposes to think about this: http://info.tiki.org/article188-Tiki-
 
 == Convergence of energy ==
 There are many applications that are based on SVG-edit (CWM Draw Tool, Method Draw, Awwation, etc.) Super! Now, many of these enhancements are obviously suitable for upstream as the new default, and some are suitable as an option.
-* Let's discuss when this is a "good"/acceptable/best scenario to keep things separate vs when we feel this work should be part of SVG-edit.
-* Let's discuss a way to reduce the number of forks and make projects closer and have everyone work in the same code base (with branches, distros, alternate themes, or something!) 
+  * Let's discuss when this is a "good"/acceptable/best scenario to keep things separate vs when we feel this work should be part of SVG-edit.
+  * Let's discuss a way to reduce the number of forks and make projects closer and have everyone work in the same code base (with branches, distros, alternate themes, or something!) 
 
 
 == Wikipedia ==
