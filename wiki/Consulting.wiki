@@ -5,12 +5,11 @@ __As per the [https://en.wikipedia.org/wiki/MIT_License MIT license], you do not
 While there is no official endorsement from the point of view of SVG-edit, below is a list of self-identified consultants, who offer services. We ask that all consultants listed here be active within the community and upstream fixes and enhancements, when it's possible/relevant. Some enhancements are just too specific and it may not be acceptable for the official project code base.
 
 
-= Consultant A =
+= Consultant A=
 
 name,
 website
 etc.
-
 
 = Consultant B =
 
@@ -19,8 +18,13 @@ website
 etc.
 
 
-= Add yourself here =
+= Mark MacKay =
 
+Website: http://duopixel.ca
+Email: mark@duopixel.com
+Stackoverflow: http://stackoverflow.com/users/524555/duopixel
+Github: https://github.com/duopixel
 
+I have experience with deep customizations of SVG-Edit. Two projects that I've made with SVGEdit are [http://visualizame.net/editor/index.html Visualizame] and [http://editor.method.ac  Method Draw]. I have experience customizing SVG Edit for mobile too. I only work on projects which are appropriate to upstream to SVG-Edit (relevant as a drawing app and with an MIT License).
 
 
