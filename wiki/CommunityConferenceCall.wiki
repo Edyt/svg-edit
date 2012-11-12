@@ -10,7 +10,7 @@ Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20121
   * We will be using the Free and Open Source [http://bigbluebutton.org/ Web conferencing platform] 
   * It will be possible to join 
    * With a regular phone with a call to a North American number 
-   * Via the BigBlueButton web interface (in Flash) (please have a headset)
+   * Via the !BigBlueButton web interface (in Flash) (please have a headset)
    * With Skype (please have a headset)
 
 
@@ -111,7 +111,7 @@ If you are interested to participate, please indicate your name, city or time zo
   * Marc Laporte, Montréal (any time)
   * Pavol Rusnak, Prague (any time)
   * Chance Roth, San Diego (any time)
-  * Mark MacKay (any time)
+  * Mark !MacKay (any time)
   * Ahmad Syazwan, Kuala Lumpur (?)
   * Bdkzero, Italy 
   * Brion Vibber, San Francisco
