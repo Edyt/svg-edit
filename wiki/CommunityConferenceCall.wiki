@@ -7,7 +7,7 @@ Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20121
 
 
 =Where=
-  * We will be using the Free and Open Source [http://bigbluebutton.org/ Web conferencing platform] 
+  * We will be using the Free and Open Source [http://bigbluebutton.org/ BigBlueButton] Web conferencing platform 
   * It will be possible to join 
    * With a regular phone with a call to a North American number 
    * Via the !BigBlueButton web interface (in Flash) (please have a headset)
