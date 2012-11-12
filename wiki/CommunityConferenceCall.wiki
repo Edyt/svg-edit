@@ -85,6 +85,13 @@ More or less half the web uses rapid release browsers (Chrome & Firefox). What h
 
 What should our policy be?  
 
+== Release cycle ==
+We don't need to decide anything today but let's start the discussion. And we should eventually come up with some realistic and commonly understood guidelines. 
+Some examples:
+  * A release every 6 months like Ubuntu (October and April)
+  * Release at any time (when energy and features are there), but never more than 12 month between releases.
+
+
 
 == Consulting ecosystem ==
 There are people (ex.: on the mailing list) that are willing to sponsor SVG-edit work. How do we leverage this?
