@@ -1,5 +1,8 @@
 #summary All the ways you can participate to the project
 
+= Mailing lists =
+  * [http://groups.google.com/group/svg-edit General discussion]
+  * [http://groups.google.com/group/svg-edit-commit All commits, including changes to wiki pages]
 
 = Wiki access =
 To get wiki edit access, ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit or directly to marclaporte --at-- gmail  --dot-- com and indicate what is your Google account or gmail address (Note: check if there is a way to skip this step)
