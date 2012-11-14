@@ -33,7 +33,7 @@ Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20121
    * [https://groups.google.com/d/msg/svg-edit/8uYm9I4KheQ/kMLggZdytuoJ A schematic editor (one-line diagrams for electric utilities)] (Flint O'Brien)
    * [https://drupal.org/sandbox/josegaert/1511596 Drupal SVG] (Jo Segaert)
    * [http://www.cloud-canvas.com/ CloudCanvas] (Chance Roth)
-   * [http://doc.tiki.org/Screencast Tiki Screen capture] and [https://doc.tiki.org/Draw Tiki Draw] (Marc Laporte & Robert Plummer)
+   * [http://doc.tiki.org/Screencast Tiki Screen capture], [https://doc.tiki.org/Draw Tiki Draw] and [http://profiles.tiki.org/CartoGraf CartoGraf] (Marc Laporte & Robert Plummer)
    * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki SVG Macro] Ludovic Dubost
 
 
