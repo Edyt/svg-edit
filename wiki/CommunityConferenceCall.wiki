@@ -63,6 +63,8 @@ What should our commit access policy be?
 
 Marc Laporte proposes to think about this: http://info.tiki.org/article188-Tiki-reaches-500-contributors-with-commit-access and to move progressively in this direction. It's a little scary at first but listen to the podcast on that link :-)
 
+See proposal at: [CommitPolicy]
+
 
 == Convergence of energy ==
 There are many applications that are based on SVG-edit (CWM Draw Tool, Method Draw, Awwation, etc.) Super! Now, many of these enhancements are obviously suitable for upstream as the new default, and some are suitable as an option.
