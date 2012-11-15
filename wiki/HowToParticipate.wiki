@@ -33,5 +33,8 @@ If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsTha
   * http://twitter.com/SVGedit
   * http://code.google.com/p/svg-edit/ (Please star SVG-edit!)
 
+= Consulting =
+You can become or hire a consultant -> [Consulting]
+
 = Anything and anything else =
 Please ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit
