@@ -13,6 +13,9 @@ Please add to https://code.google.com/p/svg-edit/issues/list once you have check
 = Bug Reports =
 Please add to https://code.google.com/p/svg-edit/issues/list once you have checked that it's not already there
 
+= Translations =
+Please see: [TranslationGuidelines]
+
 = Commit access =
 See [CommitPolicy]
 
