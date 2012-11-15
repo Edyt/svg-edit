@@ -15,4 +15,4 @@ If you want commit access, just ask. We need your Gmail or Google account.
   * If you want to do something really radical, make an experimental branch
 
 
-A corollary to a lower threshold to commit access is quick rollbacks, so we need to tell people: "Don't be offended if your commit is rolled back. This is part of the process of learning and collaborating."
+A corollary to a lower threshold to commit access is quick rollbacks, so don't be offended if your commit is rolled back. This is part of the process of learning and collaborating.
