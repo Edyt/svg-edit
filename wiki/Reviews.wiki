@@ -9,7 +9,7 @@
   * [http://giizii.com/?p=449 gjolesuns's review of Arbelos]
   * [http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=131&utm_source=twitterfeed&utm_medium=twitter Michael MacNaughton's review of Arbelos]
   * [http://www.jappit.com/blog/2010/02/05/drawing-on-nokia-n900-with-svg-edit/ Drawing on your Nokia N900 with SVG-Edit]
-  * [http://www.sitepoint.com/blogs/2010/02/17/svg-edit-online-vector-graphics-editor/ SitePoint.com review of Arbelos]
+  * [http://www.sitepoint.com/svg-edit-online-vector-graphics-editor/ SitePoint.com review of Arbelos]
   * [http://my.opera.com/ODIN/blog/2010/02/18/svg-edit-standalone-widget Standalone Widget version of Arbelos by Opera]
   * [http://journal.mycom.co.jp/articles/2010/02/24/svgedit/index.html Another review of SVG-edit 2.4] (Japanese)
   * [http://www.pcworld.com/article/190614/svgedit_24.html PC-World article mentioning the SVG-edit Firefox add-on]
