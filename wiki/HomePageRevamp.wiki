@@ -26,7 +26,7 @@ For the adventurous ones, feel free to try out the [http://svg-edit.googlecode.c
 
 = Features =
 
-SVG-edit is an online vector graphics editor that uses only JavaScript, HTML5, CSS and SVG (i.e. no server-side functionality).  SVG-edit has the following features:
+SVG-edit is an online vector graphics editor that uses only !JavaScript, HTML5, CSS and SVG (i.e. no server-side functionality).  SVG-edit has the following features:
 
 <table><tr><td>
   * Free-hand drawing
@@ -97,18 +97,12 @@ SVG-edit works directly in the browser.  There have been several side projects: 
 
 = Examples =
 
-  * [http://vertex.corpsmoderne.net/main.php?g2_itemId=114 SVG drawings by wormsxulla]
   * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
 
 = Development/Discussion =
 
-Please follow us on [https://plus.google.com/b/107010604858430492390/ Google+].
+* Please see [HowToParticipate how to participate]
 
-If you have done some HTML/JS/CSS programming before, look at this list of [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3AGood-First-Bug good first bugs] and submit a patch.
-
-We have started to document the developer API here: http://svg-edit.googlecode.com/svn/trunk/docs/index.html
-
-We have started to gather some unit tests for SVG-edit here: http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
 
 = Further Reading =
 
@@ -118,36 +112,9 @@ We have started to gather some unit tests for SVG-edit here: http://svg-edit.goo
 
 = Projects That Use SVG-edit = 
 
-  * [http://adityab.github.com/Awwation/ Awwation]
-  * [http://www.flamingtext.com/imagebot/ ImageBot]
-  * [http://doc.tiki.org/Draw Tiki Wiki CMS Groupware]
-  * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
-  * [http://www.mediawiki.org/wiki/Extension:SVGEdit Experimental MediaWiki extension]
-  * [http://www.clker.com/ Clker.com] (clip art site)
-  * [http://wiki.cast.org/display/opensource/SVG+Edit+Simple+Interface Simplified drawing tool by CAST] (also as a [http://wicket.apache.org/ Wicket] component)
-  * [http://bluegriffon.org/ BlueGriffon Web Editor]
-  * [http://projectsesame.appspot.com/ Project Sesame]
-  * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
-  * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
-  * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
-  * [http://code.xwiki.org/xwiki/bin/view/Macros/SVGMacro20Macro XWiki 2.x] (via macro)
-  * [http://trac.yanel-contribution.3k3.org/wiki/svg-edit Yanel CMS] (as a 3rd-party resource)
-  * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
-  * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
-  * [http://eduvid.techfandu.org/ Project Eduvid]
+See: [ProjectsThatUseSvgEdit]
+
 
 = Around The Web =
 
-  * [http://ehmdunque.altervista.org/i-informatica/manuali/Short_intro_SVG-edit.html Short Introduction to SVG-edit] by Luigi D. CAPRA
-  * [http://www.ohloh.net/p/svg-edit Ohloh page]
-  * [http://stick.gk2.sk/blog/2009/06/svg-edit-a-web-based-svg-editor/ Announcement] on Pavol's blog
-  * [http://blog.codedread.com/archives/2009/06/19/embed-an-svg-editor-on-your-web-page/ How to embed in your web page] from Jeff's blog
-  * [https://addons.mozilla.org/en-US/firefox/addon/14186/ Firefox Add-On]
-  * [http://giizii.com/?p=449 gjolesuns's review of Arbelos]
-  * [http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=131&utm_source=twitterfeed&utm_medium=twitter Michael MacNaughton's review of Arbelos]
-  * [http://www.jappit.com/blog/2010/02/05/drawing-on-nokia-n900-with-svg-edit/ Drawing on your Nokia N900 with SVG-Edit]
-  * [http://www.sitepoint.com/blogs/2010/02/17/svg-edit-online-vector-graphics-editor/ SitePoint.com review of Arbelos]
-  * [http://my.opera.com/ODIN/blog/2010/02/18/svg-edit-standalone-widget Standalone Widget version of Arbelos by Opera]
-  * [http://journal.mycom.co.jp/articles/2010/02/24/svgedit/index.html Another review of SVG-edit 2.4] (Japanese)
-  * [http://www.pcworld.com/article/190614/svgedit_24.html PC-World article mentioning the SVG-edit Firefox add-on]
-  * [http://www.downloadsquad.com/2010/11/15/svg-edit-is-a-surprisingly-powerful-in-browser-vector-image-edit/ Download Squad review]
+See: [Reviews]
