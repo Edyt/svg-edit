@@ -38,12 +38,16 @@ If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsTha
   * [CommunityConferenceCall]
 
 = Networks =
-  * https://www.ohloh.net/p/svg-edit (Add to your stacks)
   * http://www.linkedin.com/groups/SVGedit-4712151
   * http://www.facebook.com/groups/447646278605459/ 
   * http://plus.google.com/107010604858430492390/
   * http://twitter.com/SVGedit
   * http://code.google.com/p/svg-edit/ (Please star SVG-edit!)
+
+If you use SVG-edit, add to your Ohloh.net stacks:
+<wiki:gadget url="http://www.ohloh.net/p/325148/widgets/project_users.xml" height="100" border="0"/>
+
+Also see: http://www.ohloh.net/p/svg-edit
 
 = Consulting =
 You can become or hire a consultant -> [Consulting]
