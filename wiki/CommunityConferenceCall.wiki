@@ -59,7 +59,7 @@ Now, time goes by, great people get busy with new projects and it's time for ren
 
 The commit activity has slowed in recent years: https://www.ohloh.net/p/svg-edit/commits/summary
 
-Yet, there are patches in SVN. How can we increase the odds that 1- they become appropriate for and 2- they are committed to the main code base?
+Yet, there are patches in the issue tracker: https://code.google.com/p/svg-edit/issues/list?can=2&q=patch  How can we increase the odds that 1- they become appropriate for and 2- they are committed to the main code base?
 
 What should our commit access policy be?
 
