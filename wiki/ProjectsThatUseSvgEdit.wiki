@@ -1,9 +1,25 @@
 #summary A list of projects that use SVG-edit
 
-  * Project Eduvid
+  * [http://adityab.github.com/Awwation/ Awwation]
+  * [http://www.flamingtext.com/imagebot/ ImageBot]
+  * [http://doc.tiki.org/Draw Tiki Wiki CMS Groupware]
+  * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
+  * [http://www.mediawiki.org/wiki/Extension:SVGEdit Experimental MediaWiki extension]
+  * [http://www.clker.com/ Clker.com] (clip art site)
+  * [http://wiki.cast.org/display/opensource/SVG+Edit+Simple+Interface Simplified drawing tool by CAST] (also as a [http://wicket.apache.org/ Wicket] component)
+  * [http://bluegriffon.org/ BlueGriffon Web Editor]
+  * [http://projectsesame.appspot.com/ Project Sesame]
+  * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
+  * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
+  * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
+  * [http://code.xwiki.org/xwiki/bin/view/Macros/SVGMacro20Macro XWiki 2.x] (via macro)
+  * [http://trac.yanel-contribution.3k3.org/wiki/svg-edit Yanel CMS] (as a 3rd-party resource)
+  * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
+  * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
+  * [http://eduvid.techfandu.org/ Project Eduvid]
   * [http://pitch.googlecode.com/ Pitch]
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0]
   * [http://framavectoriel.org/ Framavectoriel] (in French)
-  * CloudCanvas [http://editor.cloud-canvas.com]
+  * !CloudCanvas [http://editor.cloud-canvas.com]
 
 See also: http://code.google.com/p/svg-edit/#Projects_That_Use_SVG-edit
