@@ -2,7 +2,7 @@
 
 = Introduction =
 
-As of version 2.5 (currently still in alpha stage), SVG-Edit has several configuration settings that can be overridden either by adding URL parameters or by setting the options in JavaScript.
+As of version 2.5, SVG-edit has several configuration settings that can be overridden either by adding URL parameters or by setting the options in !JavaScript.
 
 == How to set the options ==
 
