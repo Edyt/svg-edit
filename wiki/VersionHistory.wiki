@@ -24,7 +24,7 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
  * [http://code.google.com/p/svg-edit/issues/detail?id=200 Connector lines]  
  * [http://code.google.com/p/svg-edit/issues/detail?id=308 Arrows & Markers]  
  * [http://code.google.com/p/svg-edit/issues/detail?id=341 Smoother freehand paths]
- * Foreign markup support (ForeignObject/MathML)
+ * Foreign markup support (!ForeignObject/MathML)
  * [http://code.google.com/p/svg-edit/issues/detail?id=427 Configurable options]
  * [http://code.google.com/p/svg-edit/issues/detail?id=65 File-loading options]
  * [http://code.google.com/p/svg-edit/issues/detail?id=115 Eye-dropper tool (copy element style)]
