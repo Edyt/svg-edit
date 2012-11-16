@@ -28,7 +28,7 @@ We have started to document the developer API here: http://svg-edit.googlecode.c
 
 We have started to gather some unit tests for SVG-edit here: http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
 
-Please see [CommitPolicy Commit policy]
+Please see [CommitPolicy Commit policy] and [ExtensionDocs Extension Docs]
 
 
 = Interoperability or re-use =
