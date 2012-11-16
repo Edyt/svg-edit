@@ -2,7 +2,7 @@
 
 = Introduction =
 
-As of version 2.5 (currently still in alpha stage), SVG-Edit has support for extensions. This an (in-progress) guide for creating SVG-Edit plugins.
+As of version 2.5, SVG-Edit has support for extensions. This an (in-progress) guide for creating SVG-Edit plugins.
 
 == Basic format ==
 
