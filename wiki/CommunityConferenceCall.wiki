@@ -24,7 +24,7 @@ The meeting room is at http://tiki.org/SVG-edit+2012-12+community+meeting and yo
    * Where do you want to see the project in the future?
 
 == Demos/explanation of how SVG-edit is used/integrated ==
-  * Each project presents in 2-5 minutes an overview of how they use SVG-edit. Presentators: you'll be able to [http://www.bigbluebutton.org/overview/ share URLs in the chatroom, or you can upload PDFs to the presentation tool]
+  * Each project presents in 2-5 minutes an overview of how they use SVG-edit. Presenters: you'll be able to [http://www.bigbluebutton.org/overview/ share URLs in the chatroom, or you can upload PDFs to the presentation tool]
    * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool] (Boris Goldowsky)
    * [http://awwation.com/ Awwation] (Aditya Bhatt)
    * [https://github.com/duopixel/Method-Draw Method Draw] (Mark MacKay)
