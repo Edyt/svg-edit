@@ -2,7 +2,7 @@
 
   * [http://adityab.github.com/Awwation/ Awwation]
   * [http://www.flamingtext.com/imagebot/ ImageBot]
-  * [http://doc.tiki.org/Draw Tiki Wiki CMS Groupware]
+  * [http://doc.tiki.org/Draw Tiki Wiki CMS Groupware] (aka Tiki Draw)
   * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
   * [http://www.mediawiki.org/wiki/Extension:SVGEdit Experimental MediaWiki extension]
   * [http://www.clker.com/ Clker.com] (clip art site)
