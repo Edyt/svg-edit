@@ -4,6 +4,11 @@
   * [http://groups.google.com/group/svg-edit General discussion]
   * [http://groups.google.com/group/svg-edit-commit All commits, including changes to wiki pages]
 
+= IRC chatroom =
+#svg-edit on Freenode.net
+
+Or use the web-basd version: http://webchat.freenode.net/?channels=svg-edit
+
 = Wiki access =
 To get wiki edit access, ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit or directly to marclaporte --at-- gmail  --dot-- com and indicate what is your Google account or gmail address (Note: check if there is a way to skip this step)
 
@@ -14,10 +19,17 @@ Please add to https://code.google.com/p/svg-edit/issues/list once you have check
 Please add to https://code.google.com/p/svg-edit/issues/list once you have checked that it's not already there
 
 = Translations =
-Please see: [TranslationGuidelines]
+Please see: [TranslationGuidelines Translation Guidelines]
 
-= Commit access =
-See [CommitPolicy]
+= Developers and Commit access =
+If you have done some HTML/JS/CSS programming before, look at this list of [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3AGood-First-Bug good first bugs] and submit a patch.
+
+We have started to document the developer API here: http://svg-edit.googlecode.com/svn/trunk/docs/index.html
+
+We have started to gather some unit tests for SVG-edit here: http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
+
+Please see [CommitPolicy Commit policy]
+
 
 = Interoperability or re-use =
 If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsThatUseSvgEdit]
@@ -37,4 +49,7 @@ If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsTha
 You can become or hire a consultant -> [Consulting]
 
 = Anything and anything else =
-Please ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit
+Please ask for it on the [http://groups.google.com/group/svg-edit General discussion mailing list]
+
+= If you need to ask something in private=
+You can contact marclaporte --at-- gmail  --dot-- com
