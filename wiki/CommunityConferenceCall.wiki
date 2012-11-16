@@ -82,9 +82,9 @@ We have:
   * https://bugzilla.wikimedia.org/show_bug.cgi?id=38271
   * https://code.google.com/p/svg-edit/issues/detail?id=1006
 
-Being used for Wikipedia would be the biggest surge of usage for SVG-edit (Wikipedia being a top-10 site in the World)
+Being used for Wikipedia will be the biggest surge of usage for SVG-edit (Wikipedia being a top-10 site in the World)
 
-What are the steps to get there?
+What are the next steps to get there?
 
 
 == Browser support ==
