@@ -12,7 +12,7 @@
   * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
   * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
   * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
-  * [http://code.xwiki.org/xwiki/bin/view/Macros/SVGMacro20Macro XWiki 2.x] (via macro)
+  * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki] (via macro)
   * [http://trac.yanel-contribution.3k3.org/wiki/svg-edit Yanel CMS] (as a 3rd-party resource)
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
   * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
