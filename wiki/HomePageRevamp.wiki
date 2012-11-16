@@ -95,26 +95,11 @@ SVG-edit works directly in the browser.  There have been several side projects: 
   * [http://www.youtube.com/watch?v=RVIcIy5fXOc SVG-edit 2.3 Features]
   * [http://www.youtube.com/watch?v=ZJKmEI06YiY Introduction to SVG-edit] (Version 2.2)
 
-= Examples =
-
-  * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
-
-= Development/Discussion =
-
-* Please see [HowToParticipate how to participate]
-
 
 = Further Reading =
-
+  * [ProjectsThatUseSvgEdit Projects that use SVG-edit]
+  * [Reviews]
+  * [HowToParticipate How to participate]
   * [FrequentlyAskedQuestions]
   * [Roadmap]
   * [CodeRefactoring]
-
-= Projects That Use SVG-edit = 
-
-See: [ProjectsThatUseSvgEdit]
-
-
-= Around The Web =
-
-See: [Reviews]
