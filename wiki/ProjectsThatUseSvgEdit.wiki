@@ -21,3 +21,4 @@
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0]
   * [http://framavectoriel.org/ Framavectoriel] (in French)
   * !CloudCanvas [http://editor.cloud-canvas.com]
+  * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
