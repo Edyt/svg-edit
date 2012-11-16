@@ -35,6 +35,7 @@ The meeting room is at http://tiki.org/SVG-edit+2012-12+community+meeting and yo
    * [https://groups.google.com/d/msg/svg-edit/8uYm9I4KheQ/kMLggZdytuoJ A schematic editor (one-line diagrams for electric utilities)] (Flint O'Brien)
    * [https://drupal.org/sandbox/josegaert/1511596 Drupal SVG] (Jo Segaert)
    * [http://www.cloud-canvas.com/ CloudCanvas] (Chance Roth)
+   * Jordan Mendler (our company has been using the project a lot and modifying code a lot for internal use)
    * [http://doc.tiki.org/Screencast Tiki Screen capture], [https://doc.tiki.org/Draw Tiki Draw] and [http://profiles.tiki.org/CartoGraf CartoGraf] (Marc Laporte & Robert Plummer)
    * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki SVG Macro] Ludovic Dubost
 
