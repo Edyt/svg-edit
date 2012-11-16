@@ -1,0 +1,153 @@
+Join us on December 4th, 2012 for a [CommunityConferenceCall community conference call].
+
+*[http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html Try the demo here]*
+
+= Introduction =
+
+SVG-edit is a fast, web-based, !JavaScript-driven SVG editor that works in any modern browser:
+
+ * Firefox 1.5+
+ * Opera 9.50+
+ * Safari 4+
+ * Chrome 1+
+ * IE 6+ (with the [http://code.google.com/chrome/chromeframe/ Chrome Frame plugin], native IE9 support in 2.6)
+
+This editor depends on many other open-source projects.  See [Acknowledgements] for details.
+
+In browsers that support the W3C File API, this editor allows you to open local files.  The set of browsers in which this supported is: Firefox 3.6+, Chrome 6+, Safari 5+, and Opera 11.10+ (builds from 2011-04-05 onwards).
+
+= Demos =
+
+Try out <b>[http://svg-edit.googlecode.com/svn/branches/2.5.1/editor/svg-editor.html SVG-edit 2.5.1]</b>, the latest stable release ([VersionHistory Release notes]).
+
+A largely usable [http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html alpha build] is also available (still rough around the edges, localization not updated). 
+
+For the adventurous ones, feel free to try out the [http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html trunk build] (not guaranteed to be stable).
+
+= Features =
+
+SVG-edit is an online vector graphics editor that uses only JavaScript, HTML5, CSS and SVG (i.e. no server-side functionality).  SVG-edit has the following features:
+
+<table><tr><td>
+  * Free-hand drawing
+  * Lines, Polylines
+  * Rects/Squares
+  * Ellipses/Circles
+  * Polygons/Curved Paths
+  * Stylable Text
+  * Raster Images
+  * Select/move/resize/rotate
+  * Undo/Redo
+  * Color/Gradient picker
+  * Group/ungroup
+  * Align
+  * Zoom
+  * Layers
+</td>
+<td>
+  * Convert Shapes to Path
+  * Wireframe Mode
+  * Save drawing to SVG
+  * Linear Gradient Picking
+  * View and Edit SVG Source
+  * UI Localization
+  * Resizable Canvas
+  * Change Background
+  * Draggable Dialogs
+  * Resizable UI (SVG icons)
+  * Open Local Files
+  * Import SVG into Drawing
+  * Connector lines and Arrows
+</td>
+<td>
+  * [http://code.google.com/p/svg-edit/wiki/ExtensionDocs Plugin Architecture]
+  * Smoother freehand paths
+  * Editing outside the canvas
+  * Increased support for SVG elements
+  * Add/edit Sub-paths
+  * Multiple path segment selection
+  * Support for foreign markup (MathML)
+  * Radial Gradients
+  * [http://code.google.com/p/svg-edit/wiki/ConfigOptions Configurable Options]
+  * Eye-dropper tool
+  * Stroke linejoin and linecap
+  * Export to PNG
+</td></tr></table>
+
+*New in [http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html 2.6 alpha] ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.6 more to come] for 2.6 final):*
+ * Support for Internet Explorer 9
+ * In-group editing
+ * Image library
+ * Shape library
+ * Context menu
+ * Cut/Copy/Paste
+ * Gridlines, snap to grid 
+ * Merge layers
+ * Duplicate layer
+
+
+SVG-edit works directly in the browser.  There have been several side projects:  A Firefox Add-on, an Opera Widget, a Google Wave Gadget (no longer maintained).
+
+= Videos / Screencasts =
+
+  * [http://www.youtube.com/watch?v=zpC7b1ZJvvM SVG-edit 2.4 Part 1]
+  * [http://www.youtube.com/watch?v=mDzZEoGUDe8 SVG-edit 2.4 Part 2]
+  * [http://www.youtube.com/watch?v=RVIcIy5fXOc SVG-edit 2.3 Features]
+  * [http://www.youtube.com/watch?v=ZJKmEI06YiY Introduction to SVG-edit] (Version 2.2)
+
+= Examples =
+
+  * [http://vertex.corpsmoderne.net/main.php?g2_itemId=114 SVG drawings by wormsxulla]
+  * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
+
+= Development/Discussion =
+
+Please follow us on [https://plus.google.com/b/107010604858430492390/ Google+].
+
+If you have done some HTML/JS/CSS programming before, look at this list of [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3AGood-First-Bug good first bugs] and submit a patch.
+
+We have started to document the developer API here: http://svg-edit.googlecode.com/svn/trunk/docs/index.html
+
+We have started to gather some unit tests for SVG-edit here: http://svg-edit.googlecode.com/svn/trunk/test/all_tests.html
+
+= Further Reading =
+
+  * [FrequentlyAskedQuestions]
+  * [Roadmap]
+  * [CodeRefactoring]
+
+= Projects That Use SVG-edit = 
+
+  * [http://adityab.github.com/Awwation/ Awwation]
+  * [http://www.flamingtext.com/imagebot/ ImageBot]
+  * [http://doc.tiki.org/Draw Tiki Wiki CMS Groupware]
+  * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
+  * [http://www.mediawiki.org/wiki/Extension:SVGEdit Experimental MediaWiki extension]
+  * [http://www.clker.com/ Clker.com] (clip art site)
+  * [http://wiki.cast.org/display/opensource/SVG+Edit+Simple+Interface Simplified drawing tool by CAST] (also as a [http://wicket.apache.org/ Wicket] component)
+  * [http://bluegriffon.org/ BlueGriffon Web Editor]
+  * [http://projectsesame.appspot.com/ Project Sesame]
+  * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
+  * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
+  * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
+  * [http://code.xwiki.org/xwiki/bin/view/Macros/SVGMacro20Macro XWiki 2.x] (via macro)
+  * [http://trac.yanel-contribution.3k3.org/wiki/svg-edit Yanel CMS] (as a 3rd-party resource)
+  * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
+  * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
+  * [http://eduvid.techfandu.org/ Project Eduvid]
+
+= Around The Web =
+
+  * [http://ehmdunque.altervista.org/i-informatica/manuali/Short_intro_SVG-edit.html Short Introduction to SVG-edit] by Luigi D. CAPRA
+  * [http://www.ohloh.net/p/svg-edit Ohloh page]
+  * [http://stick.gk2.sk/blog/2009/06/svg-edit-a-web-based-svg-editor/ Announcement] on Pavol's blog
+  * [http://blog.codedread.com/archives/2009/06/19/embed-an-svg-editor-on-your-web-page/ How to embed in your web page] from Jeff's blog
+  * [https://addons.mozilla.org/en-US/firefox/addon/14186/ Firefox Add-On]
+  * [http://giizii.com/?p=449 gjolesuns's review of Arbelos]
+  * [http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=131&utm_source=twitterfeed&utm_medium=twitter Michael MacNaughton's review of Arbelos]
+  * [http://www.jappit.com/blog/2010/02/05/drawing-on-nokia-n900-with-svg-edit/ Drawing on your Nokia N900 with SVG-Edit]
+  * [http://www.sitepoint.com/blogs/2010/02/17/svg-edit-online-vector-graphics-editor/ SitePoint.com review of Arbelos]
+  * [http://my.opera.com/ODIN/blog/2010/02/18/svg-edit-standalone-widget Standalone Widget version of Arbelos by Opera]
+  * [http://journal.mycom.co.jp/articles/2010/02/24/svgedit/index.html Another review of SVG-edit 2.4] (Japanese)
+  * [http://www.pcworld.com/article/190614/svgedit_24.html PC-World article mentioning the SVG-edit Firefox add-on]
+  * [http://www.downloadsquad.com/2010/11/15/svg-edit-is-a-surprisingly-powerful-in-browser-vector-image-edit/ Download Squad review]
