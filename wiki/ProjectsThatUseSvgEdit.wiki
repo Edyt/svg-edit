@@ -22,3 +22,6 @@
   * [http://framavectoriel.org/ Framavectoriel] (in French)
   * !CloudCanvas [http://editor.cloud-canvas.com]
   * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
+
+
+And many [https://github.com/search?q=%22svg-edit%22&repo=&p=1&type=Repositories&l=|forks on Github]
