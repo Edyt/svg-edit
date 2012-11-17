@@ -24,4 +24,4 @@
   * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
 
 
-And many [https://github.com/search?q=%22svg-edit%22&repo=&p=1&type=Repositories&l=|forks on Github]
+And many [https://github.com/search?q=%22svg-edit%22&repo=&p=1&type=Repositories&l= forks on Github]
