@@ -131,6 +131,7 @@ If you are interested to participate, please indicate your name, city or time zo
   * Ahmad Syazwan, Kuala Lumpur (?)
   * Bdkzero, Italy 
   * Brion Vibber, San Francisco
+  * Jordan Mendler (http://www.thevelozgroup.com), Los Angeles
   * You?
 
   Who else should we make sure is present?
