@@ -38,7 +38,7 @@ The meeting room is at http://tiki.org/SVG-edit+2012-12+community+meeting and yo
    * Jordan Mendler (our company has been using the project a lot and modifying code a lot for internal use)
    * [http://doc.tiki.org/Screencast Tiki Screen capture], [https://doc.tiki.org/Draw Tiki Draw] and [http://profiles.tiki.org/CartoGraf CartoGraf] (Marc Laporte & Robert Plummer)
    * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki SVG Macro] Ludovic Dubost
-
+   * [https://faustedition.uni-wuerzburg.de/public/text-image-links.jpg Image Annotation] Moritz Wissenbach
 
 == 2.6 Release ==
   * What is the code status in trunk?
