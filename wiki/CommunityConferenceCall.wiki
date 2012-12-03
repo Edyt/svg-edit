@@ -66,6 +66,9 @@ What should our commit access policy be?
 
 Marc Laporte proposes to think about this: http://info.tiki.org/article188-Tiki-reaches-500-contributors-with-commit-access and to move progressively in this direction. It's a little scary at first but listen to the podcast on that link :-)
 
+Also, as an example, Ben has a simple commit, how do we make it efficient? Ref: 
+https://groups.google.com/d/topic/svg-edit/4Try3YB7pMo/discussion
+
 See proposal at: [CommitPolicy]
 
 
