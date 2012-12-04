@@ -34,7 +34,9 @@ Main conclusions & notes:
    * All translators will have commit access and they can use web interface or SVN. 2.6 will be released January 15th. If you can commit your translations in December, that would be awesome.
   * Roadmap: see point above on Convergence of energy / modularization / themeing
 
-Apologies to Moritz Wissenbach (and anyone else affected) because he couldn't present his [https://faustedition.uni-wuerzburg.de/public/text-image-links.jpg Image Annotation project]. Although there is no limit to BigBlueButton for the number of people that can connect, the phone gateway we use is limited to 4 connections)
+Apologies to Moritz Wissenbach (and anyone else affected) because he couldn't present his [https://faustedition.uni-wuerzburg.de/public/text-image-links.jpg Image Annotation project]. Although there is no limit to !BigBlueButton for the number of people that can connect, the phone gateway we use is limited to 4 connections)
+
+You can see image here: http://tiki.org/tiki-download_wiki_attachment.php?attId=804
 
 
 =When=
