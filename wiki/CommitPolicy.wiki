@@ -1,18 +1,16 @@
 #summary Commit access policy
 
-At the moment, the policy is:
-  * open bugs on https://code.google.com/p/svg-edit/issues/list
-  * attach clean patches that fix the problem to the bugs (svn diff from the trunk)
-  * after a few successful, non-trivial patches we would consider granting you commit privileges 
-
-
-Proposed change:
-If you want commit access, just ask. We need your Gmail or Google account.
+If you want commit access, just ask. We need your Gmail or Google account. Keep in mind that SVG-edit is widely used and changes can have unexpected consequences. Wait for after 2.6 release (and thus trunk re-opening) for any bigger changes. 
   * If it's a translation: just commit directly. You can even use the web-based interface (awesome!)
   * If you are sure: just commit 
   * If you are pretty sure, but have some doubts:   commit and ask for a review -> https://code.google.com/p/support/wiki/CodeReviews
   * If you want some feedback before committing: add a patch to the issue tracker
   * If you want to do something really radical, make an experimental branch
 
-
 A corollary to a lower threshold to commit access is quick rollbacks, so don't be offended if your commit is rolled back. This is part of the process of learning and collaborating.
+
+
+Until the 2012-12-04 [CommunityConferenceCall], the policy was:
+  * open bugs on https://code.google.com/p/svg-edit/issues/list
+  * attach clean patches that fix the problem to the bugs (svn diff from the trunk)
+  * after a few successful, non-trivial patches we would consider granting you commit privileges 
