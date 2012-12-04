@@ -37,37 +37,35 @@ Main conclusions & notes:
 Apologies to Moritz Wissenbach (and anyone else affected) because he couldn't present his [https://faustedition.uni-wuerzburg.de/public/text-image-links.jpg Image Annotation project]. Although there is no limit to !BigBlueButton for the number of people that can connect, the phone gateway we use is limited to 4 connections. So there are likely other people that got a busy signal.
 
 The list of people varied but at one point, here were the names:
-Guest: Reimar Bauer (VIEWER)
-Guest: Moritz Wissenbach (VIEWER)
-Guest: Michel Buffa (VIEWER)
-Guest: Harry Burt (VIEWER)
-Guest: Dan Nickchen (VIEWER)
-Guest: Ahmad Syazwan (VIEWER)
-Guest: Chuck Weissman (no mic) (VIEWER)
-Guest: Emmanuel Harguindey (VIEWER)
-Guest: Boris Goldowsky (VIEWER)
-Guest: Ludovic Dubost (XWiki) (VIEWER)
-Marc Laporte (MODERATOR)
-Guest: Luigi Capra (VIEWER)
-Guest: Mark MacKay (VIEWER)
-Guest: NICHOLAS KYRIAKIDES (VIEWER)
-Guest: Harman Dandiwal (VIEWER)
-Guest: Mark Nickel (VIEWER)
-Guest: ctzurcanu (VIEWER)
-Guest: Senthil Kumar (VIEWER)
-Guest: edroid (VIEWER)
-luciash d' being (MODERATOR)
-Guest: Caleb (VIEWER)
-robertplummer (MODERATOR)
-Guest: Mark Medinger (VIEWER)
-Guest: Jo Segaert (VIEWER)
-Guest: Flint O'Brien (VIEWER)
-Guest: Chance Roth (VIEWER)
-Guest: Alexander Widera (VIEWER)
-Guest: Jordan Mendler (VIEWER)
-Guest: John Sebok (VIEWER)
-
-
+  * Reimar Bauer
+  * Moritz Wissenbach
+  * Michel Buffa
+  * Harry Burt
+  * Dan Nickchen
+  * Ahmad Syazwan
+  * Chuck Weissman (no mic)
+  * Emmanuel Harguindey
+  * Boris Goldowsky
+  * Ludovic Dubost (XWiki)
+  * Marc Laporte
+  * Luigi Capra
+  * Mark MacKay
+  * NICHOLAS KYRIAKIDES
+  * Harman Dandiwal
+  * Mark Nickel
+  * ctzurcanu
+  * Senthil Kumar
+  * edroid
+  * luciash d' being
+  * Caleb
+  * robertplummer
+  * Mark Medinger
+  * Jo Segaert
+  * Flint O'Brien
+  * Chance Roth
+  * Alexander Widera
+  * Jordan Mendler
+  * John Sebok
 
 =When=
 The meeting is confirmed for December 4th, 2012 16h00 UTC
