@@ -39,7 +39,7 @@ The meeting room is at http://tiki.org/SVG-edit+2012-12+community+meeting and yo
    * [http://doc.tiki.org/Screencast Tiki Screen capture], [https://doc.tiki.org/Draw Tiki Draw] and [http://profiles.tiki.org/CartoGraf CartoGraf] (Marc Laporte & Robert Plummer)
    * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki SVG Macro] Ludovic Dubost
    * [https://faustedition.uni-wuerzburg.de/public/text-image-links.jpg Image Annotation] Moritz Wissenbach
-   * Reimar Bauer has added a [https://bitbucket.org/ReimarBauer/xstatic-svg-edit-moin/src/tip/xstatic/pkg/svgedit_moin/data/editor/extensions/ext-server_moinsave.js?at=default save extension] for the [http://moinmo.in/MoinMoin2.0 MoinMoin Wiki Software project] and packaged it as [http://pypi.python.org/pypi/XStatic-svg-edit-moin XStatic package] for PyPI )
+   * Reimar Bauer has added a [https://bitbucket.org/ReimarBauer/xstatic-svg-edit-moin/src/tip/xstatic/pkg/svgedit_moin/data/editor/extensions/ext-server_moinsave.js?at=default save extension] for the [http://moinmo.in/MoinMoin2.0 MoinMoin Wiki Software project] and packaged it as [http://pypi.python.org/pypi/XStatic-svg-edit-moin XStatic package] for PyPI
 
 == 2.6 Release ==
   * What is the code status in trunk?
