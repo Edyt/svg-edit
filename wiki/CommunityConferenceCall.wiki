@@ -22,7 +22,8 @@ Main conclusions & notes:
    * We open as per the proposal at [CommitPolicy] with an additional caution to people that SVG-edit is widely used and changes can have unexpected consequences. Wait for after 2.6 release (and thus trunk re-opening) for any bigger changes.
   * Convergence of energy / modularization / themeing / etc.
    * Another conference call will be set up in February 2013 (after the release of 2.6) to discuss this in more detail. But in general everybody agreed some architectural changes are necessary and all participants want to contribute back. (the big question is "how?")
-  * Wikipedia: The !MediaWiki extension was presented. Getting SVG-edit on Wikipedia is a top priority. Further discussions are to be held to determine clear roadmap.
+  * Wikipedia
+   * The !MediaWiki extension was presented. Getting SVG-edit on Wikipedia is a top priority. Further discussions are to be held to determine clear roadmap.
   * Browser support
    * This will need more discussion to have a clear policy
   * Release cycle
@@ -32,6 +33,9 @@ Main conclusions & notes:
   * Translations
    * All translators will have commit access and they can use web interface or SVN. 2.6 will be released January 15th. If you can commit your translations in December, that would be awesome.
   * Roadmap: see point above on Convergence of energy / modularization / themeing
+
+Apologies to Moritz Wissenbach (and anyone else affected) because he couldn't present his [https://faustedition.uni-wuerzburg.de/public/text-image-links.jpg Image Annotation project]. Although there is no limit to BigBlueButton for the number of people that can connect, the phone gateway we use is limited to 4 connections)
+
 
 =When=
 The meeting is confirmed for December 4th, 2012 16h00 UTC
