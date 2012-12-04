@@ -20,7 +20,7 @@ I have experience with deep customizations of SVG-Edit. Two projects that I've m
 
   * Website: http://visop-dev.com
   * Email: rplummer@visop-dev.com
-  * LinkedIn: http://www.linkedin.com/pub/robert-plummer/18/89/a36
+  * !LinkedIn: http://www.linkedin.com/pub/robert-plummer/18/89/a36
   * Github: https://github.com/robertleeplummerjr
 
 Expert developer in web technologies (php, mysql, javascript, jquery, .net, t-sql).  Help to create the cwm draw tool (http://code.google.com/p/cwm-drawtool/) and implemented svg-editor into Tiki wiki cms groupware (http://tiki.org).
