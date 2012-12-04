@@ -3,8 +3,35 @@
 The recording is at:
 http://tiki.bigbluebutton.org/playback/slides/playback.html?meetingId=c986d4c28a45e0f8bab246354ebfe0422683e9de-1354632865808
 
-The recording lasts 5 hours because some people arrived early. Just use the slider to pass the empty beginning part.
+Actual meeting lasted about 3.5 hours! The recording lasts 5 hours because some people arrived early and some stayed after the meeting. Just use the slider to skip ahead. Over 30 people participated and the interest/energy level is high. The meeting lasted way longer than planned because there were so many people (a great problem to have!)
 
+Main conclusions & notes:
+  * Introduction of participants
+   * It is incredible to see the diverse ways people use SVG-edit. There were over a dozen presentations.
+  * 2.6 release
+   * Release is planned for January 15th, 2013
+   * trunk is in "risk freeze" until then (don't make major changes that can affect existing implementations)
+    * Adding new optional features is OK until December 31st 2012 (January 1-15 should be bug fixes and translations only)
+   * Ahmad will handle 2 of the remaining blockers in December
+   * Release managers: Chance and Jordan (It's their first time so anyone familiar with release process: please help them)
+   * Translators: we are counting on you to complete translations for all languages :-)
+  * Wiki edit rights
+   * Everyone will be given access.
+   * We want more people to use it for planning and documentation. Long thoughtful posts on the mailing list should perhaps be more in the wiki with a link in the mailing list.
+  * Commit access policy
+   * We open as per the proposal at [CommitPolicy] with an additional caution to people that SVG-edit is widely used and changes can have unexpected consequences. Wait for after 2.6 release (and thus trunk re-opening) for any bigger changes.
+  * Convergence of energy / modularization / themeing / etc.
+   * Another conference call will be set up in February 2013 (after the release of 2.6) to discuss this in more detail. But in general everybody agreed some architectural changes are necessary and all participants want to contribute back. (the big question is "how?")
+  * Wikipedia: The !MediaWiki extension was presented. Getting SVG-edit on Wikipedia is a top priority. Further discussions are to be held to determine clear roadmap.
+  * Browser support
+   * This will need more discussion to have a clear policy
+  * Release cycle
+   * Active devs will reconvene for exact formula on this but it is agreed that it should never be more than one year.
+  * Consulting ecosystem
+   * This is essential in a healthy community. All consultants, please add yourself to [Consulting]
+  * Translations
+   * All translators will have commit access and they can use web interface or SVN. 2.6 will be released January 15th. If you can commit your translations in December, that would be awesome.
+  * Roadmap: see point above on Convergence of energy / modularization / themeing
 
 =When=
 The meeting is confirmed for December 4th, 2012 16h00 UTC
