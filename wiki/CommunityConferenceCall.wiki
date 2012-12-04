@@ -1,5 +1,11 @@
 #summary December 4th, 2012 community conference call.
 
+The recording is at:
+http://tiki.bigbluebutton.org/playback/slides/playback.html?meetingId=c986d4c28a45e0f8bab246354ebfe0422683e9de-1354632865808
+
+The recording lasts 5 hours because some people arrived early. Just use the slider to pass the empty beginning part.
+
+
 =When=
 The meeting is confirmed for December 4th, 2012 16h00 UTC
 
