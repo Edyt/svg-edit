@@ -49,7 +49,7 @@ The list of people varied but at one point, here were the names:
   * Ludovic Dubost (XWiki)
   * Marc Laporte
   * Luigi Capra
-  * Mark MacKay
+  * Mark !MacKay
   * NICHOLAS KYRIAKIDES
   * Harman Dandiwal
   * Mark Nickel
