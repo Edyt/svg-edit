@@ -17,4 +17,4 @@ The goal of this page is for everyone in the community to be aware of how differ
 
 = Installable application =
 
-Integrating SVG-edit in a desktop application, which you download and use on your computer. 
+Integrating SVG-edit in a desktop application, which you download and use on your computer, like http://bluegriffon.org/
