@@ -40,6 +40,7 @@ Directly available online, via a web browser. No need or way to download or inst
   * [http://www.flamingtext.com/imagebot/ ImageBot]
   * [http://www.clker.com/ Clker.com] (clip art site)
   * !CloudCanvas [http://editor.cloud-canvas.com]
+  * [http://instanttee.co.nr/ InstantTee]
 
 = Installable application =
 Integrating SVG-edit in a desktop application, which you download and use on your computer. 
