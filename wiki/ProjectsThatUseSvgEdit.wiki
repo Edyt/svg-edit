@@ -1,26 +1,54 @@
 #summary A list of projects that use SVG-edit
 
-  * [http://adityab.github.com/Awwation/ Awwation]
-  * [http://www.flamingtext.com/imagebot/ ImageBot]
+  * *Integrate as-is* means that it uses some or all of the functionality of SVG-edit but it doesn't extend them. Think "SVG-edit as a finished product"
+  * * Heavy modification* means SVG-edit was used as a base, but application has important changes. Think "SVG-edit as a platform/framework/starting point"
+
+= FOSS Web apps =
+Free and Open Source Web applications that you can download and install on your own server
+
+== Integrate as-is ==
   * [http://doc.tiki.org/Draw Tiki Wiki CMS Groupware] (aka Tiki Draw)
-  * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
   * [http://www.mediawiki.org/wiki/Extension:SVGEdit Experimental MediaWiki extension]
-  * [http://www.clker.com/ Clker.com] (clip art site)
-  * [http://wiki.cast.org/display/opensource/SVG+Edit+Simple+Interface Simplified drawing tool by CAST] (also as a [http://wicket.apache.org/ Wicket] component)
-  * [http://bluegriffon.org/ BlueGriffon Web Editor]
-  * [http://projectsesame.appspot.com/ Project Sesame]
   * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
+  * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
+
+
+== Heavy modification ==
+  * [http://adityab.github.com/Awwation/ Awwation]
+
+
+= Online services =
+Directly available online, via a web browser. No need or way to download or install anything.
+
+== Use as-is ==
+  * [http://framavectoriel.org/ Framavectoriel] (in French)
+
+== Heavy modification ==
+  * [http://www.flamingtext.com/imagebot/ ImageBot]
+  * [http://www.clker.com/ Clker.com] (clip art site)
+  * !CloudCanvas [http://editor.cloud-canvas.com]
+
+= Installable application =
+Integrating SVG-edit in a desktop application, which you download and use on your computer. 
+
+== Integrate as-is ==
+
+== Heavy modification ==
+  * [http://bluegriffon.org/ BlueGriffon Web Editor]
+
+
+= Not categorized yet =
+  * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
+  * [http://wiki.cast.org/display/opensource/SVG+Edit+Simple+Interface Simplified drawing tool by CAST] (also as a [http://wicket.apache.org/ Wicket] component)
+  * [http://projectsesame.appspot.com/ Project Sesame]
   * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
   * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
   * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki] (via macro)
   * [http://trac.yanel-contribution.3k3.org/wiki/svg-edit Yanel CMS] (as a 3rd-party resource)
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
-  * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
   * [http://eduvid.techfandu.org/ Project Eduvid]
   * [http://pitch.googlecode.com/ Pitch]
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0]
-  * [http://framavectoriel.org/ Framavectoriel] (in French)
-  * !CloudCanvas [http://editor.cloud-canvas.com]
   * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
 
 
