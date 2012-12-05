@@ -11,7 +11,7 @@ Free and Open Source Web applications that you can download and install on your 
   * [http://www.mediawiki.org/wiki/Extension:SVGEdit Experimental MediaWiki extension]
   * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
   * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
-  * [http://www.chamilo.org/|Chamilo LMS]
+  * [http://www.chamilo.org/ Chamilo LMS]
 
 
 == Heavy modification ==
