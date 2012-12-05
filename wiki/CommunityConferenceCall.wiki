@@ -99,7 +99,7 @@ The meeting room is at http://tiki.org/SVG-edit+2012-12+community+meeting and yo
    * [https://www.mediawiki.org/wiki/Extension:SVGEdit MediaWiki integration] (Brion Vibber)
    * [https://www.mediawiki.org/wiki/Extension:TranslateSvg TranslateSvg] (Harry Burt)
    * Various improvements by Michel Buffa (Touch, multiline)
-   * [http://sourceforge.net/projects/ocsvg/ OwnCloud integration] (Florian Hülsmann)
+   * [http://sourceforge.net/projects/ocsvg/ ownCloud integration] (Florian Hülsmann)
    * [https://groups.google.com/d/msg/svg-edit/8uYm9I4KheQ/kMLggZdytuoJ A schematic editor (one-line diagrams for electric utilities)] (Flint O'Brien)
    * [https://drupal.org/sandbox/josegaert/1511596 Drupal SVG] (Jo Segaert)
    * [http://www.cloud-canvas.com/ CloudCanvas] (Chance Roth)
