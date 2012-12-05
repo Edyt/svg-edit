@@ -1,5 +1,7 @@
 #summary The meaning of each ID used in the SVG-edit language files
 
+To commit translations to the main code base, please see: [CommitPolicy]
+
 Under construction
 
 <wiki:comment>
