@@ -41,6 +41,7 @@ Directly available online, via a web browser. No need or way to download or inst
   * [http://www.clker.com/ Clker.com] (clip art site)
   * [http://editor.cloud-canvas.com CloudCanvas]
   * [http://instanttee.co.nr/ InstantTee]
+  * [http://www.vector-paint.com/ Vector Paint]
 
 = Installable application =
 Integrating SVG-edit in a desktop application, which you download and use on your computer. 
