@@ -52,6 +52,9 @@ Also see: http://www.ohloh.net/p/svg-edit
 = Consulting =
 You can become or hire a consultant -> [Consulting]
 
+= Events =
+Please see: [Events]
+
 = Anything and anything else =
 Please ask for it on the [http://groups.google.com/group/svg-edit General discussion mailing list]
 
