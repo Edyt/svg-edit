@@ -22,7 +22,7 @@ Please add to https://code.google.com/p/svg-edit/issues/list once you have check
 Please see: [TranslationGuidelines Translation Guidelines]
 
 = Developers and Commit access =
-If you have done some HTML/JS/CSS programming before, look at this list of [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3AGood-First-Bug good first bugs] and submit a patch.
+If you have done some HTML/JS/CSS programming before, look at this list of [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3AGood-First-Bug good first bugs] and ask for your commit access.
 
 We have started to document the developer API here: http://svg-edit.googlecode.com/svn/trunk/docs/index.html
 
