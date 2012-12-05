@@ -3,7 +3,7 @@
 The goal of this page is for everyone in the community to be aware of how different community members use and rely on SVG-edit
 
 
-= Wiki/Groupware/CMS = 
+= FOSS Web apps = 
   * All Wiki engines
   * Drupal
   * E-learning tools
@@ -15,3 +15,6 @@ The goal of this page is for everyone in the community to be aware of how differ
   * T-shirts, etc.
 
 
+= Installable application =
+
+Integrating SVG-edit in a desktop application, which you download and use on your computer. 
