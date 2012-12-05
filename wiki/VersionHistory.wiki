@@ -9,6 +9,10 @@ http://code.google.com/p/svg-edit/source/list
 
 On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.0 to MIT
 
+= Version 2.6 =
+Will be released on 2013-01-15
+
+
 = Version 2.5 ([http://en.wikipedia.org/wiki/Bicorn Bicorn]) =
 == New Features ==
 
