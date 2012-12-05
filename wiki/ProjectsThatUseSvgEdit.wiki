@@ -16,6 +16,7 @@ Free and Open Source Web applications that you can download and install on your 
 
 == Heavy modification ==
   * [http://adityab.github.com/Awwation/ Awwation]
+  * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
 
 
 = Online services =
@@ -40,7 +41,6 @@ Integrating SVG-edit in a desktop application, which you download and use on you
 
 = Not categorized yet =
   * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
-  * [http://wiki.cast.org/display/opensource/SVG+Edit+Simple+Interface Simplified drawing tool by CAST] (also as a [http://wicket.apache.org/ Wicket] component)
   * [http://projectsesame.appspot.com/ Project Sesame]
   * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
   * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
