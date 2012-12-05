@@ -12,11 +12,21 @@ Free and Open Source Web applications that you can download and install on your 
   * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
   * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
   * [http://www.chamilo.org/ Chamilo LMS]
-
+  * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
+  * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
+  * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki] (via macro)
+  * [http://eduvid.techfandu.org/ Project Eduvid]
+  * [http://trac.yanel-contribution.3k3.org/wiki/svg-edit Yanel CMS] (as a 3rd-party resource)
+  * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
+  * [http://sourceforge.net/projects/ocsvg/ ownCloud]
+  * [https://drupal.org/sandbox/josegaert/1511596 Drupal]
+  * A [https://bitbucket.org/ReimarBauer/xstatic-svg-edit-moin/src/tip/xstatic/pkg/svgedit_moin/data/editor/extensions/ext-server_moinsave.js?at=default save extension] for the [http://moinmo.in/MoinMoin2.0 MoinMoin Wiki Software project] and packaged it as [http://pypi.python.org/pypi/XStatic-svg-edit-moin XStatic package] for PyPI
 
 == Heavy modification ==
   * [http://adityab.github.com/Awwation/ Awwation]
   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
+  * [http://pitch.googlecode.com/ Pitch]
+  * [https://github.com/duopixel/Method-Draw Method Draw]
 
 
 = Online services =
@@ -24,6 +34,7 @@ Directly available online, via a web browser. No need or way to download or inst
 
 == Use as-is ==
   * [http://framavectoriel.org/ Framavectoriel] (in French)
+  * [http://projectsesame.appspot.com/ Project Sesame] (2.4)
 
 == Heavy modification ==
   * [http://www.flamingtext.com/imagebot/ ImageBot]
@@ -34,22 +45,13 @@ Directly available online, via a web browser. No need or way to download or inst
 Integrating SVG-edit in a desktop application, which you download and use on your computer. 
 
 == Integrate as-is ==
+  * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
 
 == Heavy modification ==
   * [http://bluegriffon.org/ BlueGriffon Web Editor]
 
 
-= Not categorized yet =
-  * [https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo Online Paint] (Chrome Web App)
-  * [http://projectsesame.appspot.com/ Project Sesame]
-  * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
-  * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
-  * [http://extensions.xwiki.org/xwiki/bin/view/Extension/SVG+Macro XWiki] (via macro)
-  * [http://trac.yanel-contribution.3k3.org/wiki/svg-edit Yanel CMS] (as a 3rd-party resource)
-  * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
-  * [http://eduvid.techfandu.org/ Project Eduvid]
-  * [http://pitch.googlecode.com/ Pitch]
-  * [http://wise4.telscenter.org/webapp/index.html WISE 4.0]
+= Others =
   * [http://code.google.com/p/svg-edit/issues/detail?id=252 SVG-edit on tablets and devices]
 
 
