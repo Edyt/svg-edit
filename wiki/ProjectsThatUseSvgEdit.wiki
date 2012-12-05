@@ -10,7 +10,7 @@ Free and Open Source Web applications that you can download and install on your 
   * [http://doc.tiki.org/Draw Tiki Wiki CMS Groupware] (aka Tiki Draw)
   * [http://www.mediawiki.org/wiki/Extension:SVGEdit Experimental MediaWiki extension]
   * [http://www.dokuwiki.org/plugin:svgedit Dokuwiki] (plugin)
-  * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension]
+  * [http://moinmo.in/ReimarBauer/SvgEditor MoinMoin Extension] and a [https://bitbucket.org/ReimarBauer/xstatic-svg-edit-moin/src/tip/xstatic/pkg/svgedit_moin/data/editor/extensions/ext-server_moinsave.js?at=default save extension] for the [http://moinmo.in/MoinMoin2.0 MoinMoin Wiki Software project] and packaged as [http://pypi.python.org/pypi/XStatic-svg-edit-moin XStatic package] for PyPI
   * [http://www.chamilo.org/ Chamilo LMS]
   * [http://golem.ph.utexas.edu/~distler/blog/archives/002168.html Instiki]
   * [http://www.autohotkey.com/forum/topic52732.html Integrating SVG-edit with TiddlyWiki]
@@ -20,7 +20,7 @@ Free and Open Source Web applications that you can download and install on your 
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
   * [http://sourceforge.net/projects/ocsvg/ ownCloud]
   * [https://drupal.org/sandbox/josegaert/1511596 Drupal]
-  * A [https://bitbucket.org/ReimarBauer/xstatic-svg-edit-moin/src/tip/xstatic/pkg/svgedit_moin/data/editor/extensions/ext-server_moinsave.js?at=default save extension] for the [http://moinmo.in/MoinMoin2.0 MoinMoin Wiki Software project] and packaged as [http://pypi.python.org/pypi/XStatic-svg-edit-moin XStatic package] for PyPI
+
 
 == Heavy modification ==
   * [http://adityab.github.com/Awwation/ Awwation]
