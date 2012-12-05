@@ -23,3 +23,6 @@ Typical example: http://instanttee.co.nr/
 = Installable application =
 
 Integrating SVG-edit in a desktop application, which you download and use on your computer, like http://bluegriffon.org/
+
+
+See also: [Consulting]
