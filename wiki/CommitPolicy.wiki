@@ -2,6 +2,12 @@
 
 If you want commit access, just ask marclaporte at gmail.com. We need your Gmail or Google account. Keep in mind that SVG-edit is widely used and changes can have unexpected consequences. Wait for after 2.6 release (and thus trunk re-opening) for any bigger changes. 
   * If it's a translation: just commit directly. You can even use the web-based interface (awesome!)
+   * Go to https://code.google.com/p/svg-edit/source/browse/trunk/editor/locale/
+   * Click on your language file
+   * Click "Edit file"
+   * Edit the translation file
+   * File in the box to describe your changes
+   * Click "Commit"
   * If you are sure: just commit 
   * If you are pretty sure, but have some doubts:   commit and ask for a review -> https://code.google.com/p/support/wiki/CodeReviews
   * If you want some feedback before committing: add a patch to the issue tracker
