@@ -25,7 +25,6 @@ Free and Open Source Web applications that you can download and install on your 
 == Heavy modification ==
   * [http://adityab.github.com/Awwation/ Awwation]
   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
-  * [http://pitch.googlecode.com/ Pitch]
   * [https://github.com/duopixel/Method-Draw Method Draw]
 
 
