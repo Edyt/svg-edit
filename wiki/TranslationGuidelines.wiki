@@ -29,8 +29,6 @@ There is also a block of !JavaScript strings, at the end of each language file. 
 
 The current available languages files can be found [http://code.google.com/p/svg-edit/source/browse/#svn/trunk/editor/locale here]. Click on the language file you want, then select "View Raw file" to display the file and save it as a .js file that you can edit.
 
-The translations can be attached to the [http://code.google.com/p/svg-edit/issues/detail?id=410 issue 410: Update more language files for SVG-edit Bicorn (and Arbelos)] page.
-
 This page is sorted in the same order as the language files themselves.
 
 Notes:
