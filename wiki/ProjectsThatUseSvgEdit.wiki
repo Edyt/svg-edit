@@ -34,6 +34,7 @@ Directly available online, via a web browser. No need or way to download or inst
 == Use as-is ==
   * [http://framavectoriel.org/ Framavectoriel] (in French)
   * [http://projectsesame.appspot.com/ Project Sesame] (2.4)
+  * [http://www.ezadspro.com/]
 
 == Heavy modification ==
   * [http://www.flamingtext.com/imagebot/ ImageBot]
