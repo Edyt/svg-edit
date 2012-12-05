@@ -27,4 +27,13 @@ Expert developer in web technologies (php, mysql, javascript, jquery, .net, t-sq
 
 ---
 
+= Mark Medinger =
+
+  * Email: medinger.mark@gmail.com
+  * !LinkedIn: http://www.linkedin.com/in/markmedinger
+
+Front end web developer for LIVEyearbook Inc. Have been using svg-edit for over 2 years now and helped create cropping of photos with clipPath, add a drop shadow to an object, drag images into detectable drop target zones, changed the button layout of svgedit, and background tools, etc. NOTE: I would like to give the work back to the community but understand if that is not an option.
+
+---
+
 (other consultants: add yourself to this page) 
