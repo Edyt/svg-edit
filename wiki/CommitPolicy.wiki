@@ -1,6 +1,12 @@
 #summary Commit access policy
 
-If you want commit access, just ask marclaporte at gmail.com. We need your Gmail or Google account. Keep in mind that SVG-edit is widely used and changes can have unexpected consequences. Wait for after 2.6 release (and thus trunk re-opening) for any bigger changes. 
+If you want commit access, just ask marclaporte at gmail.com. We need your Gmail or Google account. Keep in mind that SVG-edit is widely used and changes can have unexpected consequences. Wait for after 2.6 release (and thus trunk re-opening) for any bigger changes.
+
+Please join these two mailing lists
+  * [http://groups.google.com/group/svg-edit General discussion]
+  * [http://groups.google.com/group/svg-edit-commit All commits, including changes to wiki pages]
+
+= Where to commit =
   * If it's a translation: just commit directly. You can even use the web-based interface (awesome!)
    * Go to https://code.google.com/p/svg-edit/source/browse/trunk/editor/locale/
    * Click on your language file
@@ -15,7 +21,14 @@ If you want commit access, just ask marclaporte at gmail.com. We need your Gmail
 
 A corollary to a lower threshold to commit access is quick rollbacks, so don't be offended if your commit is rolled back. This is part of the process of learning and collaborating.
 
+= How to commit = 
+  * We use Subversion: https://code.google.com/p/support/wiki/SubversionFAQ
 
+
+
+
+
+= Legacy info =
 Until the 2012-12-04 [CommunityConferenceCall], the policy was:
   * open bugs on https://code.google.com/p/svg-edit/issues/list
   * attach clean patches that fix the problem to the bugs (svn diff from the trunk)
