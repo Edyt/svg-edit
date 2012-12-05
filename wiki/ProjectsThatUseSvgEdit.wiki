@@ -26,6 +26,7 @@ Free and Open Source Web applications that you can download and install on your 
   * [http://adityab.github.com/Awwation/ Awwation]
   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
   * [https://github.com/duopixel/Method-Draw Method Draw]
+  * [https://www.liveyearbook.com LIVEyearbook Inc.] NOTE: svg-edit is not accessible to public
 
 
 = Online services =
