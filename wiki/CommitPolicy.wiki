@@ -16,7 +16,7 @@ Please join these two mailing lists
    * Click "Commit"
   * If you are sure: just commit 
   * If you are pretty sure, but have some doubts:   commit and ask for a review -> https://code.google.com/p/support/wiki/CodeReviews
-  * If you want some feedback before committing: add a patch to the issue tracker
+  * If you want some feedback before committing: add a patch to the issue tracker (or if it's simple, can be on the mailing list)
   * If you want to do something really radical, make an experimental branch
 
 A corollary to a lower threshold to commit access is quick rollbacks, so don't be offended if your commit is rolled back. This is part of the process of learning and collaborating.
