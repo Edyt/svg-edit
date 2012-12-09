@@ -36,4 +36,12 @@ Front end web developer for LIVEyearbook Inc. Have been using svg-edit for over 
 
 ---
 
+
+= Ben McDonald =
+
+  * Email: mcdonald.ben@gmail.com
+  * Vector Paint: http://www.vector-paint.com/app
+
+Creator of Vector Paint which makes use of svg-edit code. I hope to summit bug fixes to the code which Vector Paint shares with svg-edit.
+
 (other consultants: add yourself to this page) 
