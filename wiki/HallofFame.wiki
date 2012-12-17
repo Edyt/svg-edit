@@ -3,4 +3,5 @@
 
 = Lukas Reschke =
 
-Special thanks to Lukas Reschke - [http://statuscode.ch statuscode.ch] for reporting http://code.google.com/p/svg-edit/source/detail?r=2080
+Special thanks to Lukas Reschke - [http://statuscode.ch statuscode.ch]
+for reporting http://code.google.com/p/svg-edit/source/detail?r=2080
