@@ -18,6 +18,9 @@ Please add to https://code.google.com/p/svg-edit/issues/list once you have check
 = Bug Reports =
 Please add to https://code.google.com/p/svg-edit/issues/list once you have checked that it's not already there
 
+= Security vulnerability reports=
+Please email [https://code.google.com/p/svg-edit/people/list project owners listed here] with a report (and please do give us a bit of time to fix the issue and release a new version) and we'll add you to the [HallofFame Hall of Fame]
+
 = Translations =
 Please see: [TranslationGuidelines Translation Guidelines]
 
