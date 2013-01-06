@@ -1,4 +1,4 @@
-Join us on December 4th, 2012 for a [CommunityConferenceCall community conference call].
+You can listen to the recording of the December 4th, 2012 [CommunityConferenceCall community conference call].
 
 *[http://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html Try the demo here]*
 
@@ -74,7 +74,7 @@ SVG-edit is an online vector graphics editor that uses only !JavaScript, HTML5, 
   * Export to PNG
 </td></tr></table>
 
-*New in [http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html 2.6 alpha] ([http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.6 more to come] for 2.6 final):*
+*New in [https://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html 2.6 beta]:*
  * Support for Internet Explorer 9
  * In-group editing
  * Image library
@@ -84,7 +84,7 @@ SVG-edit is an online vector graphics editor that uses only !JavaScript, HTML5, 
  * Gridlines, snap to grid 
  * Merge layers
  * Duplicate layer
-
+ * [http://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3D2.6&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles many more] 
 
 SVG-edit works directly in the browser.  There have been several side projects:  A Firefox Add-on, an Opera Widget, a Google Wave Gadget (no longer maintained).
 
@@ -100,6 +100,8 @@ SVG-edit works directly in the browser.  There have been several side projects: 
   * [ProjectsThatUseSvgEdit Projects that use SVG-edit]
   * [Reviews]
   * [HowToParticipate How to participate]
-  * [FrequentlyAskedQuestions]
+  * [FrequentlyAskedQuestions Frequently Asked Questions]
+  * [TipsAndTricks Tips and Tricks]
   * [Roadmap]
-  * [CodeRefactoring]
+  * [CodeRefactoring Code Refactoring]
+  
