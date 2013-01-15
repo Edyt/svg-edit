@@ -21,6 +21,14 @@ Please join these two mailing lists
 
 A corollary to a lower threshold to commit access is quick rollbacks, so don't be offended if your commit is rolled back. This is part of the process of learning and collaborating.
 
+= How to give feedback on a commit =
+You can just comment the commit as per this example: https://code.google.com/p/svg-edit/source/detail?r=2274
+
+If you feel it deserves more eyeballs, send a message to the mailing list.
+
+You can also use the Code Review system:
+https://code.google.com/p/support/wiki/CodeReviews
+
 = How to commit = 
   * We use Subversion: https://code.google.com/p/support/wiki/SubversionFAQ
 
