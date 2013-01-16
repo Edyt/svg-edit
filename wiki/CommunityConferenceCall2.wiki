@@ -52,15 +52,19 @@ Some examples:
   * A release every 6 months like Ubuntu (October and April)
   * Release at any time (when energy and features are there), but never more than 12 month between releases.
 
-== Convergence of energy / Roadmap / Revamp ==
-Please present your ideas and proposals. Ideally, in writing before the meeting so people can read and be ready with questions.
-
-
 == 2.7 Release ==
   * What is the code status in trunk?
    * [https://code.google.com/p/svg-edit/issues/list?can=2&q=NeededFor%3D2.7 The current list of issues tagged needed for 2.7]
     * Let's discuss "real" blockers for a 2.7 release, because the list above is quite long!
 
+
+== Convergence of energy / Roadmap / Revamp ==
+Please present your ideas and proposals. Ideally, in writing before the meeting so people can read and be ready with questions.
+
+ * [https://groups.google.com/d/topic/svg-edit/MvAHo1-4xpU/discussion Gauging reception for a full redesign (Mark MacKay)]
+ * [https://groups.google.com/d/topic/svg-edit/O1XLHrLZLYg/discussion Proposal: svg-edit and svg-view (Christian Tzurcanu)]
+ * [https://groups.google.com/d/topic/svg-edit/aua4-cy8hvI/discussion Modular design and customizations (Aditya Bhatt)]
+ * Add your proposal! :-)
 
 =Who=
 If you are interested to participate, please indicate your name, city or time zone and ideal dates/times/periods. We'll likely use an online service to pick the date
