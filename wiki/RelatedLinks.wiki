@@ -3,4 +3,6 @@
 See also [Events]
 
 
-* Great videos: http://www.adrianparr.com/?p=389
+ * Great videos: http://www.adrianparr.com/?p=389
+ * http://www.w3.org/Graphics/SVG/
+ * http://en.wikipedia.org/wiki/SVG_Working_Group
