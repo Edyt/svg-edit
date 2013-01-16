@@ -1,0 +1,17 @@
+#summary Let's get SVG-edit used on Wikipedia
+
+
+=Who=
+ * Brion Bibber
+ * Marc Laporte
+ * You? (join us!)
+
+
+=Related links=
+ * https://bugzilla.wikimedia.org/show_bug.cgi?id=38271
+ * https://github.com/brion/svg-edit-test
+ * http://leuksman.com/misc/svg-edit-test/
+ * https://groups.google.com/forum/#!topic/svg-edit/SfTVM4OPXiA/discussion
+ * https://www.mediawiki.org/wiki/Extension:SVGEdit
+ * https://www.mediawiki.org/wiki/Extension:TranslateSvg
+ * https://code.google.com/p/svg-edit/issues/detail?id=1006
