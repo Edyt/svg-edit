@@ -1,0 +1,76 @@
+#summary The second community conference call.
+
+You can listen to the recording of the previous one [CommunityConferenceCall here]
+
+=When=
+The meeting will be in February or March 2013, likely a weekday at 16h00 UTC like the previous one
+
+=Where=
+  * We will be using the Free and Open Source [http://bigbluebutton.org/ BigBlueButton] Web conferencing platform 
+  * It will be possible to join 
+   * With a regular phone with a call to a North American number 
+   * Via the !BigBlueButton web interface (in Flash) (please have a headset)
+   * With Skype (please have a headset)
+
+The meeting room is at http://tiki.org/SVG-edit+2012-12+community+meeting and you can already try it out.
+
+
+=Topics=
+== Introduction of participants ==
+  * Each person takes a minute or two to introduce themselves. This also serves to make sure sound is OK for all. Please have a headset.
+   * Where do you live?
+   * How do you use SVG-edit? (if this takes more than 30 seconds, please add as a presentation below)
+   * What is on your mind for this meeting (which topic of the agenda interests you the most)?
+
+== Demos/explanation of how SVG-edit is used/integrated ==
+  * Each project presents in 2-5 minutes an overview of how they use SVG-edit. Presenters: you'll be able to [http://www.bigbluebutton.org/overview/ share URLs in the chatroom, or you can upload PDFs to the presentation tool]
+
+This is for projects that didn't present in the previous call or that have something new to share.
+
+
+== Wikipedia ==
+
+Being used for Wikipedia will be the biggest surge of usage for SVG-edit (Wikipedia being a top-10 site in the World)
+
+[https://groups.google.com/forum/#!topic/svg-edit/SfTVM4OPXiA/discussion A round-trip test suite is now in place.]
+
+Related links:
+  * https://code.google.com/p/svg-edit/wiki/Wikipedia
+  * https://www.mediawiki.org/wiki/Extension:SVGEdit
+  * https://www.mediawiki.org/wiki/Extension:TranslateSvg
+  * https://bugzilla.wikimedia.org/show_bug.cgi?id=38271
+  * https://code.google.com/p/svg-edit/issues/detail?id=1006
+
+What are the next steps to get there?
+
+
+== Release cycle ==
+Let's start the discussion. And we should eventually come up with some realistic and commonly understood guidelines. 
+Some examples:
+  * A release every 6 months like Ubuntu (October and April)
+  * Release at any time (when energy and features are there), but never more than 12 month between releases.
+
+== Convergence of energy / Roadmap / Revamp ==
+Please present your ideas and proposals. Ideally, in writing before the meeting so people can read and be ready with questions.
+
+
+== 2.7 Release ==
+  * What is the code status in trunk?
+   * [https://code.google.com/p/svg-edit/issues/list?can=2&q=NeededFor%3D2.7 The current list of issues tagged needed for 2.7]
+    * Let's discuss "real" blockers for a 2.7 release, because the list above is quite long!
+
+
+=Who=
+If you are interested to participate, please indicate your name, city or time zone and ideal dates/times/periods. We'll likely use an online service to pick the date
+
+  * Marc Laporte, Montréal (any time)
+  * You?
+
+  Who else should we make sure is present?
+
+You can confirm here as well:
+https://www.facebook.com/ (link will be added later)
+
+
+= Your thoughts =
+What do you think? Let us know what is on your mind :-)
