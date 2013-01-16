@@ -13,11 +13,11 @@ Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20130
 =Where=
   * We will be using the Free and Open Source [http://bigbluebutton.org/ BigBlueButton] Web conferencing platform 
   * It will be possible to join 
-   * With a regular phone with a call to a North American number 
+   * With a regular phone with a call to a toll-free North American number 
    * Via the !BigBlueButton web interface (in Flash) (please have a headset)
-   * With Skype (please have a headset)
+   * With Skype (please have a headset) (It is a free call since you'll be calling a toll-free number)
 
-The meeting room is at http://tiki.org/SVG-edit+2012-12+community+meeting and you can already try it out.
+The meeting room is at (link coming once date is decided)
 
 
 =Topics=
@@ -34,7 +34,6 @@ This is for projects that didn't present in the previous call or that have somet
 
 
 == Wikipedia ==
-
 Being used for Wikipedia will be the biggest surge of usage for SVG-edit (Wikipedia being a top-10 site in the World)
 
 [https://groups.google.com/forum/#!topic/svg-edit/SfTVM4OPXiA/discussion A round-trip test suite is now in place.]
@@ -47,7 +46,7 @@ Related links:
   * https://code.google.com/p/svg-edit/issues/detail?id=1006
 
 What are the next steps to get there?
-
+Who can help?
 
 == Release cycle ==
 Let's start the discussion. And we should eventually come up with some realistic and commonly understood guidelines. 
@@ -70,9 +69,9 @@ Please present your ideas and proposals. Ideally, in writing before the meeting 
  * Add your proposal! :-)
 
 =Who=
-If you are interested to participate, please indicate your name, city or time zone and ideal dates/times/periods. We'll likely use an online service to pick the date
+If you are interested to participate, please indicate your name, city or time zone.
 
-  * Marc Laporte, Montréal (any time)
+  * Marc Laporte, Montréal
   * You?
 
   Who else should we make sure is present?
