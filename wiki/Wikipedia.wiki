@@ -1,5 +1,9 @@
 #summary Let's get SVG-edit used on Wikipedia
 
+= What = 
+There are over 600k SVG images total on [https://commons.wikimedia.org Wikipedia Commons]
+
+Imagine if all this free content was editable via SVG-edit! (and eventually translatable as well)
 
 =Who=
  * Brion Bibber
