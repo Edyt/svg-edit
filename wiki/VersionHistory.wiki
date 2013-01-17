@@ -9,28 +9,32 @@ http://code.google.com/p/svg-edit/source/list
 
 On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.0 to MIT
 
-= Version 2.6 =
+= Version 2.6 ([http://en.wikipedia.org/wiki/Cycloid Cycloid]) =
+
 == New Features ==
- * Support for Internet Explorer 9
- * In-group editing
- * Image library
- * Shape library
+ * [http://code.google.com/p/svg-edit/issues/detail?id=120 Support for Internet Explorer 9]
  * Context menu
- * Cut/Copy/Paste
- * Gridlines, snap to grid 
+ * [http://code.google.com/p/svg-edit/issues/detail?id=612 Cut/Copy/Paste/Paste in Place options] 
+ * [http://code.google.com/p/svg-edit/issues/detail?id=131 Gridlines, snap to grid] 
  * Merge layers
  * Duplicate layer
- * [http://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3D2.6&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles many more] 
+ * [http://code.google.com/p/svg-edit/issues/detail?id=71 Image library] 
+ * [http://code.google.com/p/svg-edit/issues/detail?id=541 Shape library]
+ * [http://code.google.com/p/svg-edit/issues/detail?id=582 Basic Server-based tools for file opening/saving]
+ * In-group editing
+ * Cut/Copy/Paste
+ * [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.6 full list]
 
- == Release Date ==
- * January 15th, 2013
+== Release Date ==
+ * [http://code.google.com/p/svg-edit/source/detail?r=2281 January 15th, 2013]
+
 == Demo ==
  * http://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html
 
 
 = Version 2.5 ([http://en.wikipedia.org/wiki/Bicorn Bicorn]) =
-== New Features ==
 
+== New Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=392 Open Local Files] (Firefox 3.6+ only)
  * [http://code.google.com/p/svg-edit/issues/detail?id=72 Import SVG into Drawing] (Firefox 3.6+ only)
  * [http://code.google.com/p/svg-edit/issues/detail?id=310 Ability to create extensions/plugins]
@@ -54,12 +58,15 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
  * [http://code.google.com/p/svg-edit/issues/detail?id=364 Inline text editing]
  * [http://code.google.com/p/svg-edit/issues/detail?id=520 Line draw snapping with Shift key]
  
- == Release Date ==
+== Release Date ==
  * June 15th, 2010
+
 == Demo ==
  * http://svg-edit.googlecode.com/svn/branches/2.5/editor/svg-editor.html
 
+
 = Version 2.4 ([http://en.wikipedia.org/wiki/Arbelos Arbelos]) =
+
 == New Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=57 Raster Images]
  * [http://code.google.com/p/svg-edit/issues/detail?id=119 Select Non-Adjacent Elements]
@@ -71,11 +78,15 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
  * [http://code.google.com/p/svg-edit/issues/detail?id=106 Wireframe Mode]
  * [http://code.google.com/p/svg-edit/issues/detail?id=39 Change Background]
  * [http://code.google.com/p/svg-edit/issues/detail?id=68 Convert Shapes to Path]
+
 == Release Date ==
- * Jan 11th, 2010
+ * January 11th, 2010
+
 == Demo ==
  * http://svg-edit.googlecode.com/svn/branches/2.4/editor/svg-editor.html
+
 == Full Release Notes ==
+
 === New SVG support ===
 	
 	* Raster Images
@@ -92,7 +103,6 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
 		  * Attributes values are no longer limited to those given in dropdown lists, any (valid) value can now be entered.
 	* Title element
 		  * Images and layer groups can now be given a title.
-
 
 === New Interface features ===
 
@@ -134,8 +144,10 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
 	* Automatic Tool Switching
 		  * After drawing an element, you will remain in the same mode you were in. However, if you simply click on another element, you will automatically go into "Select" mode.
 
+
 = Version 2.3 =
-== New Features Added ==
+
+== New Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=52 Align Objects]
  * [http://code.google.com/p/svg-edit/issues/detail?id=42 Rotate Objects]
  * [http://code.google.com/p/svg-edit/issues/detail?id=51 Clone Objects]
@@ -144,13 +156,17 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
  * [http://code.google.com/p/svg-edit/issues/detail?id=33 Gradient picking]
  * [http://code.google.com/p/svg-edit/issues/detail?id=34 Polygon Mode] (Path Editing, Phase 1)
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.3 full list])
+
 == Release Date ==
- * Sep 8th, 2009
+ * September 8th, 2009
+
 == Demo ==
  * http://svg-edit.googlecode.com/svn/branches/2.3/editor/svg-editor.html
 
-= Version 2.2 ==
-== New Features Added ==
+
+= Version 2.2 =
+
+== New Features ==
  * [http://code.google.com/p/svg-edit/issues/detail?id=31 Multiselect Mode]
  * [http://code.google.com/p/svg-edit/issues/detail?id=19 Undo/Redo Actions]
  * [http://code.google.com/p/svg-edit/issues/detail?id=27 Resize Elements]
@@ -160,13 +176,17 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
  * Resizing of the SVG canvas
  * Upgraded to [http://www.digitalmagicpro.com/jPicker/ jPicker] 1.0.8
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.2 full list])
+
 == Release Date ==
  * July 8th, 2009
+
 == Demo ==
  * http://svg-edit.googlecode.com/svn/branches/2.2/editor/svg-editor.html
 
-= Version 2.1 ==
-== New Features Added ==
+
+= Version 2.1 =
+
+== New Features ==
  * tooltips added to all UI elements
  * edit of fill opacity, stroke opacity, group opacity
  * selection of elements
@@ -177,29 +197,39 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
  * change rect radius, font-family, font-size
  * keystroke handling
  * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.1 full list])
+
 == Release Date ==
- * Jun 17th, 2009
+ * June 17th, 2009
+
 == Demo ==
  * http://svg-edit.googlecode.com/svn/branches/2.1/editor/svg-editor.html
 
-= Version 2.0 ==
-== New Features Added ==
+
+= Version 2.0 =
+
+== New Features ==
  * draw ellipse, square
  * change stroke-dasharray (line style)
  * rearranged whole code to OOP
  * GUI enhancement
-== Dates ==
- * Released - Jun 03, 2009
- * Demo URL - http://svg-edit.googlecode.com/svn/branches/2.0/svg-editor.html
- * Related Revision - http://code.google.com/p/svg-edit/source/detail?r=24
 
-= Version 1.0 ==
+== Release Date ==
+ * [http://code.google.com/p/svg-edit/source/detail?r=24 June 3rd, 2009]
+
+== Demo ==
+ * http://svg-edit.googlecode.com/svn/branches/2.0/svg-editor.html
+
+
+= Version 1.0 =
+
 == New Features ==
  * draw path, line, freehand-circle, rect
  * clear drawn image
  * delete element
  * save image
-== Dates ==
- * Released - Feb 13, 2009
- * Demo URL - http://svg-edit.googlecode.com/svn/branches/1.0/svg-editor.html
- * Related Revision - http://code.google.com/p/svg-edit/source/detail?r=9
+
+== Release Date ==
+ * [http://code.google.com/p/svg-edit/source/detail?r=9 Feb 13, 2009]
+
+== Demo ==
+ * http://svg-edit.googlecode.com/svn/branches/1.0/svg-editor.html
