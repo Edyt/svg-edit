@@ -6,7 +6,7 @@ There are over 600k SVG images total on [https://commons.wikimedia.org Wikipedia
 Imagine if all this free content was editable via SVG-edit! (and eventually translatable as well)
 
 =Who=
- * Brion Bibber
+ * Brion Vibber
  * Marc Laporte
  * You? (join us!)
 
