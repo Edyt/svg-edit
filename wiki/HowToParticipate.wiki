@@ -9,6 +9,11 @@
 
 Or use the web-basd version: http://webchat.freenode.net/?channels=svg-edit
 
+= Conference calls =
+  * [CommunityConferenceCall]
+  * [CommunityConferenceCall2]
+  * [CommunityConferenceCall3]
+
 = Wiki access =
 To get wiki edit access, ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit or directly to marclaporte --at-- gmail  --dot-- com and indicate what is your Google account or gmail address (Note: check if there is a way to skip this step)
 
@@ -35,11 +40,6 @@ Please see [CommitPolicy Commit policy], [DevelopmentProcess Development Process
 
 = Interoperability or re-use =
 If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsThatUseSvgEdit]
-
-= Conference calls =
-  * [CommunityConferenceCall]
-  * [CommunityConferenceCall2]
-  * [CommunityConferenceCall3]
 
 = Networks =
   * http://www.linkedin.com/groups/SVGedit-4712151
