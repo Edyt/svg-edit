@@ -21,7 +21,7 @@ A: Shift-clicking palette squares sets the Stroke paint value.  Thus, you can sh
 
 *Q: How can I help?
 
-A: We have a list of [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3AGood-First-Bug good first bugs] for people who are new to the project
+A: See [HowToParticipate How to participate]
 
 *Q: How can I select an element when it's hidden or behind another one?
 
