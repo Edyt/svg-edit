@@ -9,6 +9,8 @@
 
 Or use the web-basd version: http://webchat.freenode.net/?channels=svg-edit
 
+Pavol Rusnak is the channel operator.
+
 = Conference calls =
   * [CommunityConferenceCall]
   * [CommunityConferenceCall2]
