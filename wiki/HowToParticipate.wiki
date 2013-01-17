@@ -39,6 +39,8 @@ If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsTha
 
 = Conference calls =
   * [CommunityConferenceCall]
+  * [CommunityConferenceCall2]
+  * [CommunityConferenceCall3]
 
 = Networks =
   * http://www.linkedin.com/groups/SVGedit-4712151
