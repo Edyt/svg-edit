@@ -1,8 +1,8 @@
 #summary FAQ for SVG-edit
 
-*Q: Why doesn't SVG-edit work in Internet Explorer?*
+*Q: Why doesn't SVG-edit work in Internet Explorer 6-7-8?*
 
-A: SVG-edit only works in IE6+ if you have installed the [http://code.google.com/chrome/chromeframe/ Google Chrome Frame plugin]. Internet Explorer 8 and under do not natively support Scalable Vector Graphics (SVG), however the upcoming IE9 does. We plan on making sure SVG-edit will work in Internet Explorer 9 by the time it has been fully released. 
+A: SVG-edit only works in IE6-7-8 if you have installed the [http://code.google.com/chrome/chromeframe/ Google Chrome Frame plugin]. Internet Explorer 8 and under do not natively support Scalable Vector Graphics (SVG), however IE9+ does, and thus is supported starting in SVG-edit 2.6
 
 In theory there are several other possibilities that could allow SVG-edit to work in IE:
   * someone gets it to work with the [http://svgweb.googlecode.com/ SVG Web] shim
