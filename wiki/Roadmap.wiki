@@ -14,7 +14,7 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
  * [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.7 to-do]
 
 == Implemented Features ==
-* [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.7 full list]
+ * [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.7 full list]
 
 == Release Date ==
  * TBD
