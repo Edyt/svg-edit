@@ -68,17 +68,17 @@ SVG-edit is an online vector graphics editor that uses only !JavaScript, HTML5, 
   * Export to PNG
 </td></tr></table>
 
-*New in [https://svg-edit.googlecode.com/svn/trunk/editor/svg-editor.html 2.6 beta]:*
- * Support for Internet Explorer 9
- * In-group editing
- * Image library
- * Shape library
- * Context menu
- * Cut/Copy/Paste
- * Gridlines, snap to grid 
- * Merge layers
- * Duplicate layer
- * [http://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3D2.6&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles many more] 
+ * New in 2.6:
+  * Support for Internet Explorer 9
+  * In-group editing
+  * Image library
+  * Shape library
+  * Context menu
+  * Cut/Copy/Paste
+  * Gridlines, snap to grid 
+  * Merge layers
+  * Duplicate layer
+  * [http://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3D2.6&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles many more] 
 
 SVG-edit works directly in the browser.  There have been several side projects:  A Firefox Add-on, an Opera Widget, a Google Wave Gadget (no longer maintained).
 
