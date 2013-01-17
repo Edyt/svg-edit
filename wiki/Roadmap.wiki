@@ -8,23 +8,16 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
  * http://en.wikipedia.org/wiki/List_of_curves
  * http://en.wikipedia.org/wiki/List_of_regular_polytopes
 
-= Version 2.6 ([http://en.wikipedia.org/wiki/Cycloid Cycloid]) =
+= Version 2.7 (codename TBD) =
+
 == Proposed Features ==
- * ([http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.6 full list], [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.6 left-to-do])
+ * [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.7 to-do]
 
 == Implemented Features ==
- * [http://code.google.com/p/svg-edit/issues/detail?id=120 Support for Internet Explorer 9]
- * Context menu
- * [http://code.google.com/p/svg-edit/issues/detail?id=612 Cut/Copy/Paste/Paste in Place options] 
- * [http://code.google.com/p/svg-edit/issues/detail?id=131 Gridlines, snap to grid] 
- * Merge layers
- * Duplicate layer
- * [http://code.google.com/p/svg-edit/issues/detail?id=71 Image library] 
- * [http://code.google.com/p/svg-edit/issues/detail?id=541 Shape library]
- * [http://code.google.com/p/svg-edit/issues/detail?id=582 Basic Server-based tools for file opening/saving]
-== Proposed Release Date ==
- * ASAP
+* [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3ANeededFor-2.7 full list]
 
+== Release Date ==
+ * TBD
 
 = Future =
 == Proposed Features ==
