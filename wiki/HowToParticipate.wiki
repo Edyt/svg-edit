@@ -33,8 +33,6 @@ We have started to gather some unit tests for SVG-edit here: http://svg-edit.goo
 
 Please see [CommitPolicy Commit policy], [DevelopmentProcess Development Process] and [ExtensionDocs Extension Docs]
 
-We have a list of [http://code.google.com/p/svg-edit/issues/list?can=1&q=label%3AGood-First-Bug good first bugs] for people who are new to the project.
-
 = Interoperability or re-use =
 If you integrate / enhance / use SVG-edit in any way, please add to [ProjectsThatUseSvgEdit]
 
