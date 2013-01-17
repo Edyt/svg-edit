@@ -1,12 +1,16 @@
-#summary A high-level roadmap for the svg-edit project.
+#summary A high-level roadmap for the SVG-edit project.
 
 = Introduction =
 
-This document covers future versions of svg-edit.  For previous versions, see the VersionHistory.
+This document covers future versions of SVG-edit. For previous versions, see the VersionHistory.
+
+Although there is no set date to do so, one important project is to get SVG-edit used on [Wikipedia].
 
 Starting with 2.4, development versions of SVG-edit are given an alphabetic codename that corresponds to the name of a shape.  See potential lists here:
  * http://en.wikipedia.org/wiki/List_of_curves
  * http://en.wikipedia.org/wiki/List_of_regular_polytopes
+
+You can follow all [https://code.google.com/p/svg-edit/source/list code commits here] to see any features that have been developed since the latest stable release.
 
 = Version 2.7 (codename TBD) =
 
