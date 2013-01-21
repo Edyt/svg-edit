@@ -1,6 +1,6 @@
 #summary The second community conference call.
 
-You can listen to the recording of the previous one [CommunityConferenceCall here]
+You can listen to the recording of the previous one [CommunityConferenceCall here] (and read up on meeting notes)
 
 =When=
 The meeting will be February 12th, 2013 (at 16h00 UTC like the previous one)
