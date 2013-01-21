@@ -16,7 +16,7 @@ Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20130
    * Via the !BigBlueButton web interface (in Flash) (please have a headset)
    * With Skype (please have a headset) (It is a free call since you'll be calling a toll-free number)
 
-The meeting room is at (link coming once date is decided)
+The meeting room is at http://tiki.org/SVG-edit+2013-02+community+meeting
 
 
 =Topics=
