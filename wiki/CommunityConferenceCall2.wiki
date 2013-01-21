@@ -59,6 +59,10 @@ Some examples:
     * Let's discuss "real" blockers for a 2.7 release, because the list above is quite long!
 
 
+== Ease of use and skinning platform ==
+
+
+
 == Convergence of energy / Roadmap / Revamp ==
 Please present your ideas and proposals. Ideally, in writing before the meeting so people can read and be ready with questions.
 
