@@ -3,6 +3,11 @@
 See also [Events]
 
 
+= SVG =
  * Great videos: http://www.adrianparr.com/?p=389
  * http://www.w3.org/Graphics/SVG/
  * http://en.wikipedia.org/wiki/SVG_Working_Group
+
+= !JavaScript=
+ * http://www.adrianparr.com/?p=457 
+ * http://www.adrianparr.com/?p=463
