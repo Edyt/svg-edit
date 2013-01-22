@@ -1,4 +1,4 @@
-#summary Links related to SVG-edit, SVG, etc.
+#summary Links related to SVG-edit, SVG, JavaScript, etc.
 
 See also [Events]
 
