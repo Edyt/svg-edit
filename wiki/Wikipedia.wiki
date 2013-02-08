@@ -12,6 +12,7 @@ Imagine if all this free content was editable via SVG-edit! (and eventually tran
 
 
 =Related links=
+ * http://lists.wikimedia.org/pipermail/wikitech-l/2012-November/064472.html
  * https://bugzilla.wikimedia.org/show_bug.cgi?id=38271
  * https://github.com/brion/svg-edit-test
  * http://leuksman.com/misc/svg-edit-test/
