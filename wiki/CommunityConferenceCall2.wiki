@@ -71,6 +71,11 @@ Please present your ideas and proposals. Ideally, in writing before the meeting 
  * [https://groups.google.com/d/topic/svg-edit/aua4-cy8hvI/discussion Modular design and customizations (Aditya Bhatt)]
  * Add your proposal! :-)
 
+
+== Unhosted ==
+ * https://unhosted.org/apps/
+ * http://2013.unhosted.org/
+
 =Who=
 If you are interested to participate, please indicate your name, city or time zone.
 
