@@ -23,7 +23,7 @@ Free and Open Source Web applications that you can download and install on your 
 
 
 == Heavy modification ==
-  * [https://github.com/asyazwan/ext-sozi|ext-sozi] SVG-edit extension to use Sozi in your SVGs. Create Sozi SVGs in your browser, 100% client-side.
+  * [https://github.com/asyazwan/ext-sozi ext-sozi] SVG-edit extension to use Sozi in your SVGs. Create Sozi SVGs in your browser, 100% client-side.
   * [http://adityab.github.com/Awwation/ Awwation]
   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
   * [https://github.com/duopixel/Method-Draw Method Draw]
