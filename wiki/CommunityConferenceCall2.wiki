@@ -77,7 +77,7 @@ Please present your ideas and proposals. Ideally, in writing before the meeting 
  * http://2013.unhosted.org/
 
 =Who=
-If you are interested to participate, please indicate your name, city or time zone.
+Optional: You can indicate your name, city or time zone.
 
   * Marc Laporte, Montréal
   * Ílson Bolzan, Porto Alegre
@@ -90,3 +90,13 @@ https://www.facebook.com/events/322796481155915/
 
 = Your thoughts =
 What do you think? Let us know what is on your mind :-)
+
+
+= Promotion of this conference call =
+  * https://www.facebook.com/events/322796481155915/
+  * http://www.linkedin.com/groups/SVGedit-2nd-Community-Conference-Call-4712151.S.206831551
+  * https://twitter.com/SVGedit/status/293632047895937024
+  * https://plus.google.com/107010604858430492390/posts/j1NMXR8ufGb
+  * https://groups.google.com/d/msg/svg-edit/EFpAFKJV9kA/82ZWvmORicIJ
+  * https://code.google.com/p/svg-edit/ (on front page) 
+  * https://bugzilla.wikimedia.org/show_bug.cgi?id=38271#c19
