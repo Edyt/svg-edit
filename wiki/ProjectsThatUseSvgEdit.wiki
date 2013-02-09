@@ -21,9 +21,11 @@ Free and Open Source Web applications that you can download and install on your 
   * [http://sourceforge.net/projects/ocsvg/ ownCloud]
   * [https://drupal.org/sandbox/josegaert/1511596 Drupal]
 
+== Extension ==
+  * [http://asyazwan.github.com/ext-sozi/ ext-sozi] SVG-edit extension to use Sozi in your SVGs. Create Sozi SVGs in your browser, 100% client-side. See also [http://asyazwan.github.com/ext-sozi/ext-sozi-guide.png illustrated guide]
+
 
 == Heavy modification ==
-  * [http://asyazwan.github.com/ext-sozi/ ext-sozi] SVG-edit extension to use Sozi in your SVGs. Create Sozi SVGs in your browser, 100% client-side.
   * [http://adityab.github.com/Awwation/ Awwation]
   * [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
   * [https://github.com/duopixel/Method-Draw Method Draw]
