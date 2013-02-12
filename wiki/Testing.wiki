@@ -1,0 +1,6 @@
+There are some unit tests here: https://svg-edit.googlecode.com/svn/trunk/test/
+
+All the tests can be run at once from [https://svg-edit.googlecode.com/svn/trunk/test/all_tests.html this page].
+
+== To do ==
+* List all tests that need to be written
