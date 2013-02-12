@@ -8,7 +8,7 @@ The recording is here: http://tiki.bigbluebutton.org/playback/slides/playback.ht
 
 
 =Summary of discussions=
- * Jacques presented Instiki
+ * Jacques presented SVG-edit integrated in Instiki
  * We discussed a [VersionLifecycle], to be improved/proposed.
  * Discussion about testing and unit testing -> [Testing]
  * Convergence of energy / theming -> [Theming]
