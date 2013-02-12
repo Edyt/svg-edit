@@ -3,3 +3,9 @@ We need to make it easier to theme svg-edit and tweak the interface. Currently t
 == Open questions ==
  * What needs to be changed in the code to make this separation happen?
  * What sorts of interface changes would we want possible? Perhaps take inspiration from other editors like [http://editor.method.ac/ Method Draw] and [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
+
+
+== Related links ==
+ * [https://groups.google.com/d/topic/svg-edit/MvAHo1-4xpU/discussion Gauging reception for a full redesign (Mark MacKay)]
+ * [https://groups.google.com/d/topic/svg-edit/O1XLHrLZLYg/discussion Proposal: svg-edit and svg-view (Christian Tzurcanu)]
+ * [https://groups.google.com/d/topic/svg-edit/aua4-cy8hvI/discussion Modular design and customizations (Aditya Bhatt)]
