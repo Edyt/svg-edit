@@ -1,0 +1,5 @@
+We need to make it easier to theme svg-edit and tweak the interface. Currently the presentation, markup and logic are mixed in css, html and javascript. Ideally an approach similar to the [http://www.csszengarden.com/ CSS Zen Garden].
+
+== Open questions ==
+ * What needs to be changed in the code to make this separation happen?
+ * What sorts of interface changes would we want possible? Perhaps take inspiration from other editors like [http://editor.method.ac/ Method Draw] and [https://code.google.com/p/cwm-drawtool/ CWM Draw Tool]
