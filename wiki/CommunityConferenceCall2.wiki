@@ -1,6 +1,10 @@
 #summary The second community conference call.
 
 You can listen to the recording of the previous one [CommunityConferenceCall here] (and read up on meeting notes)
+The next call is [CommunityConferenceCall3 here]
+
+
+The recording is here: http://tiki.bigbluebutton.org/playback/slides/playback.html?meetingId=c986d4c28a45e0f8bab246354ebfe0422683e9de-1360684740601
 
 
 =Summary of discussions=
