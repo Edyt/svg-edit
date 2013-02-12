@@ -6,6 +6,9 @@ You can listen to the recording of the previous one [CommunityConferenceCall her
 =Summary of discussions=
  * [VersionLifecycle]
  * Discussion about testing and unit testing -> [Testing]
+ * Convergence of energy /theming
+ ** Look at TinyMCE on how they do it
+ ** Report places that need overrides as bugs
 
 =When=
 The meeting will be February 12th, 2013 (at 16h00 UTC like the previous one)
