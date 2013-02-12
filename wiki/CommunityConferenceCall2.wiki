@@ -7,7 +7,7 @@ You can listen to the recording of the previous one [CommunityConferenceCall her
  * [VersionLifecycle]
  * Discussion about testing and unit testing -> [Testing]
  * Convergence of energy /theming
- ** Look at TinyMCE on how they do it
+ ** Look at TinyMCE on how they do it in terms of theming and extending functionality
  ** Report places that need overrides as bugs
 
 =When=
