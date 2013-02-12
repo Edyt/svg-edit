@@ -16,6 +16,7 @@ The recording is here: http://tiki.bigbluebutton.org/playback/slides/playback.ht
   * Report areas that need overrides as bugs / todos / issues on the new [Theming] page
   * [Wikipedia]: Brion presented the test suite and general objectives
  * Example of changes to SVG implementation in the browser [http://dschulze.com/blog/articles/4/efficient-redrawing-on-svg-or-why-suspendredraw-is-a-lie suspend/unsuspend Redraw Implementation]
+ * Presented Unhosted.org
  * We will have Community Conference calls every 2-3 months
 
 =When=
