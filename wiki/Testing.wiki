@@ -9,3 +9,8 @@ All the tests can be run at once from [https://svg-edit.googlecode.com/svn/trunk
  ** People don't end up writing a test that already exists
  ** When people want to add a new test, they know where to add it
  ** People know that those tests exist, and have access to easy tutorials on how to write them.
+
+
+
+Related:
+ * For [Wikipedia], we have a round-trip testing suite: https://github.com/brion/svg-edit-test
