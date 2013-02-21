@@ -31,13 +31,3 @@ https://code.google.com/p/support/wiki/CodeReviews
 
 = How to commit = 
   * We use Subversion: https://code.google.com/p/support/wiki/SubversionFAQ
-
-
-
-
-
-= Legacy info =
-Until the 2012-12-04 [CommunityConferenceCall], the policy was:
-  * open bugs on https://code.google.com/p/svg-edit/issues/list
-  * attach clean patches that fix the problem to the bugs (svn diff from the trunk)
-  * after a few successful, non-trivial patches we would consider granting you commit privileges 
