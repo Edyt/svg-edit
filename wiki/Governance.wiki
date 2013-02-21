@@ -17,4 +17,4 @@ Admins rarely need to vote because decisions are usually consensual and it's a [
 
 
 == References ==
- * [http://producingoss.com/ Producing Open Source Software How to Run a Successful Free Software Project by Karl Fogel]
+ * [http://producingoss.com/ Producing Open Source Software - How to Run a Successful Free Software Project - by Karl Fogel]
