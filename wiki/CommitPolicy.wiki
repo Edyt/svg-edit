@@ -1,6 +1,6 @@
 #summary Commit access policy
 
-If you want commit access, just ask marclaporte at gmail.com. We need your Gmail or Google account. Keep in mind that SVG-edit is widely used and changes can have unexpected consequences. Wait for after 2.6 release (and thus trunk re-opening) for any bigger changes.
+If you want commit access, just ask marclaporte at gmail.com. We need your Gmail or Google account. Keep in mind that SVG-edit is widely used and changes can have unexpected consequences.
 
 Please join these two mailing lists
   * [http://groups.google.com/group/svg-edit General discussion]
