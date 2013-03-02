@@ -13,8 +13,7 @@ Admins rarely need to vote because decisions are usually consensual and it's a [
 
 == Ongoing responsibilities of the Admins ==
  * Add/remove [CommitPolicy commit access] for contributors
- * They also act as a safe guard, as a last resort, to deal with [http://www.youtube.com/watch?v=ZSFDm3UYkeE Difficult People].
-
+ * They also act as a safe guard, as a last resort, to deal with [http://producingoss.com/en/difficult-people.html Difficult People] or [http://www.youtube.com/watch?v=ZSFDm3UYkeE Poisonous People].
 
 == References ==
  * [http://producingoss.com/ Producing Open Source Software - How to Run a Successful Free Software Project - by Karl Fogel]
