@@ -98,6 +98,7 @@ In browsers that support the W3C File API, this editor allows you to open local 
   * [FrequentlyAskedQuestions Frequently Asked Questions]
   * [TipsAndTricks Tips and Tricks]
   * [Roadmap]
+  * [Governance]
   * [CodeRefactoring Code Refactoring]
   * [VersionHistory Version History (release notes)]
   * This editor depends on many other open-source projects.  See [Acknowledgements] for details.
