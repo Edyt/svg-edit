@@ -20,7 +20,7 @@ The Google Summer of Code is a program for students in most countries.  You will
 
 Do this if you want to participate:
 
-  # Start by reading the [http://socghop.appspot.com/document/show/gsoc_program/google/gsoc2010/faqs Google Summer of Code FAQ]
+  # Start by reading the [http://www.google-melange.com/gsoc/document/show/gsoc_program/google/gsoc2013/help_page Google Summer of Code FAQ]
   # See which of the Ideas below you find interesting or come up with your own idea.
   # Get in contact with the community
   # Submit your proposal on the Google Summer of Code website
