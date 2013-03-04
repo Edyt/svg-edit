@@ -11,3 +11,10 @@ See also [Events]
 = !JavaScript=
  * http://www.adrianparr.com/?p=457 
  * http://www.adrianparr.com/?p=463
+
+
+
+
+= Other =
+ * http://srguiwiz.github.com/adj-js/user-docs/
+ * http://leosbog.nrvr.com/2013/02/20/writing-svg-to-disk/
