@@ -19,3 +19,4 @@ See also [Events]
  * http://srguiwiz.github.com/adj-js/user-docs/
  * http://leosbog.nrvr.com/2013/02/20/writing-svg-to-disk/
  * http://www.linkedin.com/groups/Using-SVG-realtime-displays-factory-2549009.S.216775723
+ * https://code.google.com/p/nanoblok/
