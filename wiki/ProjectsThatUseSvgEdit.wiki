@@ -46,7 +46,7 @@ Directly available online, via a web browser. No need or way to download or inst
   * [http://editor.cloud-canvas.com CloudCanvas]
   * [http://instanttee.co.nr/ InstantTee]
   * [http://www.vector-paint.com/ Vector Paint]
-  * [http://dev.chromics.com/master/editor/svg-editor.html|Chromics]
+  * [http://dev.chromics.com/master/editor/svg-editor.html Chromics]
 
 = Installable application =
 Integrating SVG-edit in a desktop application, which you download and use on your computer. 
