@@ -23,3 +23,4 @@ See also [Events]
  * jHotDraw
   * http://www.randelshofer.ch/oop/jhotdraw/Documentation/index.html
   * http://jhotdraw.org/
+ * http://svgjs.com/
