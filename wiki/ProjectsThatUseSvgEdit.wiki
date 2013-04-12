@@ -23,6 +23,7 @@ Free and Open Source Web applications that you can download and install on your 
 
 == Extension ==
   * [http://asyazwan.github.com/ext-sozi/ ext-sozi] SVG-edit extension to use Sozi in your SVGs. Create Sozi SVGs in your browser, 100% client-side. See also [http://asyazwan.github.com/ext-sozi/ext-sozi-guide.png illustrated guide]
+  * [https://github.com/josegaert/ext-mathjax ext-mathjax] SVG-edit extension to use the [http://www.mathjax.com/ MathJax] javaScript library to transform LaTeX math into nicely typeset SVG figures.
 
 
 == Heavy modification ==
