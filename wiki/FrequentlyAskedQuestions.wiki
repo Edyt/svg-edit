@@ -50,4 +50,9 @@ A:
   * Open the colorpicker by clicking on the color blocks in the bottom toolbar. If you want to copy the fill, select the Fill block. If you want to copy the stroke, select the Stroke block.
   * Hit "Ok" in the colorpicker
 
+* Q: How can I serve SVG graphic editor from my own server?
+
+A: 
+  * You need to download the latest version to your server and unzip.  The exact commands/instructions are here: http://howik.com/Improve_your_user%27s_experience_by_adding_svg_graphic_editor_to_your_website_in_less_than_2_minutes
+
 The other objects will get the Fill or the Stroke of the first object.
