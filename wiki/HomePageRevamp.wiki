@@ -3,8 +3,8 @@
 SVG-edit is a fast, web-based, !JavaScript-driven SVG drawing editor that works in any modern browser.
 
 = Recent news =
- * 2013-04-09 is the [CommunityConferenceCall3  upcoming community conference call] (Make sure to join us!)
- * 2013-02-12 was the [CommunityConferenceCall2 previous community conference call] (You can listen to the recording)
+ * 2013-04-09 [CommunityConferenceCall3 community conference call] (You can listen to the recording)
+ * 2013-02-12 [CommunityConferenceCall2 community conference call] (You can listen to the recording)
  * 2013-01-15: [https://code.google.com/p/svg-edit/downloads/detail?name=svg-edit-2.6.zip&can=2&q= SVG-edit 2.6] was released
 
 = Demos =
