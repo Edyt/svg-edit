@@ -15,13 +15,11 @@ Expert developer in web technologies (php, mysql, javascript, jquery, .net, t-sq
 
 ---
 
-
 = Ben !McDonald =
 
   * Email: mcdonald.ben@gmail.com
   * Website: http://yaks.co.nz/web-apps/
-  * Vector Paint: http://vectorpaint.yaks.co.nz
 
-Creator of Vector Paint which makes use of svg-edit code. I hope to submit bug fixes to the code which Vector Paint shares with svg-edit.
+Three years experience working on SVG graphic editors and SVG-edit code. I can help you make high quality SVG-edit based apps. Creator of [http://vectorpaint.yaks.co.nz Vector Paint] which makes use of svg-edit code.
 
 (other consultants: add yourself to this page) 
