@@ -9,6 +9,15 @@ The tests automate svg-edit to perform a series of load-save operations on svg d
 
 The Error Score is based on how many pixels differ between the rasterized version of the original svg document and the rasterized version of the svg document that ran through svg-edit. The closer to 0 the better. In the present interface you can also see a highlighted view of which pixels differ in each test, and compare the C14N-canonicalized input xml with the C14N-canonicalized svg-edit output in a side-by-side diff.
 
+In revisions of svg-edit as of this writing, one of the first tests (352) will pause at "uploading saved source..." for a very long time due to the wildly inaccurate dimensions of the image that svg-edit reports back to the server. Be patient.
+
+= Identified Issues =
+This section lists some issues that the roundtrip tests have revealed
+<ul>
+<li>Inline style attributes are not preserved</li>
+<li>Wildly inaccurate dimensions of saved document, as exemplified by <a href="https://www.mbaynton.com/svg-edit/2.6/test/roundtrip-test-src/rasterview.php?direction=&svgId=352">test 352</a></li>
+</ul>
+
 = Test code and dependencies =
 This section is only of interest if you wanted to set up a new roundtrip test environment on your own server.
 
