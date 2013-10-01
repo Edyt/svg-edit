@@ -6,14 +6,15 @@ Previous calls: [CommunityConferenceCall] [CommunityConferenceCall2] [CommunityC
 The meeting will be October 10th, 2013 (at 16h00 UTC like the previous one) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20131010T1600 the time in your time zone] 
 
 =Topics= 
-* Follow-up on [Wikipedia] progress 
-* Round trip dashboard
-* Security fixes
-* 2.7 release
-* Github discussion
+ * Follow-up on [Wikipedia] progress 
+ * Round trip dashboard
+ * Security fixes
+ * 2.7 release
+ * Github discussion
 
 =Related links=
-* https://plus.google.com/
-* https://twitter.com/SVGedit/status/
-* http://www.linkedin.com/
-* http://www.facebook.com/
+ * Add links here when it's official
+ * https://plus.google.com/
+ * https://twitter.com/SVGedit/status/
+ * http://www.linkedin.com/
+ * http://www.facebook.com/
