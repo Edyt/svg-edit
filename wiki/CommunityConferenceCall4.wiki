@@ -1,16 +1,19 @@
-Coming soon
+#summary Community Conference Call 4
 
+Previous calls: [CommunityConferenceCall] [CommunityConferenceCall2] [CommunityConferenceCall]
 
-Topics
-Security fixes
-Round trip script
-Wikipedia
+=When= The meeting will be April 9th, 2013 (at 16h00 UTC like the previous one) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20130409T1600 the time in your time zone] 
 
+=Topics= 
+* Follow-up on [Wikipedia] progress 
+* Round trip dashboard
+* Security fixes
+* 2.7 release
+* Github discussion
 
-
-2.7 release
-
-Github discussion
-
-
+=Related links=
+* https://plus.google.com/
+* https://twitter.com/SVGedit/status/
+* http://www.linkedin.com/
+* http://www.facebook.com/
 
