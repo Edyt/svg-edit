@@ -3,7 +3,7 @@
 Previous calls: [CommunityConferenceCall] [CommunityConferenceCall2] [CommunityConferenceCall3]
 
 =When=
-The meeting will be October 9th, 2013 (at 16h00 UTC like the previous one) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20130409T1600 the time in your time zone] 
+The meeting will be October 10th, 2013 (at 16h00 UTC like the previous one) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20131010T1600 the time in your time zone] 
 
 =Topics= 
 * Follow-up on [Wikipedia] progress 
