@@ -5,6 +5,9 @@ Previous calls: [CommunityConferenceCall] [CommunityConferenceCall2] [CommunityC
 =When=
 The meeting will be October 10th, 2013 (at 16h00 UTC like the previous one) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20131010T1600 the time in your time zone] 
 
+=Where=
+Online with BigBlueButton [http://tiki.org/SVG-edit+2013-10+community+meeting here]  (no registration required)
+
 =Topics= 
  * Follow-up on [Wikipedia] progress 
  * Round trip dashboard
