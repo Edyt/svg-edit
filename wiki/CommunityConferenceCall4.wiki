@@ -15,6 +15,7 @@ The meeting will be October 10th, 2013 (at 16h00 UTC like the previous one) Plea
 =Related links=
  * Add links here when it's official
  * https://plus.google.com/
- * https://twitter.com/SVGedit/status/
+ * https://twitter.com/SVGedit/
  * http://www.linkedin.com/
  * http://www.facebook.com/
+ * https://identi.ca/
