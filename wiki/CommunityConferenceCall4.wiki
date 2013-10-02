@@ -12,6 +12,9 @@ The meeting will be October 10th, 2013 (at 16h00 UTC like the previous one) Plea
  * 2.7 release
  * Github discussion
 
+=Who=
+Everyone is invited. Add your name below to confirm your participation.
+
 =Related links=
  * Add links here when it's official
  * https://plus.google.com/
