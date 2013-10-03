@@ -19,6 +19,7 @@ Online with BigBlueButton [http://tiki.org/SVG-edit+2013-10+community+meeting he
 Everyone is invited. Add your name below to confirm your participation.
  * Marc Laporte
  * Mike Baynton
+ * Brion Vibber
 
 =Related links=
  * Add links here when it's official
