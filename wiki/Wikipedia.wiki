@@ -1,15 +1,14 @@
 #summary Let's get SVG-edit used on Wikipedia
 
 = What = 
-There are over 600k SVG images total on [https://commons.wikimedia.org Wikipedia Commons]
+There are over 600k SVG images total on [https://commons.wikimedia.org Wikipedia Commons]. Imagine if all this free content was editable via SVG-edit! (and eventually translatable as well)
 
-Imagine if all this free content was editable via SVG-edit! (and eventually translatable as well)
-
-Maybe https://github.com/svg/svgo can be useful?
+The 1st thing we need is [RoundtripTests] (worked on by Mike Baynton, based on initial ideas / work by Brion Vibber)
 
 =Who=
  * Brion Vibber
- * Marc Laporte
+ * Mike Baynton
+ * Marc Laporte 
  * You? (join us!)
 
 
@@ -22,3 +21,4 @@ Maybe https://github.com/svg/svgo can be useful?
  * https://www.mediawiki.org/wiki/Extension:SVGEdit
  * https://www.mediawiki.org/wiki/Extension:TranslateSvg
  * https://code.google.com/p/svg-edit/issues/detail?id=1006
+ * Maybe https://github.com/svg/svgo can be useful?
