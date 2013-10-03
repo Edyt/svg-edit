@@ -16,7 +16,9 @@ This section lists some issues that the roundtrip tests have revealed
 <ul>
 <li>Inline style attributes are not preserved</li>
 <li>Wildly inaccurate dimensions of saved document, as exemplified by <a href="https://www.mbaynton.com/svg-edit/2.6/test/roundtrip-test-src/rasterview.php?direction=&svgId=352">test 352</a></li>
+<li>2013-10-03 Firefox on Windows eats up over 2 gigs of RAM and eventually crashes (reported by marclaporte)</li>
 </ul>
+
 
 = Test code and dependencies =
 This section is only of interest if you wanted to set up a new roundtrip test environment on your own server.
