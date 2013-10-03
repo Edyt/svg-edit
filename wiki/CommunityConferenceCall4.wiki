@@ -10,7 +10,7 @@ Online with BigBlueButton [http://tiki.org/SVG-edit+2013-10+community+meeting he
 
 =Topics= 
  * Follow-up on [Wikipedia] progress 
- * Round trip dashboard
+ * [RoundtripTests] dashboard
  * Security fixes
  * 2.7 release
  * Github discussion
