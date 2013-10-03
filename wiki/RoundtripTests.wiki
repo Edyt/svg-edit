@@ -1,15 +1,15 @@
-#summary Information and help for the svg roundtrip (load/save) tests from Wikimedia Commons.
+#summary Information and help for the SVG roundtrip (load/save) tests from Wikimedia Commons.
 
 = Roundtrip Tests =
 
-Primarily in an effort to make svg-edit suitable for Wikipedia, there are some tests that determine how accurately svg-edit reproduces an original svg document when it is loaded into svg-edit and immediately saved back out.
+Primarily in an effort to make SVG-edit suitable for [Wikipedia], there are some tests that determine how accurately SVG-edit reproduces an original svg document when it is loaded into SVG-edit and immediately saved back out.
 
 = Hosted tests =
-The tests automate svg-edit to perform a series of load-save operations on svg documents randomly selected from the Wikimedia Commons, but svg-edit's output is sent back to a server for analysis and permanent storage. Currently, the main test server is <a href="https://www.mbaynton.com/svg-edit/2.6/test/roundtrip-test-src/launcher.php">https://www.mbaynton.com/svg-edit/2.6/test/roundtrip-test-src/launcher.php</a>. Anyone who wants to help out can donate some cycles and bandwidth to the tests just by visiting this URL. We test hundreds of svg's on many browsers and many svg-edit code revisions, so there's probably tests to be run.
+The tests automate SVG-edit to perform a series of load-save operations on svg documents randomly selected from the Wikimedia Commons, but SVG-edit's output is sent back to a server for analysis and permanent storage. Currently, the main test server is <a href="https://www.mbaynton.com/svg-edit/2.6/test/roundtrip-test-src/launcher.php">https://www.mbaynton.com/svg-edit/2.6/test/roundtrip-test-src/launcher.php</a>. Anyone who wants to help out can donate some cycles and bandwidth to the tests just by visiting this URL. We test hundreds of svg's on many browsers and many SVG-edit code revisions, so there's probably tests to be run.
 
-The Error Score is based on how many pixels differ between the rasterized version of the original svg document and the rasterized version of the svg document that ran through svg-edit. The closer to 0 the better. In the present interface you can also see a highlighted view of which pixels differ in each test, and compare the C14N-canonicalized input xml with the C14N-canonicalized svg-edit output in a side-by-side diff.
+The Error Score is based on how many pixels differ between the rasterized version of the original SVG document and the rasterized version of the SVG document that ran through SVG-edit. The closer to 0 the better. In the present interface you can also see a highlighted view of which pixels differ in each test, and compare the C14N-canonicalized input xml with the C14N-canonicalized SVG-edit output in a side-by-side diff.
 
-In revisions of svg-edit as of this writing, one of the first tests (352) will pause at "uploading saved source..." for a very long time due to the wildly inaccurate dimensions of the image that svg-edit reports back to the server. Be patient.
+In revisions of SVG-edit as of this writing, one of the first tests (352) will pause at "uploading saved source..." for a very long time due to the wildly inaccurate dimensions of the image that SVG-edit reports back to the server. Be patient.
 
 = Identified Issues =
 This section lists some issues that the roundtrip tests have revealed
