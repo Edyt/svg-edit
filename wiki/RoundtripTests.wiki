@@ -48,5 +48,7 @@ Once you're satisfied with the set of tests you've loaded, you probably shouldn'
 <li>(Optionally) a W3C markup validator. The validator is web based and so doesn't need to be local; the one it uses should be in settings.php but is currently hardcoded in helper-functions.php (function testSvgStrictValidity).</li></ul>
 
 = Future Enhancements =
-<ul><li>Use http://www.mergely.com/ for textual diffs</li><li>Plenty more...</li>
+<ul><li>Use http://www.mergely.com/ for textual diffs</li>
+<li>Allow tests to run from svg-edit hosted on arbitrary servers, so developers can evaluate changes before checking them in.</li>
+<li>Plenty more...</li>
 </ul>
