@@ -10,11 +10,11 @@ Online with BigBlueButton [http://tiki.org/SVG-edit+2013-10+community+meeting he
 
 =Topics= 
  * demo of !WebAppFind (Brett Zamir)
- * Follow-up on [Wikipedia] progress 
- * [RoundtripTests] dashboard
+ * Follow-up on [Wikipedia] progress (Brion Vibber)
+ * [RoundtripTests] dashboard (Mike Baynton)
  * Security fixes
  * 2.7 release
- * Github discussion
+ * Github discussion (Daniel Shapiro)
 
 =Who=
 Everyone is invited. Add your name below to confirm your participation.
