@@ -9,7 +9,7 @@ The meeting will be October 10th, 2013 (at 16h00 UTC like the previous one) Plea
 Online with BigBlueButton [http://tiki.org/SVG-edit+2013-10+community+meeting here]  (no registration required)
 
 =Topics= 
- * demo of WebAppFind (Brett Zamir)
+ * demo of !WebAppFind (Brett Zamir)
  * Follow-up on [Wikipedia] progress 
  * [RoundtripTests] dashboard
  * Security fixes
