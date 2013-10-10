@@ -20,6 +20,7 @@ Everyone is invited. Add your name below to confirm your participation.
  * Marc Laporte
  * Mike Baynton
  * Brion Vibber
+ * Daniel Shapiro
 
 =Related links=
  * Add links here when it's official
