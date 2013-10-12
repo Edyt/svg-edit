@@ -2,14 +2,14 @@
 
 == Unexpected svgEditor.ready doesn't exist when load svg-editor from parent using iframe ==
 
-Situation: You have a web page where you use iframe to load svg-editor. Seems that jquery ready function is not waiting for all javascript load, so you may have some unexpected behaviour, like svgEditor.ready doesn't exist.  Due that you need to take this exception and wait a little more to try again.
+Situation: You have a web page where you use an iframe to load svg-edit. Since the jQuery ready function does not wait for all JavaScript to load, you may get some unexpected behavior, such as svgEditor.ready not existing.  You may thus need to catch this exception and wait a little longer to try again:
 
 * svg_frame is the id for the svg-editor iframe
 
 {{{
 $('#svg_frame').ready(function() {
 
-    ifrm = $('#svg_frame')[0]
+    var ifrm = $('#svg_frame')[0];
 
     // waiting for real load
     (function(){
