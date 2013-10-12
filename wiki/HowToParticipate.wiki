@@ -15,6 +15,8 @@ Pavol Rusnak is the channel operator.
   * [CommunityConferenceCall]
   * [CommunityConferenceCall2]
   * [CommunityConferenceCall3]
+  * [CommunityConferenceCall4]
+  * [CommunityConferenceCall5]
 
 = Wiki access =
 To get wiki edit access, ask for it on the mailing list: https://groups.google.com/forum/#!forum/svg-edit or directly to marclaporte --at-- gmail  --dot-- com and indicate what is your Google account or gmail address (Note: check if there is a way to skip this step)
