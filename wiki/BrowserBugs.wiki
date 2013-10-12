@@ -179,7 +179,6 @@ Other bugs related to Bug 309782:
 
   * *Feature:* SMIL (animation), *Version(s):* All, *Workaround:* None
   * *Feature:* SVG Text Selection, *Version(s):* All, *Workaround:* None
-  * *Feature:* Non-Scaling-Stroke, *Version(s):* All, *Workaround:* Re-calculate stroke manually, https://bugzilla.mozilla.org/show_bug.cgi?id=528332
 
 == Webkit ==
 
