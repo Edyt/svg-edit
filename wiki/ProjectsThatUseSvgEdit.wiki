@@ -20,6 +20,7 @@ Free and Open Source Web applications that you can download and install on your 
   * [http://wise4.telscenter.org/webapp/index.html WISE 4.0 Learning environment] (drawing component)
   * [http://sourceforge.net/projects/ocsvg/ ownCloud]
   * [https://drupal.org/sandbox/josegaert/1511596 Drupal]
+  * [https://github.com/brettz9/webappfind WebAppFind] - Allows desktop invocation of web apps (currently Windows only); contains a demo SVG type handler using SVG-edit
 
 == Extension ==
   * [http://asyazwan.github.com/ext-sozi/ ext-sozi] SVG-edit extension to use Sozi in your SVGs. Create Sozi SVGs in your browser, 100% client-side. See also [http://asyazwan.github.com/ext-sozi/ext-sozi-guide.png illustrated guide]
