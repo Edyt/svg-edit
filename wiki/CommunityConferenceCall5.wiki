@@ -3,7 +3,7 @@
 Previous calls: [CommunityConferenceCall] [CommunityConferenceCall2] [CommunityConferenceCall3] [CommunityConferenceCall4]
 
 =When=
-The meeting will be November 7th, 2013 (at 16h00 UTC like the previous one) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20131107T1600 the time in your time zone] 
+The meeting will be November 7th, 2013 (at 16h00 UTC like the previous one but your daylight saving time may have changed) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20131107T1600 the time in your time zone] 
 
 =Where=
 Online with BigBlueButton [http://tiki.org/SVG-edit+2013-11+community+meeting here]  (no registration required)
