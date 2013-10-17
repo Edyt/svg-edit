@@ -93,6 +93,10 @@ In browsers that support the W3C File API, this editor allows you to open local 
  * Chrome 1+
  * IE 6+ (with the [http://code.google.com/chrome/chromeframe/ Chrome Frame plugin], native IE9 support in 2.6)
 
+= Support the project =
+If you use SVG-edit, add to your Ohloh.net stacks:
+<wiki:gadget url="http://www.ohloh.net/p/325148/widgets/project_users.xml" height="100" border="0"/>
+
 = Further Reading =
   * [ProjectsThatUseSvgEdit Projects that use SVG-edit]
   * [Reviews]
