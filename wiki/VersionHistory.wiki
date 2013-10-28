@@ -12,6 +12,7 @@ On 2011-09-29 (and for upcoming 2.6), the license was changed Apache License v2.
 = Version 2.7 ([http://en.wikipedia.org/wiki/Deltoid_curve Deltoid curve]) =
 
 == New Features ==
+ * Export to PNG, JPEG, BMP, WEBP (including quality control for JPEG/WEBP) for default editor and for the server_opensave extension
  * Star and Polygon Extensions [https://code.google.com/p/svg-edit/source/detail?r=2318 r2318] [https://code.google.com/p/svg-edit/source/detail?r=2319 r2319]
  * Zoom features
  * Security improvements
