@@ -1356,7 +1356,7 @@ Notes:
 <font color="Blue">
 == saveFromBrowser ==
 </font>
-||Description||_Sentence_. Text that appears in popup on the new window with a PNG/SVG (%s = PNG or SVG)||
+||Description||_Sentence_. Text that appears in popup on the new window with a SVG or image (%s = PNG, JPEG, BMP, WEBP, SVG)||
 ||Default language||Select \"Save As...\" in your browser to save this image as a %s file.||
 ||In use since||2.5||
 ||Obsolete since||-||
