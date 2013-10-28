@@ -911,8 +911,8 @@ Notes:
 <font color="blue">
 == tool_export ==
 </font>
-||Description||_Verb_. To save the image as a PNG file||
-||Default language||Export as PNG||
+||Description||_Verb_. To save the image as a PNG, JPEG, BMP, or WEBP file||
+||Default language||Export||
 ||In use since||2.5||
 ||Obsolete since||-||
 
@@ -1348,7 +1348,7 @@ Notes:
 <font color="Blue">
 == loadingImage ==
 </font>
-||Description||_Sentence_. Text that briefly appears on the page when the "Export to PNG" option is chosen||
+||Description||_Sentence_. Text that briefly appears on the page when the "Export" option is chosen||
 ||Default language||Loading image, please wait...||
 ||In use since||2.5||
 ||Obsolete since||-||
@@ -1364,7 +1364,7 @@ Notes:
 <font color="Blue">
 == noteTheseIssues ==
 </font>
-||Description||_Sentence_. On "Export to PNG", the prefix text to indicate there are issues. ||
+||Description||_Sentence_. On "Export", the prefix text to indicate there are issues. ||
 ||Default language||Also note the following issues: ||
 ||In use since||2.5||
 ||Obsolete since||-||
@@ -1452,7 +1452,7 @@ Notes:
 <font color="Blue">
 == exportNoBlur ==
 </font>
-||Description||_Sentence_. Note that blur is not supported on PNG export ||
+||Description||_Sentence_. Note that blur is not supported on image export ||
 ||Default language||Blurred elements will appear as un-blurred||
 ||In use since||2.5||
 ||Obsolete since||-||
@@ -1460,7 +1460,7 @@ Notes:
 <font color="Blue">
 == exportNoImage ==
 </font>
-||Description||_Sentence_. Note that Image elements are not supported on PNG export ||
+||Description||_Sentence_. Note that Image elements are not supported on image export ||
 ||Default language||Image elements will not appear||
 ||In use since||2.5||
 ||Obsolete since||-||
@@ -1468,7 +1468,7 @@ Notes:
 <font color="Blue">
 == exportNoforeignObject ==
 </font>
-||Description||_Sentence_. Note that foreignObject elements are not supported on PNG export ||
+||Description||_Sentence_. Note that foreignObject elements are not supported on image export ||
 ||Default language||foreignObject elements will not appear||
 ||In use since||2.5||
 ||Obsolete since||-||
@@ -1476,7 +1476,7 @@ Notes:
 <font color="Blue">
 == exportNoDashArray ==
 </font>
-||Description||_Sentence_. Note that stroke-dasharray is not supported on PNG export (will appear as regular stroke instead) ||
+||Description||_Sentence_. Note that stroke-dasharray is not supported on image export (will appear as regular stroke instead) ||
 ||Default language||Strokes will appear filled||
 ||In use since||2.5||
 ||Obsolete since||-||
@@ -1484,7 +1484,7 @@ Notes:
 <font color="Blue">
 == exportNoText ==
 </font>
-||Description||_Sentence_. Note that text is not supported on PNG export (will only appear in browsers that don't support Canvas Text API)||
+||Description||_Sentence_. Note that text is not supported on image export (will only appear in browsers that don't support Canvas Text API)||
 ||Default language||Text may not appear as expected||
 ||In use since||2.5||
 ||Obsolete since||-||
