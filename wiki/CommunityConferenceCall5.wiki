@@ -2,6 +2,9 @@
 
 Previous calls: [CommunityConferenceCall] [CommunityConferenceCall2] [CommunityConferenceCall3] [CommunityConferenceCall4]
 
+The recording is here:
+http://tiki.bigbluebutton.org/playback/slides/playback.html?meetingId=c986d4c28a45e0f8bab246354ebfe0422683e9de-1383839952270
+
 =When=
 The meeting will be November 7th, 2013 (at 16h00 UTC like the previous one but your daylight saving time may have changed) Please check for [http://www.timeanddate.com/worldclock/fixedtime.html?iso=20131107T1600 the time in your time zone] 
 
