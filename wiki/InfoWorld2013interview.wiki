@@ -1,0 +1,19 @@
+#summary 2013 interview for online presentation on SVG tools, for posting on InfoWorld.com
+
+== What is the purpose of SVG-edit? ==
+
+== What are its main functions? ==
+
+== What does SVG-edit do that other SVG tools do not? ==
+
+== Who developed it? ==
+
+== Is SVG-edit an open source or commercial product? If it is commercial, Can you provide a price range per-seat? ==
+
+== How important is SVG, from your perspective? ==
+
+== Can you provide some screen shots or URLs with visuals of SVG-edit? ==
+
+== Any other comments about SVG-edit? ==
+
+== Who is your employer and what is your title there? == 
