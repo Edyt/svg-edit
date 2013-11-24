@@ -10,7 +10,7 @@
 According to Ohloh.net "SVG-edit has had 1,749 commits made by 36 contributors representing 50,115 lines of code"
 
 == Is SVG-edit an open source or commercial product? If it is commercial, Can you provide a price range per-seat? ==
-SVG-edit is Free and Open Source software, and community-managed.
+SVG-edit is Free and Open Source software, and community-managed. The license is MIT.
 
 == How important is SVG, from your perspective? ==
 
