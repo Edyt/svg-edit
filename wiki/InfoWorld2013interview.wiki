@@ -38,3 +38,6 @@ SVG-edit is a community-managed project with a open contribution policy. Join us
 We also have a project to get SVG-edit used on Wikipedia for over half million SVG images there.
 
 == Who is your employer and what is your title there? == 
+* I am volunteer project administrator for SVG-edit, along with others. We do have some consultants which are available to integrate SVG-edit in your application or for adding additional functionality. 
+
+
