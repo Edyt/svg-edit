@@ -18,9 +18,11 @@ Most SVG tools are desktop applications, which makes it more complicated to coll
 
 I am pretty sure it's the Free and Open Source (FOSS) web-based SVG editor with the most features. If there are other projects out there with more / different features, please do get in touch with us o we may collaborate. We have developed an SVG test suite that would surely be useful to you too!
 
+It's also likely the Free and Open Source (FOSS) web-based SVG editor with the most contributors.
 
 == Who developed it? ==
 According to Ohloh.net "SVG-edit has had 1,749 commits made by 36 contributors representing 50,115 lines of code"
+https://www.ohloh.net/p/svg-edit
 
 == Is SVG-edit an open source or commercial product? If it is commercial, Can you provide a price range per-seat? ==
 SVG-edit is Free and Open Source software, and community-managed. The license is MIT. So you can embed in your commercial or FOSS project.
