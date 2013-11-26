@@ -1,7 +1,8 @@
 #summary 2013 interview for online presentation on SVG tools, for posting on InfoWorld.com
+#labels interview
 
 == What is the purpose of SVG-edit? ==
-SVG-edit is an online vector graphics editor that uses only JavaScript, HTML5, CSS and SVG (i.e. no server-side functionality). It is designed to be embedded in a web application (Wiki, CMS, Groupware, etc.)
+SVG-edit is an online vector graphics editor that uses only !JavaScript, HTML5, CSS and SVG (i.e. no server-side functionality). It is designed to be embedded in a web application (Wiki, CMS, Groupware, etc.)
 
 == What are its main functions? ==
  * Supports all modern browsers
@@ -39,5 +40,3 @@ We also have a project to get SVG-edit used on Wikipedia for over half million S
 
 == Who is your employer and what is your title there? == 
 * I am volunteer project administrator for SVG-edit, along with others. We do have some consultants which are available to integrate SVG-edit in your application or for adding additional functionality. 
-
-
