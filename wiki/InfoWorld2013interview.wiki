@@ -26,7 +26,7 @@ According to Ohloh.net "SVG-edit has had 1,749 commits made by 36 contributors r
 SVG-edit is Free and Open Source software, and community-managed. The license is MIT. So you can embed in your commercial or FOSS project.
 
 == How important is SVG, from your perspective? ==
-It is very important to have standards for all data formats.
+It is very important to have standards for all data formats, as much as possible. If the tool you use to generate SVG stops being developed, you maintain your assets and can move to a more modern tool. It also protects you against vendor lock-in.
 
 == Can you provide some screen shots or URLs with visuals of SVG-edit? ==
 Here is demo of the stable version:
