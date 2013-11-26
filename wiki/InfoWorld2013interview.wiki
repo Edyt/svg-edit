@@ -16,6 +16,8 @@ SVG-edit is an online vector graphics editor that uses only !JavaScript, HTML5, 
 == What does SVG-edit do that other SVG tools do not? ==
 Most SVG tools are desktop applications, which makes it more complicated to collaborate. 
 
+I am pretty sure it's the Free and Open Source (FOSS) web-based SVG editor with the most feature. If there are other projects out there with more / different features, please do get in touch with us o we may collaborate. We have developed an SVG test suite that would surely be useful to you too!
+
 
 == Who developed it? ==
 According to Ohloh.net "SVG-edit has had 1,749 commits made by 36 contributors representing 50,115 lines of code"
