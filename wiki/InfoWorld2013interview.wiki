@@ -47,4 +47,4 @@ https://code.google.com/p/svg-edit/downloads/list
 Also, SVG-edit is embedded in other projects, and we have no way of tracking how many downloads there.
 
 == Who is your employer and what is your title there? == 
-I (Marc Laporte) am a volunteer project administrator for SVG-edit, along with others. We do have some consultants which are available to integrate SVG-edit in your application or for adding additional functionality.
+I (Marc Laporte) am a volunteer project administrator for SVG-edit, along with others. We do have some consultants which are available to integrate SVG-edit in your application or for adding additional functionality (and let's work together so those features are added to SVG-edit!)
