@@ -52,3 +52,6 @@ Once you're satisfied with the set of tests you've loaded, you probably shouldn'
 <li>Allow tests to run from svg-edit hosted on arbitrary servers, so developers can evaluate changes before checking them in.</li>
 <li>Plenty more...</li>
 </ul>
+
+= Related links =
+* https://github.com/RazrFalcon/SVGCleaner
