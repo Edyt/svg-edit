@@ -15,12 +15,15 @@ On 2011-09-29 (and for upcoming 2.6+ versions), the license was changed Apache L
  * Export to PNG, JPEG, BMP, WEBP (including quality control for JPEG/WEBP) for default editor and for the server_opensave extension
  * Star and Polygon Extensions [https://code.google.com/p/svg-edit/source/detail?r=2318 r2318] [https://code.google.com/p/svg-edit/source/detail?r=2319 r2319]
  * Allow server_opensave extension to work wholly client-side (if browser [http://caniuse.com/#feat=download supports] the download attribute)
- * Added webappfind extension for use with https://github.com/brettz9/webappfind
+ * Added WebAppFind extension for use with https://github.com/brettz9/webappfind
  * Added new php_savefile extension to replace outdated, non-functioning server-save code; requires user to create "savefile_config.php" file and do any validation there (for their own security)
  * Use addEventListener for 'beforeunload' event so user can add their own if desired
  * Added Polish locale
  * Zoom features
  * Security improvements and other fixes
+ * Potentially breaking API changes:
+ ** Disallowed extPath setting via URL and cross-domain/cross-folder extensions via URL (security enhancement)
+ ** Deprecated "pngsave" option called by setCustomHandlers() in favor of "exportImage" (to accommodate export of other image types). Second argument will now supply, in addition to "issues" and "svg", the properties "type" (currently 'PNG', 'JPEG', 'BMP', 'WEBP'), "mimeType", and "quality" (for 'JPEG' and 'WEBP' types).
 
 = Version 2.6 ([http://en.wikipedia.org/wiki/Cycloid Cycloid]) =
 
