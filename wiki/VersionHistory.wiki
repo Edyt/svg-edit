@@ -15,7 +15,7 @@ On 2011-09-29 (and for upcoming 2.6+ versions), the license was changed Apache L
  * Export to PNG, JPEG, BMP, WEBP (including quality control for JPEG/WEBP) for default editor and for the server_opensave extension
  * Added Star, Polygon, and Panning Extensions [https://code.google.com/p/svg-edit/source/detail?r=2318 r2318] [https://code.google.com/p/svg-edit/source/detail?r=2319 r2319] [https://code.google.com/p/svg-edit/source/detail?r=2333 r2333]
  * Added non-default extension, ext-xdomain-messaging.js, moving cross-domain messaging code (as used by the embedded editor) out of core and requiring, when the extension IS included, that configuration (an array "allowedOrigins") be set in order to allow access by any domain (even same domain).
- * Cause embedded editor to pass on URL arguments to the child iframe
+ * Cause embedded editor to pass on URL arguments to the child editor (child iframe)
  * Added default extension, ext-storage.js moving storage setting code into this (optional) extension; contains dialog to ask user whether they wish to utilize local storage for prefs and/or content; provides configuration options to tweak behaviors.
  * Allow for a new file config.js within the editor folder (but not committed to SVN and ignored) which is always loaded and can be used for supplying configuration which happens early enough to affect URL or user storage configuration, in addition to extension behavior configuration. Provided config-sample.js to indicate types of configuration one could use (see also defaultPrefs, defaultExtensions, and defaultConfig within svg-editor.js )
  * Added configuration "preventAllURLConfig", "lockExtensions", and/or "preventURLContentLoading" for greater control of what can be configured via URL.
