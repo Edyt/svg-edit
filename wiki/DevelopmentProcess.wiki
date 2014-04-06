@@ -50,6 +50,8 @@ $ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.goo
 
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
 
+Modify the [VersionHistory] and [Roadmap] to reflect the new stable version.
+
 If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
 
 = Creating a Branch =
