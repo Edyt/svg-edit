@@ -28,16 +28,18 @@ During this phase, all feature work has been complete.  The release has now gone
 
 == Release ==
 
-During this phase, the trunk will be branched to svn/branches/X.X (where X.X is the release number) and the following steps will be performed:
+During this phase, the trunk will be branched to svn/branches/X.X (where X.X is the release number) and the following steps need to be performed:
 
-  * the HTML will be updated to reference the minified JS files (switch HTML comments)
-  * the HTML will be updated to point to the Google CDN version of jQuery (switch HTML comments)
+  * update the HTML to reference the aggregated minified JS file, svgedit.compiled.js (switch HTML comments)
+  * update the HTML to point to the Google CDN version of jQuery (switch HTML comments)
+  * change the version stored at the top of the Makefile
   * run the Makefile, which does the following automatically
     * JS files will be minified on the branch
     * all files will be packaged up as a downloadable zip file
     * the Firefox extension will be packaged into an xpi file
     * the Opera widget will be packaged into a wgt file
      * [http://my.opera.com/addons/blog/2012/04/24/sunsetting-unite-and-widgets Opera Widgets are being phased out]
+  * commit the now built minified JS file, svgedit.compiled.js
   * upload the zip, xpi and wgt files to the Google Code download section
   * update the *stable* tag to refer to the new release branch via:
 
