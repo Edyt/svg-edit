@@ -40,7 +40,7 @@ During this phase, the trunk will be branched to svn/branches/X.X (where X.X is 
     * the Opera widget will be packaged into a wgt file
      * [http://my.opera.com/addons/blog/2012/04/24/sunsetting-unite-and-widgets Opera Widgets are being phased out]
   * commit the now built minified JS file, svgedit.compiled.js
-  * upload the zip, xpi and wgt files to the Google Code download section
+  * project owner: upload the zip, xpi and wgt files to the Google Code download section
   * update the *stable* tag to refer to the new release branch via:
 
 {{{
@@ -50,7 +50,7 @@ $ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.goo
 
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
 
-Modify the [VersionHistory] and [Roadmap] to reflect the new stable version.
+Modify the [VersionHistory] and [Roadmap] to reflect the new stable version. A project owner should also modify the Project home page.
 
 If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
 
