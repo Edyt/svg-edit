@@ -12,7 +12,7 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
 
 You can follow all [https://code.google.com/p/svg-edit/source/list code commits here] to see any features that have been developed since the latest stable release.
 
-= Version 2.7 (codename TBD) =
+= Version 2.7 (codename [http://en.wikipedia.org/wiki/Deltoid_curve Deltoid curve]) =
 
 == Proposed Features ==
  * [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.7 to-do]
