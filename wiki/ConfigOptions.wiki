@@ -41,7 +41,7 @@ If an "allowInitialUserOverride" boolean is set to true, it will allow subsequen
 Note that those items marked as preferences are configuration items which can also be set via the UI (and specifically via Editor Options except where mentioned). Those items which appear in the UI but are not treated internally as preferences are marked with "Maybe" as their status may change.
 
 || *Property* || *Description* || *Default* || *Preference* ||
-|| lang || Two-letter language code. The language must exist in the Editor Preferences language list || en || Yes ||
+|| lang || Two-letter language code. The language must exist in the Editor Preferences language list || Default to "en" if locale.js detection does not detect another language || Yes ||
 || bkgd_url || Background raster image URL. This image will fill the background of the document, useful for tracing purposes || (none) || Yes ||
 || img_save || Defines whether included raster images should be saved as Data URIs when possible, or as URL references. Must be either 'embed' or 'ref'. Settable in the Document Properties dialog. || embed || Yes ||
 || dimensions || The default width/height of a new document. Use an array in setConfig (i.e. `[`800, 600`]`) and comma separated numbers in the URL || `[`640, 480`]` || Maybe ||
@@ -66,7 +66,7 @@ Note that those items marked as preferences are configuration items which can al
 || no_save_warning || A boolean that when true prevents the warning dialog box from appearing when closing/reloading the page. Mostly useful for testing. || false || No ||
 || canvas_expansion || The minimum area visible outside the canvas, as a multiple of the image dimensions. The larger the number, the more one can scroll outside the canvas. || 3 || No ||
 || show_outside_canvas || A boolean that defines whether or not elements outside the canvas should be visible || true || No ||
-|| iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || m || Yes ||
+|| iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || Will default to 's' if the window height is smaller than the minimum height and 'm' otherwise || Yes ||
 || bkgd_color || Canvas background color || #FFF (white) || Yes ||
 || selectNew || Initial state of option to automatically select objects after they are created (v2.6) || true || No ||
 || save_notice_done || Used to track alert status || false || Yes ||
@@ -77,13 +77,15 @@ Note that those items marked as preferences are configuration items which can al
 || colorPickerCSS || || null || No ||
 || preventAllURLConfig || || false || No ||
 || preventURLContentLoading || || false || No ||
-|| lockExtensions || || false || No ||
+|| lockExtensions || Disallowed in URL setting || false || No ||
 || noDefaultExtensions || || false || No ||
 || showGrid || || false || No ||
 || noStorageOnLoad || || false || No ||
 || forceStorage || || false || No ||
 || emptyStorageOnDecline || || false || No ||
-
+|| paramurl || This is available via URL only. Deprecated || || No ||
+|| show_outside_canvas Set by svgcanvas.js || || No || 
+|| selectNew || Set by svgcanvas.js || || No
 == Preload a file ==
 
 It is also possible to start the editor with preloaded SVG file, using the following methods:
