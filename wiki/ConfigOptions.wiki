@@ -45,9 +45,9 @@ Note that those items marked as preferences are configuration items which can al
 || bkgd_url || Background raster image URL. This image will fill the background of the document, useful for tracing purposes || (none) || Yes ||
 || img_save || Defines whether included raster images should be saved as Data URIs when possible, or as URL references. Must be either 'embed' or 'ref'. Settable in the Document Properties dialog. || embed || Yes ||
 || dimensions || The default width/height of a new document. Use an array in setConfig (i.e. `[`800, 600`]`) and comma separated numbers in the URL || `[`640, 480`]` || Maybe ||
-|| initFill`[`color`]` || The initial fill color. Must be a hex code string. || FF0000 || No ||
+|| initFill`[`color`]` || The initial fill color. Must be a hex code string. || FF0000 (solid red) || No ||
 || initFill`[`opacity`]` || The initial fill opacity. Must be a number between 0 and 1 || 1 || No ||
-|| initStroke`[`color`]` || The initial stroke color. Must be a hex code. || 000000 || No ||
+|| initStroke`[`color`]` || The initial stroke color. Must be a hex code. || 000000 (solid black) || No ||
 || initStroke`[`width`]` || The initial stroke width. Must be a positive number. || 5 || No ||
 || initStroke`[`opacity`]` || The initial stroke opacity. Must be a number between 0 and 1 || 1 || No ||
 || initTool || The initially selected tool. Must be either the ID of the button for the tool, or the ID without "tool_" prefix || select || No ||
@@ -55,7 +55,7 @@ Note that those items marked as preferences are configuration items which can al
 || jGraduatePath || The path where jGraduate images are located. Note that as of version 2.7, this is not configurable by URL for security reasons. || jgraduate/images/ || No ||
 || langPath || The path where the language files are located, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || locale/ || No ||
 || extPath || The path used for extension files, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || extensions/ || No ||
-|| extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that as of version 2.7, paths containing "/", "\", or ":", are disallowed for security reasons. Although previous versions of this list would entirely override the default list, as of version 2.7, the defaults will always be added to this explicit list unless the configuration "noDefaultExtensions" is included. || `[`'ext-arrows.js','ext-connector.js'`]` || No ||
+|| extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that as of version 2.7, paths containing "/", "\", or ":", are disallowed for security reasons. Although previous versions of this list would entirely override the default list, as of version 2.7, the defaults will always be added to this explicit list unless the configuration "noDefaultExtensions" is included. || `[``]` || No || 'ext-overview_window.js','ext-markers.js','ext-connector.js','ext-eyedropper.js','ext-shapes.js','ext-imagelib.js','ext-grid.js','ext-polygon.js','ext-star.js','ext-panning.js','ext-storage.js'
 || showlayers || Open the layers side-panel by default || false || No ||
 || wireframe || Start in wireframe mode || false || No ||
 || gridSnapping || Enable snap to grid by default. Set in Editor Options. || false || Maybe ||
@@ -71,6 +71,18 @@ Note that those items marked as preferences are configuration items which can al
 || selectNew || Initial state of option to automatically select objects after they are created (v2.6) || true || No ||
 || save_notice_done || Used to track alert status || false || Yes ||
 || export_notice_done || Used to track alert status || false || Yes ||
+|| allowedOrigins || || [] || No
+|| canvasName || || default || No
+|| initOpacity || || 1 || No
+|| colorPickerCSS || || null || No
+|| preventAllURLConfig || || false || No
+|| preventURLContentLoading || || false || No
+|| lockExtensions || || false || No
+|| noDefaultExtensions || || false || No
+|| showGrid || || false || No
+|| noStorageOnLoad || || false || No
+|| forceStorage || || false || No
+|| emptyStorageOnDecline || || false || No
 
 == Preload a file ==
 
