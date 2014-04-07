@@ -47,7 +47,7 @@ $ svn delete -m "Removing old stable branch" https://svg-edit.googlecode.com/svn
 $ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.googlecode.com/svn/branches/stable -m "Pointing stable branch to 2.3 branch"
 }}}
  * A project owner should move the old version information from [https://code.google.com/p/svg-edit/ Project home] page to the [VersionHistory] page and move any information on the new release from the [Roadmap] to the [https://code.google.com/p/svg-edit/ Project home].
-* Update the [Roadmap] to refer to the next planned release (and keep updated with any new features added to trunk).
+ * Update the [Roadmap] to refer to the next planned release (and keep updated with any new features added to trunk).
 
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
 
