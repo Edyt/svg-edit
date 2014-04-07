@@ -8,6 +8,8 @@ As of version 2.5, SVG-Edit has support for extensions. This an (in-progress) gu
 
 SVG-Edit plugins are standalone !JavaScript files that can be either included in the HTML file or loaded using setConfig or through the URL (see ConfigOptions for usage).
 
+Note that if you create a "config.js" file in the "editor" directory, this will be used to execute commands before extensions are loaded, e.g., if you wish to make configuration changes which affect extension loading behavior. Normally, however, it should be preferable for modularity to use the extension mechanism, as this can allow you or users to customize which extensions are loaded (whereas "config.js" will always run if present).
+
 This is the general format for an extension:
 
 {{{
