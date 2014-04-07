@@ -44,7 +44,7 @@ Note that those items marked as preferences are configuration items which can al
 || lang || Two-letter language code. The language must exist in the Editor Preferences language list || en || Yes ||
 || bkgd_url || Background raster image URL. This image will fill the background of the document, useful for tracing purposes || (none) || Yes ||
 || img_save || Defines whether included raster images should be saved as Data URIs when possible, or as URL references. Must be either 'embed' or 'ref'. Settable in the Document Properties dialog. || embed || Yes ||
-|| dimensions || The default width/height of a new document. Use an array in setConfig (i.e. `[`800, 600`]`) and comma separated numbers in the URL || `[`640, 480`]` || Maybe
+|| dimensions || The default width/height of a new document. Use an array in setConfig (i.e. `[`800, 600`]`) and comma separated numbers in the URL || `[`640, 480`]` || Maybe ||
 || initFill`[`color`]` || The initial fill color. Must be a hex code string. || FF0000 || No ||
 || initFill`[`opacity`]` || The initial fill opacity. Must be a number between 0 and 1 || 1 || No ||
 || initStroke`[`color`]` || The initial stroke color. Must be a hex code. || 000000 || No ||
@@ -69,8 +69,8 @@ Note that those items marked as preferences are configuration items which can al
 || iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || m || Yes ||
 || bkgd_color || Canvas background color || #FFF (white) || Yes ||
 || selectNew || Initial state of option to automatically select objects after they are created (v2.6) || true || No ||
-|| save_notice_done || Used to track alert status || false || Yes
-|| export_notice_done || Used to track alert status || false || Yes
+|| save_notice_done || Used to track alert status || false || Yes ||
+|| export_notice_done || Used to track alert status || false || Yes ||
 
 == Preload a file ==
 
