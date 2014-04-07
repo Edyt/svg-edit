@@ -20,6 +20,8 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
 
 == Implemented Features ==
  * [https://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3Dnextversion+status%3AFixed%2CDone&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles already fixed/implemented]
+ * Potentially breaking API changes:
+ ** Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
 
 == Release Date ==
  * TBD
