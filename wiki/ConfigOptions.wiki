@@ -2,11 +2,11 @@
 
 = Introduction =
 
-As of version 2.5, SVG-edit has several configuration settings that can be overridden either by adding URL parameters or by setting the options in !JavaScript.
+As of version 2.5, SVG-edit has several configuration settings that can be overridden either by adding URL parameters or by setting the options in !JavaScript. As of version 2.7, a few among these options related to paths are disallowed via URL though they can still be set by svgEditor.setConfig.
 
 == How to set the options ==
 
-Options can be set using svgEditor.setConfig(options), where "options" is an object literal of keys and values. This must be run _before_ the actual page or DOM is loaded, else it will have no effect.
+Options can be set using svgEditor.setConfig(options), where "options" is an object literal of keys and values. This must be run _before_ the actual page or DOM is loaded, otherwise it will have no effect. Note that one may create a "config.js" file within the "editor" directory and add such configuration directives to it without needing to modify the repository editor code.
 
 Example:
 
@@ -28,7 +28,13 @@ The same options can be set in the URL like this:
 .../svg-editor.html?dimensions=300,240&canvas_expansion=5&initFill[color]=0000FF
 }}}
 
-If options are set both using .setConfig() as well as in the URL, the URL value will be used.
+As of version 2.7, if options are set both using .setConfig() as well as in the URL, the .setConfig() value will be used. The reverse was true in previous versions but was changed for security reasons.
+
+One may optionally pass another object to .setConfig() as the second argument to further adjust configuration behavior.
+
+If an "overwrite" boolean is set to false on this additional object, it will, as occurs with all URL type configurations, prevent the current configuration from overwriting any explicitly set previous configurations. The default is true except for URLs which always are false.
+
+If an "allowInitialUserOverride" boolean is set to true, it will allow subsequent configuration overwriting via URL (e.g., if you *do* want the user to have the option to override certain or your (config.js) .setConfig() directives via URL while still wishing to provide them with your own default value, you should add this property).
 
 == Configurable options ==
 
@@ -43,10 +49,11 @@ If options are set both using .setConfig() as well as in the URL, the URL value 
 || initStroke`[`width`]` || The initial stroke width. Must be a positive number. || 5 ||
 || initStroke`[`opacity`]` || The initial stroke opacity. Must be a number between 0 and 1 || 1 ||
 || initTool || The initially selected tool. Must be either the ID of the button for the tool, or the ID without "tool_" prefix || select ||
-|| imgPath || The path where the SVG icons are located, with trailing slash || images/ ||
-|| langPath || The path where the language files are located, with trailing slash || locale/ ||
-|| extPath || The path used for extension files, with trailing slash || extensions/ ||
-|| extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that this list entirely overrides the default list, so the default extensions will not be included if not in the list. || `[`'ext-arrows.js','ext-connector.js'`]` ||
+|| imgPath || The path where the SVG icons are located, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || images/ ||
+|| jGraduatePath || The path where jGraduate images are located. Note that as of version 2.7, this is not configurable by URL for security reasons. || jgraduate/images/ ||
+|| langPath || The path where the language files are located, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || locale/ ||
+|| extPath || The path used for extension files, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || extensions/ ||
+|| extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that as of version 2.7, paths containing "/", "\", or ":", are disallowed for security reasons. Although previous versions of this list would entirely override the default list, as of version 2.7, the defaults will always be added to this explicit list unless the configuration "noDefaultExtensions" is included. || `[`'ext-arrows.js','ext-connector.js'`]` ||
 || showlayers || Open the layers side-panel by default || false ||
 || wireframe || Start in wireframe mode || false ||
 || gridSnapping || Enable snap to grid by default || false ||
