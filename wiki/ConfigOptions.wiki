@@ -55,7 +55,7 @@ Note that those items marked as preferences are configuration items which can al
 || jGraduatePath || The path where jGraduate images are located. Note that as of version 2.7, this is not configurable by URL for security reasons. || jgraduate/images/ || No ||
 || langPath || The path where the language files are located, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || locale/ || No ||
 || extPath || The path used for extension files, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || extensions/ || No ||
-|| extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that as of version 2.7, paths containing "/", "\", or ":", are disallowed for security reasons. Although previous versions of this list would entirely override the default list, as of version 2.7, the defaults will always be added to this explicit list unless the configuration "noDefaultExtensions" is included. || `[``]` || No || 'ext-overview_window.js','ext-markers.js','ext-connector.js','ext-eyedropper.js','ext-shapes.js','ext-imagelib.js','ext-grid.js','ext-polygon.js','ext-star.js','ext-panning.js','ext-storage.js'
+|| extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that as of version 2.7, paths containing "/", "\", or ":", are disallowed for security reasons. Although previous versions of this list would entirely override the default list, as of version 2.7, the defaults will always be added to this explicit list unless the configuration "noDefaultExtensions" is included. || `[`'ext-overview_window.js','ext-markers.js','ext-connector.js','ext-eyedropper.js','ext-shapes.js','ext-imagelib.js','ext-grid.js','ext-polygon.js','ext-star.js','ext-panning.js','ext-storage.js'`]` || No ||
 || showlayers || Open the layers side-panel by default || false || No ||
 || wireframe || Start in wireframe mode || false || No ||
 || gridSnapping || Enable snap to grid by default. Set in Editor Options. || false || Maybe ||
@@ -71,7 +71,7 @@ Note that those items marked as preferences are configuration items which can al
 || selectNew || Initial state of option to automatically select objects after they are created (v2.6) || true || No ||
 || save_notice_done || Used to track alert status || false || Yes ||
 || export_notice_done || Used to track alert status || false || Yes ||
-|| allowedOrigins || || [] || No ||
+|| allowedOrigins || || `[]` || No ||
 || canvasName || || default || No ||
 || initOpacity || || 1 || No ||
 || colorPickerCSS || || null || No ||
