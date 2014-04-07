@@ -42,15 +42,14 @@ During this phase, the trunk will be branched to svn/branches/X.X (where X.X is 
   * Commit the now built minified JS file, svgedit.compiled.js
   * Project owner: ~~upload the zip, xpi and wgt files to the Google Code download section~~ (Add to Google Drive since new project downloads [http://google-opensource.blogspot.hk/2013/05/a-change-to-google-code-download-service.html now disabled]?)
   * update the *stable* branch to refer to the new release branch via:
-
 {{{
 $ svn delete -m "Removing old stable branch" https://svg-edit.googlecode.com/svn/branches/stable
 $ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.googlecode.com/svn/branches/stable -m "Pointing stable branch to 2.3 branch"
 }}}
+ * A project owner should move the old version information from [https://code.google.com/p/svg-edit/ Project home] page to the [VersionHistory] page and move any information on the new release from the [Roadmap] to the [https://code.google.com/p/svg-edit/ Project home].
+* Update the [Roadmap] to refer to the next planned release (and keep updated with any new features added to trunk).
 
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
-
-Modify the [VersionHistory] and [Roadmap] to reflect the new stable version. A project owner should also modify the Project home page.
 
 If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
 
