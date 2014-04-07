@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This document covers future versions of SVG-edit. For previous versions, see the VersionHistory, and for the current version, see [https://code.google.com/p/svg-edit/ Project home].
+This document covers future versions of SVG-edit. For the current release and previous versions, see the VersionHistory.
 
 Although there is no set date to do so, one important project is to get SVG-edit used on [Wikipedia].
 
