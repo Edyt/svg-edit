@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This document covers future versions of SVG-edit. For previous versions, see the VersionHistory.
+This document covers future versions of SVG-edit. For previous versions, see the VersionHistory, and for the current version, see [https://code.google.com/p/svg-edit/ Project home].
 
 Although there is no set date to do so, one important project is to get SVG-edit used on [Wikipedia].
 
@@ -12,7 +12,7 @@ Starting with 2.4, development versions of SVG-edit are given an alphabetic code
 
 You can follow all [https://code.google.com/p/svg-edit/source/list code commits here] to see any features that have been developed since the latest stable release.
 
-= Version 2.7 (codename [http://en.wikipedia.org/wiki/Deltoid_curve Deltoid curve]) =
+= Version 2.8 ([https://en.wikipedia.org/wiki/Devil%27s_curve Devil's curve] in trunk; not yet released) =
 
 == Proposed Features ==
  * [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-2.7 to-do]
