@@ -30,22 +30,22 @@ During this phase, all feature work has been complete.  The release has now gone
 
 During this phase, the trunk will be branched to svn/branches/X.X (where X.X is the release number) and the following steps need to be performed:
 
-  * update the HTML to reference the aggregated minified JS file, svgedit.compiled.js (switch HTML comments)
-  * update the HTML to point to the Google CDN version of jQuery (switch HTML comments)
-  * change the version stored at the top of the Makefile
-  * run the Makefile, which does the following automatically
+  * Update the HTML to reference the aggregated minified JS file, svgedit.compiled.js (switch HTML comments)
+  * Update the HTML to point to the Google CDN version of jQuery (switch HTML comments)
+  * Change the version stored at the top of the Makefile
+  * Run the Makefile, which does the following automatically
     * JS files will be minified on the branch
     * all files will be packaged up as a downloadable zip file
     * the Firefox extension will be packaged into an xpi file
     * the Opera widget will be packaged into a wgt file
      * [http://my.opera.com/addons/blog/2012/04/24/sunsetting-unite-and-widgets Opera Widgets are being phased out]
-  * commit the now built minified JS file, svgedit.compiled.js
-  * project owner: upload the zip, xpi and wgt files to the Google Code download section
-  * update the *stable* tag to refer to the new release branch via:
+  * Commit the now built minified JS file, svgedit.compiled.js
+  * Project owner: ~~upload the zip, xpi and wgt files to the Google Code download section~~ (Add to Google Drive since new project downloads [http://google-opensource.blogspot.hk/2013/05/a-change-to-google-code-download-service.html now disabled]?)
+  * update the *stable* branch to refer to the new release branch via:
 
 {{{
-$ svn delete -m "Removing old stable tag" https://svg-edit.googlecode.com/svn/tags/stable
-$ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.googlecode.com/svn/tags/stable -m "Pointing stable tag to 2.3 branch"
+$ svn delete -m "Removing old stable branch" https://svg-edit.googlecode.com/svn/branches/stable
+$ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.googlecode.com/svn/branches/stable -m "Pointing stable branch to 2.3 branch"
 }}}
 
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
