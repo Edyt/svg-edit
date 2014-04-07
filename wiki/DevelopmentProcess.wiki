@@ -51,7 +51,7 @@ $ svn copy https://svg-edit.googlecode.com/svn/branches/2.3 https://svg-edit.goo
 
 At this point, the trunk is now opened up again and enters Pre-Alpha phase for the next release.
 
-If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk.
+If bugs are encountered with a released version, those fixes must be merged to both the release branch and the trunk (as well as to the "stable" branch if the bug is for the stable version).
 
 = Creating a Branch =
 
