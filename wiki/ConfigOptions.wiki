@@ -38,11 +38,13 @@ If an "allowInitialUserOverride" boolean is set to true, it will allow subsequen
 
 == Configurable options ==
 
-|| *Property* || *Description* || *Default* ||
-|| lang || Two-letter language code. The language must exist in the Editor Preferences language list || en ||
-|| bkgd_url || Background raster image URL. This image will fill the background of the document, useful for tracing purposes || (none) ||
-|| img_save || Defines whether included raster images should be saved as Data URIs when possible, or as URL references. Must be either 'embed' or 'ref' || embed ||
-|| dimensions || The default width/height of a new document. Use an array in setConfig (i.e. `[`800, 600`]`) and comma separated numbers in the URL || `[`640, 480`]` ||
+Note that those items marked as preferences are configuration items which can also be set via the UI. Those items which appear in the UI but are not treated internally as preferences are marked with "Maybe" as their status may change.
+
+|| *Property* || *Description* || *Default* || *Preference* ||
+|| lang || Two-letter language code. The language must exist in the Editor Preferences language list || en || Yes ||
+|| bkgd_url || Background raster image URL. This image will fill the background of the document, useful for tracing purposes || (none) || Yes ||
+|| img_save || Defines whether included raster images should be saved as Data URIs when possible, or as URL references. Must be either 'embed' or 'ref' || embed || Yes ||
+|| dimensions || The default width/height of a new document. Use an array in setConfig (i.e. `[`800, 600`]`) and comma separated numbers in the URL || `[`640, 480`]` || Maybe
 || initFill`[`color`]` || The initial fill color. Must be a hex code string. || FF0000 ||
 || initFill`[`opacity`]` || The initial fill opacity. Must be a number between 0 and 1 || 1 ||
 || initStroke`[`color`]` || The initial stroke color. Must be a hex code. || 000000 ||
@@ -56,15 +58,19 @@ If an "allowInitialUserOverride" boolean is set to true, it will allow subsequen
 || extensions || Extensions to load on startup. Use an array in setConfig and comma separated file names in the URL. Note that as of version 2.7, paths containing "/", "\", or ":", are disallowed for security reasons. Although previous versions of this list would entirely override the default list, as of version 2.7, the defaults will always be added to this explicit list unless the configuration "noDefaultExtensions" is included. || `[`'ext-arrows.js','ext-connector.js'`]` ||
 || showlayers || Open the layers side-panel by default || false ||
 || wireframe || Start in wireframe mode || false ||
-|| gridSnapping || Enable snap to grid by default || false ||
-|| snappingStep || Set the default grid snapping value || 10 ||
+|| gridSnapping || Enable snap to grid by default. Set in Editor Options. || false || Maybe ||
+|| gridColor || Set in Editor Options. || #000 (black) || Maybe || 
+|| baseUnit || Set in Editor Options. || px || Maybe ||
+|| snappingStep || Set the default grid snapping value. Set in Editor Options. || 10 || Maybe ||
+|| showRulers || Initial state of ruler display (v2.6). Set in Editor Options. || true || Maybe ||
 || no_save_warning || A boolean that when true prevents the warning dialog box from appearing when closing/reloading the page. Mostly useful for testing. || false ||
 || canvas_expansion || The minimum area visible outside the canvas, as a multiple of the image dimensions. The larger the number, the more one can scroll outside the canvas. || 3 ||
 || show_outside_canvas || A boolean that defines whether or not elements outside the canvas should be visible || true ||
-|| iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || m ||
-|| bkgd_color || Canvas background color || #FFF (white) ||
-|| showRulers || Initial state of ruler display (v2.6) || true ||
-|| selectNew || Initial state of option to automatically select objects after they are created (v2.6)|| true ||
+|| iconsize || Size of the toolbar icons. Must be one of the following: 's', 'm', 'l', 'xl' || m || Yes ||
+|| bkgd_color || Canvas background color || #FFF (white) || Yes ||
+|| selectNew || Initial state of option to automatically select objects after they are created (v2.6) || true ||
+|| save_notice_done || Used to track alert status || false || Yes
+|| export_notice_done || Used to track alert status || false || Yes
 
 == Preload a file ==
 
