@@ -103,10 +103,10 @@ Or as URL parameter:
 
 {{{
 // Data URI: 
-?source=data:image/svg+xml;base64,...
+?source=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2C... // encoded via encodeURIComponent()
 
 // Local URL:
-?url=images/logo.svg
+?url=images%2Flogo.svg // encoded via encodeURIComponent()
 }}}
 
 *Note:* There is currently a bug that prevents data URIs ending with equals (=) characters from being parsed. Removing these characters seem to allow the import to work as expected.
