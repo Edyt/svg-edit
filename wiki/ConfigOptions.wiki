@@ -84,8 +84,8 @@ Note that those items marked as preferences are configuration items which can al
 || forceStorage || || false || No ||
 || emptyStorageOnDecline || || false || No ||
 || paramurl || This is available via URL only. Deprecated || || No ||
-|| show_outside_canvas || Set by svgcanvas.js || || No || 
-|| selectNew || Set by svgcanvas.js || || No ||
+|| show_outside_canvas || Set by svgcanvas.js || true || No || 
+|| selectNew || Set by svgcanvas.js || true || No ||
 
 == Preload a file ==
 
