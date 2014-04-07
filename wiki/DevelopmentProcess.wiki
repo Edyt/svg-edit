@@ -40,7 +40,7 @@ During this phase, the trunk will be branched to svn/branches/X.X (where X.X is 
     * the Opera widget will be packaged into a wgt file
      * [http://my.opera.com/addons/blog/2012/04/24/sunsetting-unite-and-widgets Opera Widgets are being phased out]
   * Commit the now built minified JS file, svgedit.compiled.js
-  * Project owner: ~~upload the zip, xpi and wgt files to the Google Code download section~~ (Add to Google Drive since new project downloads [http://google-opensource.blogspot.hk/2013/05/a-change-to-google-code-download-service.html now disabled]?)
+  * Project owner: ~~upload the zip, xpi and wgt files to the Google Code download section~~ (Commit the packaged files and/or add to Google Drive since new project downloads [http://google-opensource.blogspot.hk/2013/05/a-change-to-google-code-download-service.html now disabled]?)
   * update the *stable* branch to refer to the new release branch via:
 {{{
 $ svn delete -m "Removing old stable branch" https://svg-edit.googlecode.com/svn/branches/stable
