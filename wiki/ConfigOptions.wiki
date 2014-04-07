@@ -71,18 +71,18 @@ Note that those items marked as preferences are configuration items which can al
 || selectNew || Initial state of option to automatically select objects after they are created (v2.6) || true || No ||
 || save_notice_done || Used to track alert status || false || Yes ||
 || export_notice_done || Used to track alert status || false || Yes ||
-|| allowedOrigins || || [] || No
-|| canvasName || || default || No
-|| initOpacity || || 1 || No
-|| colorPickerCSS || || null || No
-|| preventAllURLConfig || || false || No
-|| preventURLContentLoading || || false || No
-|| lockExtensions || || false || No
-|| noDefaultExtensions || || false || No
-|| showGrid || || false || No
-|| noStorageOnLoad || || false || No
-|| forceStorage || || false || No
-|| emptyStorageOnDecline || || false || No
+|| allowedOrigins || || [] || No ||
+|| canvasName || || default || No ||
+|| initOpacity || || 1 || No ||
+|| colorPickerCSS || || null || No ||
+|| preventAllURLConfig || || false || No ||
+|| preventURLContentLoading || || false || No ||
+|| lockExtensions || || false || No ||
+|| noDefaultExtensions || || false || No ||
+|| showGrid || || false || No ||
+|| noStorageOnLoad || || false || No ||
+|| forceStorage || || false || No ||
+|| emptyStorageOnDecline || || false || No ||
 
 == Preload a file ==
 
