@@ -15,7 +15,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
 = Version 2.8 ([https://en.wikipedia.org/wiki/Devil%27s_curve Devil's curve] in trunk; not yet released) =
 
 == Proposed Features ==
- * [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-nextversion next version]
+ * [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-nextversion next version] ([https://code.google.com/p/svg-edit/issues/list?can=2&q=label:NeededFor-nextversion%20type=Defect&colspec=ID%20Type%20Status%20Priority%20NeededFor%20Browser%20Owner%20Summary Bugs only])
  * [https://code.google.com/p/svg-edit/issues/list?can=2&q=NeededFor%3AFuture&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles future version]
 
 == Implemented Features ==
