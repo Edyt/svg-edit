@@ -105,7 +105,10 @@ svgEditor.loadFromURL("images/logo.svg");
 Or as URL parameter:
 
 {{{
-// Data URI: 
+// Data URI
+'?source=' + encodeURIComponent('data:image/svg+xml;utf8,' + encodeURIComponent('<svg...') // Yes, this needs double encoding
+
+// Data URI (base 64): 
 '?source=' + encodeURIComponent('data:image/svg+xml;base64,' + ...) // data%3Aimage%2Fsvg%2Bxml%3Bbase64%2C ...
 
 // Local URL:
