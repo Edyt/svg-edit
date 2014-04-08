@@ -10,6 +10,8 @@ http://code.google.com/p/svg-edit/source/list
 As of 2011-09-29 (and for 2.6+ versions), the license was changed from Apache License v2.0 to MIT.
 
 = Current release: Version 2.7 ([https://en.wikipedia.org/wiki/Deltoid_curve Deltoid curve]) =
+
+== New Features ==
  * Export to PNG, JPEG, BMP, WEBP (including quality control for JPEG/WEBP) for default editor and for the server_opensave extension
  * Added Star, Polygon, and Panning Extensions [https://code.google.com/p/svg-edit/source/detail?r=2318 r2318] [https://code.google.com/p/svg-edit/source/detail?r=2319 r2319] [https://code.google.com/p/svg-edit/source/detail?r=2333 r2333]
  * Added non-default extension, ext-xdomain-messaging.js, moving cross-domain messaging code (as used by the embedded editor) out of core and requiring, when the extension IS included, that configuration (an array "allowedOrigins") be set in order to allow access by any domain (even same domain).
@@ -39,6 +41,13 @@ As of 2011-09-29 (and for 2.6+ versions), the license was changed from Apache Li
 <wiki:comment>
  * [http://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3D2.6&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles many more] 
 </wiki:comment>
+
+== Release date ==
+ * April 7th, 2014
+
+== Demo ==
+ * http://svg-edit.googlecode.com/svn/branches/2.7/editor/svg-editor.html
+
 
 = Version 2.6 ([http://en.wikipedia.org/wiki/Cycloid Cycloid]) =
 
