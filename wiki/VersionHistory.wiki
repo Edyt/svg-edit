@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page describes the current release and previous versions of SVG-edit. For planned future versions, see the [Roadmap].
+This page describes the current release and previous versions of SVG-edit. For planned future versions (or current trunk-only features), see the [Roadmap].
 
 You can see the changes of the upcoming version here:
 http://code.google.com/p/svg-edit/source/list
