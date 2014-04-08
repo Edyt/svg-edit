@@ -21,7 +21,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
 == Implemented Features ==
  * [https://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3Dnextversion+status%3AFixed%2CDone&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles already fixed/implemented]
  * Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
- * [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI where available, and as blob URI otherwise)
+ * Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI where available, and as blob URI otherwise)
  * Potentially breaking API changes:
   * Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
   * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." prefix and double encodeURIComponent() the remaining content)
