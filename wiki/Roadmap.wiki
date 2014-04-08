@@ -23,7 +23,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
  * Potentially breaking API changes:
   * Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
-  * Data URIs must be properly URL encoded (use encodeURIComponent())
+  * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." preifx and double encodeURIComponent() the remaining content)
 
 == Release Date ==
  * TBD
