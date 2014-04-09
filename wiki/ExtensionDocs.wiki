@@ -107,11 +107,16 @@ Most plugins will want to run functions when certain events are triggered. This 
 || mouseUp || The main (left) mouse button is released (anywhere) || Same as for mousedown || An optional object with these properties: element (the element being affected), keep (boolean that indicates if the current element should be kept) started (boolean that indicates if editing should still be considered as "started") ||
 || zoomChanged || The zoom level is changed || Supplies the new zoom level as a number (not percentage) || None ||
 || selectedChanged || The element selection has changed (elements were added/removed from selection || Supplies an object with these properties: elems (array of the newly selected elements), selectedElement (the single selected element), multiselected (a boolean that indicates whether one or more elements was selected) || None ||
-|| elementChanged || One or more elements were changed || Array of the affected elements || None ||
+|| elementChanged || One or more elements were changed || Object with properties: elems (array of the affected elements) || None ||
+|| elementTransition || Called when part of element is in process of changing, generally on mousemove actions like rotate, move, etc. || Object with properties: elems (array of transitioning elements) || None ||
 || toolButtonStateUpdate || The bottom panel was updated || Object with these properties: nofill (boolean that indicates fill is disabled), nostroke (boolean that indicates stroke is disabled) || None ||
 || langChanged || The language was changed || Two-letter code of the new language || None ||
 || langReady || Invoked as soon as the locale is ready || An object with properties "lang" containing the two-letter language code and "uiStrings" as an alias for svgEditor.uiStrings || None ||
+|| addlangData || Means for an extension to add locale data || The two-letter language code || Object with "data" property set to an object containing two-letter language codes keyed to an array of objects with "id" and "title" or "textContent" properties ||
 || callback || Invoked upon addition of the extension, or, if svgicons are set, then after the icons are ready || None || None ||
+|| canvasUpdated || Invoked upon updates to the canvas || Object with properties: new_x, new_y, old_x, old_y, d_x, d_y || None ||
+|| onNewDocument || Called when new image is created || None || None ||
+|| workareaResized || Called when sidepanel is resized or toggled || None || None ||
 
 == Helper functions ==
 
