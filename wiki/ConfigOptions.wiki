@@ -83,7 +83,7 @@ Note that those items marked as preferences are configuration items which can al
 || noStorageOnLoad || Some interaction with ext-storage.js; prevents even the loading of previously saved local storage || false || No ||
 || forceStorage || Some interaction with ext-storage.js; strongly discouraged from modification as it bypasses user privacy by preventing them from choosing whether to keep local storage or not || false || No ||
 || emptyStorageOnDecline || Used by ext-storage.js; empty any prior storage if the user declines to store || false || No ||
-|| paramurl || This is available via URL only. Deprecated and removed in trunk. Allowed an un-encoded URL within the query string || || No ||
+|| paramurl || This is available via URL only. Deprecated and removed in trunk. Allowed an un-encoded URL within the query string (use "url" or "source" with a data: URI instead) || (None) || No ||
 || selectNew || Set by svgcanvas.js; used by mouseUp; it true, will replace the selection with the current element and show grips || true || No ||
 
 == Preload a file ==
