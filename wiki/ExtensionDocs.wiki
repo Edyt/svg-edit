@@ -111,7 +111,7 @@ Most plugins will want to run functions when certain events are triggered. This 
 || toolButtonStateUpdate || The bottom panel was updated || Object with these properties: nofill (boolean that indicates fill is disabled), nostroke (boolean that indicates stroke is disabled) || None ||
 || langChanged || The language was changed || Two-letter code of the new language || None ||
 || langReady || Invoked as soon as the locale is ready || An object with properties "lang" containing the two-letter language code and "uiStrings" as an alias for svgEditor.uiStrings || None ||
-|| callback || Invoked upon addition of the extension, or, if svgicons are set, then after the icons are ready || None ||
+|| callback || Invoked upon addition of the extension, or, if svgicons are set, then after the icons are ready || None || None ||
 
 == Helper functions ==
 
