@@ -58,14 +58,14 @@ Each button is an object with the following properties (added to the array "butt
 || icon (string) || The file path to the raster version of the icon. || Only if no svgicons is supplied ||
 || svgicon (string) || If absent, will utilize the button "id"; used to set "placement" on the svgIcons call || No ||
 || list (string) || || No ||
-|| position || The numeric index for placement; defaults to last position (as of the time of extension addition) if not present || No ||
+|| position (integer) || The numeric index for placement; defaults to last position (as of the time of extension addition) if not present || No ||
 || panel (string) || The ID of the context panel to be included, if type is "context". || Only if type is "context" ||
 || events (object) || DOM event names with associated functions. Example: `{'click': function() { alert('Button was clicked') }` } || Yes ||
 || includeWith (object) || Object with flyout menu data (see following properties) || No || 
 || includeWith`[`button`]` (string) || jQuery selector of the existing button to be joined. Example: `'#tool_line'` || Yes (if includeWith is used) ||
 || includeWith`[`isDefault`]` (boolean) || Option indicating whether button is default in flyout list or not || No ||
 || isDefault (boolean) || Whether or not the default is the default || No ||
-|| includeWith`[`position`]` (number) || Position of icon in flyout list, will be added to end if not indicated || No ||
+|| includeWith`[`position`]` (integer) || Position of icon in flyout list, will be added to end if not indicated || No ||
 || key (string) || The key to bind to the button || No ||
 
 == Creating SVG icons ==
@@ -93,7 +93,7 @@ These are added by the extension returning an object with the property "context_
 || defval (string) || Default value || No ||
 || label (string) || Label associated with the tool, visible in the UI || No ||
 || title (string) || The tooltip text that will appear when the user hovers over the tool || Yes ||
-|| size (number) || Value of the "size" attribute of the tool || No ||
+|| size (integer) || Value of the "size" attribute of the tool input || No ||
 || spindata (object) || When added to a tool of type "input", this tool becomes a "spinner" which allows the number to be in/decreased. For data required see [http://svg-edit.googlecode.com/svn/trunk/editor/spinbtn/JQuerySpinBtn.js The SpinButton script] || No ||
 || colnum (integer) || Added as part of the option list class. || No ||
 
