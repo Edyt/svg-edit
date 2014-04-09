@@ -49,19 +49,24 @@ Note how the returned properties include information on the buttons, as well as 
 
 Buttons can appear either in the mode panel (left panel) or the context panel (top panel, changes depending on selection). Their icons can either consist of SVG icons (recommended) or just raster images. 
 
-Each button is an object with the following properties:
+Each button is an object with the following properties (added to the array "buttons" on the object provided by the extension):
 
 || *Property* || *Description* || *Required?* ||
 || id (string) || A unique identifier for this button. If SVG icons are used, this must match the ID used in the icon file. || Yes ||
 || type (string) || Type of button. Must be either 'mode' or 'context' || Yes ||
 || title (string) || The tooltip text that will appear when the user hovers over the icon || Yes ||
 || icon (string) || The file path to the raster version of the icon. || Only if no svgicons is supplied ||
+|| svgicon (string) || If absent, will utilize the button "id"; used to set "placement" on the svgIcons call || No ||
+|| list (string) || || No ||
+|| position || The numeric index for placement; defaults to last position (as of the time of extension addition) if not present || No ||
 || panel (string) || The ID of the context panel to be included, if type is "context". || Only if type is "context" ||
 || events (object) || DOM event names with associated functions. Example: `{'click': function() { alert('Button was clicked') }` } || Yes ||
 || includeWith (object) || Object with flyout menu data (see following properties) || No || 
 || includeWith`[`button`]` (string) || jQuery selector of the existing button to be joined. Example: `'#tool_line'` || Yes (if includeWith is used) ||
 || includeWith`[`isDefault`]` (boolean) || Option indicating whether button is default in flyout list or not || No ||
+|| isDefault (boolean) || Whether or not the default is the default || No ||
 || includeWith`[`position`]` (number) || Position of icon in flyout list, will be added to end if not indicated || No ||
+|| key (string) || The key to bind to the button || No ||
 
 == Creating SVG icons ==
 
@@ -76,6 +81,8 @@ For further information, see the [http://svg-icon-loader.googlecode.com/ SVG Ico
 
 Context tools appear in the top toolbar whenever a certain type of element is selected.
 
+These are added by the extension returning an object with the property "context_tools".
+
 || *Property* || *Description* || *Required?* ||
 || panel (string) || The ID of the existing panel for the tool to be added to || Yes ||
 || container_id (string) || The ID to be given to the tool's container element || No ||
@@ -88,6 +95,7 @@ Context tools appear in the top toolbar whenever a certain type of element is se
 || title (string) || The tooltip text that will appear when the user hovers over the tool || Yes ||
 || size (number) || Value of the "size" attribute of the tool || No ||
 || spindata (object) || When added to a tool of type "input", this tool becomes a "spinner" which allows the number to be in/decreased. For data required see [http://svg-edit.googlecode.com/svn/trunk/editor/spinbtn/JQuerySpinBtn.js The SpinButton script] || No ||
+|| colnum || Added as part of the option list class.
 
 == SVG-Edit events ==
 
@@ -102,7 +110,8 @@ Most plugins will want to run functions when certain events are triggered. This 
 || elementChanged || One or more elements were changed || Array of the affected elements || None ||
 || toolButtonStateUpdate || The bottom panel was updated || Object with these properties: nofill (boolean that indicates fill is disabled), nostroke (boolean that indicates stroke is disabled) || None ||
 || langChanged || The language was changed || Two-letter code of the new language || None ||
-
+|| langReady || Invoked as soon as the locale is ready || An object with properties "lang" containing the two-letter language code and "uiStrings" as an alias for svgEditor.uiStrings || None ||
+|| callback || Invoked upon addition of the extension, or, if svgicons are set, then after the icons are ready || None ||
 
 == Helper functions ==
 
