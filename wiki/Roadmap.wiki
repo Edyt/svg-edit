@@ -25,6 +25,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * Potentially breaking API changes:
   * Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
   * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." prefix and double encodeURIComponent() the remaining content)
+  * Remove "paramurl" parameter (use "url" or "source" with a data: URI instead)
 
 == Release Date ==
  * TBD
