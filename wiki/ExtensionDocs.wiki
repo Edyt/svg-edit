@@ -60,7 +60,7 @@ Each button is an object with the following properties (added to the array "butt
 || title (string) || The tooltip text that will appear when the user hovers over the icon || Yes ||
 || icon (string) || The file path to the raster version of the icon. || Only if no svgicons is supplied ||
 || svgicon (string) || If absent, will utilize the button "id"; used to set "placement" on the svgIcons call || No ||
-|| list (string) || || No ||
+|| list (string) || Points to the "id" of a context_tools item of type "button-select" into which the button will be added as a panel list item || No ||
 || position (integer) || The numeric index for placement; defaults to last position (as of the time of extension addition) if not present || No ||
 || panel (string) || The ID of the context panel to be included, if type is "context". || Only if type is "context" ||
 || events (object) || DOM event names with associated functions. Example: `{'click': function() { alert('Button was clicked') }` } || Yes ||
