@@ -29,7 +29,9 @@ The basic structure of this plugin looks like this:
 {{{
 svgEditor.addExtension("Hello World", function() {
 	
+	// Returning an object is optional as of v2.7+
 	return {
+		// name: "", // A name has traditionally been added but apparently not needed?
 		svgicons: "extensions/helloworld-icon.xml",
 		buttons: [{...}],
 		mouseDown: function() {
@@ -42,6 +44,7 @@ svgEditor.addExtension("Hello World", function() {
 	};
 });
 }}}
+
 
 Note how the returned properties include information on the buttons, as well as the functions that should be run when certain events take place.
 
