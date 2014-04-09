@@ -95,7 +95,7 @@ These are added by the extension returning an object with the property "context_
 || title (string) || The tooltip text that will appear when the user hovers over the tool || Yes ||
 || size (number) || Value of the "size" attribute of the tool || No ||
 || spindata (object) || When added to a tool of type "input", this tool becomes a "spinner" which allows the number to be in/decreased. For data required see [http://svg-edit.googlecode.com/svn/trunk/editor/spinbtn/JQuerySpinBtn.js The SpinButton script] || No ||
-|| colnum || Added as part of the option list class.
+|| colnum || Added as part of the option list class. || No ||
 
 == SVG-Edit events ==
 
