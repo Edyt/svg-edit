@@ -25,11 +25,12 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * Embedded editor fix
  * Support and demonstrate export in embedded editor
  * allow showGrid to be set before load
+ * Minor improvement in display when icon size is set to small
  * Potentially breaking API changes:
   * Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
   * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." prefix and double encodeURIComponent() the remaining content)
   * Remove "paramurl" parameter (use "url" or "source" with a data: URI instead)
-  * svgCanvas.rasterExport now takes a window name as the third argument
+  * svgCanvas.rasterExport now takes a window name as the third argument, with the supplied name also being provided as a "exportWindowName" property on the object passed to the [ExtensionDocs#svgEditor_public_methods exportImage] method optionally supplied to svgEditor.setCustomHandlers.
 
 == Release Date ==
  * TBD
