@@ -18,7 +18,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * [http://code.google.com/p/svg-edit/issues/list?can=2&q=label%3ANeededFor-nextversion next version] ([https://code.google.com/p/svg-edit/issues/list?can=2&q=label:NeededFor-nextversion%20type=Defect&colspec=ID%20Type%20Status%20Priority%20NeededFor%20Browser%20Owner%20Summary Bugs only])
  * [https://code.google.com/p/svg-edit/issues/list?can=2&q=NeededFor%3AFuture&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles future version]
 
-== Implemented Features ==
+== Implemented Features (subject to further alteration before release) ==
  * [https://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3Dnextversion+status%3AFixed%2CDone&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles already fixed/implemented]
  * Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
  * Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI where available, and as blob URI otherwise)
@@ -26,7 +26,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * Support and demonstrate export in embedded editor
  * allow showGrid to be set before load
  * Minor improvement in display when icon size is set to small
- * Potentially breaking API changes:
+ * Potentially breaking API changes (subject to further alteration before release):
   * Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
   * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." prefix and double encodeURIComponent() the remaining content)
   * Remove "paramurl" parameter (use "url" or "source" with a data: URI instead)
