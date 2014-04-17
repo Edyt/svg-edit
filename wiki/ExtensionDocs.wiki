@@ -138,7 +138,7 @@ These are supplied in an object through the first parameter of the extension fun
 === svgEditor public methods ==
 
 || *Name* || *Description* || *Params* || *Return value* ||
-|| setCustomHandlers() || Override default SVG open, save, and export behaviors || Accepts object with all optional properties, "open", "save", and "exportImage"; "saved" is passed a string of the SVG whereas "exportImage" is passed an object containing "svg" with the SVG contents as a string, "issues" with an array of UI strings pertaining to relevant known CanVG issues, "type" for handling the chosen image type ("PNG", "JPEG", "BMP", "WEBP") (or, as planned for 3.0.0, "PDF" type), "quality" as a decimal between 0 and 1 (for use with JPEG or WEBP) || (None) ||
+|| setCustomHandlers() || Override default SVG open, save, and export behaviors || Accepts object with all optional properties, "open", "save", and "exportImage"; "open" is not passed any parameters; "saved" is passed a string containing the SVG; "exportImage" is passed an object containing the properties: "svg" with the SVG contents as a string, "issues" with an array of UI strings pertaining to relevant known CanVG issues, "type" indicating the chosen image type ("PNG", "JPEG", "BMP", "WEBP") (or, as planned for 3.0.0, "PDF" type), and "quality" as a decimal between 0 and 1 (for use with JPEG or WEBP) || (None) ||
 || ... || ... || ... || ... ||
 
 issues: issues, type: imgType, mimeType: mimeType, quality: quality, exportWindowName: exportWindowName
