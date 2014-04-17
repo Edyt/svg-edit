@@ -9,7 +9,12 @@ http://code.google.com/p/svg-edit/source/list
 
 As of 2011-09-29 (and for 2.6+ versions), the license was changed from Apache License v2.0 to MIT.
 
-= Current release: Version 2.7 ([https://en.wikipedia.org/wiki/Deltoid_curve Deltoid curve]) =
+= Current release: 2.7.1 (applied to 2.7 branch) =
+
+ * Fix important ID situation with embedded API
+ * Update functions available to embedded editor
+
+= Version 2.7 ([https://en.wikipedia.org/wiki/Deltoid_curve Deltoid curve]) =
 
 == New Features ==
  * Export to PNG, JPEG, BMP, WEBP (including quality control for JPEG/WEBP) for default editor and for the server_opensave extension
