@@ -51,6 +51,7 @@ Note that those items marked as preferences are configuration items which can al
 || initStroke`[`width`]` || The initial stroke width. Must be a positive number. || 5 || No ||
 || initStroke`[`opacity`]` || The initial stroke opacity. Must be a number between 0 and 1 || 1 || No ||
 || initTool || The initially selected tool. Must be either the ID of the button for the tool, or the ID without "tool_" prefix || select || No ||
+|| exportWindowType || New as of 2.8. Can be "new" or "same" to indicate whether new windows will be generated for each export; the window.name of the export window is namespaced based on the canvasName (and incremented if "new" is selected as the type) || new || No ||
 || imgPath || The path where the SVG icons are located, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || images/ || No ||
 || jGraduatePath || The path where jGraduate images are located. Note that as of version 2.7, this is not configurable by URL for security reasons. || jgraduate/images/ || No ||
 || langPath || The path where the language files are located, with trailing slash. Note that as of version 2.7, this is not configurable by URL for security reasons. || locale/ || No ||
