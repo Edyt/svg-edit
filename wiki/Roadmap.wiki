@@ -20,17 +20,20 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
 
 == Implemented Features (subject to further alteration before release) ==
  * [https://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3Dnextversion+status%3AFixed%2CDone&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles already fixed/implemented]
- * Avoid error in ungrouping function when no elements selected (was impacting !MathJax "Ok" button).
- * Fix [https://code.google.com/p/svg-edit/issues/detail?id=1205 issue #1205] with Snap to Grid preventing editing
- * Fix bug in exportImage if svgEditor.setCustomHandlers calls made
- * Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
- * Added openclipart support to imagelib extension
- * Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI)
- * Allow config "exportWindowType" of value "new" or "same" to indicate whether to reuse the same export window upon subsequent exports
- * Ensure all dependencies are first available before canvg (and jsPDF) usage; upgrade canvg version and allow for empty images
- * Support and demonstrate export in embedded editor
- * allow showGrid to be set before load
- * Minor improvement in display when icon size is set to small
+ * Feature: Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI)
+ * Feature: Allow config "exportWindowType" of value "new" or "same" to indicate whether to reuse the same export window upon subsequent exports
+ * Feature: Added openclipart support to imagelib extension
+ * Feature: allow showGrid to be set before load
+ * Feature: Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
+ * Demo feature: Support and demonstrate export in embedded editor
+ * Upgrade: canvg version
+ * Fix: Avoid error in ungrouping function when no elements selected (was impacting !MathJax "Ok" button).
+ * Fix: [https://code.google.com/p/svg-edit/issues/detail?id=1205 issue #1205] with Snap to Grid preventing editing
+ * Fix: bug in exportImage if svgEditor.setCustomHandlers calls made
+ * Fix: Ensure "loading..." message closes upon completion or error
+ * Fix: Ensure all dependencies are first available before canvg (and jsPDF) usage
+ * Fix: Allow for empty images
+ * Fix: Minor improvement in display when icon size is set to small
  * Potentially breaking API changes (subject to further alteration before release):
   * Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
   * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." prefix and double encodeURIComponent() the remaining content)
