@@ -25,8 +25,9 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * Fix bug in exportImage if svgEditor.setCustomHandlers calls made
  * Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
  * Added openclipart support to imagelib extension
- * Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI where available, and as blob URI otherwise)
- * Ensure all dependencies are first available before canvg (and jsPDF) usage
+ * Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI)
+ * Allow config "exportWindowType" of value "new" or "same" to indicate whether to reuse the same export window upon subsequent exports
+ * Ensure all dependencies are first available before canvg (and jsPDF) usage; upgrade canvg version and allow for empty images
  * Support and demonstrate export in embedded editor
  * allow showGrid to be set before load
  * Minor improvement in display when icon size is set to small
@@ -35,6 +36,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
   * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." prefix and double encodeURIComponent() the remaining content)
   * Remove "paramurl" parameter (use "url" or "source" with a data: URI instead)
   * svgCanvas.rasterExport now takes a window name as the third argument, with the supplied name also being provided as a "exportWindowName" property on the object passed to the [ExtensionDocs#svgEditor_public_methods exportImage] method optionally supplied to svgEditor.setCustomHandlers.
+  * Change 2.7 allowance of "PDF" as a type in the canvas "rasterExport" method and the "exported" event to instead be moved to the canvas "exportPDF" method and "exportedPDF" event respectively.
 
 == Release Date ==
  * TBD
