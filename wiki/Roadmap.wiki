@@ -20,12 +20,13 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
 
 == Implemented Features (subject to further alteration before release) ==
  * [https://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3Dnextversion+status%3AFixed%2CDone&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles already fixed/implemented]
- * Feature: Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI)
- * Feature: Allow config "exportWindowType" of value "new" or "same" to indicate whether to reuse the same export window upon subsequent exports
- * Feature: Added openclipart support to imagelib extension
- * Feature: allow showGrid to be set before load
- * Feature: Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
- * Demo feature: Support and demonstrate export in embedded editor
+ * Enhancement: Client-side [https://code.google.com/p/svg-edit/issues/detail?id=1156 PDF export] (to data: URI)
+ * Enhancement: Allow config "exportWindowType" of value "new" or "same" to indicate whether to reuse the same export window upon subsequent exports
+ * Enhancement: Added openclipart support to imagelib extension
+ * Enhancement: allow showGrid to be set before load
+ * Enhancement: Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
+ * Enhancement: More clear naming of labels: "Open Image"->"Open SVG" and "Import SVG"->"Import Image" (issue #1206)
+ * Demo enhancement: Support and demonstrate export in embedded editor
  * Upgrade: canvg version
  * Fix: Avoid error in ungrouping function when no elements selected (was impacting !MathJax "Ok" button).
  * Fix: [https://code.google.com/p/svg-edit/issues/detail?id=1205 issue #1205] with Snap to Grid preventing editing
