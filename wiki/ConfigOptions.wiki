@@ -6,7 +6,7 @@ As of version 2.5, SVG-edit has several configuration settings that can be overr
 
 == How to set the options ==
 
-Options can be set using svgEditor.setConfig(options), where "options" is an object literal of keys and values. This must be run _before_ the actual page or DOM is loaded, otherwise it will have no effect. Note that one may create a "config.js" file within the "editor" directory and add such configuration directives to it without needing to modify the repository editor code.
+Options can be set using svgEditor.setConfig(options), where "options" is an object literal of keys and values. This must be run _before_ the actual page or DOM is loaded, otherwise it will have no effect. Note that one may create a "config.js" file within the "editor" directory and add such configuration directives to it without needing to modify the repository editor code (and note version 2.8 adds support for a custom.css file for the same purpose).
 
 Example:
 
