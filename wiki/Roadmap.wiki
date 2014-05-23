@@ -26,7 +26,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * Enhancement: allow showGrid to be set before load
  * Enhancement: Support loading of (properly URL encoded) non-base64 "data:image/svg+xml;utf8,"-style data URIs
  * Enhancement: More clear naming of labels: "Open Image"->"Open SVG" and "Import SVG"->"Import Image" (issue #1206)
- * Enhancement: Included reference to (repository-ignored) custom.css file which, as with config.js, allows customization without modifying the repo
+ * Enhancement: Included reference to (repository-ignored) custom.css file which once created by the user, as with config.js, allows customization without modifying the repo
  * Demo enhancement: Support and demonstrate export in embedded editor
  * Upgrade: canvg version
  * Fix: Avoid error in ungrouping function when no elements selected (was impacting !MathJax "Ok" button).
