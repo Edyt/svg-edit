@@ -38,6 +38,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
  * Fix: Allow for empty images
  * Fix: Minor improvement in display when icon size is set to small
  * Fix: Based64-encoding issues with Unicode text (e.g., in data URIs or icons)
+ * Fix: 2.7 regression in filesave.php for SVG saving (used by ext-server_opensave.js when client doesn't support the download attribute)
  * Potentially breaking API changes (subject to further alteration before release):
   * Remove 2.7-deprecated "pngsave" (in favor of "exportImage")
   * Data URIs must be properly URL encoded (use encodeURIComponent() on the "data:..." prefix and double encodeURIComponent() the remaining content)
