@@ -89,7 +89,9 @@ Note that those items marked as preferences are configuration items which can al
 
 == Preload a file ==
 
-It is also possible to start the editor with preloaded SVG file, using the following methods:
+It is also possible to start the editor with preloaded SVG file, using the following methods.
+
+However, one should bear in mind that if one wishes to immediately set a particular string, especially if in config.js (and prevent the user from saving their own text), one should first set the config option "noStorageOnLoad" to false or otherwise any previous local storage may overwrite your own string.
 
 {{{
 // Serialized string:
