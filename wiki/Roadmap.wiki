@@ -20,7 +20,7 @@ You can follow all [https://code.google.com/p/svg-edit/source/list code commits 
 
 == Implemented Features (subject to further alteration before release) ==
  * [https://code.google.com/p/svg-edit/issues/list?can=1&q=NeededFor%3Dnextversion+status%3AFixed%2CDone&colspec=ID+Type+Status+Priority+NeededFor+Browser+Owner+Summary&cells=tiles already fixed/implemented]
- * Enhancement: Client-side PDF export (issue #1156) (to data: URI)
+ * Enhancement (Experimental): Client-side PDF export (issue #1156) (to data: URI) and server-side PDF export (where not supported in browser and using ext-server_opensave.js); uses [https://github.com/MrRio/jsPDF jsPDF] library
  * Enhancement: For image exports, provided "datauri" property to "exported" event.
  * Enhancement: Allow config "exportWindowType" of value "new" or "same" to indicate whether to reuse the same export window upon subsequent exports
  * Enhancement: Added openclipart support to imagelib extension
