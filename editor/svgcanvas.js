@@ -1991,13 +1991,13 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 //				d_attr += + real_x + ',' + real_y + ' ';
 //				shape.setAttributeNS(null, 'points', d_attr);
 				end.x = real_x; end.y = real_y;
+				nextPos = null;
 				if (controllPoint2.x && controllPoint2.y) {
 					for (i = 0; i < STEP_COUNT - 1; i++) {
 						parameter = i / STEP_COUNT;
 						nextParameter = (i + 1) / STEP_COUNT;
-						bSpline = getBsplinePoint(nextParameter);
-						nextPos = bSpline;
-						bSpline = getBsplinePoint(parameter);
+						bSpline = nextPos || getBsplinePoint(parameter);
+						nextPos = getBsplinePoint(nextParameter);
 						sumDistance += Math.sqrt((nextPos.x - bSpline.x) * (nextPos.x - bSpline.x) + (nextPos.y - bSpline.y) * (nextPos.y - bSpline.y));
 						if (sumDistance > THRESHOLD_DIST) {
 							d_attr += + bSpline.x + ',' + bSpline.y + ' ';
