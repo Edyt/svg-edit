@@ -54,7 +54,7 @@ var NS = svgedit.NS;
 // Default configuration options
 var curConfig = {
 	show_outside_canvas: true,
-	selectNew: true,
+	//selectNew: true,
 	dimensions: [640, 480]
 };
 
