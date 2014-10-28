@@ -2978,7 +2978,7 @@ pathActions = canvas.pathActions = function() {
 			var curpos = points.getItem(0), prevCtlPt = null;
 			var d = [];
 			d.push(['M', curpos.x, ',', curpos.y, ' C'].join(''));
-			for (i = 1; i <= (N-4); i += 3) {
+			for (i = 1; i <= (N-3); i += 3) {
 				var ct1 = points.getItem(i);
 				var ct2 = points.getItem(i+1);
 				var end = points.getItem(i+2);
