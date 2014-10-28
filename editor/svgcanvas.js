@@ -2228,12 +2228,16 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 				controllPoint1 = {x:0, y:0};
 				start = {x:0, y:0};
 				end = {x:0, y:0};
-				var coords = element.getAttribute('points');
-				var commaIndex = coords.indexOf(',');
-				if (commaIndex >= 0) {
-					keep = coords.indexOf(',', commaIndex+1) >= 0;
-				} else {
-					keep = coords.indexOf(' ', coords.indexOf(' ')+1) >= 0;
+
+				keep = element.points.numberOfItems > 1;
+				//if only a single point, add another point to make a dot show up
+				if(!keep){
+					keep = true;
+					var first = element.points.getItem(0);
+					var second = svgroot.createSVGPoint();
+					second.x = first.x + 1;
+					second.y = first.y;
+					element.points.appendItem(second);
 				}
 				if (keep) {
 					element = pathActions.smoothPolylineIntoPath(element);
