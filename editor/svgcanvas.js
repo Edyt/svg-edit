@@ -2000,8 +2000,10 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 						nextPos = getBsplinePoint(nextParameter);
 						sumDistance += Math.sqrt((nextPos.x - bSpline.x) * (nextPos.x - bSpline.x) + (nextPos.y - bSpline.y) * (nextPos.y - bSpline.y));
 						if (sumDistance > THRESHOLD_DIST) {
-							d_attr += + bSpline.x + ',' + bSpline.y + ' ';
-							shape.setAttributeNS(null, 'points', d_attr);
+							var point = svgroot.createSVGPoint();
+							point.x = nextPos.x;
+							point.y = nextPos.y;
+							shape.points.appendItem(point);
 							sumDistance -= THRESHOLD_DIST;
 						}
 					}
