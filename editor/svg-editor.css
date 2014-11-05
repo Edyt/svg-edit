@@ -161,7 +161,7 @@ select {
 #workarea {
 	display: inline-table-cell;
 	position:absolute;
-	top: 40px;
+	top: 0; /*40px;*/
 	left: 40px;
 	bottom: 40px;
 	right: 14px;
@@ -492,7 +492,7 @@ div.palette_item:first-child {
 	position: absolute;
 	border-right: none;
 	width: 32px;
-	top: 40px;
+	top: 0; /*40px;*/
 	left: 1px;
 	margin-top: -2px;
 	padding-left: 2px;
