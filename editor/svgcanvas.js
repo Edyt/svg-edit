@@ -156,7 +156,7 @@ var all_properties = {
 		stroke_width: curConfig.initStroke.width,
 		stroke_dasharray: 'none',
 		stroke_linejoin: 'miter',
-		stroke_linecap: 'butt',
+		stroke_linecap: 'round',
 		opacity: curConfig.initOpacity
 	}
 };
@@ -1510,7 +1510,7 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 						points: d_attr,
 						id: getNextId(),
 						fill: 'none',
-						opacity: cur_shape.opacity / 2,
+						//opacity: cur_shape.opacity / 2,
 						'stroke-linecap': 'round',
 						style: 'pointer-events:none'
 					}
@@ -2473,6 +2473,10 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	$(container).mousedown(mouseDown).mousemove(mouseMove).click(handleLinkInCanvas).dblclick(dblClick).mouseup(mouseUp);
 //	$(window).mouseup(mouseUp);
 	
+
+//quick swipe up/down/left/right would trigger windows gestures in surface pro 3 Firefox (but not in IE somehow)
+//(these guestures could be disabled in windows 8 settings)
+return;
 	 //TODO(rafaelcastrocouto): User preference for shift key and zoom factor
 	$(container).bind('mousewheel DOMMouseScroll', function(e){
 		//if (!e.shiftKey) {return;}
