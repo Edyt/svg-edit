@@ -164,7 +164,7 @@ select {
 	top: 0; /*40px;*/
 	left: 40px;
 	bottom: 40px;
-	right: 14px;
+	right: 0px;
 	background-color: #A0A0A0;
 	border: 1px solid #808080;
 	overflow: auto;
@@ -973,7 +973,7 @@ span.zoom_tool {
 #tool_opacity {
 	overflow: visible;
 }
-
+/*
 @media screen and (max-width:1250px) {
 	.expanded #palette_holder {
 		left: 560px;
@@ -1015,7 +1015,7 @@ span.zoom_tool {
 		height: 30px;
 	}
 }
-
+*/
 /*–––––––––––––––––––––––––––––––––––––*/
 
 #option_lists ul {
