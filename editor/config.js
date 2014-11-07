@@ -18,11 +18,11 @@ svgEditor.setConfig({
 		// color: 'FF0000', // solid red
 		// opacity: 1
 	// },
-	// initStroke: {
-		// width: 5,
-		// color: '000000', // solid black
-		// opacity: 1
-	// },
+	initStroke: {
+		// opacity: 1,
+		width: 3,
+		color: '0000FF' // solid blue
+	},
 	// initOpacity: 1,
 	// colorPickerCSS: null,
 	initTool: 'fhpath',
