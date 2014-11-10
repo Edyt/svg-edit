@@ -1,0 +1,6 @@
+#svgcanvas{
+	background: white;
+}
+#canvasBackground rect{
+	stroke-dasharray: 5,5;
+}
