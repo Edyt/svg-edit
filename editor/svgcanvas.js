@@ -1299,6 +1299,10 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 			y:spline.y
 		};
 	};
+
+	var isErasing = function(evt){
+		return evt.button === 5 || (evt.button === 0 && evt.ctrlKey);
+	};
 	// - when we are in a create mode, the element is added to the canvas
 	// but the action is not recorded until mousing up
 	// - when we are in select mode, select the element, remember the position
@@ -1306,12 +1310,14 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	var mouseDown = function(evt) {
 		if (canvas.spaceKey || evt.button === 1) {return;}
 
+		//palm/finger rejection
+		if (evt.pointerType === 'touch') {return;}
+
 		var right_click = evt.button === 2;
 	
 		if (evt.altKey) { // duplicate when dragging
 			svgCanvas.cloneSelectedElements(0, 0);
 		}
-	
 		root_sctm = $('#svgcontent g')[0].getScreenCTM().inverse();
 		
 		var pt = svgedit.math.transformPoint( evt.pageX, evt.pageY, root_sctm ),
@@ -1320,11 +1326,13 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 			
 		evt.preventDefault();
 
-		if (right_click) {
+		canvas.last_mode = null;
+		if (right_click || isErasing(evt)) {
+			canvas.last_mode = current_mode;
 			current_mode = 'select';
 			lastClickPoint = pt;
 		}
-		
+
 		// This would seem to be unnecessary...
 //		if (['select', 'resize'].indexOf(current_mode) == -1) {
 //			setGradient();
@@ -2136,6 +2144,20 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 				}
 				current_mode = 'select';
 			case 'select':
+				if (selectedElements.length && isErasing(evt)){
+					element = null;
+					canvas.deleteSelectedElements();
+					if(canvas.last_mode){
+						//TODO: expose Actions from svg-editor.js, so we should
+						//instead call: Actions.getButtonData().fn()
+						var tool = $('#tools_left, #svg_editor .tools_flyout').find('#tool_'+canvas.last_mode);
+						if(tool){
+							tool.click().mouseup();
+						}
+						canvas.last_mode = null;
+					}
+					break;
+				}
 				if (selectedElements[0] != null) {
 					// if we only have one selected element
 					if (selectedElements[1] == null) {
@@ -2469,13 +2491,21 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	};
 	
 	// Added mouseup to the container here.
+	$(container).click(handleLinkInCanvas).dblclick(dblClick);
+	if(window.PointerEvent){
+		//jquery is too old, and it does not support pointer events
+		container.addEventListener('pointercancel', function(e){
+			//touch event canceled, let's canceled any in progress action
+			//see http://msdn.microsoft.com/en-us/library/ie/hh846776%28v=vs.85%29.aspx
+			started = false;
+		});
+		container.addEventListener('pointerdown', mouseDown);
+		container.addEventListener('pointermove', mouseMove);
+		container.addEventListener('pointerup', mouseUp);
+	}else{
+		$(container).mousedown(mouseDown).mousemove(mouseMove).mouseup(mouseUp);
+	}
 	// TODO(codedread): Figure out why after the Closure compiler, the window mouseup is ignored.
-	$(container).mousedown(mouseDown).mousemove(mouseMove).click(handleLinkInCanvas).dblclick(dblClick).mouseup(mouseUp);
-	container.addEventListener('pointercancel', function(e){
-		//touch event canceled, let's canceled any in progress action
-		//see http://msdn.microsoft.com/en-us/library/ie/hh846776%28v=vs.85%29.aspx
-		started = false;
-	});
 //	$(window).mouseup(mouseUp);
 	
 
