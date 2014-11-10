@@ -2471,6 +2471,11 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	// Added mouseup to the container here.
 	// TODO(codedread): Figure out why after the Closure compiler, the window mouseup is ignored.
 	$(container).mousedown(mouseDown).mousemove(mouseMove).click(handleLinkInCanvas).dblclick(dblClick).mouseup(mouseUp);
+	container.addEventListener('pointercancel', function(e){
+		//touch event canceled, let's canceled any in progress action
+		//see http://msdn.microsoft.com/en-us/library/ie/hh846776%28v=vs.85%29.aspx
+		started = false;
+	});
 //	$(window).mouseup(mouseUp);
 	
 
