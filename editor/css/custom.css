@@ -1,0 +1,40 @@
+#menu-buttons {
+    padding: 0 0 0 50px;
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    right:20%;
+}
+
+
+
+button {
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 14px;
+    border: none;
+    line-height: 140%;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.bg-color-1 {
+    background: #4F80FF;
+}
+
+.bg-color-2 {
+    background: #ff3442;
+}
+
+.bg-color-3 {
+    background: #8ec5ff;
+}
+
+button:hover {background: #2F84C1;}

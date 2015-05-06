@@ -44,7 +44,7 @@
 			gridColor: "#000",
 			baseUnit: 'px',
 			snappingStep: 10,
-			showRulers: (svgedit.browser.isTouch()) ? false : true,
+			showRulers: false, //(svgedit.browser.isTouch()) ? false : true,
 			show_outside_canvas: false,
 			no_save_warning: true,
 			initFont: 'Helvetica, Arial, sans-serif'
@@ -2926,7 +2926,9 @@
 					{sel:'#tool_image', fn: clickImage, evt: 'mouseup'},
 					{sel:'#tool_zoom', fn: clickZoom, evt: 'mouseup', key: ['Z', true]},
 					{sel:'#tool_clear', fn: clickClear, evt: 'mouseup', key: [modKey + 'N', true]},
+					{sel:'#tool_button_discard', fn: clickClear, evt: 'mouseup', key: [modKey + 'N', true]},
 					{sel:'#tool_save', fn: function() { editingsource?saveSourceEditor():clickSave()}, evt: 'mouseup', key: [modKey + 'S', true]},
+					{sel:'#tool_button_save', fn: function() { editingsource?saveSourceEditor():clickSave()}, evt: 'mouseup', key: [modKey + 'S', true]},
 					{sel:'#tool_export', fn: clickExport, evt: 'mouseup'},
 					{sel:'#tool_open', fn: clickOpen, evt: 'mouseup'},
 					{sel:'#tool_import', fn: clickImport, evt: 'mouseup'},

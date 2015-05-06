@@ -61,10 +61,11 @@ html, body {
 }
 
  #menu_bar {
-  padding: 0 0 0 50px;
+  padding: 0 0 10px 50px;
 	background: #2f2f2c;
 	position: relative;
 	z-index: 2;
+     width: 100%;
 }
 
  #menu_bar.active .menu.open .menu_list {

@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/method-draw.css" type="text/css"/>
 	<link rel="stylesheet" href="spinbtn/JQuerySpinBtn.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link rel="stylesheet" href="css/custom.css" type="text/css"/>
 
 	<!--<!{endif}&ndash;&gt;-->
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
@@ -63,6 +64,7 @@
 	<script type="text/javascript" src="method-draw/requestanimationframe.js"></script>
 	<script type="text/javascript" src="method-draw/taphold.js"></script>
 	<script src="locale/locale.js"></script>
+	<script src="extensions/ext-helloworld.js"></script>
 	<!--<!{endif}&ndash;&gt;-->
 
 
@@ -146,7 +148,11 @@
 				<div class="menu_item" id="tool_source">Source... <span class="shortcut">⌘U</span></div>
 			</div>
 		</div>
-
+		<div id="menu-buttons">
+			<button id="tool_button_discard" class="bg-color-1">discard changes</button>
+			<button id="tool_button_save" class="bg-color-2">save</button>
+			<button id="tool_button_save_close" class="bg-color-3">save and close</button>
+		</div>
 
 
 	</div>
