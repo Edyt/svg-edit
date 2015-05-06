@@ -7810,6 +7810,24 @@ this.cycleElement = function(next) {
 
 this.clear();
 
+// Function elementAreSame
+// Checks if all the selected Elements are the same type
+//
+// Parameters:
+// None
+
+this.elementsAreSame = function(elements) {
+	if (!elements.length || elements[0] == null) return null
+	else {
+		var isSameElement = function(el) {
+			if (el && selectedElements[0])
+				return (el.nodeName == selectedElements[0].nodeName);
+			else return null;
+		}
+		return selectedElements.every(isSameElement);
+	}
+};
+
 
 // DEPRECATED: getPrivateMethods 
 // Since all methods are/should be public somehow, this function should be removed
