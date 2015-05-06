@@ -28,6 +28,7 @@
 	<!--<script type="text/javascript" src="method-draw.compiled.js"></script>-->
 	<!--{else}>-->
 	<script src="svgedit.js"></script>
+	<script src="jquery-svg.js"></script>
 	<script type="text/javascript" src="touch.js"></script>
 	<script type="text/javascript" src="js-hotkeys/jquery.hotkeys.min.js"></script>
 	<script type="text/javascript" src="jquerybbq/jquery.bbq.min.js"></script>
@@ -165,24 +166,29 @@
 		<div class="tool_button" id="tool_ellipse" title="Ellipse/Circle Tool [C]"></div>
 		<div class="tool_button" id="tool_path" title="Path Tool [P]"></div>
 
-		<div id="color_tools">
-			<div id="tool_switch" title="Switch stroke and fill colors [X]"></div>
-			<div class="color_tool active" id="tool_fill">
-				<label class="icon_label" title="Change fill color"></label>
-				<div class="color_block">
-					<div id="fill_bg"></div>
-					<div id="fill_color" class="color_block"></div>
-				</div>
-			</div>
+		<div id="setRed" class="tool_button" >red</div>
+		<div id="setBlue" class="tool_button" >blue</div>
+		<div id="setYellow" class="tool_button" >yellow</div>
 
-			<div class="color_tool" id="tool_stroke">
-				<label class="icon_label" title="Change stroke color"></label>
-				<div class="color_block">
-					<div id="stroke_bg"></div>
-					<div id="stroke_color" class="color_block" title="Change stroke color"></div>
-				</div>
-			</div>
-		</div>
+
+		<!--<div id="color_tools">-->
+			<!--<div id="tool_switch" title="Switch stroke and fill colors [X]"></div>-->
+			<!--<div class="color_tool active" id="tool_fill">-->
+				<!--<label class="icon_label" title="Change fill color"></label>-->
+				<!--<div class="color_block">-->
+					<!--<div id="fill_bg"></div>-->
+					<!--<div id="fill_color" class="color_block"></div>-->
+				<!--</div>-->
+			<!--</div>-->
+
+			<!--<div class="color_tool" id="tool_stroke">-->
+				<!--<label class="icon_label" title="Change stroke color"></label>-->
+				<!--<div class="color_block">-->
+					<!--<div id="stroke_bg"></div>-->
+					<!--<div id="stroke_color" class="color_block" title="Change stroke color"></div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
 	</div> <!-- tools_left -->
 
 	<div id="tools_bottom" class="tools_panel">

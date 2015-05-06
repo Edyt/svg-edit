@@ -16,8 +16,8 @@
 // 2) browser.js
 // 3) svgcanvas.js
 
-(function() { 
-  
+(function() {
+
   document.addEventListener("touchstart", touchHandler, true);
   document.addEventListener("touchmove", touchHandler, true);
   document.addEventListener("touchend", touchHandler, true);
@@ -555,7 +555,7 @@
 			var selectedChanged = function(window,elems) {			  
 				var mode = svgCanvas.getMode();
 				if(mode === "select") setSelectMode();
-				if (mode === "pathedit") return updateContextPanel();
+				if (mode === "pathedit") return;
 				// if elems[1] is present, then we have more than one element
 				selectedElement = (elems.length == 1 || elems[1] == null ? elems[0] : null);
 				elems = elems.filter(Boolean)
@@ -563,7 +563,6 @@
 				if (svgCanvas.elementsAreSame(multiselected)) selectedElement = multiselected[0]
 				if (selectedElement != null) {
 				  $('#multiselected_panel').hide()
-					updateToolbar();
 					if (multiselected.length) {//multiselected elements are the same
 					  $('#tools_top').addClass('multiselected')
 					}
@@ -639,16 +638,7 @@
 				}
 				
 				Editor.show_save_warning = true;
-		
-				// we update the contextual panel with potentially new
-				// positional/sizing information (we DON'T want to update the
-				// toolbar here as that creates an infinite loop)
-				// also this updates the history buttons
-		
-				// we tell it to skip focusing the text control if the
-				// text element was previously in focus
-				updateContextPanel();
-				
+
 				// In the event a gradient was flipped:
 				if(selectedElement && mode === "select") {
 					Editor.paintBox.fill.update();
@@ -1315,66 +1305,7 @@
 			// create a new layer background if it doesn't exist
 			if (!document.getElementById('canvas_background')) createBackground();
 			var fill = document.getElementById('canvas_background').getAttribute("fill");
-			
-			// updates the toolbar (colors, opacity, etc) based on the selected element
-			// This function also updates the opacity and id elements that are in the context panel
-			var updateToolbar = function() {
-				if (selectedElement != null) {
-					switch ( selectedElement.tagName ) {
-					case 'use':
-					  $(".context_panel").hide();
-					  $("#use_panel").show();
-					  break;
-					case 'image':
-  					$(".context_panel").hide();
-  				  $("#image_panel").show();
-  				  break;
-					case 'foreignObject':
-  					$(".context_panel").hide();
-						break;
-					case 'g':
-					case 'a':
-						// Look for common styles
-						var gWidth = null;
-						
-						var childs = selectedElement.getElementsByTagName('*');
-						for(var i = 0, len = childs.length; i < len; i++) {
-							var swidth = childs[i].getAttribute("stroke-width");
-							if(i === 0) {
-								gWidth = swidth;
-							} else if(gWidth !== swidth) {
-								gWidth = null;
-							}
-						}
-						
-						$('#stroke_width').val(gWidth === null ? "0" : gWidth);
-            updateContextPanel();
-						break;
-					default:
-						//removed because multiselect shouldnt set color
-						//Editor.paintBox.fill.update(false);
-						//Editor.paintBox.stroke.update(false);
-						
-						$('#stroke_width').val(selectedElement.getAttribute("stroke-width") || 0);
-						var dash = selectedElement.getAttribute("stroke-dasharray") || "none"
-						$('option', '#stroke_style').removeAttr('selected');
-						$('#stroke_style option[value="'+ dash +'"]').attr("selected", "selected");
-						$('#stroke_style').trigger('change');
 
-	          $.fn.dragInput.updateCursor($('#stroke_width')[0])
-	          $.fn.dragInput.updateCursor($('#blur')[0])
-					}
-	
-				}
-				
-				// All elements including image and group have opacity
-				if(selectedElement != null) {
-					var opac_perc = ((selectedElement.getAttribute("opacity")||1.0)*100);
-					$('#group_opacity').val(opac_perc);
-					$.fn.dragInput.updateCursor($('#group_opacity')[0])
-				}
-			};
-		
 			var setImageURL = Editor.setImageURL = function(url) {
 				if(!url) url = default_img_url;
 				
@@ -1386,248 +1317,7 @@
 				var w = Math.min(Math.max(12 + elem.value.length * 6, 50), 300);
 				$(elem).width(w);
 			}
-		
-			// updates the context panel tools based on the selected element
-			var updateContextPanel = function(e) {
-			var elem = selectedElement;
-				// If element has just been deleted, consider it null
-				if(elem != null && !elem.parentNode) elem = null;
-				if (multiselected && multiselected[0] != null && !multiselected[0].parentNode) multiselected = false;
-				
-				var currentLayerName = svgCanvas.getCurrentDrawing().getCurrentLayerName();
-				var currentMode = svgCanvas.getMode();
-				var unit = curConfig.baseUnit !== 'px' ? curConfig.baseUnit : null;
-				var is_node = currentMode == 'pathedit'; //elem ? (elem.id && elem.id.indexOf('pathpointgrip') == 0) : false;
-				
-				if (is_node) {
-				  $('.context_panel').hide();
-				  $('#path_node_panel').show();
-				  $('#stroke_panel').hide();
-					var point = path.getNodePoint();
-					$('#tool_add_subpath').removeClass('push_button_pressed').addClass('tool_button');
-					$('#tool_node_delete').toggleClass('disabled', !path.canDeleteNodes);
-					
-					// Show open/close button based on selected point
-					setIcon('#tool_openclose_path', path.closed_subpath ? 'open_path' : 'close_path');
-					
-					if(point) {
-						var seg_type = $('#seg_type');
-						if(unit) {
-							point.x = svgedit.units.convertUnit(point.x);
-							point.y = svgedit.units.convertUnit(point.y);
-						}
-						$('#path_node_x').val(Math.round(point.x));
-						$('#path_node_y').val(Math.round(point.y));
-						if(point.type) {
-							seg_type.val(point.type).removeAttr('disabled');
-							$("#seg_type_label").html(point.type == 4 ? "Straight" : "Curve")
-						} else {
-							seg_type.val(4).attr('disabled','disabled');
-						}
-					}
-					$("#tools_top").removeClass("multiselected")			  
-          $("#stroke_panel").hide();
-          $("#canvas_panel").hide();
-					return;
-				}
-				
-				var menu_items = $('#cmenu_canvas li');
-				$('.context_panel').hide();
-				$('.menu_item', '#edit_menu').addClass('disabled');
-				$('.menu_item', '#object_menu').addClass('disabled');
-				
-        
-        //hack to show the proper multialign box
-        if (multiselected) {
-          multiselected = multiselected.filter(Boolean);
-          elem = (svgCanvas.elementsAreSame(multiselected)) ? multiselected[0] : null
-          if (elem) $("#tools_top").addClass("multiselected")
-        }
 
-        if (!elem && !multiselected) {
-          $("#tools_top").removeClass("multiselected")			  
-          $("#stroke_panel").hide();
-          $("#canvas_panel").show();
-				}
-		
-				if (elem != null) {
-				  $("#stroke_panel").show();
-					var elname = elem.nodeName;
-					var angle = svgCanvas.getRotationAngle(elem);
-					$('#angle').val(Math.round(angle));
-					
-					var blurval = svgCanvas.getBlur(elem);
-					$('#blur').val(blurval);
-					if(!is_node && currentMode != 'pathedit') {
-						$('#selected_panel').show();
-						$('.action_selected').removeClass('disabled');
-						// Elements in this array already have coord fields
-            var x, y
-						if(['g', 'polyline', 'path'].indexOf(elname) >= 0) {
-							var bb = svgCanvas.getStrokedBBox([elem]);
-							if(bb) {
-								x = bb.x;
-								y = bb.y;
-							}
-						}
-						
-						if(unit) {
-							x = svgedit.units.convertUnit(x);
-							y = svgedit.units.convertUnit(y);
-						}
-
-						$("#" + elname +"_x").val(Math.round(x))
-						$("#" + elname +"_y").val(Math.round(y))
-						if (elname === "polyline") {
-						  //we're acting as if polylines were paths
-						  $("#path_x").val(Math.round(x))
-  						$("#path_y").val(Math.round(y))
-						}
-											
-					  // Elements in this array cannot be converted to a path
-  					var no_path = ['image', 'text', 'path', 'g', 'use'].indexOf(elname) == -1;
-  					if (no_path) $('.action_path_convert_selected').removeClass('disabled');
-  					if (elname === "path") $('.action_path_selected').removeClass('disabled');
-  
-					}
-					
-					var link_href = null;
-					if (el_name === 'a') {
-						link_href = svgCanvas.getHref(elem);
-						$('#g_panel').show();
-					}
-					
-					if(elem.parentNode.tagName === 'a') {
-						if(!$(elem).siblings().length) {
-							$('#a_panel').show();
-							link_href = svgCanvas.getHref(elem.parentNode);
-						}
-					}
-					
-					// Hide/show the make_link buttons
-					$('#tool_make_link, #tool_make_link').toggle(!link_href);
-					
-					if(link_href) {
-						$('#link_url').val(link_href);
-					}
-					
-					// update contextual tools here
-					var panels = {
-						g: [],
-						a: [],
-						rect: ['rx','width','height', 'x', 'y'],
-						image: ['width','height', 'x', 'y'],
-						circle: ['cx','cy','r'],
-						ellipse: ['cx','cy','rx','ry'],
-						line: ['x1','y1','x2','y2'], 
-						text: ['x', 'y'],
-						'use': [],
-						path : []
-					};
-					
-					var el_name = elem.tagName;
-					
- 					if($(elem).data('gsvg')) {
- 						$('#g_panel').show();
- 					}
- 					
- 					if (el_name == "path" || el_name == "polyline") {
- 					  $('#path_panel').show();
- 					}
-					
-					if(panels[el_name]) {
-						var cur_panel = panels[el_name];
-						$('#' + el_name + '_panel').show();
-			      
-			      // corner radius has to live in a different panel
-			      // because otherwise it changes the position of the 
-			      // of the elements
-			      if(el_name == "rect") $("#cornerRadiusLabel").show()
-			      else $("#cornerRadiusLabel").hide()
-						
-						$.each(cur_panel, function(i, item) {
-							var attrVal = elem.getAttribute(item);
-							if(curConfig.baseUnit !== 'px' && elem[item]) {
-								var bv = elem[item].baseVal.value;
-								attrVal = svgedit.units.convertUnit(bv);
-							}
-							
-							//update the draginput cursors
-						  var name_item = document.getElementById(el_name + '_' + item);
-							name_item.value = Math.round(attrVal) || 0;
-							if (name_item.getAttribute("data-cursor") === "true") {
-      				  $.fn.dragInput.updateCursor(name_item );
-      				}
-						});
-						
-						if(el_name == 'text') {
-							var font_family = elem.getAttribute("font-family");
-							var select = document.getElementById("font_family_dropdown");
-							select.selectedIndex = 3
-							
-							$('#text_panel').css("display", "inline");	
-							$('#tool_italic').toggleClass('active', svgCanvas.getItalic())
-							$('#tool_bold').toggleClass('active', svgCanvas.getBold())
-							$('#font_family').val(font_family);
-							$('#font_size').val(elem.getAttribute("font-size"));
-							$('#text').val(elem.textContent);
-							$('#preview_font').text(font_family.split(",")[0].replace(/'/g, "")).css('font-family', font_family);
-							if (svgCanvas.addedNew) {
-								// Timeout needed for IE9
-								setTimeout(function() {
-									$('#text').focus().select();
-								},100);
-							}
-						} // text
-						else if(el_name == 'image') {
-							setImageURL(svgCanvas.getHref(elem));
-						} // image
-						else if(el_name === 'g' || el_name === 'use') {
-							$('#container_panel').show();
-							$('.action_group_selected').removeClass('disabled');
-							var title = svgCanvas.getTitle();
-						}
-					}
-					menu_items[(el_name === 'g' ? 'en':'dis') + 'ableContextMenuItems']('#ungroup');
-					menu_items[((el_name === 'g' || !multiselected) ? 'dis':'en') + 'ableContextMenuItems']('#group');
-				}
-				
-				if (multiselected) {
-					$('#multiselected_panel').show();
-					$('.action_multi_selected').removeClass('disabled');
-					menu_items
-						.enableContextMenuItems('#group')
-						.disableContextMenuItems('#ungroup');
-				} 
-				
-				if (!elem) {
-					menu_items.disableContextMenuItems('#delete,#cut,#copy,#group,#ungroup,#move_front,#move_up,#move_down,#move_back');
-				}
-				
-				// update history buttons
-				if (undoMgr.getUndoStackSize() > 0) {
-					$('#tool_undo').removeClass( 'disabled');
-				}
-				else {
-					$('#tool_undo').addClass( 'disabled');
-				}
-				if (undoMgr.getRedoStackSize() > 0) {
-					$('#tool_redo').removeClass( 'disabled');
-				}
-				else {
-					$('#tool_redo').addClass( 'disabled');
-				}
-				
-				svgCanvas.addedNew = false;
-				
-				if ( (elem && !is_node)	|| multiselected) {
-					// update the selected elements' layer
-					$('#selLayerNames').removeAttr('disabled').val(currentLayerName);
-					
-					// Enable regular menu options
-					canv_menu.enableContextMenuItems('#delete,#cut,#copy,#move_front,#move_up,#move_down,#move_back');
-				}
-			};
 		
 			$('#text').on("focus", function(e){ textBeingEntered = true; } );
 			$('#text').on("blur", function(){ textBeingEntered = false; } );
@@ -2263,7 +1953,6 @@
 					svgCanvas.setMode("pathedit")
 					path.toEditMode(elems[0]);
 					svgCanvas.clearSelection();
-          updateContextPanel();
 				}
 			}
 			
@@ -2341,7 +2030,6 @@
 				if(!cw) step *= -1;
 				var new_angle = $('#angle').val()*1 + step;
 				svgCanvas.setRotationAngle(new_angle);
-				updateContextPanel();
 			};
 			
 			var clickClear = function(){
@@ -2353,7 +2041,6 @@
 					svgCanvas.setResolution(dims[0], dims[1]);
 					updateCanvas(true);
 					zoomImage();
-					updateContextPanel();
 					prepPaints();
 					svgCanvas.runExtensions('onNewDocument');
 				});
@@ -2361,12 +2048,10 @@
 			
 			var clickBold = function(){
 				svgCanvas.setBold( !svgCanvas.getBold() );
-				updateContextPanel();
 			};
 			
 			var clickItalic = function(){
 				svgCanvas.setItalic( !svgCanvas.getItalic() );
-				updateContextPanel();
 			};
 			
 			var clickExport = function() {
@@ -2880,8 +2565,7 @@
 					fill="#' + cur.color + '" opacity="' + cur.opacity + '"/>\
 					<defs><linearGradient id="gradbox_"/></defs></svg>', 'text/xml');
 				var docElem = svgdocbox.documentElement;
-				
-				docElem = $(container)[0].appendChild(document.importNode(docElem, true));
+
         if (type === 'canvas') docElem.setAttribute('width',60.5);
         else docElem.setAttribute('width',"100%");
 				
@@ -2997,7 +2681,7 @@
 					}
 				}
 			};
-			
+
 			Editor.paintBox.fill = new PaintBox('#fill_color', 'fill');
 			Editor.paintBox.stroke = new PaintBox('#stroke_color', 'stroke');
 
@@ -3644,7 +3328,6 @@
             				svgCanvas.selectOnly([newImage])
             				svgCanvas.alignSelectedElements("m", "page")
     				  			svgCanvas.alignSelectedElements("c", "page")
-            				updateContextPanel();
         	  			}
   				  		  // put a placeholder img so we know the default dimensions
   				  		  var img_width = 100;
@@ -4131,7 +3814,17 @@
 
 		return Editor;
 	}(jQuery);
-	
+$(function(){
+	$("#setRed").click(function(){
+		window.svgCanvas.setColor("stroke", "#EA4747");
+	});
+	$("#setBlue").click(function(){
+		window.svgCanvas.setColor("stroke", "#477BEA");
+	});
+	$("#setYellow").click(function(){
+		window.svgCanvas.setColor("stroke", "#EAE747");
+	});
+})
 	// Run init once DOM is loaded
 	$(methodDraw.init);
 
