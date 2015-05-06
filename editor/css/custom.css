@@ -37,4 +37,16 @@ button {
     background: #8ec5ff;
 }
 
+.colorPickerGroup{
+    margin-top:10px;
+}
+
+.colorPickerBtn{
+    width: 40px;
+    height: 20px;
+    border: solid;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
 button:hover {background: #2F84C1;}
