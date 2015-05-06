@@ -3000,7 +3000,6 @@
 			
 			Editor.paintBox.fill = new PaintBox('#fill_color', 'fill');
 			Editor.paintBox.stroke = new PaintBox('#stroke_color', 'stroke');
-			Editor.paintBox.canvas = new PaintBox('#canvas_color', 'canvas');
 
 			$('#stroke_width').val(curConfig.initStroke.width);
 			$('#group_opacity').val(curConfig.initOpacity * 100);
