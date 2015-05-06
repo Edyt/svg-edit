@@ -3816,17 +3816,7 @@
 
 		return Editor;
 	}(jQuery);
-$(function(){
-	$("#setRed").click(function(){
-		window.svgCanvas.setColor("stroke", "#EA4747");
-	});
-	$("#setBlue").click(function(){
-		window.svgCanvas.setColor("stroke", "#477BEA");
-	});
-	$("#setYellow").click(function(){
-		window.svgCanvas.setColor("stroke", "#EAE747");
-	});
-})
+
 	// Run init once DOM is loaded
 	$(methodDraw.init);
 

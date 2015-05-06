@@ -38,15 +38,27 @@ button {
 }
 
 .colorPickerGroup{
-    margin-top:10px;
+    margin-top:40px;
 }
 
 .colorPickerBtn{
-    width: 40px;
+    width: 34px;
     height: 20px;
     border: solid;
+    border-width: 2px;
     border-radius: 5px;
-    margin-bottom: 4px;
+    margin: 8px auto;
 }
 
-button:hover {background: #2F84C1;}
+.colorPickerBtn.color-selected {
+    border-color: white !important;
+}
+
+.colorPickerBtn:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2F84C1;
+    cursor: pointer;
+}

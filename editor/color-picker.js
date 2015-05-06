@@ -11,13 +11,15 @@ $(function () {
                 "border-color": getBorderColor(color)
             })
             .click(function () {
+                $(".color-selected").removeClass("color-selected");
+                $(this).addClass("color-selected");
                 window.svgCanvas.setColor("stroke", color);
             });
         colorPicker.append(btn);
     });
 
     function getBorderColor(hexColor){
-        return shadeColor(hexColor, 5);
+        return shadeColor(hexColor, 80);
     }
 
     function shadeColor(hexColor, diff){
@@ -34,8 +36,8 @@ $(function () {
 
         hexColor = hexColor.replace("#", "");
         var r = parseInt(hexColor.substr(0, 2), 16),
-            b = parseInt(hexColor.substr(2, 4), 16),
-            g = parseInt(hexColor.substr(4, 6), 16);
+            b = parseInt(hexColor.substr(2, 2), 16),
+            g = parseInt(hexColor.substr(4, 2), 16);
 
         return "#" + shadeBasicColor(r).toString(16) + shadeBasicColor(b).toString(16) + shadeBasicColor(g).toString(16);
     }
