@@ -12,9 +12,7 @@
 	<link rel="stylesheet" href="jgraduate/css/jPicker.css" type="text/css"/>
 	<link rel="stylesheet" href="jgraduate/css/jgraduate.css" type="text/css"/>
 	<link rel="stylesheet" href="css/method-draw.css" type="text/css"/>
-	<link rel="stylesheet" href="spinbtn/JQuerySpinBtn.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
-
 	<!--<!{endif}&ndash;&gt;-->
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -22,13 +20,10 @@
 
 	<script type="text/javascript" src="jquery.js"></script>
 
-	<script src="spinbtn/JQuerySpinBtn.min.js"></script>
-
 
 	<!--{if svg_edit_release}-->
 	<!--<script type="text/javascript" src="method-draw.compiled.js"></script>-->
 	<!--{else}>-->
-	<script src="svgedit.js"></script>
 	<script type="text/javascript" src="touch.js"></script>
 	<script type="text/javascript" src="js-hotkeys/jquery.hotkeys.min.js"></script>
 	<script type="text/javascript" src="jquerybbq/jquery.bbq.min.js"></script>
@@ -43,26 +38,22 @@
 	<script type="text/javascript" src="svgutils.js"></script>
 	<script type="text/javascript" src="sanitize.js"></script>
 	<script type="text/javascript" src="history.js"></script>
-	<script src="coords.js"></script>
-	<script src="recalculate.js"></script>
 	<script type="text/javascript" src="select.js"></script>
 	<script type="text/javascript" src="draw.js"></script>
 	<script type="text/javascript" src="path.js"></script>
 	<script type="text/javascript" src="method-draw/dialog.js"></script>
 	<script type="text/javascript" src="svgcanvas.js"></script>
 	<!--<script type="text/javascript" src="src/method-draw.js"></script>-->
-	<!--<script src="svg-editor.js"></script>-->
-	<script src="method-draw.js"></script>
+	<script src="svg-editor.js"></script>
 	<script type="text/javascript" src="method-draw/jquery-draginput.js"></script>
 	<script type="text/javascript" src="contextmenu.js"></script>
 	<script type="text/javascript" src="jgraduate/jpicker.min.js"></script>
 	<script type="text/javascript" src="method-draw/mousewheel.js"></script>
-	<!--<script type="text/javascript" src="extensions/ext-eyedropper.js"></script>-->
-	<!--<script type="text/javascript" src="extensions/ext-shapes.js"></script>-->
-	<!--<script type="text/javascript" src="extensions/ext-grid.js"></script>-->
+	<script type="text/javascript" src="extensions/ext-eyedropper.js"></script>
+	<script type="text/javascript" src="extensions/ext-shapes.js"></script>
+	<script type="text/javascript" src="extensions/ext-grid.js"></script>
 	<script type="text/javascript" src="method-draw/requestanimationframe.js"></script>
 	<script type="text/javascript" src="method-draw/taphold.js"></script>
-	<script src="locale/locale.js"></script>
 	<!--<!{endif}&ndash;&gt;-->
 
 
@@ -525,6 +516,8 @@
 		<div class="tool_button" id="tool_rect" title="Square/Rect Tool [R]"></div>
 		<div class="tool_button" id="tool_ellipse" title="Ellipse/Circle Tool [C]"></div>
 		<div class="tool_button" id="tool_path" title="Path Tool [P]"></div>
+		<div class="tool_button" id="tool_text" title="Text Tool [T]"></div>
+		<div class="tool_button" id="tool_zoom" title="Zoom Tool [Z]"></div>
 
 		<div id="color_tools">
 			<div id="tool_switch" title="Switch stroke and fill colors [X]"></div>
@@ -572,7 +565,10 @@
 				<input id="zoom" size="3" value="100%" type="text" readonly="readonly" />
 			</div>
 		</div>
-		
+
+		<div id="tools_bottom_3">
+			<div id="palette" title="Click to change fill color, shift-click to change stroke color"></div>
+		</div>
 	</div>
 
 	<!-- hidden divs -->
