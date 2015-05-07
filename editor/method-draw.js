@@ -2912,6 +2912,13 @@
 			
 			// Associate all button actions as well as non-button keyboard shortcuts
 			var Actions = function() {
+				var inIframe = function () {
+					try {
+						return window.self !== window.top;
+					} catch (e) {
+						return true;
+					}
+				};
 				// sel:'selector', fn:function, evt:'event', key:[key, preventDefault, NoDisableInInput]
 				var tool_buttons = [
 					{sel:'#tool_select', fn: clickSelect, evt: 'click', key: ['V', true]},
@@ -2928,7 +2935,24 @@
 					{sel:'#tool_clear', fn: clickClear, evt: 'mouseup', key: [modKey + 'N', true]},
 					{sel:'#tool_button_discard', fn: clickClear, evt: 'mouseup', key: [modKey + 'N', true]},
 					{sel:'#tool_save', fn: function() { editingsource?saveSourceEditor():clickSave()}, evt: 'mouseup', key: [modKey + 'S', true]},
-					{sel:'#tool_button_save', fn: function() { editingsource?saveSourceEditor():clickSave()}, evt: 'mouseup', key: [modKey + 'S', true]},
+					{sel:'#tool_button_save', fn: function() {
+						if(inIframe()) {
+							window.methodDraw.parent.save();
+						} else {
+							editingsource ? saveSourceEditor() : clickSave()
+						}
+					},
+						evt: 'mouseup', key: [modKey + 'S', true]
+					},
+					{sel:'#tool_button_save_close', fn: function() {
+						if(inIframe()) {
+							window.methodDraw.parent.hide();
+						} else {
+							editingsource ? saveSourceEditor() : clickSave()
+						}
+					},
+						evt: 'mouseup', key: [modKey + 'S', true]
+					},
 					{sel:'#tool_export', fn: clickExport, evt: 'mouseup'},
 					{sel:'#tool_open', fn: clickOpen, evt: 'mouseup'},
 					{sel:'#tool_import', fn: clickImport, evt: 'mouseup'},
