@@ -1,4 +1,4 @@
-/*globals svgEditor, svgCanvas, $, widget*/
+/*globals methodDraw, svgCanvas, $, widget*/
 /*jslint vars: true, eqeq: true, regexp: true, continue: true*/
 /*
  * ext-storage.js
@@ -26,13 +26,13 @@ TODOS
 2. We might provide control of storage settings through the UI besides the
     initial (or URL-forced) dialog.
 */
-svgEditor.addExtension('storage', function() {
+methodDraw.addExtension('storage', function() {
 	// We could empty any already-set data for users when they decline storage,
 	//  but it would be a risk for users who wanted to store but accidentally
 	// said "no"; instead, we'll let those who already set it, delete it themselves;
 	// to change, set the "emptyStorageOnDecline" config setting to true
 	// in config.js.
-	var emptyStorageOnDecline = svgEditor.curConfig.emptyStorageOnDecline,
+	var emptyStorageOnDecline = methodDraw.curConfig.emptyStorageOnDecline,
 		// When the code in svg-editor.js prevents local storage on load per
 		//  user request, we also prevent storing on unload here so as to
 		//  avoid third-party sites making XSRF requests or providing links
@@ -42,9 +42,9 @@ svgEditor.addExtension('storage', function() {
 		// user's prior work. To change this behavior so that no use of storage
 		// or adding of new storage takes place regardless of settings, set
 		// the "noStorageOnLoad" config setting to true in config.js.
-		noStorageOnLoad = svgEditor.curConfig.noStorageOnLoad,
-		forceStorage = svgEditor.curConfig.forceStorage,
-		storage = svgEditor.storage;
+		noStorageOnLoad = methodDraw.curConfig.noStorageOnLoad,
+		forceStorage = methodDraw.curConfig.forceStorage,
+		storage = methodDraw.storage;
 
 	function replaceStoragePrompt (val) {
 		val = val ? 'storagePrompt=' + val : '';
@@ -60,7 +60,7 @@ svgEditor.addExtension('storage', function() {
 	}
 	function setSVGContentStorage (val) {
 		if (storage) {
-			var name = 'svgedit-' + svgEditor.curConfig.canvasName;
+			var name = 'svgedit-' + methodDraw.curConfig.canvasName;
 			if (!val) {
 				storage.removeItem(name);
 			}
@@ -81,8 +81,8 @@ svgEditor.addExtension('storage', function() {
 	function emptyStorage() {
 		setSVGContentStorage('');
 		var name;
-		for (name in svgEditor.curPrefs) {
-			if (svgEditor.curPrefs.hasOwnProperty(name)) {
+		for (name in methodDraw.curPrefs) {
+			if (methodDraw.curPrefs.hasOwnProperty(name)) {
 				name = 'svg-edit-' + name;
 				if (storage) {
 					storage.removeItem(name);
@@ -113,10 +113,10 @@ svgEditor.addExtension('storage', function() {
 				setSVGContentStorage(svgCanvas.getSvgString());			
 			}
 
-			svgEditor.setConfig({no_save_warning: true}); // No need for explicit saving at all once storage is on
-			// svgEditor.showSaveWarning = false;
+			methodDraw.setConfig({no_save_warning: true}); // No need for explicit saving at all once storage is on
+			// methodDraw.showSaveWarning = false;
 
-			var curPrefs = svgEditor.curPrefs;
+			var curPrefs = methodDraw.curPrefs;
 
 			for (key in curPrefs) {
 				if (curPrefs.hasOwnProperty(key)) { // It's our own config, so we don't need to iterate up the prototype chain
@@ -266,15 +266,15 @@ svgEditor.addExtension('storage', function() {
 						// It should be enough to (conditionally) add to storage on
 						//   beforeunload, but if we wished to update immediately,
 						//   we might wish to try setting:
-						//       svgEditor.setConfig({noStorageOnLoad: true});
+						//       methodDraw.setConfig({noStorageOnLoad: true});
 						//   and then call:
-						//       svgEditor.loadContentAndPrefs();
+						//       methodDraw.loadContentAndPrefs();
 						
 						// We don't check for noStorageOnLoad here because
 						//   the prompt gives the user the option to store data
 						setupBeforeUnloadListener();
 						
-						svgEditor.storagePromptClosed = true;
+						methodDraw.storagePromptClosed = true;
 					},
 					null,
 					null,

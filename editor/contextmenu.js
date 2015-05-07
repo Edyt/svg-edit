@@ -1,4 +1,4 @@
-/*globals $, svgEditor*/
+/*globals $, methodDraw*/
 /*jslint vars: true, eqeq: true*/
 /**
  * Package: svgedit.contextmenu

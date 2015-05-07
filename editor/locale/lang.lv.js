@@ -1,6 +1,6 @@
-/*globals svgEditor */
-/*globals svgEditor */
-svgEditor.readLang({
+/*globals methodDraw */
+/*globals methodDraw */
+methodDraw.readLang({
 	lang: "lv",
 	dir : "ltr",
 	common: {

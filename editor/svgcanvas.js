@@ -6875,7 +6875,7 @@ var changeSelectedAttributeNoUndo = function(attr, newValue, elems) {
 
 			// Go into "select" mode for text changes
 			// NOTE: Important that this happens AFTER elem.setAttribute() or else attributes like
-			// font-size can get reset to their old value, ultimately by svgEditor.updateContextPanel(),
+			// font-size can get reset to their old value, ultimately by methodDraw.updateContextPanel(),
 			// after calling textActions.toSelectMode() below
 			if (current_mode === 'textedit' && attr !== '#text' && elem.textContent.length) {
 				textActions.toSelectMode(elem);

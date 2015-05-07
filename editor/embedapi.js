@@ -95,7 +95,7 @@ function getMessageListener (t) {
 * @param {HTMLIFrameElement} frame
 * @param {array} [allowedOrigins=[]] Array of origins from which incoming
 *	 messages will be allowed when same origin is not used; defaults to none.
-*	 If supplied, it should probably be the same as svgEditor's allowedOrigins
+*	 If supplied, it should probably be the same as methodDraw's allowedOrigins
 */
 function EmbeddedSVGEdit (frame, allowedOrigins) {
   if (!(this instanceof EmbeddedSVGEdit)) { // Allow invocation without 'new' keyword

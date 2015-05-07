@@ -1,4 +1,4 @@
-/*globals svgEditor, svgedit, $ */
+/*globals methodDraw, svgedit, $ */
 /*jslint es5: true, vars: true*/
 /*
  * ext-overview_window.js
@@ -10,7 +10,7 @@
  */
 
 var overviewWindowGlobals = {};
-svgEditor.addExtension("overview_window", function() {	'use strict';
+methodDraw.addExtension("overview_window", function() {	'use strict';
 	//define and insert the base html element
 	var propsWindowHtml= "\
 		<div id=\"overview_window_content_pane\" style=\" width:100%; word-wrap:break-word;  display:inline-block; margin-top:20px;\">\

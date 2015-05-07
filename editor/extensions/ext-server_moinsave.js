@@ -1,9 +1,7 @@
-/*globals svgEditor, svgedit, svgCanvas, canvg, $, top*/
-/*jslint vars: true*/
 /*
  * ext-server_moinsave.js
  *
- * Licensed under the MIT License
+ * Licensed under the Apache License, Version 2
  *
  * Copyright(c) 2010 Alexis Deveria
  *              2011 MoinMoin:ReimarBauer
@@ -12,46 +10,45 @@
  *
  */
 
-svgEditor.addExtension("server_opensave", {
-	callback: function() {'use strict';
-		var Utils = svgedit.utilities;
+methodDraw.addExtension("server_opensave", {
+	callback: function() {
+
 		var save_svg_action = '/+modify';
 		
 		// Create upload target (hidden iframe)
 		var target = $('<iframe name="output_frame" src="#"/>').hide().appendTo('body');
 	
-		svgEditor.setCustomHandlers({
+		methodDraw.setCustomHandlers({
 			save: function(win, data) {
 				var svg = "<?xml version=\"1.0\"?>\n" + data;
 				var qstr = $.param.querystring();
 				var name = qstr.substr(9).split('/+get/')[1];
-				var svg_data = Utils.encode64(svg);
+				var svg_data = svgedit.utilities.encode64(svg);
 				if(!$('#export_canvas').length) {
 					$('<canvas>', {id: 'export_canvas'}).hide().appendTo('body');
 				}
 				var c = $('#export_canvas')[0];
 				c.width = svgCanvas.contentW;
 				c.height = svgCanvas.contentH;
-				Utils.buildCanvgCallback(function () {
-					canvg(c, svg, {renderCallback: function() {
-						var datauri = c.toDataURL('image/png');
-						// var uiStrings = svgEditor.uiStrings;
-						var png_data = Utils.encode64(datauri); // Brett: This encoding seems unnecessary
-						var form = $('<form>').attr({
-						method: 'post',
-						action: save_svg_action + '/' + name,
-						target: 'output_frame'
-					}).append('<input type="hidden" name="png_data" value="' + png_data + '">')
-						.append('<input type="hidden" name="filepath" value="' + svg_data + '">')
-						.append('<input type="hidden" name="filename" value="' + 'drawing.svg">')
-						.append('<input type="hidden" name="contenttype" value="application/x-svgdraw">')
-						.appendTo('body')
-						.submit().remove();
-					}});
-				})();
+				$.getScript('canvg/canvg.js', function() {
+				canvg(c, svg, {renderCallback: function() {
+					var datauri = c.toDataURL('image/png');
+					var uiStrings = methodDraw.uiStrings;
+					var png_data = svgedit.utilities.encode64(datauri);
+					var form = $('<form>').attr({
+					method: 'post',
+					action: save_svg_action + '/' + name,
+					target: 'output_frame'
+				})	.append('<input type="hidden" name="png_data" value="' + png_data + '">')
+					.append('<input type="hidden" name="filepath" value="' + svg_data + '">')
+					.append('<input type="hidden" name="filename" value="' + 'drawing.svg">')
+					.append('<input type="hidden" name="contenttype" value="application/x-svgdraw">')
+					.appendTo('body')
+					.submit().remove();
+					}})});
 				alert("Saved! Return to Item View!");
 				top.window.location = '/'+name;
-			}
+			},
 		});
 	
 	}

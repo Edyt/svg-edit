@@ -1,5 +1,5 @@
-/*globals svgEditor */
-svgEditor.readLang({
+/*globals methodDraw */
+methodDraw.readLang({
 	lang: "pl",
 	dir : "ltr",
 	author: "Aleksander Lurie",

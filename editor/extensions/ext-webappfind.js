@@ -1,4 +1,4 @@
-/*globals svgEditor*/
+/*globals methodDraw*/
 /*
 Depends on Firefox add-on and executables from https://github.com/brettz9/webappfind
 
@@ -26,7 +26,7 @@ window.addEventListener('message', function(e) {
             pathID = e.data[1];
             
             svgString = e.data[2];
-            svgEditor.loadFromString(svgString);
+            methodDraw.loadFromString(svgString);
             
             /*if ($('#tool_save_file')) {
                 $('#tool_save_file').disabled = false;
@@ -42,11 +42,11 @@ window.addEventListener('message', function(e) {
 
 window.postMessage([readMessage], window.location.origin !== 'null' ? window.location.origin : '*'); // Avoid "null" string error for file: protocol (even though file protocol not currently supported by add-on)
 
-svgEditor.addExtension('WebAppFind', function() {
+methodDraw.addExtension('WebAppFind', function() {
 
     return {
         name: 'WebAppFind',
-        svgicons: svgEditor.curConfig.extPath + 'webappfind-icon.svg',
+        svgicons: methodDraw.curConfig.extPath + 'webappfind-icon.svg',
         buttons: [{
             id: 'webappfind_save', // 
             type: 'app_menu',
@@ -57,7 +57,7 @@ svgEditor.addExtension('WebAppFind', function() {
                     if (!pathID) { // Not ready yet as haven't received first payload
                         return;
                     }
-                    window.postMessage([saveMessage, pathID, svgEditor.canvas.getSvgString()], window.location.origin);
+                    window.postMessage([saveMessage, pathID, methodDraw.canvas.getSvgString()], window.location.origin);
                 }
             }
         }]
