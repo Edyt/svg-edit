@@ -73,10 +73,3 @@ button:hover {
 .menu .zoom_menu_item:hover {
     background: rgba(255,255,255,0.1);
 }
-
-#separator {
-    width:32px;
-    height: 1px;
-    background-color: #575554;
-    margin: 20px auto 30px auto;
-}
