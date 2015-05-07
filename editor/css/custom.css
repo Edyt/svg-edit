@@ -37,11 +37,11 @@ button {
     background: #8ec5ff;
 }
 
-.colorPickerGroup{
+.color-picker-group {
     margin-top:40px;
 }
 
-.colorPickerBtn{
+.color-picker-btn{
     width: 34px;
     height: 20px;
     border: solid;
@@ -50,11 +50,11 @@ button {
     margin: 8px auto;
 }
 
-.colorPickerBtn.color-selected {
+.color-picker-btn.color-selected {
     border-color: white !important;
 }
 
-.colorPickerBtn:hover {
+.color-picker-btn:hover {
     cursor: pointer;
 }
 

@@ -1,11 +1,12 @@
 $(function () {
-    var COLORS = ["#000000", "#7400B8", "#005CB8", "#00B884", "#FC9C00", "#FC7600", "#FC2200"];
+    var COLORS = ["#000000", "#7400B8", "#005CB8", "#00B884", "#FC9C00", "#FC7600", "#FC2200"],
+        PRESELECTED = "#000000";
 
     var colorPicker = $("#colorPicker");
 
     COLORS.forEach(function (color) {
         var btn = $("<div/>")
-            .addClass("colorPickerBtn")
+            .addClass("color-picker-btn")
             .css({
                 "background-color": color,
                 "border-color": getBorderColor(color)
@@ -17,6 +18,14 @@ $(function () {
             });
         colorPicker.append(btn);
     });
+
+    preselectColor();
+
+    function preselectColor(){
+        var preselectedIdx = COLORS.indexOf(PRESELECTED);
+        window.methodDraw.setConfig({initStroke: {width: 1.5, color: PRESELECTED.replace("#", ""), opacity: 1}});
+        colorPicker.find(".color-picker-btn").eq(preselectedIdx).addClass("color-selected");
+    }
 
     function getBorderColor(hexColor){
         return shadeColor(hexColor, 80);
