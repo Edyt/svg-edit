@@ -54,7 +54,7 @@ var NS = svgedit.NS;
 // Default configuration options
 var curConfig = {
 	show_outside_canvas: true,
-	//selectNew: true,
+	selectNew: true,
 	dimensions: [640, 480]
 };
 
@@ -1300,9 +1300,6 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		};
 	};
 
-	var isErasing = function(evt){
-		return evt.button === 5 || (evt.button === 0 && evt.ctrlKey);
-	};
 	// - when we are in a create mode, the element is added to the canvas
 	// but the action is not recorded until mousing up
 	// - when we are in select mode, select the element, remember the position
@@ -1327,7 +1324,7 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		evt.preventDefault();
 
 		canvas.last_mode = null;
-		if (right_click || isErasing(evt)) {
+		if (right_click) {
 			canvas.last_mode = current_mode;
 			current_mode = 'select';
 			lastClickPoint = pt;
@@ -2115,6 +2112,11 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	// identified, a ChangeElementCommand is created and stored on the stack for those attrs
 	// this is done in when we recalculate the selected dimensions()
 	var mouseUp = function(evt) {
+		canvas.addClones = false;
+		window.removeEventListener("keyup", canvas.removeClones)
+		selectedElements = selectedElements.filter(Boolean);
+
+
 		if (evt.button === 2) {return;}
 		var tempJustSelected = justSelected;
 		justSelected = null;
@@ -2144,20 +2146,6 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 				}
 				current_mode = 'select';
 			case 'select':
-				if (selectedElements.length && isErasing(evt)){
-					element = null;
-					canvas.deleteSelectedElements();
-					if(canvas.last_mode){
-						//TODO: expose Actions from svg-editor.js, so we should
-						//instead call: Actions.getButtonData().fn()
-						var tool = $('#tools_left, #svg_editor .tools_flyout').find('#tool_'+canvas.last_mode);
-						if(tool){
-							tool.click().mouseup();
-						}
-						canvas.last_mode = null;
-					}
-					break;
-				}
 				if (selectedElements[0] != null) {
 					// if we only have one selected element
 					if (selectedElements[1] == null) {
@@ -3602,6 +3590,7 @@ pathActions = canvas.pathActions = function() {
 			}
 		},
 		getNodePoint: function() {
+			if (!svgedit.path.path) return;
 			var sel_pt = svgedit.path.path.selected_pts.length ? svgedit.path.path.selected_pts[0] : 1;
 
 			var seg = svgedit.path.path.segs[sel_pt];
