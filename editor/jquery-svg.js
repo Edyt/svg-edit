@@ -50,8 +50,7 @@
             obj[aname] = attr;
           }
           return obj;
-        }
-		if (typeof key === "object") {
+        } else if (typeof key === "object") {
           // Setting attributes form object
 		  var v;
           for (v in key) {
