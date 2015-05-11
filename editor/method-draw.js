@@ -329,6 +329,7 @@
     		});
 
 			Editor.canvas = svgCanvas = new $.SvgCanvas(document.getElementById("svgcanvas"), curConfig);
+			var discardHistory = svgCanvas.undoMgr.getUndoStackSize();
 			Editor.show_save_warning = false;
 			Editor.paintBox = {fill: null, stroke:null, canvas:null};
 			var palette = ["#444444", "#482816", "#422C10", "#3B2F0E", "#32320F", 
@@ -3044,9 +3045,19 @@
 					{sel:'#tool_image', fn: clickImage, evt: 'mouseup'},
 					{sel:'#tool_zoom', fn: clickZoom, evt: 'mouseup', key: ['Z', true]},
 					{sel:'#tool_clear', fn: clickClear, evt: 'mouseup', key: [modKey + 'N', true]},
-					{sel:'#tool_button_discard', fn: clickClear, evt: 'mouseup', key: [modKey + 'N', true]},
+					{sel:'#tool_button_discard', fn:
+						function() {
+							debugger;
+							var current = svgCanvas.undoMgr.getUndoStackSize();
+							for(i = 0; i < current - discardHistory; i++) {
+								clickUndo();
+							}
+							discardHistory = svgCanvas.undoMgr.getUndoStackSize();
+						},
+						evt: 'mouseup', key: [modKey + 'N', true]},
 					{sel:'#tool_save', fn: function() { editingsource?saveSourceEditor():clickSave()}, evt: 'mouseup', key: [modKey + 'S', true]},
 					{sel:'#tool_button_save', fn: function() {
+						discardHistory = svgCanvas.undoMgr.getUndoStackSize();
 						if(inIframe()) {
 							window.methodDraw.parent.save();
 						} else {
@@ -3056,6 +3067,7 @@
 						evt: 'mouseup', key: [modKey + 'S', true]
 					},
 					{sel:'#tool_button_save_close', fn: function() {
+						discardHistory = svgCanvas.undoMgr.getUndoStackSize();
 						if(inIframe()) {
 							window.methodDraw.parent.hide();
 						} else {
@@ -3616,6 +3628,8 @@
 					updateRulers(cnvs, zoom);
 					workarea.scroll();
 				}
+				//Background drawing updated by tp
+				discardHistory = undoMgr.getUndoStackSize();
 			}
 			
 			// Make [1,2,5] array
