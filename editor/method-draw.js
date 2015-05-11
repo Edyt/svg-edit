@@ -22,6 +22,14 @@
   document.addEventListener("touchmove", touchHandler, true);
   document.addEventListener("touchend", touchHandler, true);
   document.addEventListener("touchcancel", touchHandler, true);
+
+	var inIframe = function () {
+		try {
+			return window.self !== window.top;
+		} catch (e) {
+			return true;
+		}
+	};
   
 	if(!window.methodDraw) window.methodDraw = function($) {
 		var svgCanvas;
@@ -56,8 +64,9 @@
 					"key_up":"Up",
 					"key_down":"Down",
 					"key_backspace":"Backspace",
-					"key_del":"Del"
-	
+					"key_del":"Del",
+					"discard": "Discard changes",
+					"save": "Save changes"
 				},
 				// This is needed if the locale is English, since the locale strings are not read in that instance.
 				layers: {
@@ -329,7 +338,6 @@
     		});
 
 			Editor.canvas = svgCanvas = new $.SvgCanvas(document.getElementById("svgcanvas"), curConfig);
-			var discardHistory = svgCanvas.undoMgr.getUndoStackSize();
 			Editor.show_save_warning = false;
 			Editor.paintBox = {fill: null, stroke:null, canvas:null};
 			var palette = ["#444444", "#482816", "#422C10", "#3B2F0E", "#32320F", 
@@ -386,21 +394,30 @@
 			// they should be easy to handle this way.
 			(function() {
 				$('#dialog_container').draggable({cancel:'#dialog_content, #dialog_buttons *', containment: 'window'});
-				var box = $('#dialog_box'), btn_holder = $('#dialog_buttons');
+				var box = $('#dialog_box'), btn_holder = $('#dialog_buttons'), ok, discard;
 				
-				var dbox = function(type, msg, callback, defText) {
+				var dbox = function(type, msg, callback, defText, callback2) {
 					$('#dialog_content').html('<p>'+msg.replace(/\n/g,'</p><p>')+'</p>')
 						.toggleClass('prompt',(type=='prompt'));
 					btn_holder.empty();
-					
-					var ok = $('<input type="button" value="' + uiStrings.common.ok + '">').appendTo(btn_holder);
-				
+
+					if(type == 'newSvg') {
+						$('#dialog_container').css("width", "500px");
+
+						ok = $('<input type="button" value="' + uiStrings.common.save + '">').appendTo(btn_holder);
+						discard = $('<input type="button" id="middle_button" value="' + uiStrings.common.discard + '">').appendTo(btn_holder).
+							on("click touchstart", function() { box.hide();callback2()});;
+
+					} else {
+						 ok = $('<input type="button" value="' + uiStrings.common.ok + '">').appendTo(btn_holder);
+					}
+
 					if(type != 'alert') {
 						$('<input type="button" value="' + uiStrings.common.cancel + '">')
 							.appendTo(btn_holder)
 							.on("click touchstart", function() { box.hide();callback(false)});
 					}
-					
+
 					if(type == 'prompt') {
 						var input = $('<input type="text">').prependTo(btn_holder);
 						input.val(defText || '');
@@ -424,6 +441,7 @@
 				
 				$.alert = function(msg, cb) { dbox('alert', msg, cb);};
 				$.confirm = function(msg, cb) {	dbox('confirm', msg, cb);};
+				$.newSvg = function(msg, cb, cb2) {	dbox('newSvg', msg, cb, '', cb2);};
 				$.process_cancel = function(msg, cb) {	dbox('process', msg, cb);};
 				$.prompt = function(msg, txt, cb) { dbox('prompt', msg, cb, txt);};
 			}());
@@ -2143,8 +2161,11 @@
 			
 			var clickClear = function(){
 				var dims = curConfig.dimensions;
-				$.confirm(uiStrings.notification.QwantToClear, function(ok) {
+				$.newSvg(uiStrings.notification.QwantToClear, function(ok) {
 					if(!ok) return;
+					if(inIframe()) {
+						window.methodDraw.parent.save();
+					}
 					setSelectMode();
 					svgCanvas.clear();
 					svgCanvas.setResolution(dims[0], dims[1]);
@@ -2153,6 +2174,19 @@
 					updateContextPanel();
 					prepPaints();
 					svgCanvas.runExtensions('onNewDocument');
+					console.log("ok");
+				},
+				function(discard) {
+					if(!discard) return;
+					setSelectMode();
+					svgCanvas.clear();
+					svgCanvas.setResolution(dims[0], dims[1]);
+					updateCanvas(true);
+					zoomImage();
+					updateContextPanel();
+					prepPaints();
+					svgCanvas.runExtensions('onNewDocument');
+					console.log("discard");
 				});
 			};
 			
@@ -3024,13 +3058,6 @@
 			
 			// Associate all button actions as well as non-button keyboard shortcuts
 			var Actions = function() {
-				var inIframe = function () {
-					try {
-						return window.self !== window.top;
-					} catch (e) {
-						return true;
-					}
-				};
 				// sel:'selector', fn:function, evt:'event', key:[key, preventDefault, NoDisableInInput]
 				var tool_buttons = [
 					{sel:'#tool_select', fn: clickSelect, evt: 'click', key: ['V', true]},
@@ -3047,17 +3074,19 @@
 					{sel:'#tool_clear', fn: clickClear, evt: 'mouseup', key: [modKey + 'N', true]},
 					{sel:'#tool_button_discard', fn:
 						function() {
-							debugger;
-							var current = svgCanvas.undoMgr.getUndoStackSize();
-							for(i = 0; i < current - discardHistory; i++) {
-								clickUndo();
+							if(inIframe()) {
+								window.methodDraw.parent.hide();
+							} else {
+								var current = svgCanvas.undoMgr.getUndoStackSize();
+								for(i = 0; i < current; i++) {
+									clickUndo();
+								}
 							}
-							discardHistory = svgCanvas.undoMgr.getUndoStackSize();
 						},
 						evt: 'mouseup', key: [modKey + 'N', true]},
 					{sel:'#tool_save', fn: function() { editingsource?saveSourceEditor():clickSave()}, evt: 'mouseup', key: [modKey + 'S', true]},
 					{sel:'#tool_button_save', fn: function() {
-						discardHistory = svgCanvas.undoMgr.getUndoStackSize();
+						undoMgr.resetUndoStack();
 						if(inIframe()) {
 							window.methodDraw.parent.save();
 						} else {
@@ -3067,7 +3096,6 @@
 						evt: 'mouseup', key: [modKey + 'S', true]
 					},
 					{sel:'#tool_button_save_close', fn: function() {
-						discardHistory = svgCanvas.undoMgr.getUndoStackSize();
 						if(inIframe()) {
 							window.methodDraw.parent.hide();
 						} else {
@@ -3629,7 +3657,7 @@
 					workarea.scroll();
 				}
 				//Background drawing updated by tp
-				discardHistory = undoMgr.getUndoStackSize();
+				undoMgr.resetUndoStack();
 			}
 			
 			// Make [1,2,5] array
