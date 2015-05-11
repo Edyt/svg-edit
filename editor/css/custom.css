@@ -25,16 +25,16 @@ button {
 
 }
 
-.bg-color-1 {
-    background: #4F80FF;
+.bg-color-discard {
+    background: #88332D;
 }
 
-.bg-color-2 {
-    background: #ff3442;
+.bg-color-save {
+    background: #3E6985;
 }
 
-.bg-color-3 {
-    background: #8ec5ff;
+.bg-color-save-close {
+    background: #0073C3;
 }
 
 .color-picker-group {
