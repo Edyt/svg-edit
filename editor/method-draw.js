@@ -1379,157 +1379,11 @@
 				$('.menu_item', '#object_menu').addClass('disabled');
 
 
-				//hack to show the proper multialign box
-				//if (multiselected) {
-				//	multiselected = multiselected.filter(Boolean);
-				//	elem = (svgCanvas.elementsAreSame(multiselected)) ? multiselected[0] : null
-				//	if (elem) $("#tools_top").addClass("multiselected")
-				//}
-
-				//if (!elem && !multiselected) {
-				//	$("#tools_top").removeClass("multiselected")
-				//	$("#stroke_panel").hide();
-				//	$("#canvas_panel").show();
-				//}
-
 				if (elem != null) {
-					//$("#stroke_panel").show();
-					//var elname = elem.nodeName;
-					//var angle = svgCanvas.getRotationAngle(elem);
-					//$('#angle').val(Math.round(angle));
-                    //
-					//var blurval = svgCanvas.getBlur(elem);
-					//$('#blur').val(blurval);
-					//if (!is_node && currentMode != 'pathedit') {
-					//	$('#selected_panel').show();
-					//	$('.action_selected').removeClass('disabled');
-					//	// Elements in this array already have coord fields
-					//	var x, y
-					//	if (['g', 'polyline', 'path'].indexOf(elname) >= 0) {
-					//		var bb = svgCanvas.getStrokedBBox([elem]);
-					//		if (bb) {
-					//			x = bb.x;
-					//			y = bb.y;
-					//		}
-					//	}
-                    //
-					//	if (unit) {
-					//		x = svgedit.units.convertUnit(x);
-					//		y = svgedit.units.convertUnit(y);
-					//	}
-                    //
-					//	$("#" + elname + "_x").val(Math.round(x))
-					//	$("#" + elname + "_y").val(Math.round(y))
-					//	if (elname === "polyline") {
-					//		//we're acting as if polylines were paths
-					//		$("#path_x").val(Math.round(x))
-					//		$("#path_y").val(Math.round(y))
-					//	}
-                    //
-					//	// Elements in this array cannot be converted to a path
-					//	var no_path = ['image', 'text', 'path', 'g', 'use'].indexOf(elname) == -1;
-					//	if (no_path) $('.action_path_convert_selected').removeClass('disabled');
-					//	if (elname === "path") $('.action_path_selected').removeClass('disabled');
-                    //
-					//}
-                    //
-					//var link_href = null;
-					//if (el_name === 'a') {
-					//	link_href = svgCanvas.getHref(elem);
-					//	$('#g_panel').show();
-					//}
-                    //
-					//if (elem.parentNode.tagName === 'a') {
-					//	if (!$(elem).siblings().length) {
-					//		$('#a_panel').show();
-					//		link_href = svgCanvas.getHref(elem.parentNode);
-					//	}
-					//}
-
-					// Hide/show the make_link buttons
-					//$('#tool_make_link, #tool_make_link').toggle(!link_href);
-
-					//if (link_href) {
-					//	$('#link_url').val(link_href);
-					//}
-                    //
-					//// update contextual tools here
-					//var panels = {
-					//	g: [],
-					//	a: [],
-					//	rect: ['rx', 'width', 'height', 'x', 'y'],
-					//	image: ['width', 'height', 'x', 'y'],
-					//	circle: ['cx', 'cy', 'r'],
-					//	ellipse: ['cx', 'cy', 'rx', 'ry'],
-					//	line: ['x1', 'y1', 'x2', 'y2'],
-					//	text: ['x', 'y'],
-					//	'use': [],
-					//	path: []
-					//};
-
+					if (!is_node && currentMode != 'pathedit') {
+						$('.action_selected').removeClass('disabled');
+					}
 					var el_name = elem.tagName;
-
-					//if ($(elem).data('gsvg')) {
-					//	$('#g_panel').show();
-					//}
-                    //
-					//if (el_name == "path" || el_name == "polyline") {
-					//	$('#path_panel').show();
-					//}
-
-					//if (panels[el_name]) {
-					//	var cur_panel = panels[el_name];
-					//	$('#' + el_name + '_panel').show();
-                    //
-					//	// corner radius has to live in a different panel
-					//	// because otherwise it changes the position of the
-					//	// of the elements
-					//	if (el_name == "rect") $("#cornerRadiusLabel").show()
-					//	else $("#cornerRadiusLabel").hide()
-                    //
-					//	$.each(cur_panel, function (i, item) {
-					//		var attrVal = elem.getAttribute(item);
-					//		if (curConfig.baseUnit !== 'px' && elem[item]) {
-					//			var bv = elem[item].baseVal.value;
-					//			attrVal = svgedit.units.convertUnit(bv);
-					//		}
-                    //
-					//		//update the draginput cursors
-					//		var name_item = document.getElementById(el_name + '_' + item);
-					//		name_item.value = Math.round(attrVal) || 0;
-					//		if (name_item.getAttribute("data-cursor") === "true") {
-					//			$.fn.dragInput.updateCursor(name_item);
-					//		}
-					//	});
-                    //
-					//	if (el_name == 'text') {
-					//		var font_family = elem.getAttribute("font-family");
-					//		var select = document.getElementById("font_family_dropdown");
-					//		select.selectedIndex = 3
-                    //
-					//		$('#text_panel').css("display", "inline");
-					//		$('#tool_italic').toggleClass('active', svgCanvas.getItalic())
-					//		$('#tool_bold').toggleClass('active', svgCanvas.getBold())
-					//		$('#font_family').val(font_family);
-					//		$('#font_size').val(elem.getAttribute("font-size"));
-					//		$('#text').val(elem.textContent);
-					//		$('#preview_font').text(font_family.split(",")[0].replace(/'/g, "")).css('font-family', font_family);
-					//		if (svgCanvas.addedNew) {
-					//			// Timeout needed for IE9
-					//			setTimeout(function () {
-					//				$('#text').focus().select();
-					//			}, 100);
-					//		}
-					//	} // text
-					//	else if (el_name == 'image') {
-					//		setImageURL(svgCanvas.getHref(elem));
-					//	} // image
-					//	else if (el_name === 'g' || el_name === 'use') {
-					//		$('#container_panel').show();
-					//		$('.action_group_selected').removeClass('disabled');
-					//		var title = svgCanvas.getTitle();
-					//	}
-					//}
 					menu_items[(el_name === 'g' ? 'en' : 'dis') + 'ableContextMenuItems']('#ungroup');
 					menu_items[((el_name === 'g' || !multiselected) ? 'dis' : 'en') + 'ableContextMenuItems']('#group');
 				}
@@ -3531,6 +3385,9 @@
   							break;
 					}
 					
+			});
+			$(window).mousedown(function(evt){
+				$('.contextMenu').hide();
 			});
 			
 			$('.contextMenu li').mousedown(function(ev) {
