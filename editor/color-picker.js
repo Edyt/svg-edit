@@ -15,9 +15,10 @@ $(function () {
             .click(function () {
                 $(".color-selected").removeClass("color-selected");
                 $(this).addClass("color-selected");
-                window.svgCanvas.setColor("stroke", color);
-                window.svgCanvas.setColor("fill", color);
-                window.svgCanvas.setPaintOpacity("fill", FILL_OPACITY);
+                svgCanvas.clearPathActions();
+                svgCanvas.setColor("stroke", color);
+                svgCanvas.setColor("fill", color);
+                svgCanvas.setPaintOpacity("fill", FILL_OPACITY);
             });
         colorPicker.append(btn);
     });
@@ -26,7 +27,7 @@ $(function () {
 
     function preselectColor(){
         var preselectedIdx = COLORS.indexOf(PRESELECTED);
-        window.methodDraw.setConfig({
+        methodDraw.setConfig({
             initStroke: {width: '3px', color: PRESELECTED.replace("#", ""), opacity: 1},
             initFill: {color: PRESELECTED.replace("#", ""), opacity: FILL_OPACITY}});
         colorPicker.find(".color-picker-btn").eq(preselectedIdx).addClass("color-selected");

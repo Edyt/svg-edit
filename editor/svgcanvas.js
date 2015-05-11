@@ -7817,6 +7817,10 @@ this.elementsAreSame = function(elements) {
 	}
 };
 
+	this.clearPathActions = function(remove){
+		pathActions.clear(remove)
+	}
+
 
 // DEPRECATED: getPrivateMethods 
 // Since all methods are/should be public somehow, this function should be removed
