@@ -1,6 +1,7 @@
 $(function () {
     var COLORS = ["#000000", "#7400B8", "#005CB8", "#00B884", "#FC9C00", "#FC7600", "#FC2200"],
-        PRESELECTED = "#000000";
+        PRESELECTED = "#000000",
+        FILL_OPACITY = 0.2;
 
     var colorPicker = $("#colorPicker");
 
@@ -15,6 +16,8 @@ $(function () {
                 $(".color-selected").removeClass("color-selected");
                 $(this).addClass("color-selected");
                 window.svgCanvas.setColor("stroke", color);
+                window.svgCanvas.setColor("fill", color);
+                window.svgCanvas.setPaintOpacity("fill", FILL_OPACITY);
             });
         colorPicker.append(btn);
     });
@@ -23,7 +26,9 @@ $(function () {
 
     function preselectColor(){
         var preselectedIdx = COLORS.indexOf(PRESELECTED);
-        window.methodDraw.setConfig({initStroke: {width: 1.5, color: PRESELECTED.replace("#", ""), opacity: 1}});
+        window.methodDraw.setConfig({
+            initStroke: {width: '3px', color: PRESELECTED.replace("#", ""), opacity: 1},
+            initFill: {color: PRESELECTED.replace("#", ""), opacity: FILL_OPACITY}});
         colorPicker.find(".color-picker-btn").eq(preselectedIdx).addClass("color-selected");
     }
 
