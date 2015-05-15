@@ -408,9 +408,9 @@ svgedit.draw.Drawing.prototype.identifyLayers = function() {
 		while (layernames.indexOf(("Layer " + i)) >= 0) { i++; }
 		var newname = "Layer " + i;
 		a_layer = svgdoc.createElementNS(NS.SVG, "g");
-		var layer_title = svgdoc.createElementNS(NS.SVG, "title");
-		layer_title.textContent = newname;
-		a_layer.appendChild(layer_title);
+		//var layer_title = svgdoc.createElementNS(NS.SVG, "title");
+		//layer_title.textContent = newname;
+		//a_layer.appendChild(layer_title);
 		var j;
 		for (j = 0; j < orphans.length; ++j) {
 			a_layer.appendChild(orphans[j]);
@@ -433,9 +433,9 @@ svgedit.draw.Drawing.prototype.identifyLayers = function() {
 svgedit.draw.Drawing.prototype.createLayer = function(name) {
 	var svgdoc = this.svgElem_.ownerDocument;
 	var new_layer = svgdoc.createElementNS(NS.SVG, "g");
-	var layer_title = svgdoc.createElementNS(NS.SVG, "title");
-	layer_title.textContent = name;
-	new_layer.appendChild(layer_title);
+	//var layer_title = svgdoc.createElementNS(NS.SVG, "title");
+	//layer_title.textContent = name;
+	//new_layer.appendChild(layer_title);
 	this.svgElem_.appendChild(new_layer);
 	this.identifyLayers();
 	return new_layer;
