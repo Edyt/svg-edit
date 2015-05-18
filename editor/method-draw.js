@@ -3097,6 +3097,7 @@
 					},
 					{sel:'#tool_button_save_close', fn: function() {
 						if(inIframe()) {
+							window.methodDraw.parent.save();
 							window.methodDraw.parent.hide();
 						} else {
 							editingsource ? saveSourceEditor() : clickSave()
