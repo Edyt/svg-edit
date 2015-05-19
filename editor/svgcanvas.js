@@ -1262,7 +1262,8 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		bSpline = {x:0, y:0},
 		nextPos = {x:0, y:0},
 		THRESHOLD_DIST = 0.8,
-		STEP_COUNT = 10;
+		STEP_COUNT = 10,
+		lastMouseMoveEvt;
 
 	var getBsplinePoint = function(t) {
 		var spline = {x:0, y:0},
@@ -2477,9 +2478,25 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		e.preventDefault();
 		return false;
 	};
-	
-	// Added mouseup to the container here.
-	$(container).click(handleLinkInCanvas).dblclick(dblClick);
+
+	var storeMouseMoveEvt = function(evt){
+		lastMouseMoveEvt = evt;
+	}
+
+	var fireMouseMoveOnShiftDown = function(keyEvt){
+		if(keyEvt.shiftKey){
+			lastMouseMoveEvt.shiftKey = true;
+			mouseMove(lastMouseMoveEvt);
+		}
+	}
+
+	$(container)
+		.click(handleLinkInCanvas)
+		.dblclick(dblClick)
+		.mousemove(storeMouseMoveEvt);
+
+	$(window).keydown(fireMouseMoveOnShiftDown);
+
 	if(window.PointerEvent){
 		//jquery is too old, and it does not support pointer events
 		container.addEventListener('pointercancel', function(e){
