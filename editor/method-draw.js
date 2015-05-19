@@ -45,7 +45,7 @@
 			extPath: 'extensions/',
 			jGraduatePath: 'jgraduate/images/',
 			extensions: [],
-			initTool: 'select',
+			initTool: 'fhpath',
 			wireframe: false,
 			colorPickerCSS: false,
 			gridSnapping: false,
