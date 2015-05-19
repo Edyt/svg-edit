@@ -1,6 +1,6 @@
 $(function () {
     var COLORS = ["#18212A", "#7F49C9", "#0B58AB", "#016366", "#21853B", "#995E00", "#CC410C", "#B01A0D"],
-        PRESELECTED = "#000000",
+        PRESELECTED = "#18212A",
         FILL_OPACITY = 0.2;
 
     var colorPicker = $("#colorPicker");
