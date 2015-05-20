@@ -3075,6 +3075,16 @@ pathActions = canvas.pathActions = function() {
 		return element;
 	};
 
+	$(window).keyup(function(keyEvt){
+		// ESC pressed
+		if(keyEvt.keyCode == 27 && (current_mode == 'path' || current_mode == 'pathedit')){
+			//remove the path from ui and setMode on convase to 'path'.
+			//setting mode clears pathActions too
+			$('#'+getId()).remove();
+			svgCanvas.setMode('path');
+		}
+	});
+
 	return {
 		mouseDown: function(evt, mouse_target, start_x, start_y) {
 			var id;
@@ -3751,7 +3761,7 @@ pathActions = canvas.pathActions = function() {
 		deletePathNode: function() {
 			if (!pathActions.canDeleteNodes) {return;}
 			svgedit.path.path.storeD();
-			
+
 			var sel_pts = svgedit.path.path.selected_pts;
 			var i = sel_pts.length;
 
@@ -3759,7 +3769,7 @@ pathActions = canvas.pathActions = function() {
 				var pt = sel_pts[i];
 				svgedit.path.path.deleteSeg(pt);
 			}
-			
+
 			// Cleanup
 			var cleanup = function() {
 				var segList = svgedit.path.path.elem.pathSegList;
