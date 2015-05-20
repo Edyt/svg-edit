@@ -3473,17 +3473,8 @@ pathActions = canvas.pathActions = function() {
 				if (!evt.shiftKey && !hasMoved) {
 					svgedit.path.path.selectPt(last_pt);
 				} 
-			} else if (rubberBox && rubberBox.getAttribute('display') != 'none') {
-				// Done with multi-node-select
-				rubberBox.setAttribute('display', 'none');
-				
-				if (rubberBox.getAttribute('width') <= 2 && rubberBox.getAttribute('height') <= 2) {
-					pathActions.toSelectMode(evt.target);
-				}
-				
-			// else, move back to select mode	
 			} else {
-				pathActions.toSelectMode(evt.target);
+				pathActions.toPathMode();
 			}
 			hasMoved = false;
 		},
@@ -3494,6 +3485,11 @@ pathActions = canvas.pathActions = function() {
 			svgedit.path.path.show(true).update();
 			svgedit.path.path.oldbbox = svgedit.utilities.getBBox(svgedit.path.path.elem);
 			subpath = false;
+		},
+		toPathMode: function(){
+			current_mode = 'path';
+			svgedit.path.path.show(false);
+			clearSelection();
 		},
 		toSelectMode: function(elem) {
 			var selPath = (elem == svgedit.path.path.elem);
