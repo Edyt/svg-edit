@@ -1374,7 +1374,12 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 			}
 			mouse_target = selectedElements[0];
 		}
-		
+
+		//TPE-2419
+		if('select' === current_mode && right_click && ('path' === canvas.last_mode || 'pathedit' === canvas.last_mode)){
+			mouse_target = $('#'+ getId()).get(0);
+		}
+
 		startTransform = mouse_target.getAttribute('transform');
 		var i, stroke_w,
 			tlist = svgedit.transformlist.getTransformList(mouse_target);
