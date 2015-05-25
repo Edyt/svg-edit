@@ -611,13 +611,15 @@ svgedit.utilities.assignAttributes = function(node, attrs, suspendLength, unitCh
 	for (i in attrs) {
 		var ns = (i.substr(0,4) === 'xml:' ? NS.XML :
 			i.substr(0,6) === 'xlink:' ? NS.XLINK : null);
-
-		if(ns) {
-			node.setAttributeNS(ns, i, attrs[i]);
-		} else if(!unitCheck) {
-			node.setAttribute(i, attrs[i]);
-		} else {
-			svgedit.units.setUnitAttr(node, i, attrs[i]);
+		var attrVal = attrs[i];
+		if(attrVal !== undefined && attrVal !== null) {
+			if (ns) {
+				node.setAttributeNS(ns, i, attrVal);
+			} else if (!unitCheck) {
+				node.setAttribute(i, attrVal);
+			} else {
+				svgedit.units.setUnitAttr(node, i, attrVal);
+			}
 		}
 	}
 	if (!svgedit.browser.isOpera()) {svgroot_.unsuspendRedraw(handle);}
