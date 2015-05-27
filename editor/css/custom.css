@@ -13,10 +13,7 @@ button {
     border-radius: 3px;
     padding: 5px 14px;
     border: none;
-    line-height: 140%;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: sans-serif;
+    font: 16px/120% 'Source Sans Pro', sans-serif;
     position: relative;
     right: 0;
     margin-right: 5px;
