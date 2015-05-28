@@ -2241,6 +2241,7 @@
 				  flash($('#edit_menu'));
 					undoMgr.undo();
 				}
+				updateContextPanel();
 			};
 		
 			var clickRedo = function(){
@@ -2248,6 +2249,7 @@
 				  flash($('#edit_menu'));
 					undoMgr.redo();
 				}
+				updateContextPanel();
 			};
 			
 			var clickGroup = function(){
@@ -3084,7 +3086,16 @@
 							}
 						},
 						evt: 'mouseup', key: [modKey + 'N', true]},
-					{sel:'#tool_save', fn: function() { editingsource?saveSourceEditor():clickSave()}, evt: 'mouseup', key: [modKey + 'S', true]},
+					{sel:'#tool_save', fn: function() {
+						undoMgr.resetUndoStack();
+						if(inIframe()) {
+							window.methodDraw.parent.save();
+						} else {
+							editingsource ? saveSourceEditor() : clickSave()
+						}
+					},
+						evt: 'mouseup', key: [modKey + 'S', true]
+					},
 					{sel:'#tool_button_save', fn: function() {
 						undoMgr.resetUndoStack();
 						if(inIframe()) {
