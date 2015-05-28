@@ -7061,22 +7061,24 @@ this.pasteElements = function(type, x, y) {
 	
 	if (type !== 'in_place') {
 		
-		var ctr_x, ctr_y;
-		
-		if (!type) {
-			ctr_x = lastClickPoint.x;
-			ctr_y = lastClickPoint.y;
-		} else if (type === 'point') {
-			ctr_x = x;
-			ctr_y = y;
-		} 
-		
-		var bbox = getStrokedBBox(pasted);
-		var cx = ctr_x - (bbox.x + bbox.width/2),
-			cy = ctr_y - (bbox.y + bbox.height/2),
-			dx = [],
-			dy = [];
-	
+		var ctr_x, ctr_y, dx = [], dy = [], cx, cy;
+
+		if (type === 'offset'){
+			var OFFSET = 10;
+			dx.push(OFFSET);
+			dy.push(OFFSET);
+		} else {
+			if (!type) {
+				ctr_x = lastClickPoint.x;
+				ctr_y = lastClickPoint.y;
+			} else if (type === 'point') {
+				ctr_x = x;
+				ctr_y = y;
+			}
+			var bbox = getStrokedBBox(pasted);
+			cx = ctr_x - (bbox.x + bbox.width/2);
+			cy = ctr_y - (bbox.y + bbox.height/2);
+		}
 		$.each(pasted, function(i, item) {
 			dx.push(cx);
 			dy.push(cy);
