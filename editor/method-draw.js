@@ -1416,7 +1416,7 @@
 				}
 
 				if (!elem) {
-					menu_items.disableContextMenuItems('#delete,#cut,#copy,#group,#ungroup,#move_front,#move_up,#move_down,#move_back');
+					menu_items.disableContextMenuItems('#delete,#cut,#copy,#move_front,#move_up,#move_down,#move_back');
 				}
 
 				// update history buttons
