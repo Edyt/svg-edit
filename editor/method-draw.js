@@ -3436,6 +3436,7 @@
 					
 			});
 			$(window).mousedown(function(evt){
+				updateContextPanel();
 				$('.contextMenu').hide();
 			});
 			
