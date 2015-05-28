@@ -2393,6 +2393,17 @@
 				}
 				svgCanvas.save(saveOpts);
 			};
+
+			//method inovking save on parent dialog
+			var parentSave = function() {
+				undoMgr.resetUndoStack();
+				updateContextPanel();
+				if(inIframe()) {
+					window.methodDraw.parent.save();
+				} else {
+					editingsource ? saveSourceEditor() : clickSave()
+				}
+			};
 			
 			var saveSourceEditor = function(){
 				if (!editingsource) return;
@@ -3086,24 +3097,10 @@
 							}
 						},
 						evt: 'mouseup', key: [modKey + 'N', true]},
-					{sel:'#tool_save', fn: function() {
-						undoMgr.resetUndoStack();
-						if(inIframe()) {
-							window.methodDraw.parent.save();
-						} else {
-							editingsource ? saveSourceEditor() : clickSave()
-						}
-					},
+					{sel:'#tool_save', fn: parentSave,
 						evt: 'mouseup', key: [modKey + 'S', true]
 					},
-					{sel:'#tool_button_save', fn: function() {
-						undoMgr.resetUndoStack();
-						if(inIframe()) {
-							window.methodDraw.parent.save();
-						} else {
-							editingsource ? saveSourceEditor() : clickSave()
-						}
-					},
+					{sel:'#tool_button_save', fn: parentSave,
 						evt: 'mouseup', key: [modKey + 'S', true]
 					},
 					{sel:'#tool_button_save_close', fn: function() {
