@@ -897,7 +897,8 @@ var textActions, pathActions;
 // Parameters:
 // newDoc - The SVG DOM document
 this.prepareSvg = function(newDoc) {
-	this.sanitizeSvg(newDoc.documentElement);
+	if (!svgedit.browser.isIE)
+		this.sanitizeSvg(newDoc.documentElement);
 
 	// convert paths into absolute commands
 	var i, path, len,
@@ -5035,7 +5036,7 @@ this.importSvgString = function(xmlString) {
 		} else {
 			// convert string into XML document
 			var newDoc = svgedit.utilities.text2xml(xmlString);
-	
+
 			this.prepareSvg(newDoc);
 	
 			// import new svg document into our document
