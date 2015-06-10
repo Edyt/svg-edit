@@ -83,7 +83,7 @@
 					"enterNewLayerName":"Please enter the new layer name",
 					"layerHasThatName":"Layer already has that name",
 					"QmoveElemsToLayer":"Move selected elements to layer \"%s\"?",
-					"QwantToClear":"This will create a new annotation on the same text range.",
+					"QwantToClear":"This will create a new annotation on the same element.",
 					"QwantToOpen":"Do you want to open a new file?\nThis will also erase your undo history",
 					"QerrorsRevertToSource":"There were parsing errors in your SVG source.\nRevert back to original SVG source?",
 					"QignoreSourceChanges":"Ignore changes made to SVG source?",
