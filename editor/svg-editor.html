@@ -104,9 +104,9 @@
 			<div class="menu_title">File</div>
 			<div class="menu_list" id="file_menu">
 				<div id="tool_clear" class="menu_item">New Document</div>
-				<div id="tool_open" class="menu_item" style="display: none;"><div id="fileinputs"></div>Open SVG...</div>
-				<div id="tool_import" class="menu_item" style="display: none;"><div id="fileinputs_import"></div>Import Image...</div>
-				<div id="tool_save" class="menu_item">Save Image... <span class="shortcut">⌘S</span></div>
+				<div data-role="tool_button_discard" class="menu_item">Discard changes</div>
+				<div data-role="tool_button_save" class="menu_item">Save</div>
+				<div data-role="tool_button_save_close" class="menu_item">Save and close</div>
 				
 			</div>
 		</div>
@@ -167,9 +167,9 @@
 		</div>
 
 		<div id="menu-buttons">
-			<button id="tool_button_discard" class="bg-color-discard">discard changes</button>
-			<button id="tool_button_save" class="bg-color-save">save</button>
-			<button id="tool_button_save_close" class="bg-color-save-close">save and close</button>
+			<button data-role="tool_button_discard" class="bg-color-discard">discard changes</button>
+			<button data-role="tool_button_save" class="bg-color-save">save</button>
+			<button data-role="tool_button_save_close" class="bg-color-save-close">save and close</button>
 		</div>
 
 

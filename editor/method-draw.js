@@ -3121,7 +3121,7 @@
 								clickClean();
 							}
 						}, evt: 'mouseup', key: [modKey + 'N', true]},
-					{sel:'#tool_button_discard', fn:
+					{sel:'[data-role=tool_button_discard]', fn:
 						function() {
 							if(inIframe()) {
 								window.methodDraw.parent.hide();
@@ -3136,10 +3136,10 @@
 					{sel:'#tool_save', fn: parentSave,
 						evt: 'mouseup', key: [modKey + 'S', true]
 					},
-					{sel:'#tool_button_save', fn: parentSave,
+					{sel:'[data-role=tool_button_save]', fn: parentSave,
 						evt: 'mouseup', key: [modKey + 'S', true]
 					},
-					{sel:'#tool_button_save_close', fn: function() {
+					{sel:'[data-role=tool_button_save_close]', fn: function() {
 						if(inIframe()) {
 							window.methodDraw.parent.save();
 							window.methodDraw.parent.hide();
