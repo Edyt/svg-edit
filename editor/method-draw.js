@@ -2161,8 +2161,10 @@
 				$.newSvg(uiStrings.notification.QwantToClear, function(ok) {
 					if(!ok) return;
 					if(inIframe()) {
+						console.log("window.methodDraw.parent",window.methodDraw.parent);
 						window.methodDraw.parent.save();
 					}
+					console.log("window.methodDraw.parent",window.methodDraw.parent);
 					setSelectMode();
 					svgCanvas.clear();
 					svgCanvas.setResolution(dims[0], dims[1]);
@@ -2171,7 +2173,7 @@
 					updateContextPanel();
 					prepPaints();
 					svgCanvas.runExtensions('onNewDocument');
-					console.log("ok");
+					console.log("ok - dot!");
 				},
 				function(discard) {
 					if(!discard) return;
@@ -2375,7 +2377,8 @@
 				$('#save_output_btns').toggle(!!forSaving);
 				$('#tool_source_back').toggle(!forSaving);
 				
-				var str = orig_source = svgCanvas.getSvgString();
+				var str = orig_source = svgCanvas.getSvgS
+				tring();
 				$('#svg_source_textarea').val(str);
 				$('#svg_source_editor').fadeIn();
 				$('#svg_source_textarea').focus().select();
@@ -2393,6 +2396,7 @@
 
 			//method inovking save on parent dialog
 			var parentSave = function() {
+				debugger;
 				undoMgr.resetUndoStack();
 				updateContextPanel();
 				if(inIframe()) {
@@ -3085,6 +3089,7 @@
 					{sel:'#tool_button_discard', fn:
 						function() {
 							if(inIframe()) {
+								// We are in the TP app
 								window.methodDraw.parent.hide();
 							} else {
 								var current = svgCanvas.undoMgr.getUndoStackSize();
@@ -3101,10 +3106,14 @@
 						evt: 'mouseup', key: [modKey + 'S', true]
 					},
 					{sel:'#tool_button_save_close', fn: function() {
+						debugger;
 						if(inIframe()) {
+							// We are in the TP app
+							console.log("iframe");
 							window.methodDraw.parent.save();
 							window.methodDraw.parent.hide();
 						} else {
+							console.log("no iframe");
 							editingsource ? saveSourceEditor() : clickSave()
 						}
 					},
