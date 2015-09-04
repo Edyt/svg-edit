@@ -1,4 +1,4 @@
-/*globals svgEditor, svgedit, svgCanvas, $*/
+/*globals methodDraw, svgedit, svgCanvas, $*/
 /*jslint vars: true, eqeq: true*/
 /*
  * ext-star.js
@@ -9,7 +9,7 @@
  *
  */
 
-svgEditor.addExtension('star', function(S){'use strict';
+methodDraw.addExtension('star', function(S){'use strict';
 
 	var // NS = svgedit.NS,
 		// svgcontent = S.svgcontent,
@@ -56,7 +56,7 @@ svgEditor.addExtension('star', function(S){'use strict';
 
 	return {
 		name: 'star',
-		svgicons: svgEditor.curConfig.extPath + 'star-icons.svg',
+		svgicons: methodDraw.curConfig.extPath + 'star-icons.svg',
 		buttons: [{
 			id: 'tool_star',
 			type: 'mode',

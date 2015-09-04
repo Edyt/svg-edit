@@ -99,8 +99,8 @@ if(jQuery)( function() {
 							});
 							
 							// When items are selected
-							menu.find('A').unbind('mouseup');
-							menu.find('LI:not(.disabled) A').mouseup( function() {
+							menu.find('A').unbind('mousedown');
+							menu.find('LI:not(.disabled) A').mousedown( function() {
 								doc.unbind('click').unbind('keypress');
 								$(".contextMenu").hide();
 								// Callback

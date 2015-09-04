@@ -1,4 +1,4 @@
-﻿/*globals $, svgEditor*/
+﻿/*globals $, methodDraw*/
 /*jslint vars: true, eqeq: true*/
 /* SpinButton control
  *
@@ -131,7 +131,7 @@ $.fn.SpinButton = function(cfg) { 'use strict';
 			var x = e.pageX || e.x;
 			var y = e.pageY || e.y;
 			var el = e.target || e.srcElement;
-			var scale = svgEditor.tool_scale || 1;
+			var scale = methodDraw.tool_scale || 1;
 			var height = $(el).height()/2;
 			
 			var direction = 

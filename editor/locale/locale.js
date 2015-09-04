@@ -15,7 +15,7 @@
 // 2) svgcanvas.js
 // 3) svg-editor.js
 
-var svgEditor = (function($, editor) {'use strict';
+var methodDraw = (function($, editor) {'use strict';
 
 	var lang_param;
 	
@@ -325,4 +325,4 @@ var svgEditor = (function($, editor) {'use strict';
 	};
 	
 	return editor;
-}(jQuery, svgEditor));
+}(jQuery, methodDraw));

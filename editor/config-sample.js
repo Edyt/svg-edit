@@ -3,7 +3,7 @@
 //   CREATE A NEW FILE config.js AND ADD CONTENTS
 //   SUCH AS SHOWN BELOW INTO THAT FILE.
 
-/*globals svgEditor*/
+/*globals methodDraw*/
 /*
 The config.js file is intended for the setting of configuration or
   preferences which must run early on; if this is not needed, it is
@@ -20,7 +20,7 @@ See svg-editor.js for documentation on using setConfig().
 */
 
 // URL OVERRIDE CONFIG
-svgEditor.setConfig({
+methodDraw.setConfig({
 	/**
 	To override the ability for URLs to set URL-based SVG content,
 	    uncomment the following:
@@ -40,7 +40,7 @@ svgEditor.setConfig({
 	// lockExtensions: true,
 });
 
-svgEditor.setConfig({
+methodDraw.setConfig({
 	/*
 	Provide default values here which differ from that of the editor but
 		which the URL can override
@@ -48,7 +48,7 @@ svgEditor.setConfig({
 }, {allowInitialUserOverride: true});
 
 // EXTENSION CONFIG
-svgEditor.setConfig({
+methodDraw.setConfig({
 	extensions: [
 		// 'ext-overview_window.js', 'ext-markers.js', 'ext-connector.js', 'ext-eyedropper.js', 'ext-shapes.js', 'ext-imagelib.js', 'ext-grid.js', 'ext-polygon.js', 'ext-star.js', 'ext-panning.js', 'ext-storage.js'
 	]
@@ -56,7 +56,7 @@ svgEditor.setConfig({
 });
 
 // OTHER CONFIG
-svgEditor.setConfig({	
+methodDraw.setConfig({
 	// canvasName: 'default',
 	// canvas_expansion: 3,
 	// initFill: {
@@ -117,7 +117,7 @@ As with configuration, one may use allowInitialUserOverride, but
   Failing to use allowInitialUserOverride will ensure preferences
   are hard-coded here regardless of URL or prior user storage setting.
 */
-svgEditor.setConfig(
+methodDraw.setConfig(
 	{
 		// lang: '', // Set dynamically within locale.js if not previously set
 		// iconsize: '', // Will default to 's' if the window height is smaller than the minimum height and 'm' otherwise
@@ -136,7 +136,7 @@ svgEditor.setConfig(
 		// export_notice_done: false
 	}
 );
-svgEditor.setConfig(
+methodDraw.setConfig(
 	{
 		// Indicate pref settings here if you wish to allow user storage or URL settings
 		//   to be able to override your default preferences (unless other config options

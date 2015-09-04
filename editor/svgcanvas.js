@@ -54,7 +54,7 @@ var NS = svgedit.NS;
 // Default configuration options
 var curConfig = {
 	show_outside_canvas: true,
-	//selectNew: true,
+	selectNew: false,
 	dimensions: [640, 480]
 };
 
@@ -897,7 +897,8 @@ var textActions, pathActions;
 // Parameters:
 // newDoc - The SVG DOM document
 this.prepareSvg = function(newDoc) {
-	this.sanitizeSvg(newDoc.documentElement);
+	if (!svgedit.browser.isIE)
+		this.sanitizeSvg(newDoc.documentElement);
 
 	// convert paths into absolute commands
 	var i, path, len,
@@ -1262,7 +1263,8 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		bSpline = {x:0, y:0},
 		nextPos = {x:0, y:0},
 		THRESHOLD_DIST = 0.8,
-		STEP_COUNT = 10;
+		STEP_COUNT = 10,
+		lastMouseMoveEvt;
 
 	var getBsplinePoint = function(t) {
 		var spline = {x:0, y:0},
@@ -1300,9 +1302,6 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		};
 	};
 
-	var isErasing = function(evt){
-		return evt.button === 5 || (evt.button === 0 && evt.ctrlKey);
-	};
 	// - when we are in a create mode, the element is added to the canvas
 	// but the action is not recorded until mousing up
 	// - when we are in select mode, select the element, remember the position
@@ -1327,7 +1326,7 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		evt.preventDefault();
 
 		canvas.last_mode = null;
-		if (right_click || isErasing(evt)) {
+		if (right_click) {
 			canvas.last_mode = current_mode;
 			current_mode = 'select';
 			lastClickPoint = pt;
@@ -1376,7 +1375,12 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 			}
 			mouse_target = selectedElements[0];
 		}
-		
+
+		//TPE-2419
+		if('select' === current_mode && right_click && ('path' === canvas.last_mode || 'pathedit' === canvas.last_mode)){
+			mouse_target = $('#'+ getId()).get(0);
+		}
+
 		startTransform = mouse_target.getAttribute('transform');
 		var i, stroke_w,
 			tlist = svgedit.transformlist.getTransformList(mouse_target);
@@ -2115,6 +2119,11 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	// identified, a ChangeElementCommand is created and stored on the stack for those attrs
 	// this is done in when we recalculate the selected dimensions()
 	var mouseUp = function(evt) {
+		canvas.addClones = false;
+		window.removeEventListener("keyup", canvas.removeClones)
+		selectedElements = selectedElements.filter(Boolean);
+
+
 		if (evt.button === 2) {return;}
 		var tempJustSelected = justSelected;
 		justSelected = null;
@@ -2144,42 +2153,11 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 				}
 				current_mode = 'select';
 			case 'select':
-				if (selectedElements.length && isErasing(evt)){
-					element = null;
-					canvas.deleteSelectedElements();
-					if(canvas.last_mode){
-						//TODO: expose Actions from svg-editor.js, so we should
-						//instead call: Actions.getButtonData().fn()
-						var tool = $('#tools_left, #svg_editor .tools_flyout').find('#tool_'+canvas.last_mode);
-						if(tool){
-							tool.click().mouseup();
-						}
-						canvas.last_mode = null;
-					}
-					break;
-				}
 				if (selectedElements[0] != null) {
 					// if we only have one selected element
 					if (selectedElements[1] == null) {
 						// set our current stroke/fill properties to the element's
 						var selected = selectedElements[0];
-						switch ( selected.tagName ) {
-							case 'g':
-							case 'use':
-							case 'image':
-							case 'foreignObject':
-								break;
-							default:
-								cur_properties.fill = selected.getAttribute('fill');
-								cur_properties.fill_opacity = selected.getAttribute('fill-opacity');
-								cur_properties.stroke = selected.getAttribute('stroke');
-								cur_properties.stroke_opacity = selected.getAttribute('stroke-opacity');
-								cur_properties.stroke_width = selected.getAttribute('stroke-width');
-								cur_properties.stroke_dasharray = selected.getAttribute('stroke-dasharray');
-								cur_properties.stroke_linejoin = selected.getAttribute('stroke-linejoin');
-								cur_properties.stroke_linecap = selected.getAttribute('stroke-linecap');
-						}
-
 						if (selected.tagName == 'text') {
 							cur_text.font_size = selected.getAttribute('font-size');
 							cur_text.font_family = selected.getAttribute('font-family');
@@ -2489,9 +2467,25 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		e.preventDefault();
 		return false;
 	};
-	
-	// Added mouseup to the container here.
-	$(container).click(handleLinkInCanvas).dblclick(dblClick);
+
+	var storeMouseMoveEvt = function(evt){
+		lastMouseMoveEvt = evt;
+	}
+
+	var fireMouseMoveOnShiftDown = function(keyEvt){
+		if(keyEvt.shiftKey){
+			lastMouseMoveEvt.shiftKey = true;
+			mouseMove(lastMouseMoveEvt);
+		}
+	}
+
+	$(container)
+		.click(handleLinkInCanvas)
+		.dblclick(dblClick)
+		.mousemove(storeMouseMoveEvt);
+
+	$(window).keydown(fireMouseMoveOnShiftDown);
+
 	if(window.PointerEvent){
 		//jquery is too old, and it does not support pointer events
 		container.addEventListener('pointercancel', function(e){
@@ -3070,6 +3064,16 @@ pathActions = canvas.pathActions = function() {
 		return element;
 	};
 
+	$(window).keyup(function(keyEvt){
+		// ESC pressed
+		if(keyEvt.keyCode == 27 && (current_mode == 'path' || current_mode == 'pathedit')){
+			//remove the path from ui and setMode on convase to 'path'.
+			//setting mode clears pathActions too
+			$('#'+getId()).remove();
+			svgCanvas.setMode('path');
+		}
+	});
+
 	return {
 		mouseDown: function(evt, mouse_target, start_x, start_y) {
 			var id;
@@ -3458,17 +3462,8 @@ pathActions = canvas.pathActions = function() {
 				if (!evt.shiftKey && !hasMoved) {
 					svgedit.path.path.selectPt(last_pt);
 				} 
-			} else if (rubberBox && rubberBox.getAttribute('display') != 'none') {
-				// Done with multi-node-select
-				rubberBox.setAttribute('display', 'none');
-				
-				if (rubberBox.getAttribute('width') <= 2 && rubberBox.getAttribute('height') <= 2) {
-					pathActions.toSelectMode(evt.target);
-				}
-				
-			// else, move back to select mode	
 			} else {
-				pathActions.toSelectMode(evt.target);
+				pathActions.toPathMode();
 			}
 			hasMoved = false;
 		},
@@ -3479,6 +3474,11 @@ pathActions = canvas.pathActions = function() {
 			svgedit.path.path.show(true).update();
 			svgedit.path.path.oldbbox = svgedit.utilities.getBBox(svgedit.path.path.elem);
 			subpath = false;
+		},
+		toPathMode: function(){
+			current_mode = 'path';
+			svgedit.path.path.show(false);
+			clearSelection();
 		},
 		toSelectMode: function(elem) {
 			var selPath = (elem == svgedit.path.path.elem);
@@ -3548,7 +3548,7 @@ pathActions = canvas.pathActions = function() {
 			if (drawn_path) {
 				var elem = svgedit.utilities.getElem(getId());
 				$(svgedit.utilities.getElem('path_stretch_line')).remove();
-				$(elem).remove();
+				if(remove)$(elem).remove();
 				$(svgedit.utilities.getElem('pathpointgrip_container')).find('*').attr('display', 'none');
 				drawn_path = firstCtrl = null;
 				started = false;
@@ -3602,6 +3602,7 @@ pathActions = canvas.pathActions = function() {
 			}
 		},
 		getNodePoint: function() {
+			if (!svgedit.path.path) return;
 			var sel_pt = svgedit.path.path.selected_pts.length ? svgedit.path.path.selected_pts[0] : 1;
 
 			var seg = svgedit.path.path.segs[sel_pt];
@@ -3745,7 +3746,7 @@ pathActions = canvas.pathActions = function() {
 		deletePathNode: function() {
 			if (!pathActions.canDeleteNodes) {return;}
 			svgedit.path.path.storeD();
-			
+
 			var sel_pts = svgedit.path.path.selected_pts;
 			var i = sel_pts.length;
 
@@ -3753,7 +3754,7 @@ pathActions = canvas.pathActions = function() {
 				var pt = sel_pts[i];
 				svgedit.path.path.deleteSeg(pt);
 			}
-			
+
 			// Cleanup
 			var cleanup = function() {
 				var segList = svgedit.path.path.elem.pathSegList;
@@ -5035,7 +5036,7 @@ this.importSvgString = function(xmlString) {
 		} else {
 			// convert string into XML document
 			var newDoc = svgedit.utilities.text2xml(xmlString);
-	
+
 			this.prepareSvg(newDoc);
 	
 			// import new svg document into our document
@@ -5838,8 +5839,9 @@ this.getMode = function() {
 // Parameters:
 // name - String with the new mode to change to
 this.setMode = function(name) {
-	pathActions.clear(true);
+	pathActions.clear();
 	textActions.clear();
+	$("#workarea").attr("class", name);
 	cur_properties = (selectedElements[0] && selectedElements[0].nodeName == 'text') ? cur_text : cur_shape;
 	current_mode = name;
 };
@@ -6875,7 +6877,7 @@ var changeSelectedAttributeNoUndo = function(attr, newValue, elems) {
 
 			// Go into "select" mode for text changes
 			// NOTE: Important that this happens AFTER elem.setAttribute() or else attributes like
-			// font-size can get reset to their old value, ultimately by svgEditor.updateContextPanel(),
+			// font-size can get reset to their old value, ultimately by methodDraw.updateContextPanel(),
 			// after calling textActions.toSelectMode() below
 			if (current_mode === 'textedit' && attr !== '#text' && elem.textContent.length) {
 				textActions.toSelectMode(elem);
@@ -7060,22 +7062,24 @@ this.pasteElements = function(type, x, y) {
 	
 	if (type !== 'in_place') {
 		
-		var ctr_x, ctr_y;
-		
-		if (!type) {
-			ctr_x = lastClickPoint.x;
-			ctr_y = lastClickPoint.y;
-		} else if (type === 'point') {
-			ctr_x = x;
-			ctr_y = y;
-		} 
-		
-		var bbox = getStrokedBBox(pasted);
-		var cx = ctr_x - (bbox.x + bbox.width/2),
-			cy = ctr_y - (bbox.y + bbox.height/2),
-			dx = [],
-			dy = [];
-	
+		var ctr_x, ctr_y, dx = [], dy = [], cx, cy;
+
+		if (type === 'offset'){
+			var OFFSET = 10;
+			dx.push(OFFSET);
+			dy.push(OFFSET);
+		} else {
+			if (!type) {
+				ctr_x = lastClickPoint.x;
+				ctr_y = lastClickPoint.y;
+			} else if (type === 'point') {
+				ctr_x = x;
+				ctr_y = y;
+			}
+			var bbox = getStrokedBBox(pasted);
+			cx = ctr_x - (bbox.x + bbox.width/2);
+			cy = ctr_y - (bbox.y + bbox.height/2);
+		}
 		$.each(pasted, function(i, item) {
 			dx.push(cx);
 			dy.push(cy);
@@ -7809,6 +7813,28 @@ this.cycleElement = function(next) {
 };
 
 this.clear();
+
+// Function elementAreSame
+// Checks if all the selected Elements are the same type
+//
+// Parameters:
+// None
+
+this.elementsAreSame = function(elements) {
+	if (!elements.length || elements[0] == null) return null
+	else {
+		var isSameElement = function(el) {
+			if (el && selectedElements[0])
+				return (el.nodeName == selectedElements[0].nodeName);
+			else return null;
+		}
+		return selectedElements.every(isSameElement);
+	}
+};
+
+	this.clearPathActions = function(remove){
+		pathActions.clear(remove)
+	}
 
 
 // DEPRECATED: getPrivateMethods 

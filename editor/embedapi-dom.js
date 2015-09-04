@@ -36,7 +36,7 @@ $(function () {'use strict';
     }
     
     function exportPNG() {
-        var str = frame.contentWindow.svgEditor.uiStrings.notification.loadingImage;
+        var str = frame.contentWindow.methodDraw.uiStrings.notification.loadingImage;
 
         var exportWindow = window.open(
             'data:text/html;charset=utf-8,' + encodeURIComponent('<title>' + str + '</title><h1>' + str + '</h1>'),
@@ -46,7 +46,7 @@ $(function () {'use strict';
     }
     
     function exportPDF() {
-        var str = frame.contentWindow.svgEditor.uiStrings.notification.loadingImage;
+        var str = frame.contentWindow.methodDraw.uiStrings.notification.loadingImage;
         
 		/**
         // If you want to handle the PDF blob yourself, do as follows

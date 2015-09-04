@@ -1,0 +1,72 @@
+#menu-buttons {
+    padding: 0 0 0 50px;
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    right:20%;
+}
+
+
+
+button {
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 14px;
+    border: none;
+    font: 16px/120% 'Source Sans Pro', sans-serif;
+    position: relative;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.bg-color-discard {
+    background: #88332D;
+}
+
+.bg-color-save {
+    background: #3E6985;
+}
+
+.bg-color-save-close {
+    background: #0073C3;
+}
+
+.color-picker-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid;
+    border-width: 2px;
+    margin: 15px auto 10px auto;
+}
+
+.color-picker-btn.color-selected {
+    box-shadow: 0 0 0 2px white;
+}
+
+.color-picker-btn:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2F84C1;
+    cursor: pointer;
+}
+
+.zoom_menu_item {
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 10px;
+    z-index: 10;
+    color: #fff;
+    position: relative;
+    height: 16px;
+    vertical-align: top;
+}
+
+.menu .zoom_menu_item:hover {
+    background: rgba(255,255,255,0.1);
+}

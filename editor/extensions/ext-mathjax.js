@@ -1,4 +1,4 @@
-/*globals MathJax, svgEditor, svgCanvas, $*/
+/*globals MathJax, methodDraw, svgCanvas, $*/
 /*jslint es5: true, todo: true, vars: true*/
 /*
  * ext-mathjax.js
@@ -9,7 +9,7 @@
  *
  */
 
-svgEditor.addExtension("mathjax", function() {'use strict';
+methodDraw.addExtension("mathjax", function() {'use strict';
   // Configuration of the MathJax extention.
 
   // This will be added to the head tag before MathJax is loaded.
@@ -41,7 +41,7 @@ svgEditor.addExtension("mathjax", function() {'use strict';
     locationX,
     locationY,
     mathjaxLoaded = false,
-    uiStrings = svgEditor.uiStrings;
+    uiStrings = methodDraw.uiStrings;
 
   // TODO: Implement language support. Move these uiStrings to the locale files and the code to the langReady callback.
   $.extend(uiStrings, {
@@ -116,7 +116,7 @@ svgEditor.addExtension("mathjax", function() {'use strict';
 
   return {
     name: "MathJax",
-    svgicons: svgEditor.curConfig.extPath + "mathjax-icons.xml",
+    svgicons: methodDraw.curConfig.extPath + "mathjax-icons.xml",
     buttons: [{
         id: "tool_mathjax",
         type: "mode",

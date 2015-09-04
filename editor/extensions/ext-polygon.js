@@ -1,4 +1,4 @@
-/*globals svgEditor, svgCanvas, svgedit, $*/
+/*globals methodDraw, svgCanvas, svgedit, $*/
 /*jslint vars: true, eqeq: true, todo: true */
 /*
  * ext-polygon.js
@@ -8,7 +8,7 @@
  * All rights reserved
  *
  */
-svgEditor.addExtension("polygon", function(S) {'use strict';
+methodDraw.addExtension("polygon", function(S) {'use strict';
 
     var // NS = svgedit.NS,
 		// svgcontent = S.svgcontent,
@@ -113,7 +113,7 @@ svgEditor.addExtension("polygon", function(S) {'use strict';
 	*/
     return {
         name: "polygon",
-        svgicons: svgEditor.curConfig.extPath + "polygon-icons.svg",
+        svgicons: methodDraw.curConfig.extPath + "polygon-icons.svg",
         buttons: [{
             id: "tool_polygon",
             type: "mode",

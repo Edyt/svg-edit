@@ -1,4 +1,4 @@
-/*globals $, svgEditor*/
+/*globals $, methodDraw*/
 /*jslint vars: true, eqeq: true*/
 /**
  * Package: svgedit.contextmenu
@@ -53,7 +53,7 @@ var svgedit = svgedit || {};
 	};
 	// Defer injection to wait out initial menu processing. This probably goes away once all context
 	// menu behavior is brought here.
-	svgEditor.ready(function() {
+	methodDraw.ready(function() {
 		var menuItem;
 		for (menuItem in contextMenuExtensions) {
 			injectExtendedContextMenuItemIntoDom(contextMenuExtensions[menuItem]);

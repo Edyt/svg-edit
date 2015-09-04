@@ -1,5 +1,5 @@
 // EXTENSION CONFIG
-svgEditor.setConfig({
+methodDraw.setConfig({
 	extensions: [
 		'ext-panning.js'
 		// 'ext-overview_window.js', 'ext-markers.js', 'ext-connector.js', 'ext-eyedropper.js', 'ext-shapes.js', 'ext-imagelib.js', 'ext-grid.js', 'ext-polygon.js', 'ext-star.js', 'ext-storage.js'
@@ -11,7 +11,7 @@ svgEditor.setConfig({
 });
 
 // OTHER CONFIG
-svgEditor.setConfig({	
+methodDraw.setConfig({
 	// canvasName: 'default',
 	// canvas_expansion: 3,
 	// initFill: {
@@ -72,7 +72,7 @@ As with configuration, one may use allowInitialUserOverride, but
   Failing to use allowInitialUserOverride will ensure preferences
   are hard-coded here regardless of URL or prior user storage setting.
 */
-svgEditor.setConfig(
+methodDraw.setConfig(
 	{
 		// lang: '', // Set dynamically within locale.js if not previously set
 		// iconsize: '', // Will default to 's' if the window height is smaller than the minimum height and 'm' otherwise
