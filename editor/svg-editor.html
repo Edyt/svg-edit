@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/method-draw.css" type="text/css"/>
 	<link rel="stylesheet" href="spinbtn/JQuerySpinBtn.css" type="text/css"/>
 	<link rel="stylesheet" href="css/custom.css" type="text/css"/>
+	<link rel="stylesheet" href="css/new-sketch-dialog.css" type="text/css"/>
 
 	<!--<!{endif}&ndash;&gt;-->
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
@@ -254,13 +255,15 @@
 	</select>
 </div>
 
-<div id="dialog_box">
+<div id="dialog_box" class="dialog">
 	<div id="dialog_box_overlay"></div>
 	<div id="dialog_container">
+		<div id="dialog_header"></div>
 		<div id="dialog_content"></div>
-		<div id="dialog_buttons"></div>
+		<div id="dialog_buttons" class="dialog__buttons"></div>
 	</div>
 </div>
+
 
 <ul id="cmenu_canvas" class="contextMenu">
 	<li><a href="#cut">Cut <span class="shortcut">⌘X;</span></a></li>

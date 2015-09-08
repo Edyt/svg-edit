@@ -1,0 +1,64 @@
+.dialog {
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  border: 1px solid #CFCFCF;
+  box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 15px;
+}
+
+.dialog__header {
+  color: #0C6366;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 10px 5px 10px;
+}
+
+.dialog__buttons {
+  display: block;
+  /*margin: 20px 0 0 0;*/
+  padding: 0;
+}
+
+.dialog p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 12px 0;
+  max-width: 300px;
+}
+
+.button {
+  background-color: #0B58AB;
+  border-radius: 2px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 5px;
+  padding: 6px 10px;
+  transition: all 0.05s ease-in;
+}
+
+.button--primary {
+  background-color: #016366;
+}
+
+.button--primary:hover {
+  background-color: #3D8183;
+}
+
+.button--secondary {
+  background-color: #87ACAC;
+}
+
+.button--secondary:hover {
+  background-color: #3D8183;
+}
+
+.button--cancel {
+  background-color: #7C8489;
+  margin-left: 10px;
+}
+
+.button--cancel:hover {
+  background-color: #4F5559;
+}
