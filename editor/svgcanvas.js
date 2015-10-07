@@ -1263,8 +1263,8 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		bSpline = {x:0, y:0},
 		nextPos = {x:0, y:0},
 		THRESHOLD_DIST = 0.8,
-		STEP_COUNT = 10,
-		lastMouseMoveEvt;
+		STEP_COUNT = 10;
+		;
 
 	var getBsplinePoint = function(t) {
 		var spline = {x:0, y:0},
@@ -2468,23 +2468,35 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		return false;
 	};
 
-	var storeMouseMoveEvt = function(evt){
-		lastMouseMoveEvt = evt;
-	}
-
-	var fireMouseMoveOnShiftDown = function(keyEvt){
-		if(keyEvt.shiftKey){
-			lastMouseMoveEvt.shiftKey = true;
-			mouseMove(lastMouseMoveEvt);
+	var shiftKeyHandler = function(){
+		var SHIFT_KEY_CODE = 16;
+		var shiftKeyDown, lastMouseMoveEvt;
+		return {
+			keydown: function(keyEvt){
+				if(keyEvt.keyCode === SHIFT_KEY_CODE){
+					if(!shiftKeyDown){
+						shiftKeyDown = true;
+						lastMouseMoveEvt.shiftKey = true;
+						mouseMove(lastMouseMoveEvt);
+					}
+				}
+			},
+			keyup: function(keyEvt){
+				if(keyEvt.keyCode === SHIFT_KEY_CODE){
+					shiftKeyDown = false;
+				}
+			},
+			storeMouseMoveEvt: function(mouseMoveEvt){
+				lastMouseMoveEvt = mouseMoveEvt;
+			}
 		}
-	}
+	}();
+
+	$(window).keydown(shiftKeyHandler.keydown).keyup(shiftKeyHandler.keyup);
 
 	$(container)
 		.click(handleLinkInCanvas)
-		.dblclick(dblClick)
-		.mousemove(storeMouseMoveEvt);
-
-	$(window).keydown(fireMouseMoveOnShiftDown);
+		.dblclick(dblClick);
 
 	if(window.PointerEvent){
 		//jquery is too old, and it does not support pointer events
@@ -2495,9 +2507,10 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		});
 		container.addEventListener('pointerdown', mouseDown);
 		container.addEventListener('pointermove', mouseMove);
+		container.addEventListener('pointermove', shiftKeyHandler.storeMouseMoveEvt);
 		container.addEventListener('pointerup', mouseUp);
 	}else{
-		$(container).mousedown(mouseDown).mousemove(mouseMove).mouseup(mouseUp);
+		$(container).mousedown(mouseDown).mousemove(mouseMove).mousemove(shiftKeyHandler.storeMouseMoveEvt).mouseup(mouseUp);
 	}
 	// TODO(codedread): Figure out why after the Closure compiler, the window mouseup is ignored.
 //	$(window).mouseup(mouseUp);
