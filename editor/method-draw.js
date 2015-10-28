@@ -3113,7 +3113,7 @@
 							window.methodDraw.parent.save();
 							window.methodDraw.parent.hide();
 						} else {
-							console.log("no iframe");
+							console.log("no iframe o.O");
 							editingsource ? saveSourceEditor() : clickSave()
 						}
 					},
