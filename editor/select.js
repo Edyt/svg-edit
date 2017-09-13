@@ -389,7 +389,7 @@ svgedit.select.SelectorManager.prototype.initGroup = function() {
 		}
 	});
 
-	var rect = svgFactory_.createSVGElement({
+	/*var rect = svgFactory_.createSVGElement({
 		'element': 'rect',
 		'attr': {
 			'width': '100%',
@@ -406,7 +406,7 @@ svgedit.select.SelectorManager.prototype.initGroup = function() {
 	// Both Firefox and WebKit are too slow with this filter region (especially at higher
 	// zoom levels) and Opera has at least one bug
 //	if (!svgedit.browser.isOpera()) rect.setAttribute('filter', 'url(#canvashadow)');
-	canvasbg.appendChild(rect);
+	canvasbg.appendChild(rect);*/
 	svgFactory_.svgRoot().insertBefore(canvasbg, svgFactory_.svgContent());
 };
 

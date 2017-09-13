@@ -1351,8 +1351,8 @@
 			}
 
 			// create a new layer background if it doesn't exist
-			if (!document.getElementById('canvas_background')) createBackground();
-			var fill = document.getElementById('canvas_background').getAttribute("fill");
+			//if (!document.getElementById('canvas_background')) createBackground();
+			//var fill = document.getElementById('canvas_background').getAttribute("fill");
 
 			var setImageURL = Editor.setImageURL = function(url) {
 				if(!url) url = default_img_url;
@@ -3647,7 +3647,7 @@
 				//if(w == w_orig && h == h_orig) {
 				//	workarea.css('overflow','hidden');
 				//} else {
-				workarea.css('overflow','scroll');
+				//workarea.css('overflow','scroll');
 				//}
 
 				var old_can_y = cnvs.height()/2;
