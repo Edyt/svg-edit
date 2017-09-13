@@ -2997,7 +2997,7 @@ pathActions = canvas.pathActions = function() {
 	// This function converts a polyline (created by the fh_path tool) into
 	// a path element and coverts every three line segments into a single bezier
 	// curve in an attempt to smooth out the free-hand
-	var smoothPolylineIntoPath = function(element) {
+	var smoothPolylineIntoPath_old = function(element) {
 		var i, points = element.points;
 		var N = points.numberOfItems;
 		if (N >= 4) {
@@ -3063,6 +3063,49 @@ pathActions = canvas.pathActions = function() {
 		}
 		return element;
 	};
+
+  var smoothPolylineIntoPath = function(element) {
+        var points = element.points;
+        var N = points.numberOfItems;
+        if (N >= 3) {
+          var d = [];
+          var curpos = points.getItem(0);
+          d.push(['M', curpos.x, ',', curpos.y].join(''));
+          var prevpos = curpos;
+          curpos = points.getItem(1);
+          //var relcurpos = {x: curpos.x - prevpos.x, y: curpos.y - prevpos.y};
+          var i = 2, xc, yc;
+          while (i<N) {
+            prevpos = curpos;
+            curpos = points.getItem(i);
+            if (i === N - 1){
+              xc = curpos.x;
+              yc = curpos.y;
+            } else {
+              xc = (prevpos.x + curpos.x) >> 1;
+              yc = (prevpos.y + curpos.y) >> 1;
+            }
+            d.push('Q' + prevpos.x + ',' + prevpos.y + ' ' + xc + ',' + yc);
+            d.push('M' + xc + ',' + yc);
+            i++;
+          }
+          d.pop(); //last moveto is not needed
+          d = d.join(' ');
+
+          // create new path element
+          element = addSvgElementFromJson({
+            element: 'path',
+            curStyles: true,
+            attr: {
+              id: getId(),
+              d: d,
+              fill: 'none'
+            }
+          });
+          console.log('element, ', element);
+        }
+        return element;
+  };
 
 	$(window).keyup(function(keyEvt){
 		// ESC pressed
