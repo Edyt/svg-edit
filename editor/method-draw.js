@@ -1674,7 +1674,7 @@
 				}
 
 				var start_pan = function(evt) {
-					if(evt.button === 1 || keypan === true || (evt.originalEvent.touches && evt.originalEvent.touches.length >= 2)) {
+					if(evt.button === 1 || keypan === true || (evt.touches && evt.touches.length >= 2)) {
 						panning = true;
 						last_x = evt.clientX;
 						last_y = evt.clientY;
@@ -1682,9 +1682,16 @@
 					}
 				}
 
-				$('#svgcanvas')
+        var svgcanvas = document.getElementById('svgcanvas');
+        svgcanvas.addEventListener('mousemove', move_pan);
+        svgcanvas.addEventListener('mouseup', move_pan);
+        svgcanvas.addEventListener('touchend', move_pan);
+        svgcanvas.addEventListener('mousedown', start_pan);
+        svgcanvas.addEventListener('touchmove', start_pan);
+
+				/*$('#svgcanvas')
 					.on('mousemove mouseup touchend', move_pan)
-					.on("mousedown touchmove", start_pan)
+					.on("mousedown touchmove", start_pan)*/
 
 				$(window).mouseup(function() {
 					panning = false;
@@ -3471,8 +3478,9 @@
 					}
 
 				});
-			$(window).mousedown(function(evt){
-				updateContextPanel();
+
+      window.addEventListener('mousedown', function(evt){
+				//updateContextPanel();
 				$('.contextMenu').hide();
 			});
 

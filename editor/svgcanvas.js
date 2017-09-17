@@ -1239,6 +1239,7 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	return mouse_target;
 };
 
+var mouseEvents = {};
 // Mouse events
 (function() {
 	var d_attr = null,
@@ -2004,6 +2005,12 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 //				shape.setAttributeNS(null, 'points', d_attr);
 				end.x = real_x; end.y = real_y;
 				nextPos = null;
+
+        var point = svgroot.createSVGPoint();
+        point.x = real_x;
+        point.y = real_y;
+        shape.points.appendItem(point);
+        /*
 				if (controllPoint2.x && controllPoint2.y) {
 					for (i = 0; i < STEP_COUNT - 1; i++) {
 						parameter = i / STEP_COUNT;
@@ -2019,7 +2026,7 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 							sumDistance -= THRESHOLD_DIST;
 						}
 					}
-				}
+				}*/
 				controllPoint2 = {x:controllPoint1.x, y:controllPoint1.y};
 				controllPoint1 = {x:start.x, y:start.y};
 				start = {x:end.x, y:end.y};
@@ -2479,12 +2486,11 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		}
 	}
 
-	$(container)
-		.click(handleLinkInCanvas)
-		.dblclick(dblClick)
-		.mousemove(storeMouseMoveEvt);
+  container.addEventListener('click', handleLinkInCanvas);
+  container.addEventListener('dblclick', dblClick);
+  container.addEventListener('mousemove', storeMouseMoveEvt);
 
-	$(window).keydown(fireMouseMoveOnShiftDown);
+  window.addEventListener('keydown', fireMouseMoveOnShiftDown);
 
 	if(window.PointerEvent){
 		//jquery is too old, and it does not support pointer events
@@ -2497,7 +2503,9 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 		container.addEventListener('pointermove', mouseMove);
 		container.addEventListener('pointerup', mouseUp);
 	}else{
-		$(container).mousedown(mouseDown).mousemove(mouseMove).mouseup(mouseUp);
+    container.addEventListener('mousedown', mouseDown);
+    container.addEventListener('mouseup', mouseUp);
+    container.addEventListener('mousemove', mouseMove);
 	}
 	// TODO(codedread): Figure out why after the Closure compiler, the window mouseup is ignored.
 //	$(window).mouseup(mouseUp);
