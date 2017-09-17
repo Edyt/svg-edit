@@ -2118,7 +2118,7 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 	// - in move/resize mode, the element's attributes which were affected by the move/resize are
 	// identified, a ChangeElementCommand is created and stored on the stack for those attrs
 	// this is done in when we recalculate the selected dimensions()
-	var mouseUp = function(evt) {
+	var mouseUp = mouseEvents.up = function(evt) {
 		canvas.addClones = false;
 		window.removeEventListener("keyup", canvas.removeClones)
 		selectedElements = selectedElements.filter(Boolean);
@@ -3102,7 +3102,6 @@ pathActions = canvas.pathActions = function() {
               fill: 'none'
             }
           });
-          console.log('element, ', element);
         }
         return element;
   };
@@ -5887,6 +5886,135 @@ this.setMode = function(name) {
 	$("#workarea").attr("class", name);
 	cur_properties = (selectedElements[0] && selectedElements[0].nodeName == 'text') ? cur_text : cur_shape;
 	current_mode = name;
+  this._showCanvas(name === 'fhpath');
+};
+
+this._showCanvas = function(show){
+  var workarea = document.getElementById('workarea');
+  var canvas = workarea.querySelector('canvas');
+  if (show) {
+    if (!canvas) {
+      canvas = document.createElement('canvas');
+      canvas.width = dimensions[0];
+      canvas.height = dimensions[1];
+      var ctx = canvas.getContext("2d");
+      var isMouseDown = false;
+      var points = [];
+      var canvasMouseDown = function(evt) {
+        var x = evt.pageX, y = evt.pageY;
+        var p = 0; //pressure
+        if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
+          p = evt.touches[0].force;
+        }
+        points.push({x, y, p});
+        ctx.lineWidth = parseInt(cur_shape.stroke_width);
+        ctx.strokeStyle = cur_shape.stroke;
+        ctx.lineCap = cur_shape.stroke_linecap;
+        ctx.lineJoin = cur_shape.stroke_linejion;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        isMouseDown = true;
+      };
+      var canvasMouseMove = function(evt) {
+        if (!isMouseDown) {
+          return;
+        }
+        var x = evt.pageX, y = evt.pageY;
+        var p = 0; //pressure
+        if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
+          p = evt.touches[0].force;
+        }
+        points.push({x, y, p});
+        if (points.length >= 3) {
+          var lastpoint = points[points.length - 1];
+          var secondlast = points[points.length - 2];
+          var xc = (lastpoint.x + secondlast.x) / 2;
+          var yc = (lastpoint.y + secondlast.y) / 2;
+          /*ctx.lineWidth = cur_shape.stroke_width;
+          ctx.strokeStyle = cur_shape.stroke;
+          ctx.lineCap = cur_shape.stroke_linecap;
+          ctx.lineJoin = cur_shape.stroke_linejion;*/
+          ctx.quadraticCurveTo(secondlast.x, secondlast.y, xc, yc);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(xc, yc);
+        }
+        evt.preventDefault()
+      };
+      var canvasMouseUp = function(evt) {
+        isMouseDown = false;
+        var x = evt.pageX, y = evt.pageY;
+        var p = 0; //pressure
+        if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
+          p = evt.touches[0].force;
+        }
+        if (points.length >= 3) {
+          var lastpoint = points[points.length - 1];
+          /*ctx.lineWidth = cur_shape.stroke_width;
+          ctx.strokeStyle = cur_shape.stroke;
+          ctx.lineCap = cur_shape.stroke_linecap;
+          ctx.lineJoin = cur_shape.stroke_linejion;*/
+          ctx.quadraticCurveTo(lastpoint.x, lastpoint.y, x, y);
+          ctx.stroke();
+        }
+        points.push({x, y, p});
+        
+        var shapeid = getNextId();
+
+        var starttime = +new Date();
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        var element;
+        if (points.length < 3) {
+          element = addSvgElementFromJson({
+            element: 'polyline',
+            curStyles: true,
+            attr: {
+              points: points.map(function(p){return p.x + ',' + p.y}).join(' '),
+              id: shapeid,
+              fill: 'none',
+              //opacity: cur_shape.opacity / 2,
+              'stroke-linecap': 'round',
+              style: 'pointer-events:none'
+            }
+          });
+        } else {
+          var pointsWrapper = {points: points, getItem: function(i){
+            return this.points[i];
+          }, numberOfItems: points.length};
+          element = pathActions.smoothPolylineIntoPath({points: pointsWrapper});
+        }
+        points = [];
+
+        //TODO: figure out how this was removed when a shape is finished
+        element.removeAttribute('opacity');
+
+        //record the new element in undo stack
+        mouseEvents.up(evt);
+
+        var endtime = +new Date();
+        console.log(endtime-starttime,'ms');
+
+
+      };
+      workarea.appendChild(canvas);
+      var eventMap = [{evts: ['touchstart', 'mousedown'], h: canvasMouseDown},
+        {evts: ['touchmove', 'mousemove'], h: canvasMouseMove},
+        {evts: ['touchend', 'touchleave', 'mouseup'], h: canvasMouseUp}];
+      eventMap.forEach(function(o){
+        o.evts.forEach(function(evtname){
+          canvas.addEventListener(evtname, o.h);
+        });
+      });
+    }
+    canvas.style.display = "";
+  } else if (canvas){
+    if (canvas.style.display !== "none") {
+      var ctx = canvas.getContext("2d");
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      canvas.style.display = "none";
+    }
+  }
 };
 
 // Group: Element Styling
