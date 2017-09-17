@@ -196,7 +196,9 @@ html, body {
 	vertical-align: middle;
 	width: 640px;
 	height: 480px;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 #rulers > div {
