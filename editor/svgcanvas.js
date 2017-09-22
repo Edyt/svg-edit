@@ -5897,6 +5897,21 @@ this.setMode = function(name) {
   this._showCanvas(name === 'fhpath');
 };
 
+function pressureToLineWidth(p, lineWidth){
+  return Math.max(1, Math.log(p + 1) * 5 * 0.4 + 0.6 * lineWidth);
+}
+
+function getPressure(evt){
+    var p = 0; //pressure
+    if(!isNaN(evt.pressure)){
+      p = evt.pressure;
+    } else if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
+      p = evt.touches[0].force;
+    //} else {
+    //  p = Math.random();
+    }
+    return p;
+}
 this._showCanvas = function(show){
   var workarea = document.getElementById('workarea');
   var canvas = workarea.querySelector('canvas');
@@ -5908,12 +5923,11 @@ this._showCanvas = function(show){
       var ctx = canvas.getContext("2d");
       var isMouseDown = false;
       var points = [];
+      var lineWidth = 0;
       var canvasMouseDown = function(evt) {
         var x = evt.pageX, y = evt.pageY;
-        var p = 0; //pressure
-        if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
-          p = evt.touches[0].force;
-        }
+        var p = getPressure(evt);
+        //console.log('mousedown', p, evt.pressure, evt.type);
         points.push({x, y, p});
         ctx.lineWidth = parseInt(cur_shape.stroke_width);
         ctx.strokeStyle = cur_shape.stroke;
@@ -5928,18 +5942,18 @@ this._showCanvas = function(show){
           return;
         }
         var x = evt.pageX, y = evt.pageY;
-        var p = 0; //pressure
-        if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
-          p = evt.touches[0].force;
-        }
+        var p = getPressure(evt);
         points.push({x, y, p});
         if (points.length >= 3) {
           var lastpoint = points[points.length - 1];
           var secondlast = points[points.length - 2];
           var xc = (lastpoint.x + secondlast.x) / 2;
           var yc = (lastpoint.y + secondlast.y) / 2;
-          /*ctx.lineWidth = cur_shape.stroke_width;
-          ctx.strokeStyle = cur_shape.stroke;
+          if(p) {
+            ctx.lineWidth = lineWidth = pressureToLineWidth(p, lineWidth);
+            points[points.length - 1].lw = lineWidth;
+          }
+          /*ctx.strokeStyle = cur_shape.stroke;
           ctx.lineCap = cur_shape.stroke_linecap;
           ctx.lineJoin = cur_shape.stroke_linejion;*/
           ctx.quadraticCurveTo(secondlast.x, secondlast.y, xc, yc);
@@ -5952,9 +5966,9 @@ this._showCanvas = function(show){
       var canvasMouseUp = function(evt) {
         isMouseDown = false;
         var x = evt.pageX, y = evt.pageY;
-        var p = 0; //pressure
-        if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
-          p = evt.touches[0].force;
+        var p = getPressure(evt);
+        if(p) {
+          ctx.lineWidth = lineWidth = pressureToLineWidth(p, lineWidth);
         }
         if (points.length >= 3) {
           var lastpoint = points[points.length - 1];
@@ -5965,7 +5979,9 @@ this._showCanvas = function(show){
           ctx.quadraticCurveTo(lastpoint.x, lastpoint.y, x, y);
           ctx.stroke();
         }
-        points.push({x, y, p});
+        points.push({x, y, p, lw: lineWidth});
+
+        lineWidth = 0;
         
         var shapeid = getNextId();
 
@@ -6006,9 +6022,9 @@ this._showCanvas = function(show){
 
       };
       workarea.appendChild(canvas);
-      var eventMap = [{evts: ['touchstart', 'mousedown'], h: canvasMouseDown},
-        {evts: ['touchmove', 'mousemove'], h: canvasMouseMove},
-        {evts: ['touchend', 'touchleave', 'mouseup'], h: canvasMouseUp}];
+      var eventMap = [{evts: ['touchstart', 'pointerdown', 'mousedown'], h: canvasMouseDown},
+        {evts: ['touchmove', 'pointermove', 'mousemove'], h: canvasMouseMove},
+        {evts: ['touchend', 'touchleave', 'pointercancel', 'pointerup', 'mouseup'], h: canvasMouseUp}];
       eventMap.forEach(function(o){
         o.evts.forEach(function(evtname){
           canvas.addEventListener(evtname, o.h);
