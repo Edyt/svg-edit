@@ -1318,7 +1318,8 @@ var mouseEvents = {};
 		if (evt.altKey) { // duplicate when dragging
 			svgCanvas.cloneSelectedElements(0, 0);
 		}
-		root_sctm = $('#svgcontent g')[0].getScreenCTM().inverse();
+		//root_sctm = $('#svgcontent g')[0].getScreenCTM().inverse();
+    root_sctm = this.lastChild.getScreenCTM().inverse();
 		
 		var pt = svgedit.math.transformPoint( evt.pageX, evt.pageY, root_sctm ),
 			mouse_x = pt.x * current_zoom,
@@ -1513,16 +1514,17 @@ var mouseEvents = {};
 			case 'fhpath':
 				start.x = real_x;
 				start.y = real_y;
-				started = true;
-				d_attr = real_x + ',' + real_y + ' ';
-				stroke_w = cur_shape.stroke_width == 0 ? 1 : cur_shape.stroke_width;
+				started = {points: [{x: real_x, y: real_y}], lw: 0};
+				//d_attr = real_x + ',' + real_y + ' ';
+				//stroke_w = !cur_shape.stroke_width ? 1 : cur_shape.stroke_width;
 				addSvgElementFromJson({
-					element: 'polyline',
-					curStyles: true,
+					//element: 'polyline',
+					element: 'g',
+					//curStyles: true,
 					attr: {
-						points: d_attr,
 						id: getNextId(),
-						fill: 'none',
+						//points: d_attr,
+						//fill: 'none',
 						//opacity: cur_shape.opacity / 2,
 						'stroke-linecap': 'round',
 						style: 'pointer-events:none'
@@ -2006,12 +2008,43 @@ var mouseEvents = {};
 				end.x = real_x; end.y = real_y;
 				nextPos = null;
 
-        var point = svgroot.createSVGPoint();
+        var p = getPressure(evt);
+        var points = started.points;
+        var lw = p ? Math.round(pressureToLineWidth(p, started.lw)) : parseInt(cur_shape.stroke_width);
+        points.push({x: real_x, y: real_y, p, lw});
+        var lc = shape.lastChild;
+        var newpath;
+        while (points.length >= 3){
+          c = ['M' + points[0].x + ',' + points[0].y];
+
+          var thirdpoint = points[2];
+          var secondpoint = points[1];
+          var xc = (thirdpoint.x + secondpoint.x) / 2;
+          var yc = (thirdpoint.y + secondpoint.y) / 2;
+          c.push('Q' + secondpoint.x + ',' + secondpoint.y + ' ' + xc + ',' + yc);
+          c = c.join(' ');
+          lw = thirdpoint.lw;
+          if(lw === started.lw && lc) {
+            lc.setAttribute('d', lc.getAttribute('d') + ' ' + c);
+          }else{
+            newpath = document.createElementNS(NS.SVG, 'path');
+            newpath.setAttribute('d', c);
+            newpath.setAttribute('stroke', cur_shape.stroke);
+            newpath.setAttribute('stroke-width', lw+'px');
+            shape.appendChild(newpath);
+          }
+          secondpoint.x = xc;
+          secondpoint.y = yc;
+          points.shift();
+        }
+        started.lw = lw;
+
+        /*var point = svgroot.createSVGPoint();
         point.x = real_x;
         point.y = real_y;
         shape.points.appendItem(point);
-        /*
-				if (controllPoint2.x && controllPoint2.y) {
+        */
+				/*if (controllPoint2.x && controllPoint2.y) {
 					for (i = 0; i < STEP_COUNT - 1; i++) {
 						parameter = i / STEP_COUNT;
 						nextParameter = (i + 1) / STEP_COUNT;
@@ -2148,6 +2181,7 @@ var mouseEvents = {};
 
 		// TODO: Make true when in multi-unit mode
 		var useUnit = false; // (curConfig.baseUnit !== 'px');
+    var oldstarted = started;
 		started = false;
 		var attrs, t;
 		switch (current_mode) {
@@ -2238,7 +2272,29 @@ var mouseEvents = {};
 				start = {x:0, y:0};
 				end = {x:0, y:0};
 
-				keep = element.points.numberOfItems > 1;
+        var newelement;
+        keep = true;
+        var childcount = element.childNodes.length;
+        if (!childcount){
+          //1 or 2 points in a path, just use a polyline
+          newelement = document.createElementNS(NS.SVG, 'polyline');
+          var points = oldstarted.points;
+          if(points.length === 1){
+            points.push({x: points[0].x+1, y: points[0].y});
+          }
+          newelement.setAttribute('points', points.map(function(p){return p.x+','+p.y}).join( ));
+          newelement.setAttribute('stroke', cur_shape.stroke);
+        } else if(childcount === 1) {
+          newelement = element.firstChild;
+        }
+        if(newelement){
+          newelement.setAttribute('stroke-linecap', cur_shape.stroke_linecap);
+          newelement.id = element.id;
+          newelement.style.pointerEvents = 'none';
+          element.parentNode.replaceChild(newelement, element);
+          element = newelement;
+        }
+				/*keep = element.points.numberOfItems > 1;
 				//if only a single point, add another point to make a dot show up
 				if(!keep){
 					keep = true;
@@ -2250,7 +2306,7 @@ var mouseEvents = {};
 				}
 				if (keep) {
 					element = pathActions.smoothPolylineIntoPath(element);
-				}
+				}*/
 				break;
 			case 'line':
 				attrs = $(element).attr(['x1', 'x2', 'y1', 'y2']);
@@ -3078,14 +3134,19 @@ pathActions = canvas.pathActions = function() {
         if (N >= 3) {
           var d = [];
           var curpos = points.getItem(0);
-          d.push(['M', curpos.x, ',', curpos.y].join(''));
           var prevpos = curpos;
           curpos = points.getItem(1);
           //var relcurpos = {x: curpos.x - prevpos.x, y: curpos.y - prevpos.y};
-          var i = 2, xc, yc;
+          var i = 2, xc = curpos.x, yc = curpos.y;
+          var paths = [];
           while (i<N) {
             prevpos = curpos;
             curpos = points.getItem(i);
+            if (d.length && Math.round(prevpos.lw) !== Math.round(curpos.lw) && curpos.lw) {
+              paths.push({d: d.join(' '), lw: curpos.lw});
+              d = [];
+            }
+            d.push('M' + xc + ',' + yc);
             if (i === N - 1){
               xc = curpos.x;
               yc = curpos.y;
@@ -3094,22 +3155,38 @@ pathActions = canvas.pathActions = function() {
               yc = (prevpos.y + curpos.y) >> 1;
             }
             d.push('Q' + prevpos.x + ',' + prevpos.y + ' ' + xc + ',' + yc);
-            d.push('M' + xc + ',' + yc);
             i++;
           }
-          d.pop(); //last moveto is not needed
           d = d.join(' ');
-
-          // create new path element
-          element = addSvgElementFromJson({
-            element: 'path',
-            curStyles: true,
-            attr: {
-              id: getId(),
-              d: d,
-              fill: 'none'
-            }
-          });
+          if (paths.length) {
+            paths.push({d, lw:curpos.lw});
+            element = addSvgElementFromJson({
+              element: 'g',
+              attr: {
+                id: getId(),
+                'stroke': cur_shape.stroke,
+                'stroke-linejoin': cur_shape.stroke_linejoin,
+                'stroke-linecap': cur_shape.stroke_linecap,
+                'stroke-dasharray': cur_shape.stroke_dasharray}});
+            paths.forEach(function(p){
+              var path = document.createElementNS(NS.SVG, 'path');
+              path.setAttribute('d', p.d);
+              path.setAttribute('stroke-width', Math.round(p.lw)+'px');
+              //path.setAttribute('stroke-opacity', cur_shape.stroke_opacity);
+              element.appendChild(path);
+            });
+          } else {
+            // create new path element
+            element = addSvgElementFromJson({
+              element: 'path',
+              curStyles: true,
+              attr: {
+                id: getId(),
+                d: d,
+                fill: 'none'
+              }
+            });
+          }
         }
         return element;
   };
@@ -5894,7 +5971,7 @@ this.setMode = function(name) {
 	$("#workarea").attr("class", name);
 	cur_properties = (selectedElements[0] && selectedElements[0].nodeName == 'text') ? cur_text : cur_shape;
 	current_mode = name;
-  this._showCanvas(name === 'fhpath');
+  //this._showCanvas(name === 'fhpath');
 };
 
 function pressureToLineWidth(p, lineWidth){
