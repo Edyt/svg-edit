@@ -2127,7 +2127,7 @@ var mouseEvents = {};
 	// this is done in when we recalculate the selected dimensions()
 	var mouseUp = mouseEvents.up = function(evt) {
 		canvas.addClones = false;
-		window.removeEventListener("keyup", canvas.removeClones)
+		//window.removeEventListener("keyup", canvas.removeClones)
 		selectedElements = selectedElements.filter(Boolean);
 
 

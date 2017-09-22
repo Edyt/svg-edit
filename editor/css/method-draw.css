@@ -64,7 +64,7 @@ html, body {
   padding: 0 0 10px 50px;
 	background: #2f2f2c;
 	position: relative;
-	z-index: 2;
+	z-index: 4;
      width: 100%;
 }
 
@@ -562,9 +562,9 @@ div#workarea canvas {
 	height: 100%;
 	z-index: 3;
 }
-.touch  div#workarea {
+/*.touch  div#workarea {
 	top: 40px;
-}
+}*/
 
  .menu .menu_list {
   display: none;

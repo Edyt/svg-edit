@@ -30,7 +30,7 @@ $(function () {
     function preselectColor(){
         var preselectedIdx = COLORS.indexOf(PRESELECTED);
         methodDraw.setConfig({
-            initStroke: {width: '3px', color: PRESELECTED.replace("#", ""), opacity: 1},
+            initStroke: {width: '1px', color: PRESELECTED.replace("#", ""), opacity: 1},
             initFill: {color: PRESELECTED.replace("#", ""), opacity: FILL_OPACITY}});
         colorPicker.find(".color-picker-btn").eq(preselectedIdx).addClass("color-selected");
     }
