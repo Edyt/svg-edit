@@ -3159,7 +3159,7 @@ pathActions = canvas.pathActions = function() {
           }
           d = d.join(' ');
           if (paths.length) {
-            paths.push({d, lw:curpos.lw});
+            paths.push({d:d, lw:curpos.lw});
             element = addSvgElementFromJson({
               element: 'g',
               attr: {
@@ -6005,7 +6005,7 @@ this._showCanvas = function(show){
         var x = evt.pageX, y = evt.pageY;
         var p = getPressure(evt);
         //console.log('mousedown', p, evt.pressure, evt.type);
-        points.push({x, y, p});
+        points.push({x:x, y:y, p:p});
         ctx.lineWidth = parseInt(cur_shape.stroke_width);
         ctx.strokeStyle = cur_shape.stroke;
         ctx.lineCap = cur_shape.stroke_linecap;
@@ -6020,7 +6020,7 @@ this._showCanvas = function(show){
         }
         var x = evt.pageX, y = evt.pageY;
         var p = getPressure(evt);
-        points.push({x, y, p});
+        points.push({x:x, y:y, p:p});
         if (points.length >= 3) {
           var lastpoint = points[points.length - 1];
           var secondlast = points[points.length - 2];
@@ -6056,7 +6056,7 @@ this._showCanvas = function(show){
           ctx.quadraticCurveTo(lastpoint.x, lastpoint.y, x, y);
           ctx.stroke();
         }
-        points.push({x, y, p, lw: lineWidth});
+        points.push({x:x, y:y, p:p, lw: lineWidth});
 
         lineWidth = 0;
         
