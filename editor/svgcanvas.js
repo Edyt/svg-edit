@@ -1542,7 +1542,7 @@ var mouseEvents = {};
             attr: {
               id: getNextId(),
               //points: d_attr,
-              //fill: 'none',
+              fill: 'none',
               //opacity: cur_shape.opacity / 2,
               'stroke-linecap': 'round',
               style: 'pointer-events:none'
@@ -2056,6 +2056,7 @@ var mouseEvents = {};
             newpath.setAttribute('d', c);
             newpath.setAttribute('stroke', cur_shape.stroke);
             newpath.setAttribute('stroke-width', lw+'px');
+            //newpath.setAttribute('fill', 'none');
             shape.appendChild(newpath);
           }
           secondpoint.x = xc;
@@ -2322,10 +2323,13 @@ var mouseEvents = {};
         }
         if(newelement){
           newelement.setAttribute('stroke-linecap', cur_shape.stroke_linecap);
+          newelement.setAttribute('fill', 'none');
           newelement.id = element.id;
-          newelement.style.pointerEvents = 'none';
+          //newelement.style.pointerEvents = 'none';
           element.parentNode.replaceChild(newelement, element);
           element = newelement;
+        } else {
+          element.style.pointerEvents = 'inherit';
         }
 				/*keep = element.points.numberOfItems > 1;
 				//if only a single point, add another point to make a dot show up
