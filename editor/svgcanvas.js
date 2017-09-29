@@ -1303,6 +1303,12 @@ var mouseEvents = {};
 		};
 	};
 
+  var getMousePos = function(evt){
+    if (evt.touches && evt.changedTouches){
+      return evt.changedTouches[0];
+    }
+    return evt;
+  };
 	// - when we are in a create mode, the element is added to the canvas
 	// but the action is not recorded until mousing up
 	// - when we are in select mode, select the element, remember the position
@@ -1319,13 +1325,18 @@ var mouseEvents = {};
 			svgCanvas.cloneSelectedElements(0, 0);
 		}
 		//root_sctm = $('#svgcontent g')[0].getScreenCTM().inverse();
+    //root_sctm = document.querySelector('#svgcontent g').getScreenCTM().inverse();
     root_sctm = this.lastChild.getScreenCTM().inverse();
 		
-		var pt = svgedit.math.transformPoint( evt.pageX, evt.pageY, root_sctm ),
+    var posEvt = getMousePos(evt);
+		var pt = svgedit.math.transformPoint( posEvt.pageX, posEvt.pageY, root_sctm ),
 			mouse_x = pt.x * current_zoom,
 			mouse_y = pt.y * current_zoom;
 			
-		evt.preventDefault();
+    console.log('down', getPressure(evt), evt.type, evt.mozInputSource);
+    //if (current_mode !== 'fhpath'){
+    	evt.preventDefault();
+    //}
 
 		canvas.last_mode = null;
 		if (right_click) {
@@ -1512,28 +1523,36 @@ var mouseEvents = {};
 			case 'fhellipse':
 			case 'fhrect':
 			case 'fhpath':
+        if (started) {
+          break;
+        }
 				start.x = real_x;
 				start.y = real_y;
-				started = {points: [{x: real_x, y: real_y}], lw: 0};
-				//d_attr = real_x + ',' + real_y + ' ';
-				//stroke_w = !cur_shape.stroke_width ? 1 : cur_shape.stroke_width;
-				addSvgElementFromJson({
-					//element: 'polyline',
-					element: 'g',
-					//curStyles: true,
-					attr: {
-						id: getNextId(),
-						//points: d_attr,
-						//fill: 'none',
-						//opacity: cur_shape.opacity / 2,
-						'stroke-linecap': 'round',
-						style: 'pointer-events:none'
-					}
-				});
-				freehand.minx = real_x;
-				freehand.maxx = real_x;
-				freehand.miny = real_y;
-				freehand.maxy = real_y;
+        var isTouch = evt.type.substr(0, 5) === 'touch';
+        if(!isTouch || getPressure(evt)) {
+          //only start drawing for touch event if pressure is present
+          //this is for palm rejection
+          started = {points: [{x: real_x, y: real_y}], lw: 0, isTouch: isTouch};
+          //d_attr = real_x + ',' + real_y + ' ';
+          //stroke_w = !cur_shape.stroke_width ? 1 : cur_shape.stroke_width;
+          addSvgElementFromJson({
+            //element: 'polyline',
+            element: 'g',
+            //curStyles: true,
+            attr: {
+              id: getNextId(),
+              //points: d_attr,
+              //fill: 'none',
+              //opacity: cur_shape.opacity / 2,
+              'stroke-linecap': 'round',
+              style: 'pointer-events:none'
+            }
+          });
+          freehand.minx = real_x;
+          freehand.maxx = real_x;
+          freehand.miny = real_y;
+          freehand.maxy = real_y;
+        }
 				break;
 			case 'image':
 				started = true;
@@ -1689,9 +1708,10 @@ var mouseEvents = {};
 		if (!started) {return;}
 		if (evt.button === 1 || canvas.spaceKey) {return;}
 
+    var posEvt = getMousePos(evt);
 		var i, xya, c, cx, cy, dx, dy, len, angle, box,
 			selected = selectedElements[0],
-			pt = svgedit.math.transformPoint( evt.pageX, evt.pageY, root_sctm ),
+			pt = svgedit.math.transformPoint( posEvt.pageX, posEvt.pageY, root_sctm ),
 			mouse_x = pt.x * current_zoom,
 			mouse_y = pt.y * current_zoom,
 			shape = svgedit.utilities.getElem(getId());
@@ -1706,7 +1726,8 @@ var mouseEvents = {};
 			y = svgedit.utilities.snapToGrid(y);
 		}
 
-		evt.preventDefault();
+  	evt.preventDefault();
+
 		var tlist;
 		switch (current_mode) {
 			case 'select':
@@ -2005,13 +2026,17 @@ var mouseEvents = {};
 			case 'fhpath':
 //				d_attr += + real_x + ',' + real_y + ' ';
 //				shape.setAttributeNS(null, 'points', d_attr);
+        var isTouch = evt.type.substr(0, 5) === 'touch';
+        if (isTouch !== started.isTouch) {
+          return;
+        }
 				end.x = real_x; end.y = real_y;
 				nextPos = null;
 
         var p = getPressure(evt);
         var points = started.points;
         var lw = p ? Math.round(pressureToLineWidth(p, started.lw)) : parseInt(cur_shape.stroke_width);
-        points.push({x: real_x, y: real_y, p, lw});
+        points.push({x: real_x, y: real_y, p: p, lw: lw});
         var lc = shape.lastChild;
         var newpath;
         while (points.length >= 3){
@@ -2168,7 +2193,8 @@ var mouseEvents = {};
 		var tempJustSelected = justSelected;
 		justSelected = null;
 		if (!started) {return;}
-		var pt = svgedit.math.transformPoint(evt.pageX, evt.pageY, root_sctm),
+    var posEvt = getMousePos(evt);
+		var pt = svgedit.math.transformPoint(posEvt.pageX, posEvt.pageY, root_sctm),
 			mouse_x = pt.x * current_zoom,
 			mouse_y = pt.y * current_zoom,
 			x = mouse_x / current_zoom,
@@ -2262,6 +2288,11 @@ var mouseEvents = {};
 				});
 				return;
 			case 'fhpath':
+        var isTouch = evt.type.substr(0, 5) === 'touch';
+        if (isTouch !== oldstarted.isTouch) {
+          return;
+        }
+
 				// Check that the path contains at least 2 points; a degenerate one-point path
 				// causes problems.
 				// Webkit ignores how we set the points attribute with commas and uses space
@@ -2272,6 +2303,8 @@ var mouseEvents = {};
 				start = {x:0, y:0};
 				end = {x:0, y:0};
 
+
+        evt.preventDefault();
         var newelement;
         keep = true;
         var childcount = element.childNodes.length;
@@ -2548,17 +2581,24 @@ var mouseEvents = {};
 
   window.addEventListener('keydown', fireMouseMoveOnShiftDown);
 
-	if(window.PointerEvent){
-		//jquery is too old, and it does not support pointer events
-		container.addEventListener('pointercancel', function(e){
+  var canceled = function(){
 			//touch event canceled, let's canceled any in progress action
 			//see http://msdn.microsoft.com/en-us/library/ie/hh846776%28v=vs.85%29.aspx
 			started = false;
-		});
+  };
+
+  if(window.PointerEvent){
+		container.addEventListener('pointercancel', canceled);
 		container.addEventListener('pointerdown', mouseDown);
 		container.addEventListener('pointermove', mouseMove);
 		container.addEventListener('pointerup', mouseUp);
 	}else{
+    if(window.TouchEvent){
+      container.addEventListener('touchstart', mouseDown);
+      container.addEventListener('touchmove', mouseMove);
+      container.addEventListener('touchend', mouseUp);
+      container.addEventListener('touchleave', canceled);
+    }
     container.addEventListener('mousedown', mouseDown);
     container.addEventListener('mouseup', mouseUp);
     container.addEventListener('mousemove', mouseMove);
@@ -5982,9 +6022,12 @@ function getPressure(evt){
     var p = 0; //pressure
     if(!isNaN(evt.pressure)){
       p = evt.pressure;
-    } else if (evt.touches && evt.touches[0] && !isNaN(evt.touches[0].force)) {
-      p = evt.touches[0].force;
-    //} else {
+    } else if (evt.changedTouches && evt.changedTouches[0] && !isNaN(evt.changedTouches[0].force)) {
+      //var tch = evt.touches[0];
+      //console.log(tch.force, tch.radiusX, tch.radiusY, tch.rotationAngle);
+      p = evt.changedTouches[0].force;
+    } else if (evt.mozPressure){
+      p = evt.mozPressure;
     //  p = Math.random();
     }
     return p;
@@ -6099,9 +6142,9 @@ this._showCanvas = function(show){
 
       };
       workarea.appendChild(canvas);
-      var eventMap = [{evts: ['touchstart', 'pointerdown', 'mousedown'], h: canvasMouseDown},
-        {evts: ['touchmove', 'pointermove', 'mousemove'], h: canvasMouseMove},
-        {evts: ['touchend', 'touchleave', 'pointercancel', 'pointerup', 'mouseup'], h: canvasMouseUp}];
+      var eventMap = [{evts: ['pointerdown', 'touchstart', 'mousedown'], h: canvasMouseDown},
+        {evts: ['pointermove', 'touchmove', 'mousemove'], h: canvasMouseMove},
+        {evts: ['pointercancel', 'pointerup', 'touchend', 'touchleave', 'mouseup'], h: canvasMouseUp}];
       eventMap.forEach(function(o){
         o.evts.forEach(function(evtname){
           canvas.addEventListener(evtname, o.h);
