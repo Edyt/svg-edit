@@ -1263,7 +1263,6 @@ var mouseEvents = {};
 		nextParameter,
 		bSpline = {x:0, y:0},
 		nextPos = {x:0, y:0},
-		THRESHOLD_DIST = 0.8,
 		STEP_COUNT = 10,
 		lastMouseMoveEvt;
 
@@ -1314,10 +1313,8 @@ var mouseEvents = {};
 	// - when we are in select mode, select the element, remember the position
 	// and do nothing else
 	var mouseDown = function(evt) {
-		if (canvas.spaceKey || evt.button === 1) {return;}
-
-		//palm/finger rejection
-		if (evt.pointerType === 'touch') {return;}
+		//reject palm/finger
+		if (evt.pointerType === 'touch' || canvas.spaceKey || evt.button === 1) {return;}
 
 		var right_click = evt.button === 2;
 	
@@ -2065,27 +2062,6 @@ var mouseEvents = {};
         }
         started.lw = lw;
 
-        /*var point = svgroot.createSVGPoint();
-        point.x = real_x;
-        point.y = real_y;
-        shape.points.appendItem(point);
-        */
-				/*if (controllPoint2.x && controllPoint2.y) {
-					for (i = 0; i < STEP_COUNT - 1; i++) {
-						parameter = i / STEP_COUNT;
-						nextParameter = (i + 1) / STEP_COUNT;
-						bSpline = nextPos || getBsplinePoint(parameter);
-						nextPos = getBsplinePoint(nextParameter);
-						sumDistance += Math.sqrt((nextPos.x - bSpline.x) * (nextPos.x - bSpline.x) + (nextPos.y - bSpline.y) * (nextPos.y - bSpline.y));
-						if (sumDistance > THRESHOLD_DIST) {
-							var point = svgroot.createSVGPoint();
-							point.x = nextPos.x;
-							point.y = nextPos.y;
-							shape.points.appendItem(point);
-							sumDistance -= THRESHOLD_DIST;
-						}
-					}
-				}*/
 				controllPoint2 = {x:controllPoint1.x, y:controllPoint1.y};
 				controllPoint1 = {x:start.x, y:start.y};
 				start = {x:end.x, y:end.y};
@@ -2331,19 +2307,6 @@ var mouseEvents = {};
         } else {
           element.style.pointerEvents = 'inherit';
         }
-				/*keep = element.points.numberOfItems > 1;
-				//if only a single point, add another point to make a dot show up
-				if(!keep){
-					keep = true;
-					var first = element.points.getItem(0);
-					var second = svgroot.createSVGPoint();
-					second.x = first.x + 1;
-					second.y = first.y;
-					element.points.appendItem(second);
-				}
-				if (keep) {
-					element = pathActions.smoothPolylineIntoPath(element);
-				}*/
 				break;
 			case 'line':
 				attrs = $(element).attr(['x1', 'x2', 'y1', 'y2']);
@@ -3105,73 +3068,6 @@ pathActions = canvas.pathActions = function() {
 	// This function converts a polyline (created by the fh_path tool) into
 	// a path element and coverts every three line segments into a single bezier
 	// curve in an attempt to smooth out the free-hand
-	var smoothPolylineIntoPath_old = function(element) {
-		var i, points = element.points;
-		var N = points.numberOfItems;
-		if (N >= 4) {
-			// loop through every 3 points and convert to a cubic bezier curve segment
-			// 
-			// NOTE: this is cheating, it means that every 3 points has the potential to 
-			// be a corner instead of treating each point in an equal manner. In general,
-			// this technique does not look that good.
-			// 
-			// I am open to better ideas!
-			// 
-			// Reading:
-			// - http://www.efg2.com/Lab/Graphics/Jean-YvesQueinecBezierCurves.htm
-			// - http://www.codeproject.com/KB/graphics/BezierSpline.aspx?msg=2956963
-			// - http://www.ian-ko.com/ET_GeoWizards/UserGuide/smooth.htm
-			// - http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/spline/Bezier/bezier-der.html
-			var curpos = points.getItem(0), prevCtlPt = null;
-			var d = [];
-			d.push(['M', curpos.x, ',', curpos.y, ' C'].join(''));
-			for (i = 1; i <= (N-3); i += 3) {
-				var ct1 = points.getItem(i);
-				var ct2 = points.getItem(i+1);
-				var end = points.getItem(i+2);
-				
-				// if the previous segment had a control point, we want to smooth out
-				// the control points on both sides
-				if (prevCtlPt) {
-					var newpts = svgedit.path.smoothControlPoints( prevCtlPt, ct1, curpos );
-					if (newpts && newpts.length == 2) {
-						var prevArr = d[d.length-1].split(',');
-						prevArr[2] = newpts[0].x;
-						prevArr[3] = newpts[0].y;
-						d[d.length-1] = prevArr.join(',');
-						ct1 = newpts[1];
-					}
-				}
-				
-				d.push([ct1.x, ct1.y, ct2.x, ct2.y, end.x, end.y].join(','));
-				
-				curpos = end;
-				prevCtlPt = ct2;
-			}
-			// handle remaining line segments
-			d.push('L');
-			while (i < N) {
-				var pt = points.getItem(i);
-				d.push([pt.x, pt.y].join(','));
-				i++;
-			}
-			d = d.join(' ');
-
-			// create new path element
-			element = addSvgElementFromJson({
-				element: 'path',
-				curStyles: true,
-				attr: {
-					id: getId(),
-					d: d,
-					fill: 'none'
-				}
-			});
-			// No need to call "changed", as this is already done under mouseUp
-		}
-		return element;
-	};
-
   var smoothPolylineIntoPath = function(element) {
         var points = element.points;
         var N = points.numberOfItems;
