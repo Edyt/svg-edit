@@ -1,0 +1,31 @@
+{
+  "name": "svg-edit",
+  "version": "1.0.0",
+  "description": "SVG-Edit from Edyt, Inc.",
+  "main": "svgedit.js",
+  "scripts": {
+    "test": "echo \"No tests\" && exit 1",
+    "deploy": "npm version patch -m \"RELEASE: version %s\" && npm publish",
+    "version": "git add package.json",
+    "postdeploy": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edyt/svg-edit.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN license.txt",
+  "bugs": {
+    "url": "https://github.com/Edyt/svg-edit/issues"
+  },
+  "homepage": "https://github.com/Edyt/svg-edit#readme",
+  "maintainers": [
+    {
+      "name": "oiab-deploy",
+      "email": "oiab@sparkbit.pl"
+    }
+  ],
+  "publishConfig": {
+    "registry": "https://tp-nexus.sparkbit.pl/repository/npm-releases/"
+  }
+}
