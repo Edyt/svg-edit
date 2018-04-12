@@ -1,6 +1,6 @@
 {
   "name": "svg-edit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SVG-Edit from Edyt, Inc.",
   "main": "svgedit.js",
   "scripts": {
