@@ -353,13 +353,13 @@ svgedit.path.getSegSelector = function(seg, update) {
 
 // Function: smoothControlPoints
 // Takes three points and creates a smoother line based on them
-// 
-// Parameters: 
+//
+// Parameters:
 // ct1 - Object with x and y values (first control point)
 // ct2 - Object with x and y values (second control point)
 // pt - Object with x and y values (third point)
 //
-// Returns: 
+// Returns:
 // Array of two "smoothed" point objects
 svgedit.path.smoothControlPoints = function(ct1, ct2, pt) {
 	// each point must not be the origin
@@ -478,7 +478,7 @@ svgedit.path.Segment.prototype.move = function(dx, dy) {
 	var cur_pts, item = this.item;
 
 	if (this.ctrlpts) {
-		cur_pts = [item.x += dx, item.y += dy, 
+		cur_pts = [item.x += dx, item.y += dy,
 			item.x1, item.y1, item.x2 += dx, item.y2 += dy];
 	} else {
 		cur_pts = [item.x += dx, item.y += dy];
@@ -487,7 +487,7 @@ svgedit.path.Segment.prototype.move = function(dx, dy) {
 
 	if (this.next && this.next.ctrlpts) {
 		var next = this.next.item;
-		var next_pts = [next.x, next.y, 
+		var next_pts = [next.x, next.y,
 			next.x1 += dx, next.y1 += dy, next.x2, next.y2];
 		svgedit.path.replacePathSeg(this.next.type, this.next.index, next_pts);
 	}
@@ -926,7 +926,7 @@ var getRotVals = function(x, y) {
 };
 
 // If the path was rotated, we must now pay the piper:
-// Every path point must be rotated into the rotated coordinate system of 
+// Every path point must be rotated into the rotated coordinate system of
 // its old center, then determine the new center, then rotate it back
 // This is because we want the path to remember its rotation
 

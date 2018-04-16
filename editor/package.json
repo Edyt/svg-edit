@@ -7,7 +7,7 @@
     "test": "echo \"No tests\" && exit 1",
     "deploy": "npm version patch -m \"RELEASE: version %s\" && npm publish",
     "version": "git add package.json",
-    "postdeploy": "git push && git push --tags"
+    "postdeploy": "git push origin oiab && git push origin oiab --tags"
   },
   "repository": {
     "type": "git",

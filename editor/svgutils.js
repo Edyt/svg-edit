@@ -214,10 +214,10 @@ svgedit.utilities.text2xml = function(sXML) {
 
 // Function: svgedit.utilities.bboxToObj
 // Converts a SVGRect into an object.
-// 
+//
 // Parameters:
 // bbox - a SVGRect
-// 
+//
 // Returns:
 // An object with properties names x, y, width, height.
 svgedit.utilities.bboxToObj = function(bbox) {
@@ -463,7 +463,7 @@ function groupBBFix(selected) {
 // Parameters:
 // elem - Optional DOM element to get the BBox for
 svgedit.utilities.getBBox = function(elem) {
-	var selected = elem || editorContext_.geSelectedElements()[0];
+	var selected = elem || editorContext_.getSelectedElements()[0];
 	if (elem.nodeType != 1) {return null;}
 	var ret = null;
 	var elname = selected.nodeName;
@@ -596,7 +596,7 @@ if (svgedit.browser.supportsSelectors()) {
 // Function: assignAttributes
 // Assigns multiple attributes to an element.
 //
-// Parameters: 
+// Parameters:
 // node - DOM element to apply new attribute values to
 // attrs - Object with attribute keys/values
 // suspendLength - Optional integer of milliseconds to suspend redraw
